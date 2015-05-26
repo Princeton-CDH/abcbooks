@@ -1,0 +1,12 @@
+* Encoding Guidelines
+** Alphabet Groups
+   When the book is divided into sections devoted to one or more
+   letters of the alphabet, enclose each of these sections in a
+   structural <div type="alpha-group">.  Each of these <div> elements
+   should have an xml:id attribute (conventionally given the value
+   ag.N) and an ana attribute associating it with the appropriate
+   letter group.
+** Subject-Letters
+   Often, the letter being described is the subject of the line or
+   sentence (as in, "C is a Captain, who led on his men"). Tag these
+   as <c type="subject-letter">.

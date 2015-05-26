@@ -1,0 +1,5 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/abcbooks/data" owner="admin" group="guest" mode="666" created="2014-01-09T12:07:55-05:00" version="1">
+    <acl entries="0" version="1"/>
+    <subcollection name="facsimiles" filename="facsimiles"/>
+    <subcollection name="transcriptions" filename="transcriptions"/>
+</collection>

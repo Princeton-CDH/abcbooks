@@ -1,0 +1,273 @@
+<?xml-model href="schemas/abcbooks.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>A Digital Transcription of <bibl>Little Folks' ABC</bibl></title>
+      </titleStmt>
+      <publicationStmt>
+	<idno type="voyagerid">4968972</idno>
+      </publicationStmt>
+      <sourceDesc>
+	<ab><lb/>Title: Little folks' ABC. <lb/>Published/Created: London. Dean's Rag Book
+	Co., Ltd., not before 1923. <lb/>General: [12] p. of butterfly folded cloth;
+	col. ill. 21 x 19 cm. <lb/>Series: Dean's Rag Books No. 241. <lb/>Notes: Cover
+	title. <lb/>Subjects include Bendy Bear, Dutch dolls, Fluffykit, Kudleme babies,
+	Puck, Safe Swimeesy buoys, and Untearable toys and books. <lb/>With 2 p.
+	advertising leaflet for Dean's Patent Rag Books laid in. <lb/>Binding Note:
+	Unbound, with red cloth spine oversewn with yellow thread and upper and lower
+	edges pinked.. <lb/>Related name(s): Sexton, Donald R. <lb/>Voyager Bib ID:
+	4968972 </ab>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="page_image1">
+      <graphic ana="lowres" mimeType="jpg" url="00000001.jpg"/>
+    </surface>
+    <surface xml:id="page_image2">
+      <graphic ana="lowres" mimeType="jpg" url="00000002.jpg"/>
+    </surface>
+    <surface xml:id="page_image3">
+      <graphic ana="lowres" mimeType="jpg" url="00000003.jpg"/>
+    </surface>
+    <surface xml:id="page_image4">
+      <graphic ana="lowres" mimeType="jpg" url="00000004.jpg"/>
+    </surface>
+    <surface xml:id="page_image5">
+      <graphic ana="lowres" mimeType="jpg" url="00000005.jpg"/>
+    </surface>
+    <surface xml:id="page_image6">
+      <graphic ana="lowres" mimeType="jpg" url="00000006.jpg"/>
+    </surface>
+    <surface xml:id="page_image7">
+      <graphic ana="lowres" mimeType="jpg" url="00000007.jpg"/>
+    </surface>
+    <surface xml:id="page_image8">
+      <graphic ana="lowres" mimeType="jpg" url="00000008.jpg"/>
+    </surface>
+    <surface xml:id="page_image9">
+      <graphic ana="lowres" mimeType="jpg" url="00000009.jpg"/>
+    </surface>
+    <surface xml:id="page_image10">
+      <graphic ana="lowres" mimeType="jpg" url="00000010.jpg"/>
+    </surface>
+    <surface xml:id="page_image11">
+      <graphic ana="lowres" mimeType="jpg" url="00000011.jpg"/>
+    </surface>
+    <surface xml:id="page_image12">
+      <graphic ana="lowres" mimeType="jpg" url="00000012.jpg"/>
+    </surface>
+    <surface xml:id="page_image13">
+      <graphic ana="lowres" mimeType="jpg" url="00000011.jpg"/>
+    </surface>
+    <surface xml:id="page_image14">
+      <graphic ana="lowres" mimeType="jpg" url="00000012.jpg"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <pb facs="page_image1"/>
+      <pb facs="page_image2"/>
+      <div type="alpha-group" xml:id="ag1" ana="A">
+	<head>A</head>
+	<l><c type="subject-letter" rend="italic">A</c> <c type="subject-letter" rend="italic">a</c> for an Ape with tousled hair</l>
+
+      </div>
+      <div type="alpha-group" xml:id="ag2" ana="B">
+	<head>B</head>
+	
+	  <l><c type="subject-letter" rend="italic">B</c> <c type="subject-letter" rend="italic">b</c> for a Beautiful >Bendy-Bear</l>
+	
+      </div>
+      <pb facs="page_image3"/>
+      <div type="alpha-group" xml:id="ag3" ana="C">
+	<head>C</head>
+	
+	  <l><c type="subject-letter" rend="italic">C</c> <c type="subject-letter" rend="italic">c</c> for the Clown with his clever dogs </l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag4" ana="D">
+	<head>D</head>
+	
+	  <l><c type="subject-letter" rend="italic">D</c> <c type="subject-letter" rend="italic">d</c> for Dutch Dolls in wooden clogs </l>
+	
+      </div>
+      <pb facs="page_image4"/>
+      <div type="alpha-group" xml:id="ag5" ana="E">
+	<head>E</head>
+	
+	<l><c type="subject-letter" rend="italic">E</c> <c type="subject-letter" rend="italic">e</c> for an Elephant all dressed up</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag6" ana="F">
+	<head>F</head>
+	
+	<l><c type="subject-letter" rend="italic">F</c> <c type="subject-letter" rend="italic">f</c> for Fluffykit &amp; pup</l>
+	  
+	
+      </div>
+      <div type="alpha-group" xml:id="ag7" ana="G">
+	<head>G</head>
+	
+	<l><c type="subject-letter" rend="italic">G</c> <c type="subject-letter" rend="italic">g</c> for Goo-goo girls &amp; boys</l>
+	
+      </div>
+      <pb facs="page_image5"/>
+
+      <div type="alpha-group" xml:id="ag8" ana="H">
+	<head>H</head>
+	
+	<l><c type="subject-letter" rend="italic">H</c> <c type="subject-letter" rend="italic">h</c> for a Hamper of A 1 Toys</l>	  
+	
+      </div>
+      <div type="alpha-group" xml:id="ag9" ana="I">
+	<head>I</head>
+	
+	<l><c type="subject-letter" rend="italic">I</c> <c type="subject-letter" rend="italic">i</c> for an Indian black as ink</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag10" ana="J">
+	<head>J</head>
+	
+	<l><c type="subject-letter" rend="italic">J</c> <c type="subject-letter" rend="italic">j</c> for a Jumper-doll, dressed in pink</l>
+	
+      </div>
+      <pb facs="page_image6"/>
+      <div type="alpha-group" xml:id="ag11" ana="K">
+	<head>K</head>
+	
+	<l><c type="subject-letter" rend="italic">K</c> <c type="subject-letter" rend="italic">k</c> for Kuddleme babies three</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag12" ana="L">
+	<head>L</head>
+	
+	<l><c type="subject-letter" rend="italic">L</c> <c type="subject-letter" rend="italic">l</c> for a lively Lambkin, see?</l>
+	
+      </div>
+      <pb facs="page_image7"/>
+      <div type="alpha-group" xml:id="ag13" ana="M">
+	<head>M</head>
+	
+	<l><c type="subject-letter" rend="italic">M</c> <c type="subject-letter" rend="italic">m</c> for a Mandarin full of pins</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag14" ana="N">
+	<head>N</head>
+	
+	<l><c type="subject-letter" rend="italic">N</c> <c type="subject-letter" rend="italic">n</c> for Neddy (mind your shins!)</l>
+	
+      </div>
+      <pb facs="page_image8"/>
+      <div type="alpha-group" xml:id="ag15" ana="O">
+	<head>O</head>
+	
+	<l><c type="subject-letter" rend="italic">O</c> <c type="subject-letter" rend="italic">o</c> for Old Woman in a shoe </l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag16" ana="P">
+	<head>P</head>
+	
+	<l><c type="subject-letter" rend="italic">P</c> <c type="subject-letter" rend="italic">p</c> for Puck and for Pixie too</l>
+	
+      </div>
+      <pb facs="page_image9"/>
+      <div type="alpha-group" xml:id="ag17" ana="Q">
+	<head>Q</head>
+	
+	<l><c type="subject-letter" rend="italic">Q</c> <c type="subject-letter" rend="italic">q</c> for Quack-quacks, balls of fluff</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag18" ana="R">
+	<head>R</head>
+	
+	<l><c type="subject-letter" rend="italic">R</c> <c type="subject-letter" rend="italic">r</c> for Rag Knockabouts; that's the stuff!</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag19" ana="S">
+	<head>S</head>
+	
+	<l><c type="subject-letter" rend="italic">S</c> <c type="subject-letter" rend="italic">s</c> for Safe Swimeesy Buoys</l>
+	
+      </div>
+      <pb facs="page_image10"/>
+      <div type="alpha-group" xml:id="ag20" ana="T">
+	<head>T</head>
+	
+	<l><c type="subject-letter" rend="italic">T</c> <c type="subject-letter" rend="italic">t</c> for Tibby and Tubby Toys</l>
+	
+      </div>
+      <pb facs="page_image11"/>
+      <div type="alpha-group" xml:id="ag21" ana="U">
+	<head>U</head>
+	
+	<l><c type="subject-letter" rend="italic">U</c> <c type="subject-letter" rend="italic">u</c> for Untearable Toys &amp; Books</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag22" ana="V">
+	<head>V</head>
+	
+	<l><c type="subject-letter" rend="italic">V</c> <c type="subject-letter" rend="italic">v</c> for the Voice that startled "Snooks"</l>
+	
+      </div>
+      <pb facs="page_image12"/>
+      <div type="alpha-group" xml:id="ag23" ana="W">
+	<head>W</head>
+	
+	<l><c type="subject-letter" rend="italic">W</c> <c type="subject-letter" rend="italic">w</c> for Wendy Wee</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag24" ana="X">
+	<head>X</head>
+	
+	<l><c type="subject-letter" rend="italic">X</c> <c type="subject-letter" rend="italic">x</c> that stands for Xmas Tree</l>
+	
+      </div>
+      <pb facs="page_image13"/>
+      <div type="alpha-group" xml:id="ag25" ana="Y">
+	<head>Y</head>
+	
+	<l><c type="subject-letter" rend="italic">Y</c> <c type="subject-letter" rend="italic">y</c> for a Yachtsman, as for Z</l>
+	
+      </div>
+      <div type="alpha-group" xml:id="ag26" ana="Z">
+	<head>Z</head>
+	
+	<l><c type="subject-letter" rend="italic">Z</c> <c type="subject-letter" rend="italic">z</c> Z for a Zoo Rag Book, 'nuff said</l>
+	
+      </div>
+      <pb facs="page_image14"/>
+    </body>
+    <back>
+      <interpGrp type="subject">
+	<interp xml:id="A">A</interp>
+	<interp xml:id="B">B</interp>
+	<interp xml:id="C">C</interp>
+	<interp xml:id="D">D</interp>
+	<interp xml:id="E">E</interp>
+	<interp xml:id="F">F</interp>
+	<interp xml:id="G">G</interp>
+	<interp xml:id="H">H</interp>
+	<interp xml:id="I">I</interp>
+	<interp xml:id="J">J</interp>
+	<interp xml:id="K">K</interp>
+	<interp xml:id="L">L</interp>
+	<interp xml:id="M">M</interp>
+	<interp xml:id="N">N</interp>
+	<interp xml:id="O">O</interp>
+	<interp xml:id="P">P</interp>
+	<interp xml:id="Q">Q</interp>
+	<interp xml:id="R">R</interp>
+	<interp xml:id="S">S</interp>
+	<interp xml:id="T">T</interp>
+	<interp xml:id="U">U</interp>
+	<interp xml:id="V">V</interp>
+	<interp xml:id="W">W</interp>
+	<interp xml:id="X">X</interp>
+	<interp xml:id="Y">Y</interp>
+	<interp xml:id="Z">Z</interp>
+      </interpGrp>
+    </back>
+  </text>
+</TEI>

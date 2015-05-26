@@ -1,0 +1,140 @@
+<?xml-model href="schemas/abcbooks.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>A Digital Transcription of <bibl>Denslow's ABC book</bibl></title>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="voyagerid">6276923</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <ab><lb/>Title: Denslow's ABC book. <lb/>Author/Artist: Denslow, W. W. (William
+        Wallace), 1856-1915. <lb/>Published/Created: New York : G.W. Dillingham Co.,
+        1903 New York : J.J. Little &amp; Co. <lb/>General: [12] p. : col. ill. ; 29 cm.
+        <lb/>Series: Denslow's picture books for children <lb/>Notes: Wrapper title.
+        <lb/>"Published August 1903"--Copyright page. <lb/>"To Mira Bowles"--Copyright
+        page. <lb/>"For these books, W. W. Denslow has revised and adapted several of
+        the best classical fairy tales. He has improved these stories by elimination of
+        all coarseness, cruelty, and everything that might frighten children. They are
+        new; more beautiful and striking in both text and picture than any children's
+        books heretofore published. Each book is filled with pictures of action and fun
+        in brilliant colors. The twelve books are uniform in size"--Rear wrapper.
+        <lb/>In verse. <lb/>Cover p. 2 and 3 are white with color-printed pictures.
+        <lb/>Relief illustrations, color printed; figures depicted include the Scarecrow
+        and Tin Man characters from L. Frank Baum's Oz books; first printing as
+        described in Greene &amp; Hearn below. <lb/>CTSN copy: Inscribed verso f. cover
+        "To / Edward Holbrook / From / Mualmu Jenckes / Oct. 3, 1906.". <lb/>Binding
+        Note: Pub. white col. pictorial. self wrappers with advertisement on rear.
+        <lb/>References: Greene &amp; Hearn. W. W. Denslow, 29K <lb/>Subject(s): English
+        language -- Alphabet -- Juvenile poetry ; Alphabet -- Juvenile poetry ; Alphabet
+        books -- Specimens <lb/>Form/Genre: Alphabet rhymes -- 1903 <lb/>Children's
+        poetry -- 1903 <lb/>Alphabet books -- New York (State) -- New York -- 1903
+        <lb/>Juvenile literature -- New York (State) -- New York -- 1903
+        <lb/>Publishers' advertisements -- New York (State) -- New York -- 1903
+        <lb/>Related name(s): G.W. Dillingham Co ; <lb/>J.J. Little &amp; Co <lb/>Other
+        Title: ABC book <lb/>A B C book <lb/>Voyager Bib ID: 6276923 </ab>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="page_image1">
+      <graphic ana="lowres" mimeType="jpg" url="00000001.jpg"/>
+    </surface>
+    <surface xml:id="page_image2">
+      <graphic ana="lowres" mimeType="jpg" url="00000002.jpg"/>
+    </surface>
+    <surface xml:id="page_image3">
+      <graphic ana="lowres" mimeType="jpg" url="00000003.jpg"/>
+    </surface>
+    <surface xml:id="page_image4">
+      <graphic ana="lowres" mimeType="jpg" url="00000004.jpg"/>
+    </surface>
+    <surface xml:id="page_image5">
+      <graphic ana="lowres" mimeType="jpg" url="00000005.jpg"/>
+    </surface>
+    <surface xml:id="page_image6">
+      <graphic ana="lowres" mimeType="jpg" url="00000006.jpg"/>
+    </surface>
+    <surface xml:id="page_image7">
+      <graphic ana="lowres" mimeType="jpg" url="00000007.jpg"/>
+    </surface>
+    <surface xml:id="page_image8">
+      <graphic ana="lowres" mimeType="jpg" url="00000008.jpg"/>
+    </surface>
+    <surface xml:id="page_image9">
+      <graphic ana="lowres" mimeType="jpg" url="00000009.jpg"/>
+    </surface>
+    <surface xml:id="page_image10">
+      <graphic ana="lowres" mimeType="jpg" url="00000010.jpg"/>
+    </surface>
+    <surface xml:id="page_image11">
+      <graphic ana="lowres" mimeType="jpg" url="00000011.jpg"/>
+    </surface>
+    <surface xml:id="page_image12">
+      <graphic ana="lowres" mimeType="jpg" url="00000012.jpg"/>
+    </surface>
+    <surface xml:id="page_image13">
+      <graphic ana="lowres" mimeType="jpg" url="00000013.jpg"/>
+    </surface>
+    <surface xml:id="page_image14">
+      <graphic ana="lowres" mimeType="jpg" url="00000014.jpg"/>
+    </surface>
+    <surface xml:id="page_image15">
+      <graphic ana="lowres" mimeType="jpg" url="00000015.jpg"/>
+    </surface>
+    <surface xml:id="page_image16">
+      <graphic ana="lowres" mimeType="jpg" url="00000016.jpg"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div>           <pb facs="page_image1"/>
+      <pb facs="page_image2"/>
+      <pb facs="page_image3"/>
+      <pb facs="page_image4"/>
+      <pb facs="page_image5"/>
+      <pb facs="page_image6"/>
+      <pb facs="page_image7"/>
+      <pb facs="page_image8"/>
+      <pb facs="page_image9"/>
+      <pb facs="page_image10"/>
+      <pb facs="page_image11"/>
+      <pb facs="page_image12"/>
+      <pb facs="page_image13"/>
+      <pb facs="page_image14"/>
+      <pb facs="page_image15"/>
+      <pb facs="page_image16"/></div>
+    </body>
+    <back>
+      <interpGrp type="subject">
+	<interp xml:id="A">A</interp>
+	<interp xml:id="B">B</interp>
+	<interp xml:id="C">C</interp>
+	<interp xml:id="D">D</interp>
+	<interp xml:id="E">E</interp>
+	<interp xml:id="F">F</interp>
+	<interp xml:id="G">G</interp>
+	<interp xml:id="H">H</interp>
+	<interp xml:id="I">I</interp>
+	<interp xml:id="J">J</interp>
+	<interp xml:id="K">K</interp>
+	<interp xml:id="L">L</interp>
+	<interp xml:id="M">M</interp>
+	<interp xml:id="N">N</interp>
+	<interp xml:id="O">O</interp>
+	<interp xml:id="P">P</interp>
+	<interp xml:id="Q">Q</interp>
+	<interp xml:id="R">R</interp>
+	<interp xml:id="S">S</interp>
+	<interp xml:id="T">T</interp>
+	<interp xml:id="U">U</interp>
+	<interp xml:id="V">V</interp>
+	<interp xml:id="W">W</interp>
+	<interp xml:id="X">X</interp>
+	<interp xml:id="Y">Y</interp>
+	<interp xml:id="Z">Z</interp>
+      </interpGrp>
+    </back>
+  </text>
+</TEI>

@@ -1,0 +1,21 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/abcbooks/transform" owner="admin" group="guest" mode="666" created="2014-01-14T09:16:35-05:00" version="1">
+    <acl entries="0" version="1"/>
+    <resource type="XMLResource" name="alphagroup.xsl" owner="admin" group="admin" mode="644" created="2014-02-02T07:12:47-05:00" modified="2014-02-02T07:12:47-05:00" filename="alphagroup.xsl" mimetype="application/xslt+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="page.xsl" owner="admin" group="admin" mode="644" created="2014-01-14T09:26:32-05:00" modified="2014-01-14T09:26:32-05:00" filename="page.xsl" mimetype="application/xslt+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="search.xsl" owner="admin" group="admin" mode="644" created="2014-04-25T09:01:33-04:00" modified="2014-04-25T09:01:33-04:00" filename="search.xsl" mimetype="application/xslt+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="book2.xsl" owner="admin" group="admin" mode="644" created="2014-11-03T14:01:13-05:00" modified="2014-11-03T14:01:13-05:00" filename="book2.xsl" mimetype="application/xslt+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="page_transcript.xsl" owner="admin" group="admin" mode="644" created="2014-04-28T15:41:55-04:00" modified="2014-04-28T15:41:55-04:00" filename="page_transcript.xsl" mimetype="application/xslt+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="book.xsl" owner="admin" group="admin" mode="644" created="2014-10-30T16:05:17-04:00" modified="2014-10-30T16:05:17-04:00" filename="book.xsl" mimetype="application/xslt+xml">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>

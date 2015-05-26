@@ -1,0 +1,12 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/abcbooks/schemas" owner="admin" group="guest" mode="666" created="2014-01-14T09:15:02-05:00" version="1">
+    <acl entries="0" version="1"/>
+    <resource type="BinaryResource" name="abcbooks.rnc" owner="admin" group="admin" mode="644" created="2014-01-14T09:15:02-05:00" modified="2014-01-14T09:15:02-05:00" filename="abcbooks.rnc" mimetype="text/plain">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="abcbooks.xml" owner="admin" group="admin" mode="644" created="2014-01-14T09:15:02-05:00" modified="2014-01-14T09:15:02-05:00" filename="abcbooks.xml" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+    <resource type="XMLResource" name="abcbooks_doc.html" owner="admin" group="admin" mode="644" created="2014-01-14T09:15:02-05:00" modified="2014-01-14T09:15:02-05:00" filename="abcbooks_doc.html" mimetype="application/xml">
+        <acl entries="0" version="1"/>
+    </resource>
+</collection>
