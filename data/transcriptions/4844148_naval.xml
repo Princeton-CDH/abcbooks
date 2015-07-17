@@ -3,21 +3,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>A Digital Transcription of <bibl>The Union ABC</bibl></title>
+                <title>A Digital Transcription of <bibl>A Naval Alphabet</bibl></title>
             </titleStmt>
             <publicationStmt>
                 <publisher>Princeton University</publisher>
                 <pubPlace>Princeton, New Jersey</pubPlace>
-                <idno type="voyagerid">4715477</idno>
-                <idno type="abcbooksid">4715477_unionabc</idno>
+                <idno type="voyagerid">4844148</idno>
+                <idno type="abcbooksid">4844148_naval</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl xml:id="voyager4715477"><title>The Union ABC</title><publisher>Boston, Degen
-                        Estes &amp; Co. n.d. ca,. 1860s</publisher><note type="general">[14] pp. red
-                        and blue engr. illus. 21.5 cm. archival folder.</note><note type="notes"
-                        >Mending tape throughout. many tears. stains.</note><note type="binding"
-                        >Binding Note: red and blue ill. self covers.</note><author>Dyer,
-                        S.</author></bibl>
+                <bibl xml:id="voyager4844148"><title>A Naval Alphabet</title></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>

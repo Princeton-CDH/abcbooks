@@ -1,6 +1,6 @@
 <collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/abcbooks/data/transcriptions" owner="admin" group="admin" mode="755" created="2014-01-09T12:08:38-05:00" version="1">
     <acl entries="0" version="1"/>
-    <resource type="XMLResource" name="5645244-many-nations.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:14-04:00" modified="2014-06-12T16:30:14-04:00" filename="5645244-many-nations.tei.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="5645244-many-nations.tei.xml" owner="admin" group="admin" mode="644" created="2015-06-22T13:25:24-04:00" modified="2015-06-22T13:25:24-04:00" filename="5645244-many-nations.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="XMLResource" name="4753534-abcfun.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:12-04:00" modified="2014-06-12T16:30:12-04:00" filename="4753534-abcfun.tei.xml" mimetype="application/xml">
@@ -9,13 +9,13 @@
     <resource type="XMLResource" name="4770063_banditbunny.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:13-04:00" modified="2014-06-12T16:30:13-04:00" filename="4770063_banditbunny.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="5735175-mavors.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-13T15:03:53-04:00" modified="2014-06-13T15:03:53-04:00" filename="5735175-mavors.tei.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="5735175-mavors.tei.xml" owner="admin" group="admin" mode="644" created="2015-07-06T10:46:18-04:00" modified="2015-07-06T10:46:18-04:00" filename="5735175-mavors.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="XMLResource" name="6276923-denslows.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:14-04:00" modified="2014-06-12T16:30:14-04:00" filename="6276923-denslows.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="4769970-tony-sarg.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:13-04:00" modified="2014-06-12T16:30:13-04:00" filename="4769970-tony-sarg.tei.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="4769970-tony-sarg.tei.xml" owner="admin" group="admin" mode="644" created="2015-06-21T08:27:46-04:00" modified="2015-06-21T08:27:46-04:00" filename="4769970-tony-sarg.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="XMLResource" name="6273614-modern-abc.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:14-04:00" modified="2014-06-12T16:30:14-04:00" filename="6273614-modern-abc.tei.xml" mimetype="application/xml">
@@ -39,7 +39,7 @@
     <resource type="XMLResource" name="4724308-bicycleabc.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:10-04:00" modified="2014-06-12T16:30:10-04:00" filename="4724308-bicycleabc.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="4719680-mothers.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:09-04:00" modified="2014-06-12T16:30:09-04:00" filename="4719680-mothers.tei.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="4719680-mothers.tei.xml" owner="admin" group="admin" mode="644" created="2015-06-22T13:14:18-04:00" modified="2015-06-22T13:14:18-04:00" filename="4719680-mothers.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="XMLResource" name="4734384-bizarre-company.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:11-04:00" modified="2014-06-12T16:30:11-04:00" filename="4734384-bizarre-company.tei.xml" mimetype="application/xml">
@@ -48,7 +48,7 @@
     <resource type="XMLResource" name="4764206-alphabet-fairy-tales.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:12-04:00" modified="2014-06-12T16:30:12-04:00" filename="4764206-alphabet-fairy-tales.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="4764330-babes-empire.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:13-04:00" modified="2014-06-12T16:30:13-04:00" filename="4764330-babes-empire.tei.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="4764330-babes-empire.tei.xml" owner="admin" group="admin" mode="644" created="2015-06-22T13:26:10-04:00" modified="2015-06-22T13:26:10-04:00" filename="4764330-babes-empire.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="XMLResource" name="4758882_arthursalphabets.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:12-04:00" modified="2014-06-12T16:30:12-04:00" filename="4758882_arthursalphabets.tei.xml" mimetype="application/xml">
@@ -60,7 +60,7 @@
     <resource type="XMLResource" name="4841149-history-apple-pie.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:13-04:00" modified="2014-06-12T16:30:13-04:00" filename="4841149-history-apple-pie.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
-    <resource type="XMLResource" name="4844136-an-alphabet.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:30:14-04:00" modified="2014-06-12T16:30:14-04:00" filename="4844136-an-alphabet.tei.xml" mimetype="application/xml">
+    <resource type="XMLResource" name="4844136-an-alphabet.tei.xml" owner="admin" group="admin" mode="644" created="2015-05-27T16:28:32-04:00" modified="2015-05-27T16:28:32-04:00" filename="4844136-an-alphabet.tei.xml" mimetype="application/xml">
         <acl entries="0" version="1"/>
     </resource>
     <resource type="XMLResource" name="4973623-boys-girls.tei.xml" owner="admin" group="admin" mode="644" created="2014-06-12T16:37:21-04:00" modified="2014-06-12T16:37:21-04:00" filename="4973623-boys-girls.tei.xml" mimetype="application/xml">

@@ -1,5 +1,4 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -11,15 +10,19 @@
                 <idno type="abcbooksid">4844136-an-alphabet</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl><title>ABC: An alphabet</title><lb/>Title: ABC: An alphabet written &amp;
-                    pictured by Mrs. Arthur Gaskin. <lb/>Author/Artist: Gaskin, Georgie, 1866-1934.
-                    <lb/>Published/Created: London, Chicago. Elkin Mathews. ; A.C. McClurg, 1895.
-                    <lb/>General: [64], 20 pp.(publisher's catalog): ill. 19 cm. <lb/>Binding Note:
+                <bibl>
+                    <title>ABC: An alphabet</title>
+                    <author>Mrs. Arthur Gaskin</author>
+                    <author>Gaskin, Georgie, 1866-1934</author>
+                    <publisher>London, Chicago. Elkin Mathews. ; A.C. McClurg, 1895</publisher>
+                    <note type="pages">[64], 20 pp.(publisher's catalog): ill. 19 cm.</note>
+                    <note type="other">Binding Note:
                     Pub. olive green pictorial cloth stamped in white and black. <lb/>Provenance:
                     Cotsen copy "Bookplate" designed by author/illustrator on front pastedown
                     endpaper filled in by Frances Jean MacAlister Dodds. <lb/>Cotsen copy White
                     Cotsen family book plate signed and dated by Lloyd E. Cotsen May 1977.
-                    <lb/>Voyager Bib ID: 4844136 </bibl>
+                    <lb/>Voyager Bib ID: 4844136 </note>
+                   </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -308,11 +311,13 @@
                 <ab><lb/>﻿ABC <lb/>AN ALPHABET <lb/>WRITTEN &amp; PICTURED BY <lb/>MRS. ARTHUR
                     GASKIN <lb/>PUBLISHED IN LONDON <lb/>BY ELKIN MATHEWS <lb/>VIGO STREET </ab>
             </div>
-            <pb n="" facs="page_image2"/>
-            <pb n="" facs="page_image3"/>
-            <pb n="" facs="page_image4"/>
-            <pb n="" facs="page_image5"/>
-            <pb n="" facs="page_image6"/>
+            <pb n="2" facs="page_image2"/>
+            <pb n="3" facs="page_image3"/>
+            <pb n="4" facs="page_image4"/>
+            <pb n="5" facs="page_image5"/>
+
+            <pb n="6" facs="page_image6"/>
+
             <pb n="7" facs="page_image7"/>
             <div>
                 <ab><lb/>I DEDICATE THIS BOOK TO <lb/>HELEN MARY WHO WAS BORN <lb/>EASTER DAY 1895
