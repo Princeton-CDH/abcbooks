@@ -1,4 +1,4 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>A Digital Transcription of <bibl>An A. B. C. of every-day people, good, bad
+<?xml-model href="http://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>A Digital Transcription of <bibl>An A. B. C. of every-day people, good, bad
                         &amp; indifferent</bibl></title></titleStmt><publicationStmt><publisher>Princeton University</publisher><pubPlace>Princeton, New Jersey</pubPlace><idno type="voyagerid">5754953</idno><idno type="abcbooksid">5754953-an-abc</idno></publicationStmt><sourceDesc><bibl><title>An A. B. C. of every-day people</title><lb/>Title: An A. B. C. of every-day people, good, bad &amp; indifferent / by G.
                     E.Farrow ; illustrated by John Hassall. <lb/>Author/Artist: Farrow, G. E.
                     (George Edward), b. 1866. <lb/>Published/Created: London : Dean &amp; Son, 1902?

@@ -1,4 +1,4 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>A Digital Transcription of <bibl>An alphabet for boys and
+<?xml-model href="http://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>A Digital Transcription of <bibl>An alphabet for boys and
         girls</bibl></title></titleStmt><publicationStmt><publisher>Princeton University</publisher><pubPlace>Princeton, New Jersey</pubPlace><idno type="voyagerid">4973623</idno><idno type="abcbooksid">4973623-boys-girls</idno></publicationStmt><sourceDesc><bibl><title>An alphabet for boys and girls</title><author>Field, Rachel, 1894-1942.</author><publisher>Doubleday, Duran &amp; Company, Inc.</publisher><pubPlace>Garden City, New York</pubPlace>, <date>1928</date>.
 
 	  <note>General: [60] p. : col. ill. ;

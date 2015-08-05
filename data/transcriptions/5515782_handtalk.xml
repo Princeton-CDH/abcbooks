@@ -1,4 +1,4 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>

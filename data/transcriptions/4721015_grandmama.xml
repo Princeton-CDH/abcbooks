@@ -1,4 +1,4 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -12,7 +12,11 @@
                 <idno type="abcbooksid">4721015_grandmama</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl xml:id="voyager4721015"><title>Grandmama Goodsoul’s ABC of Eatables</title></bibl>
+                <bibl xml:id="voyager4721015">
+                    <title>Grandmama Goodsoul’s ABC of Eatables</title>
+                    <pubPlace>London</pubPlace>
+                    <publisher>Read, Brooks and Co., printers &amp; publishers</publisher>
+                </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>

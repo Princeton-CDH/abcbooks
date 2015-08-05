@@ -1,4 +1,4 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -12,7 +12,10 @@
                 <idno type="abcbooksid">4721007_goldfish</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl xml:id="voyager4721007"><title>Goldfish at School; or, The Alphabet of Frank the Fisherman</title></bibl>
+                <bibl xml:id="voyager4721007">
+                    <title>Goldfish at School; or, The Alphabet of Frank the Fisherman</title>
+                    
+                </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
