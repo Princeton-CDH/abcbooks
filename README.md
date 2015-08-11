@@ -13,7 +13,7 @@ text/body
 	
 	div (alpha-group)
 	
-	[head](https://etc.princeton.edu/abcbooks/node/624)
+	head(https://etc.princeton.edu/abcbooks/node/624)
 	
 	lg
 	
