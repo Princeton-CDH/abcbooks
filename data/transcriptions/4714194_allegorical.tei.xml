@@ -1,0 +1,276 @@
+<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Digital Transcription of <bibl>An Alphabet: Allegorical and Alliterative. Amusing. Appreciable at all Ages</bibl></title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+                <pubPlace>Princeton, New Jersey</pubPlace>
+                <idno type="voyagerid">4714194</idno>
+                <idno type="abcbooksid">4714194_allegorical</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl xml:id="voyager4714194"><title>An Alphabet: Allegorical and Alliterative. Amusing. Appreciable at all Ages</title></bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <surface xml:id="page_image1">
+            <graphic ana="lowres" mimeType="jpg" url="00000001.jpg"/>
+        </surface>
+        <surface xml:id="page_image2">
+            <graphic ana="lowres" mimeType="jpg" url="00000002.jpg"/>
+        </surface>
+        <surface xml:id="page_image3">
+            <graphic ana="lowres" mimeType="jpg" url="00000003.jpg"/>
+        </surface>
+        <surface xml:id="page_image4">
+            <graphic ana="lowres" mimeType="jpg" url="00000004.jpg"/>
+        </surface>
+        <surface xml:id="page_image5">
+            <graphic ana="lowres" mimeType="jpg" url="00000005.jpg"/>
+        </surface>
+        <surface xml:id="page_image6">
+            <graphic ana="lowres" mimeType="jpg" url="00000006.jpg"/>
+        </surface>
+        <surface xml:id="page_image7">
+            <graphic ana="lowres" mimeType="jpg" url="00000007.jpg"/>
+        </surface>
+        <surface xml:id="page_image8">
+            <graphic ana="lowres" mimeType="jpg" url="00000008.jpg"/>
+        </surface>
+        <surface xml:id="page_image9">
+            <graphic ana="lowres" mimeType="jpg" url="00000009.jpg"/>
+        </surface>
+        <surface xml:id="page_image10">
+            <graphic ana="lowres" mimeType="jpg" url="00000010.jpg"/>
+        </surface>
+        <surface xml:id="page_image11">
+            <graphic ana="lowres" mimeType="jpg" url="00000011.jpg"/>
+        </surface>
+        <surface xml:id="page_image12">
+            <graphic ana="lowres" mimeType="jpg" url="00000012.jpg"/>
+        </surface>
+        <surface xml:id="page_image13">
+            <graphic ana="lowres" mimeType="jpg" url="00000013.jpg"/>
+        </surface>
+        <surface xml:id="page_image14">
+            <graphic ana="lowres" mimeType="jpg" url="00000014.jpg"/>
+        </surface>
+        <surface xml:id="page_image15">
+            <graphic ana="lowres" mimeType="jpg" url="00000015.jpg"/>
+        </surface>
+        <surface xml:id="page_image16">
+            <graphic ana="lowres" mimeType="jpg" url="00000016.jpg"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <pb facs="page_image1" n="1"/>
+            <pb facs="page_image2" n="2"/>
+            <div type="alpha-group" xml:id="ag1" ana="A">
+                <head>A</head>
+                <lg>
+                    <l><c type="subject-letter">A</c> is America, land of the free.</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag2" ana="B">
+                <head>B</head>
+                <lg>
+                    <l><c type="subject-letter">B</c> is a Battle, our soldiers did see. </l>
+                </lg>
+            </div>
+            <pb facs="page_image3" n="3"/>
+            <div type="alpha-group" xml:id="ag3" ana="C">
+                <head>C</head>
+                <lg>
+                    <l><c type="subject-letter">C</c> is a Captain, who led on his men. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag4" ana="D">
+                <head>D</head>
+                <lg>
+                    <l><c type="subject-letter">D</c> is a Drummer Boy, called little Ben. </l>
+                </lg>
+            </div>
+            <pb facs="page_image4" n="4"/>
+            <div type="alpha-group" xml:id="ag5" ana="E">
+                <head>E</head>
+                <lg>
+                    <l><c type="subject-letter">E</c> is the Eagle, that proudly did soar. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag6" ana="F">
+                <head>F</head>
+                <lg>
+                    <l><c type="subject-letter">F</c> is our Flag, that shall wave evermore </l>
+                </lg>
+            </div>
+            <pb facs="page_image5" n="5"/>
+            <div type="alpha-group" xml:id="ag7" ana="G">
+                <head>G</head>
+                <lg>
+                    <l><c type="subject-letter">G</c> is a Gun, that is used in the war. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag8" ana="H">
+                <head>H</head>
+                <lg>
+                    <l><c type="subject-letter">H</c> is for Hard- tack, you scarcely can gnaw. </l>
+                </lg>
+            </div>
+            <pb facs="page_image6" n="6"/>
+            <div type="alpha-group" xml:id="ag9" ana="I">
+                <head>I</head>
+                <lg>
+                    <l><c type="subject-letter">I</c> is for Infantry, who boldly advance. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag10" ana="J">
+                <head>J</head>
+                <lg>
+                    <l><c type="subject-letter">J</c> is for Jig, which the Contrabands dance. </l>
+                </lg>
+            </div>
+            <pb facs="page_image7" n="7"/>
+            <div type="alpha-group" xml:id="ag11" ana="K">
+                <head>K</head>
+                <lg>
+                    <l><c type="subject-letter">K</c> is for Knapsack, they carry along. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag12" ana="L">
+                <head>L</head>
+                <lg>
+                    <l><c type="subject-letter">L</c> is for Lancer, bold, fearless, and strong.
+                    </l>
+                </lg>
+            </div>
+            <pb facs="page_image8" n="8"/>
+            <div type="alpha-group" xml:id="ag13" ana="M">
+                <head>M</head>
+                <lg>
+                    <l><c type="subject-letter">M</c> is for Monument, to honor the brave. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag14" ana="N">
+                <head>N</head>
+                <lg>
+                    <l><c type="subject-letter">N</c> is for Negro, no longer a slave. </l>
+                </lg>
+            </div>
+            <pb facs="page_image9" n="9"/>
+            <div type="alpha-group" xml:id="ag15" ana="O">
+                <head>O</head>
+                <lg>
+                    <l><c type="subject-letter">O</c> is an Officer, proud of his station. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag16" ana="P">
+                <head>P</head>
+                <lg>
+                    <l><c type="subject-letter">P</c> is the President, who ruled the great nation.
+                    </l>
+                </lg>
+            </div>
+            <pb facs="page_image10" n="10"/>
+            <div type="alpha-group" xml:id="ag17" ana="Q">
+                <head>Q</head>
+                <lg>
+                    <l><c type="subject-letter">Q</c> is for Quarters, guarded with care. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag18" ana="R">
+                <head>R</head>
+                <lg>
+                    <l><c type="subject-letter">R</c> is Retreat, may you never be there. </l>
+                </lg>
+            </div>
+            <pb facs="page_image11" n="11"/>
+            <div type="alpha-group" xml:id="ag19" ana="S">
+                <head>S</head>
+                <lg>
+                    <l><c type="subject-letter">S</c> is a Sailor, who respected will be. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag20" ana="T">
+                <head>T</head>
+                <lg>
+                    <l><c type="subject-letter">T</c> is a Traitor, that was hung on a tree. </l>
+                </lg>
+            </div>
+            <pb facs="page_image12" n="12"/>
+            <div type="alpha-group" xml:id="ag21" ana="U">
+                <head>U</head>
+                <lg>
+                    <l><c type="subject-letter">U</c> is the Union, our Soldiers did save. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag22" ana="V">
+                <head>V</head>
+                <lg>
+                    <l><c type="subject-letter">V</c> is for Volunteer, noble and brave. </l>
+                </lg>
+            </div>
+            <pb facs="page_image13" n="13"/>
+            <div type="alpha-group" xml:id="ag23" ana="W">
+                <head>W</head>
+                <lg>
+                    <l><c type="subject-letter">W</c> is for War, which we all of us rue. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag24" ana="X">
+                <head>X</head>
+                <lg>
+                    <l><c type="subject-letter">X</c> is a Letter which you must learn too. </l>
+                </lg>
+            </div>
+            <pb facs="page_image14" n="14"/>
+            <div type="alpha-group" xml:id="ag25" ana="Y">
+                <head>Y</head>
+                <lg>
+                    <l><c type="subject-letter">Y</c> is a Youth, who a soldier would go. </l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag26" ana="Z">
+                <head>Z</head>
+                <lg>
+                    <l><c type="subject-letter">Z</c> is Zouave, who charged on the foe. </l>
+                </lg>
+            </div>
+            <pb facs="page_image15" n="15"/>
+            <pb facs="page_image16" n="16"/>
+        </body>
+        <back>
+            <interpGrp type="subject">
+                <interp xml:id="A">A</interp>
+                <interp xml:id="B">B</interp>
+                <interp xml:id="C">C</interp>
+                <interp xml:id="D">D</interp>
+                <interp xml:id="E">E</interp>
+                <interp xml:id="F">F</interp>
+                <interp xml:id="G">G</interp>
+                <interp xml:id="H">H</interp>
+                <interp xml:id="I">I</interp>
+                <interp xml:id="J">J</interp>
+                <interp xml:id="K">K</interp>
+                <interp xml:id="L">L</interp>
+                <interp xml:id="M">M</interp>
+                <interp xml:id="N">N</interp>
+                <interp xml:id="O">O</interp>
+                <interp xml:id="P">P</interp>
+                <interp xml:id="Q">Q</interp>
+                <interp xml:id="R">R</interp>
+                <interp xml:id="S">S</interp>
+                <interp xml:id="T">T</interp>
+                <interp xml:id="U">U</interp>
+                <interp xml:id="V">V</interp>
+                <interp xml:id="W">W</interp>
+                <interp xml:id="X">X</interp>
+                <interp xml:id="Y">Y</interp>
+                <interp xml:id="Z">Z</interp>
+            </interpGrp>
+        </back>
+    </text>
+</TEI>

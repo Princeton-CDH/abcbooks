@@ -1,0 +1,718 @@
+<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Digital Transcription of <bibl>Tony Sarg's
+                                        alphabet</bibl>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+                <pubPlace>Princeton, New Jersey</pubPlace>
+                <idno type="voyagerid">4769970</idno>
+                <idno type="abcbooksid">4769970-tony-sarg</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>Tony Sarg's alphabet</title>
+                    <lb/>Title: Tony Sarg's alphabet / verses by Anne
+                                        Stoddard. <lb/>Author/Artist: Stoddard, Anne, b.
+                                        1880. <lb/>Published/Created: New York : Greenberg
+                                        Inc., 1926 <lb/>General: [28] leaves : col. ill. ;
+                                        24 cm. <lb/>Notes: Publication date supplied from
+                                        RLIN. <lb/>CTSN copy: White Cotsen family bookplate
+                                        with acquisition noted in JoAnne Cotsen's hand.
+                                        <lb/>A rhyming alphabet whose subjects include
+                                        famous characters from nursery rhymes, fairy tales,
+                                        children's literature such as Alice in Wonderland or
+                                        Gulliver's Travels, and one movie star, Charlie
+                                        Chaplin. <lb/>Binding Note: Pub. black color-printed
+                                        pictorial bds. and color-printed pictorial
+                                        endpapers. <lb/>Provenance: CTSN copy: Cotsen family
+                                        (white bookplate) <lb/>Subject(s): Nursery rhymes ;
+                                        Alphabet books <lb/>Related name(s): Sarg, Tony,
+                                        1882-1942 <lb/>Voyager Bib ID: 4769970  
+                                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <surface xml:id="page_image1">
+            <graphic ana="lowres" mimeType="jpg" url="00000001.jpg"/>
+        </surface>
+        <surface xml:id="page_image2">
+            <graphic ana="lowres" mimeType="jpg" url="00000002.jpg"/>
+        </surface>
+        <surface xml:id="page_image3">
+            <graphic ana="lowres" mimeType="jpg" url="00000003.jpg"/>
+        </surface>
+        <surface xml:id="page_image4">
+            <graphic ana="lowres" mimeType="jpg" url="00000004.jpg"/>
+        </surface>
+        <surface xml:id="page_image5">
+            <graphic ana="lowres" mimeType="jpg" url="00000005.jpg"/>
+        </surface>
+        <surface xml:id="page_image6">
+            <graphic ana="lowres" mimeType="jpg" url="00000006.jpg"/>
+        </surface>
+        <surface xml:id="page_image7">
+            <graphic ana="lowres" mimeType="jpg" url="00000007.jpg"/>
+        </surface>
+        <surface xml:id="page_image8">
+            <graphic ana="lowres" mimeType="jpg" url="00000008.jpg"/>
+        </surface>
+        <surface xml:id="page_image9">
+            <graphic ana="lowres" mimeType="jpg" url="00000009.jpg"/>
+        </surface>
+        <surface xml:id="page_image10">
+            <graphic ana="lowres" mimeType="jpg" url="00000010.jpg"/>
+        </surface>
+        <surface xml:id="page_image11">
+            <graphic ana="lowres" mimeType="jpg" url="00000011.jpg"/>
+        </surface>
+        <surface xml:id="page_image12">
+            <graphic ana="lowres" mimeType="jpg" url="00000012.jpg"/>
+        </surface>
+        <surface xml:id="page_image13">
+            <graphic ana="lowres" mimeType="jpg" url="00000013.jpg"/>
+        </surface>
+        <surface xml:id="page_image14">
+            <graphic ana="lowres" mimeType="jpg" url="00000014.jpg"/>
+        </surface>
+        <surface xml:id="page_image15">
+            <graphic ana="lowres" mimeType="jpg" url="00000015.jpg"/>
+        </surface>
+        <surface xml:id="page_image16">
+            <graphic ana="lowres" mimeType="jpg" url="00000016.jpg"/>
+        </surface>
+        <surface xml:id="page_image17">
+            <graphic ana="lowres" mimeType="jpg" url="00000017.jpg"/>
+        </surface>
+        <surface xml:id="page_image18">
+            <graphic ana="lowres" mimeType="jpg" url="00000018.jpg"/>
+        </surface>
+        <surface xml:id="page_image19">
+            <graphic ana="lowres" mimeType="jpg" url="00000019.jpg"/>
+        </surface>
+        <surface xml:id="page_image20">
+            <graphic ana="lowres" mimeType="jpg" url="00000020.jpg"/>
+        </surface>
+        <surface xml:id="page_image21">
+            <graphic ana="lowres" mimeType="jpg" url="00000021.jpg"/>
+        </surface>
+        <surface xml:id="page_image22">
+            <graphic ana="lowres" mimeType="jpg" url="00000022.jpg"/>
+        </surface>
+        <surface xml:id="page_image23">
+            <graphic ana="lowres" mimeType="jpg" url="00000023.jpg"/>
+        </surface>
+        <surface xml:id="page_image24">
+            <graphic ana="lowres" mimeType="jpg" url="00000024.jpg"/>
+        </surface>
+        <surface xml:id="page_image25">
+            <graphic ana="lowres" mimeType="jpg" url="00000025.jpg"/>
+        </surface>
+        <surface xml:id="page_image26">
+            <graphic ana="lowres" mimeType="jpg" url="00000026.jpg"/>
+        </surface>
+        <surface xml:id="page_image27">
+            <graphic ana="lowres" mimeType="jpg" url="00000027.jpg"/>
+        </surface>
+        <surface xml:id="page_image28">
+            <graphic ana="lowres" mimeType="jpg" url="00000028.jpg"/>
+        </surface>
+        <surface xml:id="page_image29">
+            <graphic ana="lowres" mimeType="jpg" url="00000029.jpg"/>
+        </surface>
+        <surface xml:id="page_image30">
+            <graphic ana="lowres" mimeType="jpg" url="00000030.jpg"/>
+        </surface>
+        <surface xml:id="page_image31">
+            <graphic ana="lowres" mimeType="jpg" url="00000031.jpg"/>
+        </surface>
+        <surface xml:id="page_image32">
+            <graphic ana="lowres" mimeType="jpg" url="00000032.jpg"/>
+        </surface>
+        <surface xml:id="page_image33">
+            <graphic ana="lowres" mimeType="jpg" url="00000033.jpg"/>
+        </surface>
+        <surface xml:id="page_image34">
+            <graphic ana="lowres" mimeType="jpg" url="00000034.jpg"/>
+        </surface>
+        <surface xml:id="page_image35">
+            <graphic ana="lowres" mimeType="jpg" url="00000035.jpg"/>
+        </surface>
+        <surface xml:id="page_image36">
+            <graphic ana="lowres" mimeType="jpg" url="00000036.jpg"/>
+        </surface>
+        <surface xml:id="page_image37">
+            <graphic ana="lowres" mimeType="jpg" url="00000037.jpg"/>
+        </surface>
+        <surface xml:id="page_image38">
+            <graphic ana="lowres" mimeType="jpg" url="00000038.jpg"/>
+        </surface>
+        <surface xml:id="page_image39">
+            <graphic ana="lowres" mimeType="jpg" url="00000039.jpg"/>
+        </surface>
+        <surface xml:id="page_image40">
+            <graphic ana="lowres" mimeType="jpg" url="00000040.jpg"/>
+        </surface>
+        <surface xml:id="page_image41">
+            <graphic ana="lowres" mimeType="jpg" url="00000041.jpg"/>
+        </surface>
+        <surface xml:id="page_image42">
+            <graphic ana="lowres" mimeType="jpg" url="00000042.jpg"/>
+        </surface>
+        <surface xml:id="page_image43">
+            <graphic ana="lowres" mimeType="jpg" url="00000043.jpg"/>
+        </surface>
+        <surface xml:id="page_image44">
+            <graphic ana="lowres" mimeType="jpg" url="00000044.jpg"/>
+        </surface>
+        <surface xml:id="page_image45">
+            <graphic ana="lowres" mimeType="jpg" url="00000045.jpg"/>
+        </surface>
+        <surface xml:id="page_image46">
+            <graphic ana="lowres" mimeType="jpg" url="00000046.jpg"/>
+        </surface>
+        <surface xml:id="page_image47">
+            <graphic ana="lowres" mimeType="jpg" url="00000047.jpg"/>
+        </surface>
+        <surface xml:id="page_image48">
+            <graphic ana="lowres" mimeType="jpg" url="00000048.jpg"/>
+        </surface>
+        <surface xml:id="page_image49">
+            <graphic ana="lowres" mimeType="jpg" url="00000049.jpg"/>
+        </surface>
+        <surface xml:id="page_image50">
+            <graphic ana="lowres" mimeType="jpg" url="00000050.jpg"/>
+        </surface>
+        <surface xml:id="page_image51">
+            <graphic ana="lowres" mimeType="jpg" url="00000051.jpg"/>
+        </surface>
+        <surface xml:id="page_image52">
+            <graphic ana="lowres" mimeType="jpg" url="00000052.jpg"/>
+        </surface>
+        <surface xml:id="page_image53">
+            <graphic ana="lowres" mimeType="jpg" url="00000053.jpg"/>
+        </surface>
+        <surface xml:id="page_image54">
+            <graphic ana="lowres" mimeType="jpg" url="00000054.jpg"/>
+        </surface>
+        <surface xml:id="page_image55">
+            <graphic ana="lowres" mimeType="jpg" url="00000055.jpg"/>
+        </surface>
+        <surface xml:id="page_image56">
+            <graphic ana="lowres" mimeType="jpg" url="00000056.jpg"/>
+        </surface>
+        <surface xml:id="page_image57">
+            <graphic ana="lowres" mimeType="jpg" url="00000057.jpg"/>
+        </surface>
+        <surface xml:id="page_image58">
+            <graphic ana="lowres" mimeType="jpg" url="00000058.jpg"/>
+        </surface>
+        <surface xml:id="page_image59">
+            <graphic ana="lowres" mimeType="jpg" url="00000059.jpg"/>
+        </surface>
+        <surface xml:id="page_image60">
+            <graphic ana="lowres" mimeType="jpg" url="00000060.jpg"/>
+        </surface>
+        <surface xml:id="page_image61">
+            <graphic ana="lowres" mimeType="jpg" url="00000061.jpg"/>
+        </surface>
+        <surface xml:id="page_image62">
+            <graphic ana="lowres" mimeType="jpg" url="00000062.jpg"/>
+        </surface>
+        <surface xml:id="page_image63">
+            <graphic ana="lowres" mimeType="jpg" url="00000063.jpg"/>
+        </surface>
+        <surface xml:id="page_image64">
+            <graphic ana="lowres" mimeType="jpg" url="00000064.jpg"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <pb facs="page_image1" n="1"/>
+                <div>
+                    <p>TONY SARG'S ALPHABET</p>
+                </div>
+                <pb facs="page_image2" n="2"/>
+                                <!-- BLANK -->
+                <pb facs="page_image3" n="3"/>
+                                <!-- BLANK -->
+                <pb facs="page_image4" n="4"/>
+                <div>
+                    <p>From the Children's Library of the Lloyd Cotsen Family
+                                        </p>
+                </div>
+                <pb facs="page_image5" n="5"/>
+                <div>
+                    <p>This Book belongs to </p>
+                </div>
+                <pb facs="page_image6" n="6"/>
+                                <!-- BLANK -->
+                <pb facs="page_image7" n="7"/>
+                <div>
+                    <p>TONY SARG'S ALPHABET Verses by Anne Stoddard Published by
+                                                GREENBERG Inc New York Printed in U.S.A. </p>
+                </div>
+                <pb facs="page_image8" n="8"/>
+                                <!-- BLANK -->
+                <pb facs="page_image9" n="9"/>
+                <div type="alpha-group" xml:id="ag1" ana="A">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">A</c> for ALICE in
+                                                  WONDERLAND</l>
+                        <l>A is for Alice and all she went through</l>
+                        <l> In Looking-glass land and in Wonderland, too.</l>
+                        <l>How I wish I might go with dear little Alice</l>
+                        <l>For a game of croquet at the Queen of Hearts' palace.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image10" n="10"/>
+                                <!-- BLANK -->
+                <pb facs="page_image11" n="11"/>
+                <div type="alpha-group" xml:id="ag2" ana="B">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">B</c> for BEAUTY and the
+                                                  BEAST</l>
+                        <l>B is for Beauty and the terrible Beast—</l>
+                        <l>I don't wonder she feared him, oh, not in the
+                                                  least !</l>
+                        <l> But his heart was so good and his deeds were so
+                                                  kind</l>
+                        <l>That, in spite of his looks, Beauty soon changed
+                                                  her mind.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image12" n="12"/>
+                                <!-- BLANK -->
+                <pb facs="page_image13" n="13"/>
+                <div type="alpha-group" xml:id="ag3" ana="C">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">C</c> for CHARLIE
+                                                  CHAPLIN</l>
+                        <l>C is for Chaplin with his funny mustache,</l>
+                        <l>His toes are turned out and his conduct is rash
+                                                  ;</l>
+                        <l>Every movie fan loves him, every child is his
+                                                  friend,</l>
+                        <l>For he keeps them all laughing from beginning to
+                                                  end.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image14" n="14"/>
+                                <!-- BLANK -->
+                <pb facs="page_image15" n="15"/>
+                <div type="alpha-group" xml:id="ag4" ana="D">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">D</c> for Dr FOSTER went
+                                                  to Glo'ster</l>
+                        <l>D's Dr. Foster, whome all of you know,</l>
+                        <l>Who journeyed to GLo'ster in the long, long
+                                                  ago;</l>
+                        <l>But he stepped in a puddle in a down-pour of
+                                                  rain</l>
+                        <l>And never will journey to Glo'ster again.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image16" n="16"/>
+                                <!-- BLANK -->
+                <pb facs="page_image17" n="17"/>
+                <div type="alpha-group" xml:id="ag5" ana="E">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">E</c>for Elephant</l>
+                        <l>E is for Elephant, doing his tricks;</l>
+                        <l>Without him, the circus would be in a fix.</l>
+                        <l>He is good and he's clever and does all he
+                                                  can</l>
+                        <l>To help out his trainer, who is a kind man.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image18" n="18"/>
+                                <!-- BLANK -->
+                <pb facs="page_image19" n="19"/>
+                <div type="alpha-group" xml:id="ag6" ana="F">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">F</c> for FEE,- FI, FO,
+                                                  FUM.</l>
+                        <l>F is for Fee-"Fee, Fi, Fo, Fum,</l>
+                        <l>"I smell the blood of an Englishmun !</l>
+                        <l>"I'll eat him alive," the giant said,</l>
+                        <l>"And grind up his bones to make my bread."</l>
+                    </lg>
+                </div>
+                <pb facs="page_image20" n="20"/>
+                                <!-- BLANK -->
+                <pb facs="page_image21" n="21"/>
+                <div type="alpha-group" xml:id="ag7" ana="G">
+                    <head>G</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">G</c> for GULLIVER'S
+                                                  TRAVELS</l>
+                        <l>G is for Gulliver, whose wonderful travels</l>
+                        <l>In Lilliput country Swift's romance unravels.</l>
+                        <l>On the edge of the bowl, see the wee
+                                                  Lilliputian</l>
+                        <l>Who seems to be teaching his host elocution.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image22" n="22"/>
+                                <!-- BLANK -->
+                <pb facs="page_image23" n="23"/>
+                <div type="alpha-group" xml:id="ag8" ana="H">
+                    <head>H</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">H</c> for HUMPTY
+                                                  DUMPTY</l>
+                        <l>H is for Humpty, who sat on a wall</l>
+                        <l>And when he fell off—oh, my! what a fall.</l>
+                        <l>I hate to inform you what really befell,</l>
+                        <l>For of poor Humpty Dumpty was left but a
+                                                  shell.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image24" n="24"/>
+                                <!-- BLANK -->
+                <pb facs="page_image25" n="25"/>
+                <div type="alpha-group" xml:id="ag9" ana="I">
+                    <head>I</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">I</c>for INDIAN</l>
+                        <l>I stands for Indian with his blanket and
+                                                  feathers,</l>
+                        <l>he stays out-of-doors in all kinds of
+                                                  weathers,</l>
+                        <l>He has never a bed, nor a table, nor chair,</l>
+                        <l>But a curious way of wearing his hair. </l>
+                    </lg>
+                </div>
+                <pb facs="page_image26" n="26"/>
+                                <!-- BLANK -->
+                <pb facs="page_image27" n="27"/>
+                <div type="alpha-group" xml:id="ag10" ana="J">
+                    <head>J</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">J</c> for JACK
+                                                  SPRATT</l>
+                        <l>J's for Jack Spratt and for Mrs. Spratt, too
+                                                  ;</l>
+                        <l>Not a bit of fat meat, only lean, he would
+                                                  chew.</l>
+                        <l>She ate up the fat—and the gist of the matter</l>
+                        <l>Is that, 'twixt this couple, they cleaned up the
+                                                  platter. </l>
+                    </lg>
+                </div>
+                <pb facs="page_image28" n="28"/>
+                                <!-- BLANK -->
+                <pb facs="page_image29" n="29"/>
+                <div type="alpha-group" xml:id="ag11" ana="K">
+                    <head>K</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">K</c> for KING COLE</l>
+                        <l>K is King Cole, the hale and the hearty,</l>
+                        <l>With his pipe and his bowl, a jolly old
+                                                  party.</l>
+                        <l>"Oh, I may be a king, with my fine fiddlers
+                                                  three,</l>
+                        <l>"But I mean to have comfort," he said, said he.
+                                                </l>
+                    </lg>
+                </div>
+                <pb facs="page_image30" n="30"/>
+                                <!-- BLANK -->
+                <pb facs="page_image31" n="31"/>
+                <div type="alpha-group" xml:id="ag12" ana="L">
+                    <head>L</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">L</c> for LITTLE
+                                                  BO-PEEP</l>
+                        <l>L is Little Bo Peep, the poor little dear,</l>
+                        <l>She will make herself ill with crying, I
+                                                  fear,</l>
+                        <l>For she's lost her fat sheep with their long
+                                                  tails behind them</l>
+                        <l>And doesn't know where in the world she will find
+                                                  them.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image32" n="32"/>
+                                <!-- BLANK -->
+                <pb facs="page_image33" n="33"/>
+                <div type="alpha-group" xml:id="ag13" ana="M">
+                    <head>M</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">M</c> for MOON</l>
+                        <l>M is for Moon and the wink that he gave</l>
+                        <l>When he saw how that naught old cow would
+                                                  behave,</l>
+                        <l>Who heard the cat fiddling the strange little
+                                                  tune</l>
+                        <l>Which set off the dish to elope with the spoon.
+                                                </l>
+                    </lg>
+                </div>
+                <pb facs="page_image34" n="34"/>
+                                <!-- BLANK -->
+                <pb facs="page_image35" n="35"/>
+                <div type="alpha-group" xml:id="ag14" ana="N">
+                    <head>N</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">N</c> for NEEDLES AND
+                                                  PINS</l>
+                        <l>N is for needles—for needles and pins,</l>
+                        <l>When a girl marries her worry begins ;</l>
+                        <l>She must cook for her husband and darn all his
+                                                  hose—</l>
+                        <l>And never forget to powder her nose.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image36" n="36"/>
+                                <!-- BLANK -->
+                <pb facs="page_image37" n="37"/>
+                <div type="alpha-group" xml:id="ag15" ana="O">
+                    <head>O</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">O</c> for OLD MOTHER
+                                                  GOOSE</l>
+                        <l>O's for Old Mother Goose with her verses
+                                                  immortal</l>
+                        <l>And the charmed world to which she holds open the
+                                                  portal.</l>
+                        <l>E'en a grown-up may enter, by fancy beguiled,</l>
+                        <l>If he has love and humor and the heart of a
+                                                  child.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image38" n="38"/>
+                                <!-- BLANK -->
+                <pb facs="page_image39" n="39"/>
+                <div type="alpha-group" xml:id="ag16" ana="P">
+                    <head>P</head>
+                    <lg>
+                        <l>
+                            <c type="subject-letter">P</c> for PUNCH and
+                                                  JUDY</l>
+                        <l>P stands for Punch—and Judy, his wife ;</l>
+                        <l>Poor thing, he leads her a terrible life,</l>
+                        <l>For his cudgel he carries to fight or to
+                                                  revel</l>
+                        <l>And whacks every head from police-man to
+                                                  devil.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image40" n="40"/>
+                                <!-- BLANK -->
+                <pb facs="page_image41" n="41"/>
+                <div type="alpha-group" xml:id="ag17" ana="Q">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">Q</c> for QUEEN OF
+                                                  HEARTS</l>
+                        <l>Q's Queen of Hearts and the tarts that she
+                                                  made</l>
+                        <l>(She will ruin her beautiful frock, I'm
+                                                  afraid!)</l>
+                        <l>The Jack of Hearts took them against the Queen's
+                                                  wishes,</l>
+                        <l>But you really can't blame him, they smelled so
+                                                  delicious.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image42" n="42"/>
+                                <!-- BLANK -->
+                <pb facs="page_image43" n="43"/>
+                <div type="alpha-group" xml:id="ag18" ana="R">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">R</c> for RED RIDING
+                                                  HOOD</l>
+                        <l>R's for Red Riding-hood, dear little girl,</l>
+                        <l>With her hood on her head and her hair all in
+                                                  curl.</l>
+                        <l>No wonder the wicked wolf wanted to eat</l>
+                        <l>A morsel so tender and juicy and sweet.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image44" n="44"/>
+                                <!-- BLANK -->
+                <pb facs="page_image45" n="45"/>
+                <div type="alpha-group" xml:id="ag19" ana="S">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">S</c> for SANTA
+                                                  CLAUS</l>
+                        <l> S stands for Santa and the toys in his pack,</l>
+                        <l>For the cap on his head and the coat on his
+                                                  back,</l>
+                        <l>For the sleigh and the reindeer, the tree and the
+                                                  holly</l>
+                        <l>And all that makes Christmas so dear and
+                                                  jolly.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image46" n="46"/>
+                                <!-- BLANK -->
+                <pb facs="page_image47" n="47"/>
+                <div type="alpha-group" xml:id="ag20" ana="T">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">T</c> for TREASURE
+                                                  ISLAND</l>
+                        <l>T's "Treasure Island," the glorious tale</l>
+                        <l>Of pirates and battles and the crew that set
+                                                  sail</l>
+                        <l>To dig up the treasure and bring it home as
+                                                  freight</l>
+                        <l>The jewels and doubloons and the
+                                                  pieces-of-eight.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image48" n="48"/>
+                                <!-- BLANK -->
+                <pb facs="page_image49" n="49"/>
+                <div type="alpha-group" xml:id="ag21" ana="U">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">U</c> for UNICORN</l>
+                        <l>U is for Unicorn, who wanted the crown</l>
+                        <l>And fought with the lion all over the town</l>
+                        <l>I wish they would share with me and with you</l>
+                        <l>Their nice bread-and-butter and plummy-cake,
+                                                  too.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image50" n="50"/>
+                                <!-- BLANK -->
+                <pb facs="page_image51" n="51"/>
+                <div type="alpha-group" xml:id="ag22" ana="V">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">V</c> for VALENTINE</l>
+                        <l>V is for Valentines and for the saint</l>
+                        <l>Whose day we all honor with emblems so
+                                                  quaint;</l>
+                        <l>For the brave paper-lace and the cupids and
+                                                  darts</l>
+                        <l>And to the postman who brings them to gladden our
+                                                  hearts.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image52" n="52"/>
+                <pb facs="page_image53" n="53"/>
+                <div type="alpha-group" xml:id="ag23" ana="W">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">W</c> for WALRUS and the
+                                                  CARPENTER</l>
+                        <l>For Walrus, of course, the W stands ;</l>
+                        <l>Who walked with the carpenter by the sea-sands
+                                                  ;</l>
+                        <l>They talked with the oysters they met on the
+                                                  beaches,</l>
+                        <l>Then gobbled them down with the kindest of
+                                                  speeches.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image54" n="54"/>
+                                <!-- BLANK -->
+                <pb facs="page_image55" n="55"/>
+                <div type="alpha-group" xml:id="ag24" ana="X">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">X</c>for XMAS CAROLS</l>
+                        <l>X is for Xmas and the carols we sing,</l>
+                        <l>The turkeys we eat and the gifts that we bring
+                                                  ;</l>
+                        <l>Of all the whole year, Christmas day is the
+                                                  best</l>
+                        <l>With love and with happiness specially blest.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image56" n="56"/>
+                                <!-- BLANK -->
+                <pb facs="page_image57" n="57"/>
+                <div type="alpha-group" xml:id="ag25" ana="Y">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">Y</c> for YANKEE
+                                                  DOODLE</l>
+                        <l>Y's Yankee Doodle, beloved old dandy,</l>
+                        <l>With his hat and his feather, so spic and so
+                                                  spandy.</l>
+                        <l>The children delight in this man of renown</l>
+                        <l>And follow his pony all over the town.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image58" n="58"/>
+                                <!-- BLANK -->
+                <pb facs="page_image59" n="59"/>
+                <div type="alpha-group" xml:id="ag26" ana="Z">
+                    <lg>
+                        <l>
+                            <c type="subject-letter">Z</c> for ZEBRA</l>
+                        <l>Z is for Zebra, the pride of the Zoo,</l>
+                        <l>He is dressed all in stripes and so stylishly,
+                                                  too.</l>
+                        <l>And as Z's the last letter, my dear children,
+                                                  I</l>
+                        <l>Must lay down my pencil and bid you good-bye.</l>
+                    </lg>
+                </div>
+                <pb facs="page_image60" n="60"/>
+                                <!-- BLANK -->
+                <pb facs="page_image61" n="61"/>
+                                <!-- BLANK -->
+                <pb facs="page_image62" n="62"/>
+                <pb facs="page_image63" n="63"/>
+                <pb facs="page_image64" n="64"/>
+                                <!-- Back Cover -->
+        </body>
+        <back>
+            <interpGrp type="subject">
+                <interp xml:id="A">A</interp>
+                <interp xml:id="B">B</interp>
+                <interp xml:id="C">C</interp>
+                <interp xml:id="D">D</interp>
+                <interp xml:id="E">E</interp>
+                <interp xml:id="F">F</interp>
+                <interp xml:id="G">G</interp>
+                <interp xml:id="H">H</interp>
+                <interp xml:id="I">I</interp>
+                <interp xml:id="J">J</interp>
+                <interp xml:id="K">K</interp>
+                <interp xml:id="L">L</interp>
+                <interp xml:id="M">M</interp>
+                <interp xml:id="N">N</interp>
+                <interp xml:id="O">O</interp>
+                <interp xml:id="P">P</interp>
+                <interp xml:id="Q">Q</interp>
+                <interp xml:id="R">R</interp>
+                <interp xml:id="S">S</interp>
+                <interp xml:id="T">T</interp>
+                <interp xml:id="U">U</interp>
+                <interp xml:id="V">V</interp>
+                <interp xml:id="W">W</interp>
+                <interp xml:id="X">X</interp>
+                <interp xml:id="Y">Y</interp>
+                <interp xml:id="Z">Z</interp>
+            </interpGrp>
+        </back>
+    </text>
+</TEI>
