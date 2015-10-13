@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Princeton University</publisher>
+            <pubPlace>Princeton, New Jersey</pubPlace>
+            <idno type="voyagerid">5947542</idno>
+         </publicationStmt>
+      </fileDesc>
+      <sourceDesc>
+         <biblStruct xmlns="">
+            <monogr>
+               <title level="m">
+                  <seg type="main">ABC jingles</seg>
+               </title>
+               <imprint>
+                  <pubPlace>Syracuse, N.Y</pubPlace>
+                  <publisher>G.C. Hanford Mfg. Co.</publisher>
+                  <date>c1920 1920</date>
+               </imprint>
+            </monogr>
+         </biblStruct>
+      </sourceDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="page_image1">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000001.jp2"/>
+      </surface>
+      <surface xml:id="page_image2">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000002.jp2"/>
+      </surface>
+      <surface xml:id="page_image3">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000003.jp2"/>
+      </surface>
+      <surface xml:id="page_image4">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000004.jp2"/>
+      </surface>
+      <surface xml:id="page_image5">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000005.jp2"/>
+      </surface>
+      <surface xml:id="page_image6">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000006.jp2"/>
+      </surface>
+      <surface xml:id="page_image7">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000007.jp2"/>
+      </surface>
+      <surface xml:id="page_image8">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000008.jp2"/>
+      </surface>
+      <surface xml:id="page_image9">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000009.jp2"/>
+      </surface>
+      <surface xml:id="page_image10">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000010.jp2"/>
+      </surface>
+      <surface xml:id="page_image11">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000011.jp2"/>
+      </surface>
+      <surface xml:id="page_image12">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000012.jp2"/>
+      </surface>
+      <surface xml:id="page_image13">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000013.jp2"/>
+      </surface>
+      <surface xml:id="page_image14">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000014.jp2"/>
+      </surface>
+      <surface xml:id="page_image15">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000015.jp2"/>
+      </surface>
+      <surface xml:id="page_image16">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000016.jp2"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <pb facs="page_image1" n="1"/>
+         <pb facs="page_image2" n="2"/>
+         <pb facs="page_image3" n="3"/>
+         <pb facs="page_image4" n="4"/>
+         <pb facs="page_image5" n="5"/>
+         <pb facs="page_image6" n="6"/>
+         <pb facs="page_image7" n="7"/>
+         <pb facs="page_image8" n="8"/>
+         <pb facs="page_image9" n="9"/>
+         <pb facs="page_image10" n="10"/>
+         <pb facs="page_image11" n="11"/>
+         <pb facs="page_image12" n="12"/>
+         <pb facs="page_image13" n="13"/>
+         <pb facs="page_image14" n="14"/>
+         <pb facs="page_image15" n="15"/>
+         <pb facs="page_image16" n="16"/>
+      </body>
+   </text>
+</TEI>
