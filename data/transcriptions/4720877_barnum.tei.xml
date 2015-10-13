@@ -21,40 +21,40 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
     </teiHeader>
     <facsimile>
         <surface xml:id="page_image1">
-            <graphic ana="lowres" mimeType="jpg" url="00000001.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000001.jp2"/>
         </surface>
         <surface xml:id="page_image2">
-            <graphic ana="lowres" mimeType="jpg" url="/00000002.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="/00000002.jp2"/>
         </surface>
         <surface xml:id="page_image3">
-            <graphic ana="lowres" mimeType="jpg" url="00000003.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000003.jp2"/>
         </surface>
         <surface xml:id="page_image4">
-            <graphic ana="lowres" mimeType="jpg" url="00000004.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000004.jp2"/>
         </surface>
         <surface xml:id="page_image5">
-            <graphic ana="lowres" mimeType="jpg" url="00000005.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000005.jp2"/>
         </surface>
         <surface xml:id="page_image6">
-            <graphic ana="lowres" mimeType="jpg" url="00000006.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000006.jp2"/>
         </surface>
         <surface xml:id="page_image7">
-            <graphic ana="lowres" mimeType="jpg" url="00000007.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000007.jp2"/>
         </surface>
         <surface xml:id="page_image8">
-            <graphic ana="lowres" mimeType="jpg" url="00000008.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000008.jp2"/>
         </surface>
         <surface xml:id="page_image9">
-            <graphic ana="lowres" mimeType="jpg" url="00000009.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000009.jp2"/>
         </surface>
         <surface xml:id="page_image10">
-            <graphic ana="lowres" mimeType="jpg" url="00000010.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000010.jp2"/>
         </surface>
         <surface xml:id="page_image11">
-            <graphic ana="lowres" mimeType="jpg" url="00000011.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000011.jp2"/>
         </surface>
         <surface xml:id="page_image12">
-            <graphic ana="lowres" mimeType="jpg" url="00000012.jpg"/>
+            <graphic ana="lowres" mimeType="jpg" url="00000012.jp2"/>
         </surface>
     </facsimile>
     <text>
