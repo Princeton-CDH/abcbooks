@@ -1,7 +1,465 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>A Digital Transcription of <bibl>The modern ABC book</bibl></title></titleStmt><publicationStmt><publisher>Princeton University</publisher><pubPlace>Princeton, New Jersey</pubPlace><idno type="voyagerid">6273614</idno><idno type="abcbooksid">6273614-modern-abc</idno></publicationStmt><sourceDesc><bibl><title>The modern ABC book</title><lb/>Title: The modern ABC book / by C.B. Falls. <lb/>Author/Artist: Falls, C.
-                    B. (Charles Buckles), 1874-1960. <lb/>Published/Created: New York : John Day,
-                    1930. <lb/>General: [32] p. : col. ill. ; 31 cm. <lb/>Notes: CTSN copy: Hinges
-                    deffective. <lb/>Binding Note: Blue cloth bds, dec. e.p. <lb/>Subject(s):
-                    English language -- Alphabet -- Juvenile literature ; Alphabet books
-                    <lb/>Voyager Bib ID: 6273614 
-                </bibl></sourceDesc></fileDesc></teiHeader><facsimile><surface xml:id="page_image1"><graphic ana="lowres" mimeType="jpg" url="00000001.jp2"/></surface><surface xml:id="page_image2"><graphic ana="lowres" mimeType="jpg" url="00000002.jp2"/></surface><surface xml:id="page_image3"><graphic ana="lowres" mimeType="jpg" url="00000003.jp2"/></surface><surface xml:id="page_image4"><graphic ana="lowres" mimeType="jpg" url="00000004.jp2"/></surface><surface xml:id="page_image5"><graphic ana="lowres" mimeType="jpg" url="00000005.jp2"/></surface><surface xml:id="page_image6"><graphic ana="lowres" mimeType="jpg" url="00000006.jp2"/></surface><surface xml:id="page_image7"><graphic ana="lowres" mimeType="jpg" url="00000007.jp2"/></surface><surface xml:id="page_image8"><graphic ana="lowres" mimeType="jpg" url="00000008.jp2"/></surface><surface xml:id="page_image9"><graphic ana="lowres" mimeType="jpg" url="00000009.jp2"/></surface><surface xml:id="page_image10"><graphic ana="lowres" mimeType="jpg" url="00000010.jp2"/></surface><surface xml:id="page_image11"><graphic ana="lowres" mimeType="jpg" url="00000011.jp2"/></surface><surface xml:id="page_image12"><graphic ana="lowres" mimeType="jpg" url="00000012.jp2"/></surface><surface xml:id="page_image13"><graphic ana="lowres" mimeType="jpg" url="00000013.jp2"/></surface><surface xml:id="page_image14"><graphic ana="lowres" mimeType="jpg" url="00000014.jp2"/></surface><surface xml:id="page_image15"><graphic ana="lowres" mimeType="jpg" url="00000015.jp2"/></surface><surface xml:id="page_image16"><graphic ana="lowres" mimeType="jpg" url="00000016.jp2"/></surface><surface xml:id="page_image17"><graphic ana="lowres" mimeType="jpg" url="00000017.jp2"/></surface><surface xml:id="page_image18"><graphic ana="lowres" mimeType="jpg" url="00000018.jp2"/></surface><surface xml:id="page_image19"><graphic ana="lowres" mimeType="jpg" url="00000019.jp2"/></surface><surface xml:id="page_image20"><graphic ana="lowres" mimeType="jpg" url="00000020.jp2"/></surface><surface xml:id="page_image21"><graphic ana="lowres" mimeType="jpg" url="00000021.jp2"/></surface><surface xml:id="page_image22"><graphic ana="lowres" mimeType="jpg" url="00000022.jp2"/></surface><surface xml:id="page_image23"><graphic ana="lowres" mimeType="jpg" url="00000023.jp2"/></surface><surface xml:id="page_image24"><graphic ana="lowres" mimeType="jpg" url="00000024.jp2"/></surface><surface xml:id="page_image25"><graphic ana="lowres" mimeType="jpg" url="00000025.jp2"/></surface><surface xml:id="page_image26"><graphic ana="lowres" mimeType="jpg" url="00000026.jp2"/></surface><surface xml:id="page_image27"><graphic ana="lowres" mimeType="jpg" url="00000027.jp2"/></surface><surface xml:id="page_image28"><graphic ana="lowres" mimeType="jpg" url="00000028.jp2"/></surface><surface xml:id="page_image29"><graphic ana="lowres" mimeType="jpg" url="00000029.jp2"/></surface><surface xml:id="page_image30"><graphic ana="lowres" mimeType="jpg" url="00000030.jp2"/></surface><surface xml:id="page_image31"><graphic ana="lowres" mimeType="jpg" url="00000031.jp2"/></surface><surface xml:id="page_image32"><graphic ana="lowres" mimeType="jpg" url="00000032.jp2"/></surface><surface xml:id="page_image33"><graphic ana="lowres" mimeType="jpg" url="00000033.jp2"/></surface><surface xml:id="page_image34"><graphic ana="lowres" mimeType="jpg" url="00000034.jp2"/></surface><surface xml:id="page_image35"><graphic ana="lowres" mimeType="jpg" url="00000035.jp2"/></surface><surface xml:id="page_image36"><graphic ana="lowres" mimeType="jpg" url="00000036.jp2"/></surface><surface xml:id="page_image37"><graphic ana="lowres" mimeType="jpg" url="00000037.jp2"/></surface><surface xml:id="page_image38"><graphic ana="lowres" mimeType="jpg" url="00000038.jp2"/></surface><surface xml:id="page_image39"><graphic ana="lowres" mimeType="jpg" url="00000039.jp2"/></surface><surface xml:id="page_image40"><graphic ana="lowres" mimeType="jpg" url="00000040.jp2"/></surface></facsimile><text><body><div><pb n="cover" facs="page_image1"/><div type="cover"><l>The</l><l>Modern</l><l>ABC</l><l>Book</l><l>By C.B. Falls</l></div><pb facs="page_image2" n="2"/><pb facs="page_image3" n="3"/><pb facs="page_image4" n="4"/><pb facs="page_image5" n="5"/><div type="title"><lg><l>The</l><l>Modern</l><l>ABC</l><l>Book</l></lg></div><pb facs="page_image6" n="6"/><pb facs="page_image7" n="7"/><div type="title"><lg><l>The</l><l>Modern</l><l>ABC</l><l>Book</l><l>By C.B. Falls</l><l>New York</l><l>The John Day Company</l><l>1930</l></lg></div><pb facs="page_image8" n="8"/><div type="copyright"><lg><l>Copyright 1930</l><l>Cyt C.B. Falls</l><l>Lithographed in the U.S.A.</l><l>By the Jersey City Printing Co</l></lg></div><pb facs="page_image9" n="9"/><div type="dedication"><lg><l>To</l><l>BJF.</l></lg></div><pb facs="page_image10" n="10"/><pb facs="page_image11" n="11"/><div type="alpha-group" xml:id="ag1" ana="A"><lg><l><c type="subject-letter">A</c> is for</l><l>Airplane</l></lg></div><pb facs="page_image12" n="12"/><div type="alpha-group" xml:id="ag2" ana="B"><lg><l><c type="subject-letter">B</c> is for</l><l>Battleship</l></lg></div><pb facs="page_image13" n="13"/><div type="alpha-group" xml:id="ag3" ana="C"><lg><l><c type="subject-letter">C</c> is for</l><l>Crane</l></lg></div><pb facs="page_image14" n="14"/><div type="alpha-group" xml:id="ag4" ana="D"><lg><l><c type="subject-letter">D</c> is for</l><l>Dam</l></lg></div><pb facs="page_image15" n="15"/><div type="alpha-group" xml:id="ag5" ana="E"><lg><l><c type="subject-letter">E</c> is for</l><l>Electric Engine</l></lg></div><pb facs="page_image16" n="16"/><div type="alpha-group" xml:id="ag6" ana="F"><lg><l><c type="subject-letter">F</c> is for</l><l>Fire Pumper</l></lg></div><pb facs="page_image17" n="17"/><div type="alpha-group" xml:id="ag7" ana="G"><lg><l><c type="subject-letter">G</c> is for</l><l>Glider</l></lg></div><pb facs="page_image18" n="18"/><div type="alpha-group" xml:id="ag8" ana="H"><lg><l><c type="subject-letter">H</c> is for</l><l>Harvester</l></lg></div><pb facs="page_image19" n="19"/><div type="alpha-group" xml:id="ag9" ana="I"><lg><l><c type="subject-letter">I</c> is for</l><l>Irrigation</l></lg></div><pb facs="page_image20" n="20"/><div type="alpha-group" xml:id="ag10" ana="J"><lg><l><c type="subject-letter">J</c> is for</l><l>Jazz</l></lg></div><pb facs="page_image21" n="21"/><div type="alpha-group" xml:id="ag11" ana="K"><lg><l><c type="subject-letter">K</c> is for</l><l>Kodak</l></lg></div><pb facs="page_image22" n="22"/><div type="alpha-group" xml:id="ag12" ana="L"><lg><l><c type="subject-letter">L</c> is for</l><l>Locomotive</l></lg></div><pb facs="page_image23" n="23"/><div type="alpha-group" xml:id="ag13" ana="M"><lg><l><c type="subject-letter">M</c> is for</l><l>Motor Boat</l></lg></div><pb facs="page_image24" n="24"/><div type="alpha-group" xml:id="ag14" ana="N"><lg><l><c type="subject-letter">N</c> is for</l><l>Newspaper</l></lg></div><pb facs="page_image25" n="25"/><div type="alpha-group" xml:id="ag15" ana="O"><lg><l><c type="subject-letter">O</c> is for</l><l>Oil Well</l></lg></div><pb facs="page_image26" n="26"/><div type="alpha-group" xml:id="ag16" ana="P"><lg><l><c type="subject-letter">P</c> is for</l><l>Parachute</l></lg></div><pb facs="page_image27" n="27"/><div type="alpha-group" xml:id="ag17" ana="Q"><lg><l><c type="subject-letter">Q</c> is for</l><l>Quarry</l></lg></div><pb facs="page_image28" n="28"/><div type="alpha-group" xml:id="ag18" ana="R"><lg><l><c type="subject-letter">R</c> is for</l><l>Radio</l></lg></div><pb facs="page_image29" n="29"/><div type="alpha-group" xml:id="ag19" ana="S"><lg><l><c type="subject-letter">S</c> is for</l><l>Skyscraper</l></lg></div><pb facs="page_image30" n="30"/><div type="alpha-group" xml:id="ag20" ana="T"><lg><l><c type="subject-letter">T</c> is for</l><l>Tractor</l></lg></div><pb facs="page_image31" n="31"/><div type="alpha-group" xml:id="ag21" ana="U"><lg><l><c type="subject-letter">U</c> is for</l><l>U-Boat</l></lg></div><pb facs="page_image32" n="32"/><div type="alpha-group" xml:id="ag22" ana="V"><lg><l><c type="subject-letter">V</c> is for</l><l>Van</l></lg></div><pb facs="page_image33" n="33"/><div type="alpha-group" xml:id="ag23" ana="W"><lg><l><c type="subject-letter">W</c> is for</l><l>Water Tank</l></lg></div><pb facs="page_image34" n="34"/><div type="alpha-group" xml:id="ag24" ana="X"><lg><l><c type="subject-letter">X</c> is for</l><l>X-Raye</l></lg></div><pb facs="page_image35" n="35"/><div type="alpha-group" xml:id="ag25" ana="Y"><lg><l><c type="subject-letter">Y</c> is for</l><l>Yacht</l></lg></div><pb facs="page_image36" n="36"/><div type="alpha-group" xml:id="ag26" ana="Z"><lg><l><c type="subject-letter">Z</c> is for</l><l>Zeppelin</l></lg></div><pb facs="page_image37" n="37"/><pb facs="page_image38" n="38"/><pb facs="page_image39" n="39"/><pb facs="page_image40" n="40"/></div></body><back><interpGrp type="subject"><interp xml:id="A">A</interp><interp xml:id="B">B</interp><interp xml:id="C">C</interp><interp xml:id="D">D</interp><interp xml:id="E">E</interp><interp xml:id="F">F</interp><interp xml:id="G">G</interp><interp xml:id="H">H</interp><interp xml:id="I">I</interp><interp xml:id="J">J</interp><interp xml:id="K">K</interp><interp xml:id="L">L</interp><interp xml:id="M">M</interp><interp xml:id="N">N</interp><interp xml:id="O">O</interp><interp xml:id="P">P</interp><interp xml:id="Q">Q</interp><interp xml:id="R">R</interp><interp xml:id="S">S</interp><interp xml:id="T">T</interp><interp xml:id="U">U</interp><interp xml:id="V">V</interp><interp xml:id="W">W</interp><interp xml:id="X">X</interp><interp xml:id="Y">Y</interp><interp xml:id="Z">Z</interp></interpGrp></back></text></TEI>
+<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+                    <teiHeader>
+                                        <fileDesc>
+                                                  <titleStmt>
+                                                  <title>A Digital Transcription of <bibl>The modern
+                                                  ABC book</bibl></title>
+                                                  </titleStmt>
+                                                  <publicationStmt>
+                                                  <publisher>Princeton University</publisher>
+                                                  <pubPlace>Princeton, New Jersey</pubPlace>
+                                                  <idno type="voyagerid">6273614</idno>
+                                                  <idno type="abcbooksid">6273614-modern-abc</idno>
+                                                  </publicationStmt>
+                                                  <sourceDesc>
+                                                  <bibl><title>The modern ABC
+                                                  book</title><lb/>Title: The modern ABC book / by
+                                                  C.B. Falls. <lb/>Author/Artist: Falls, C. B.
+                                                  (Charles Buckles), 1874-1960.
+                                                  <lb/>Published/Created: New York : John Day, 1930.
+                                                  <lb/>General: [32] p. : col. ill. ; 31 cm.
+                                                  <lb/>Notes: CTSN copy: Hinges deffective.
+                                                  <lb/>Binding Note: Blue cloth bds, dec. e.p.
+                                                  <lb/>Subject(s): English language -- Alphabet --
+                                                  Juvenile literature ; Alphabet books <lb/>Voyager
+                                                  Bib ID: 6273614 </bibl>
+                                                  </sourceDesc>
+                                        </fileDesc>
+                    </teiHeader>
+                    <facsimile>
+                                        <surface xml:id="page_image1">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000001.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image2">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000002.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image3">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000003.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image4">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000004.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image5">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000005.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image6">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000006.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image7">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000007.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image8">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000008.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image9">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000009.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image10">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000010.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image11">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000011.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image12">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000012.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image13">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000013.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image14">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000014.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image15">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000015.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image16">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000016.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image17">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000017.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image18">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000018.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image19">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000019.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image20">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000020.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image21">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000021.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image22">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000022.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image23">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000023.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image24">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000024.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image25">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000025.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image26">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000026.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image27">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000027.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image28">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000028.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image29">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000029.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image30">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000030.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image31">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000031.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image32">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000032.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image33">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000033.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image34">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000034.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image35">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000035.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image36">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000036.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image37">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000037.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image38">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000038.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image39">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000039.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image40">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000040.jp2"/>
+                                        </surface>
+                    </facsimile>
+                    <text>
+                                        <body>
+                                                  <div>
+                                                  <pb n="cover" facs="page_image1"/>
+                                                  <div type="cover">
+                                                  <l>The</l>
+                                                  <l>Modern</l>
+                                                  <l>ABC</l>
+                                                  <l>Book</l>
+                                                  <l>By C.B. Falls</l>
+                                                  </div>
+                                                  <pb facs="page_image2" n="2"/>
+                                                  <pb facs="page_image3" n="3"/>
+                                                  <pb facs="page_image4" n="4"/>
+                                                  <pb facs="page_image5" n="5"/>
+                                                  <div type="title">
+                                                  <lg>
+                                                  <l>The</l>
+                                                  <l>Modern</l>
+                                                  <l>ABC</l>
+                                                  <l>Book</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image6" n="6"/>
+                                                  <pb facs="page_image7" n="7"/>
+                                                  <div type="title">
+                                                  <lg>
+                                                  <l>The</l>
+                                                  <l>Modern</l>
+                                                  <l>ABC</l>
+                                                  <l>Book</l>
+                                                  <l>By C.B. Falls</l>
+                                                  <l>New York</l>
+                                                  <l>The John Day Company</l>
+                                                  <l>1930</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image8" n="8"/>
+                                                  <div type="copyright">
+                                                  <lg>
+                                                  <l>Copyright 1930</l>
+                                                  <l>Cyt C.B. Falls</l>
+                                                  <l>Lithographed in the U.S.A.</l>
+                                                  <l>By the Jersey City Printing Co</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image9" n="9"/>
+                                                  <div type="dedication">
+                                                  <lg>
+                                                  <l>To</l>
+                                                  <l>BJF.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image10" n="10"/>
+                                                  <pb facs="page_image11" n="11"/>
+                                                  <div type="alpha-group" xml:id="ag1" ana="A">
+                                                  <lg>
+                                                  <l><c type="subject-letter">A</c> is for</l>
+                                                  <l>Airplane</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image12" n="12"/>
+                                                  <div type="alpha-group" xml:id="ag2" ana="B">
+                                                  <lg>
+                                                  <l><c type="subject-letter">B</c> is for</l>
+                                                  <l>Battleship</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image13" n="13"/>
+                                                  <div type="alpha-group" xml:id="ag3" ana="C">
+                                                  <lg>
+                                                  <l><c type="subject-letter">C</c> is for</l>
+                                                  <l>Crane</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image14" n="14"/>
+                                                  <div type="alpha-group" xml:id="ag4" ana="D">
+                                                  <lg>
+                                                  <l><c type="subject-letter">D</c> is for</l>
+                                                  <l>Dam</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image15" n="15"/>
+                                                  <div type="alpha-group" xml:id="ag5" ana="E">
+                                                  <lg>
+                                                  <l><c type="subject-letter">E</c> is for</l>
+                                                  <l>Electric Engine</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image16" n="16"/>
+                                                  <div type="alpha-group" xml:id="ag6" ana="F">
+                                                  <lg>
+                                                  <l><c type="subject-letter">F</c> is for</l>
+                                                  <l>Fire Pumper</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image17" n="17"/>
+                                                  <div type="alpha-group" xml:id="ag7" ana="G">
+                                                  <lg>
+                                                  <l><c type="subject-letter">G</c> is for</l>
+                                                  <l>Glider</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image18" n="18"/>
+                                                  <div type="alpha-group" xml:id="ag8" ana="H">
+                                                  <lg>
+                                                  <l><c type="subject-letter">H</c> is for</l>
+                                                  <l>Harvester</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image19" n="19"/>
+                                                  <div type="alpha-group" xml:id="ag9" ana="I">
+                                                  <lg>
+                                                  <l><c type="subject-letter">I</c> is for</l>
+                                                  <l>Irrigation</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image20" n="20"/>
+                                                  <div type="alpha-group" xml:id="ag10" ana="J">
+                                                  <lg>
+                                                  <l><c type="subject-letter">J</c> is for</l>
+                                                  <l>Jazz</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image21" n="21"/>
+                                                  <div type="alpha-group" xml:id="ag11" ana="K">
+                                                  <lg>
+                                                  <l><c type="subject-letter">K</c> is for</l>
+                                                  <l>Kodak</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image22" n="22"/>
+                                                  <div type="alpha-group" xml:id="ag12" ana="L">
+                                                  <lg>
+                                                  <l><c type="subject-letter">L</c> is for</l>
+                                                  <l>Locomotive</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image23" n="23"/>
+                                                  <div type="alpha-group" xml:id="ag13" ana="M">
+                                                  <lg>
+                                                  <l><c type="subject-letter">M</c> is for</l>
+                                                  <l>Motor Boat</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image24" n="24"/>
+                                                  <div type="alpha-group" xml:id="ag14" ana="N">
+                                                  <lg>
+                                                  <l><c type="subject-letter">N</c> is for</l>
+                                                  <l>Newspaper</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image25" n="25"/>
+                                                  <div type="alpha-group" xml:id="ag15" ana="O">
+                                                  <lg>
+                                                  <l><c type="subject-letter">O</c> is for</l>
+                                                  <l>Oil Well</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image26" n="26"/>
+                                                  <div type="alpha-group" xml:id="ag16" ana="P">
+                                                  <lg>
+                                                  <l><c type="subject-letter">P</c> is for</l>
+                                                  <l>Parachute</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image27" n="27"/>
+                                                  <div type="alpha-group" xml:id="ag17" ana="Q">
+                                                  <lg>
+                                                  <l><c type="subject-letter">Q</c> is for</l>
+                                                  <l>Quarry</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image28" n="28"/>
+                                                  <div type="alpha-group" xml:id="ag18" ana="R">
+                                                  <lg>
+                                                  <l><c type="subject-letter">R</c> is for</l>
+                                                  <l>Radio</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image29" n="29"/>
+                                                  <div type="alpha-group" xml:id="ag19" ana="S">
+                                                  <lg>
+                                                  <l><c type="subject-letter">S</c> is for</l>
+                                                  <l>Skyscraper</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image30" n="30"/>
+                                                  <div type="alpha-group" xml:id="ag20" ana="T">
+                                                  <lg>
+                                                  <l><c type="subject-letter">T</c> is for</l>
+                                                  <l>Tractor</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image31" n="31"/>
+                                                  <div type="alpha-group" xml:id="ag21" ana="U">
+                                                  <lg>
+                                                  <l><c type="subject-letter">U</c> is for</l>
+                                                  <l>U-Boat</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image32" n="32"/>
+                                                  <div type="alpha-group" xml:id="ag22" ana="V">
+                                                  <lg>
+                                                  <l><c type="subject-letter">V</c> is for</l>
+                                                  <l>Van</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image33" n="33"/>
+                                                  <div type="alpha-group" xml:id="ag23" ana="W">
+                                                  <lg>
+                                                  <l><c type="subject-letter">W</c> is for</l>
+                                                  <l>Water Tank</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image34" n="34"/>
+                                                  <div type="alpha-group" xml:id="ag24" ana="X">
+                                                  <lg>
+                                                  <l><c type="subject-letter">X</c> is for</l>
+                                                  <l>X-Raye</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image35" n="35"/>
+                                                  <div type="alpha-group" xml:id="ag25" ana="Y">
+                                                  <lg>
+                                                  <l><c type="subject-letter">Y</c> is for</l>
+                                                  <l>Yacht</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image36" n="36"/>
+                                                  <div type="alpha-group" xml:id="ag26" ana="Z">
+                                                  <lg>
+                                                  <l><c type="subject-letter">Z</c> is for</l>
+                                                  <l>Zeppelin</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image37" n="37"/>
+                                                  <pb facs="page_image38" n="38"/>
+                                                  <pb facs="page_image39" n="39"/>
+                                                  <pb facs="page_image40" n="40"/>
+                                                  </div>
+                                        </body>
+                                        <back>
+                                                  <interpGrp type="subject">
+                                                  <interp xml:id="A">A</interp>
+                                                  <interp xml:id="B">B</interp>
+                                                  <interp xml:id="C">C</interp>
+                                                  <interp xml:id="D">D</interp>
+                                                  <interp xml:id="E">E</interp>
+                                                  <interp xml:id="F">F</interp>
+                                                  <interp xml:id="G">G</interp>
+                                                  <interp xml:id="H">H</interp>
+                                                  <interp xml:id="I">I</interp>
+                                                  <interp xml:id="J">J</interp>
+                                                  <interp xml:id="K">K</interp>
+                                                  <interp xml:id="L">L</interp>
+                                                  <interp xml:id="M">M</interp>
+                                                  <interp xml:id="N">N</interp>
+                                                  <interp xml:id="O">O</interp>
+                                                  <interp xml:id="P">P</interp>
+                                                  <interp xml:id="Q">Q</interp>
+                                                  <interp xml:id="R">R</interp>
+                                                  <interp xml:id="S">S</interp>
+                                                  <interp xml:id="T">T</interp>
+                                                  <interp xml:id="U">U</interp>
+                                                  <interp xml:id="V">V</interp>
+                                                  <interp xml:id="W">W</interp>
+                                                  <interp xml:id="X">X</interp>
+                                                  <interp xml:id="Y">Y</interp>
+                                                  <interp xml:id="Z">Z</interp>
+                                                  </interpGrp>
+                                        </back>
+                    </text>
+</TEI>

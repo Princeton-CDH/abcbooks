@@ -69,18 +69,207 @@
    </facsimile>
    <text>
       <body>
-         <pb facs="page_image1" n="1"/>
-         <pb facs="page_image2" n="2"/>
-         <pb facs="page_image3" n="3"/>
-         <pb facs="page_image4" n="4"/>
-         <pb facs="page_image5" n="5"/>
-         <pb facs="page_image6" n="6"/>
-         <pb facs="page_image7" n="7"/>
-         <pb facs="page_image8" n="8"/>
-         <pb facs="page_image9" n="9"/>
-         <pb facs="page_image10" n="10"/>
-         <pb facs="page_image11" n="11"/>
-         <pb facs="page_image12" n="12"/>
+         <pb n="1" facs="page_image1"/>
+         <ab>Gold Medal Series No. 52</ab>
+         <ab>The Bicycle ABC</ab>
+         <pb n="2" facs="page_image2"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>Aa</head>
+            <lg>
+               <l>For the <hi rend="bold">Assistant</hi> who taught us to ride,</l>
+               <l>And oft' when in danger to be found by our side.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>Bb</head>
+            <lg>
+               <l>For our <hi rend="bold">Bicycle</hi> with its <hi rend="bold">Brake</hi> and
+                  its <hi rend="bold">Bell</hi>,</l>
+               <l>Which we soon learnt to ride you may easily tell.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>Cc</head>
+            <lg>
+               <l>For <hi rend="bold">Columbia</hi> Flag of the Free!</l>
+               <l>I pause when I see it on Land or on Sea!</l>
+            </lg>
+         </div>
+         <pb n="3" facs="page_image3"/>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>Dd</head>
+            <lg>
+               <l>For the <hi rend="bold">Dust</hi> when the weather is dry</l>
+               <l>We cannot escape it 'tis no good to try.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>Ee</head>
+            <lg>
+               <l>Stands for <hi rend="bold">Electric</hi>, the brightest of light,</l>
+               <l>If the battery fails we are left in a plight.</l>
+            </lg>
+         </div>
+         <pb n="4" facs="page_image4"/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>Ff</head>
+            <lg>
+               <l>For the <hi rend="bold">Farm</hi> where we asked them the way:</l>
+               <l>Then we rode on again as we wished them good day.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>Gg</head>
+            <lg>
+               <l>For the <hi rend="bold">Gear</hi> case that covers the chain,</l>
+               <l>Its' a very good practise to keep out the rain.</l>
+            </lg>
+         </div>
+         <pb n="5" facs="page_image5"/>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>Hh</head>
+            <lg>
+               <l>For <hi rend="bold">Hyde Park</hi>, 'tis a pleasure to go</l>
+               <l>And see all the Bicyclists ride in the Row.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>Ii</head>
+            <lg>
+               <l>For the <hi rend="bold">Inn</hi> where we stopped to have tea,</l>
+               <l>The Landlord a jolly good fellow was he.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>Jj</head>
+            <lg>
+               <l>For the <hi rend="bold">Joker</hi> so funny at fairs</l>
+               <l>Who rides on a bicycle up and down stairs.</l>
+            </lg>
+         </div>
+         <pb n="6" facs="page_image6"/>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>Kk</head>
+            <lg>
+               <l>For the <hi rend="bold">Keeper</hi> we met one dark night</l>
+               <l>He told us the time, which was very polite.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>Ll</head>
+            <lg>
+               <l>For the <hi rend="bold">Lamp</hi> that gives us a light</l>
+               <l>When darkness sets in it makes every thing bright.</l>
+            </lg>
+         </div>
+         <pb n="7" facs="page_image7"/>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>Mm</head>
+            <lg>
+               <l>For the <hi rend="bold">Mudguard</hi> which keeps so clean:</l>
+               <l>Without it we should not be fit to be seen.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>Nn</head>
+            <lg>
+               <l>For the <hi rend="bold">Notice</hi> placed high on the wall</l>
+               <l>To bid us ride slowly For fear of a fall.</l>
+            </lg>
+         </div>
+         <pb n="8" facs="page_image8"/>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>Oo</head>
+            <lg>
+               <l>For the <hi rend="bold">Oil</hi> we Cyclists all carry:</l>
+               <l>As to feed our machines we must now and then tarry.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>Pp</head>
+            <lg>
+               <l>For the <hi rend="bold">Puncture</hi> which rouses one's ire</l>
+               <l>As the wind all escapes from our pneumatic tire.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Qq</head>
+            <lg>
+               <l>For the <hi rend="bold">Quaint</hi> little cottage that stood</l>
+               <l>Not far from the road the edge of a wood.</l>
+            </lg>
+         </div>
+         <pb n="9" facs="page_image9"/>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>Rr</head>
+            <lg>
+               <l>For the <hi rend="bold">Record</hi> the <hi rend="bold">Racer</hi> would
+                  break</l>
+               <l>As he rushes along at a terrible rate.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>Ss</head>
+            <lg>
+               <l>For the <hi rend="bold">Saddle</hi> so small and so strong</l>
+               <l>Some like them square and some like them long.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>Tt</head>
+            <lg>
+               <l>is for <hi rend="bold">Tire</hi> on which much depends,</l>
+               <l>Unless they aree pierced they're the gentlest of friends!</l>
+            </lg>
+         </div>
+         <pb n="10" facs="page_image10"/>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>Uu</head>
+            <lg>
+               <l>For the <hi rend="bold">Umpire</hi> who will see fair play</l>
+               <l>His decision is final what ever you say.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>Vv</head>
+            <lg>
+               <l>For the <hi rend="bold">Vanity</hi> common to all</l>
+               <l>Which is sure to be followed by many a fall.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>Ww</head>
+            <lg>
+               <l>For the <hi rend="bold">Wheels</hi>, so slight and so strong</l>
+               <l>Which carry us safely and lightly along.</l>
+            </lg>
+         </div>
+         <pb n="11" facs="page_image11"/>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>Xx</head>
+            <lg>
+               <l>For the <hi rend="bold">Crossroads</hi> which puzzle us so</l>
+               <l>When we cannot exactly tell which way to go.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Yy</head>
+            <lg>
+               <l>For the <hi rend="bold">Yokel</hi> who as we sped by</l>
+               <l>Seems to believe that a cyclist can fly.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Zz</head>
+            <lg>
+               <l>For the <hi rend="bold">Zeal</hi>, which, there's not the least doubt</l>
+               <l>If we wish to ride nicely we can't do without.</l>
+            </lg>
+         </div>
+         <pb n="12" facs="page_image12"/>
+         <div>
+            <ab>"Good Night."</ab>
+         </div>
       </body>
    </text>
 </TEI>

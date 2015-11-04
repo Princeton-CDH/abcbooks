@@ -191,59 +191,201 @@
    </facsimile>
    <text>
       <body>
-         <pb facs="page_image1" n="1"/>
+         <pb n="cover" facs="page_image1"/>
+         <div type="cover">
+            <ab><lb/>A APPLE PIE <lb/> BY KATE GREENAWAY </ab>
+         </div>
          <pb facs="page_image2" n="2"/>
+         <div type="blank"/>
          <pb facs="page_image3" n="3"/>
+         <div type="blank"/>
          <pb facs="page_image4" n="4"/>
+         <div type="blank"/>
          <pb facs="page_image5" n="5"/>
+         <div type="blank"/>
          <pb facs="page_image6" n="6"/>
+         <div type="blank"/>
          <pb facs="page_image7" n="7"/>
+         <div type="blank"/>
          <pb facs="page_image8" n="8"/>
+         <div type="blank"/>
          <pb facs="page_image9" n="9"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <lg>
+               <l><c type="subject-letter">A</c> APPLE PIE </l>
+            </lg>
+         </div>
          <pb facs="page_image10" n="10"/>
+         <div type="blank"/>
          <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <lg>
+               <l><c type="subject-letter">B</c> BIT IT </l>
+            </lg>
+         </div>
          <pb facs="page_image12" n="12"/>
+         <div type="blank"/>
          <pb facs="page_image13" n="13"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <lg>
+               <l><c type="subject-letter">C</c> CUT IT </l>
+            </lg>
+         </div>
          <pb facs="page_image14" n="14"/>
+         <div type="blank"/>
          <pb facs="page_image15" n="15"/>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <lg>
+               <l><c type="subject-letter">D</c> DEALT IT </l>
+            </lg>
+         </div>
          <pb facs="page_image16" n="16"/>
+         <div type="blank"/>
          <pb facs="page_image17" n="17"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <lg>
+               <l><c type="subject-letter">E</c> EAT IT </l>
+            </lg>
+         </div>
          <pb facs="page_image18" n="18"/>
+         <div type="blank"/>
          <pb facs="page_image19" n="19"/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <lg>
+               <l><c type="subject-letter">F</c> FOUGHT FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image20" n="20"/>
+         <div type="blank"/>
          <pb facs="page_image21" n="21"/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <lg>
+               <l><c type="subject-letter">G</c> GOT IT </l>
+            </lg>
+         </div>
          <pb facs="page_image22" n="22"/>
+         <div type="blank"/>
          <pb facs="page_image23" n="23"/>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <lg>
+               <l><c type="subject-letter">H</c> HAD IT </l>
+            </lg>
+         </div>
          <pb facs="page_image24" n="24"/>
+         <div type="blank"/>
          <pb facs="page_image25" n="25"/>
+         <div type="alpha-group" xml:id="ag9" ana="J">
+            <lg>
+               <l><c type="subject-letter">J</c> JUMPED FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image26" n="26"/>
+         <div type="blank"/>
          <pb facs="page_image27" n="27"/>
+         <div type="alpha-group" xml:id="ag10" ana="K">
+            <lg>
+               <l><c type="subject-letter">K</c> KNEALT FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image28" n="28"/>
+         <div type="blank"/>
          <pb facs="page_image29" n="29"/>
+         <div type="alpha-group" xml:id="ag11" ana="L">
+            <lg>
+               <l><c type="subject-letter">L</c> LONGED FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image30" n="30"/>
+         <div type="blank"/>
          <pb facs="page_image31" n="31"/>
+         <div type="alpha-group" xml:id="ag12" ana="M">
+            <lg>
+               <l><c type="subject-letter">M</c> MOURNED FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image32" n="32"/>
+         <div type="blank"/>
          <pb facs="page_image33" n="33"/>
+         <div type="alpha-group" xml:id="ag13" ana="N">
+            <lg>
+               <l><c type="subject-letter">N</c> NODDED FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image34" n="34"/>
+         <div type="blank"/>
          <pb facs="page_image35" n="35"/>
+         <div type="alpha-group" xml:id="ag14" ana="O">
+            <lg>
+               <l><c type="subject-letter">O</c> OPENED IT </l>
+            </lg>
+         </div>
          <pb facs="page_image36" n="36"/>
+         <div type="blank"/>
          <pb facs="page_image37" n="37"/>
+         <div type="alpha-group" xml:id="ag15" ana="P">
+            <lg>
+               <l><c type="subject-letter">P</c> PEEPED IN IT </l>
+            </lg>
+         </div>
          <pb facs="page_image38" n="38"/>
+         <div type="blank"/>
          <pb facs="page_image39" n="39"/>
+         <div type="alpha-group" xml:id="ag16" ana="Q">
+            <lg>
+               <l><c type="subject-letter">Q</c> QUARTERED IT </l>
+            </lg>
+         </div>
          <pb facs="page_image40" n="40"/>
+         <div type="blank"/>
          <pb facs="page_image41" n="41"/>
+         <div type="alpha-group" xml:id="ag17" ana="R">
+            <lg>
+               <l><c type="subject-letter">R</c> RAN FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image42" n="42"/>
+         <div type="blank"/>
          <pb facs="page_image43" n="43"/>
+         <div type="alpha-group" xml:id="ag18" ana="S">
+            <lg>
+               <l><c type="subject-letter">S</c> SANG FOR IT </l>
+            </lg>
+         </div>
          <pb facs="page_image44" n="44"/>
+         <div type="blank"/>
          <pb facs="page_image45" n="45"/>
+         <div type="alpha-group" xml:id="ag19" ana="T">
+            <lg>
+               <l><c type="subject-letter">T</c> TOOK IT </l>
+            </lg>
+         </div>
          <pb facs="page_image46" n="46"/>
+         <div type="blank"/>
          <pb facs="page_image47" n="47"/>
+         <div type="alpha-group" xml:id="ag20" ana="U">
+            <lg>
+               <l><c type="subject-letter">UVWXYZ</c> ALL HAD A LARGE SLICE
+                  AND WENT OFF TO BED </l>
+            </lg>
+         </div>
          <pb facs="page_image48" n="48"/>
+         <div type="blank"/>
          <pb facs="page_image49" n="49"/>
+         <div type="blank"/>
          <pb facs="page_image50" n="50"/>
+         <div type="blank"/>
          <pb facs="page_image51" n="51"/>
-         <pb facs="page_image52" n="52"/>
-         <pb facs="page_image53" n="53"/>
+         <div type="blank"/>
+         <pb n="cover" facs="page_image52"/>
+         <div type="cover">
+            <ab><lb/>A APPLE PIE <lb/> BY KATE GREENAWAY </ab>
+         </div>
+         <pb n="cover" facs="page_image53"/>
+         <div type="cover">
+            <ab><lb/>A Apple Pie <lb/>EENAWAY <lb/>BY EDMUND EVANS <lb/>LONDON:
+               GEORGE ROUTLEDGE AND SONS <lb/>BROADWAY, LUDGATE
+               HILL<lb/>NEW YORK: 9 LAFAYETTE PLACE</ab>
+         </div>
       </body>
    </text>
 </TEI>

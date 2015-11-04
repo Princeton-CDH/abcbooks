@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -225,69 +224,383 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
+         <div>
+            <p>TONY SARG'S ALPHABET</p>
+         </div>
          <pb facs="page_image2" n="2"/>
+         <!-- BLANK -->
          <pb facs="page_image3" n="3"/>
+         <!-- BLANK -->
          <pb facs="page_image4" n="4"/>
+         <div>
+            <p>From the Children's Library of the Lloyd Cotsen Family </p>
+         </div>
          <pb facs="page_image5" n="5"/>
+         <div>
+            <p>This Book belongs to </p>
+         </div>
          <pb facs="page_image6" n="6"/>
+         <!-- BLANK -->
          <pb facs="page_image7" n="7"/>
+         <div>
+            <p>TONY SARG'S ALPHABET Verses by Anne Stoddard Published by GREENBERG Inc New York
+               Printed in U.S.A. </p>
+         </div>
          <pb facs="page_image8" n="8"/>
+         <!-- BLANK -->
          <pb facs="page_image9" n="9"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <lg>
+               <l>
+                  <c type="subject-letter">A</c> for ALICE in WONDERLAND</l>
+               <l>A is for Alice and all she went through</l>
+               <l> In Looking-glass land and in Wonderland, too.</l>
+               <l>How I wish I might go with dear little Alice</l>
+               <l>For a game of croquet at the Queen of Hearts' palace.</l>
+            </lg>
+         </div>
          <pb facs="page_image10" n="10"/>
+         <!-- BLANK -->
          <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <lg>
+               <l>
+                  <c type="subject-letter">B</c> for BEAUTY and the BEAST</l>
+               <l>B is for Beauty and the terrible Beast—</l>
+               <l>I don't wonder she feared him, oh, not in the least !</l>
+               <l> But his heart was so good and his deeds were so kind</l>
+               <l>That, in spite of his looks, Beauty soon changed her mind.</l>
+            </lg>
+         </div>
          <pb facs="page_image12" n="12"/>
+         <!-- BLANK -->
          <pb facs="page_image13" n="13"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <lg>
+               <l>
+                  <c type="subject-letter">C</c> for CHARLIE CHAPLIN</l>
+               <l>C is for Chaplin with his funny mustache,</l>
+               <l>His toes are turned out and his conduct is rash ;</l>
+               <l>Every movie fan loves him, every child is his friend,</l>
+               <l>For he keeps them all laughing from beginning to end.</l>
+            </lg>
+         </div>
          <pb facs="page_image14" n="14"/>
+         <!-- BLANK -->
          <pb facs="page_image15" n="15"/>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <lg>
+               <l>
+                  <c type="subject-letter">D</c> for Dr FOSTER went to Glo'ster</l>
+               <l>D's Dr. Foster, whome all of you know,</l>
+               <l>Who journeyed to GLo'ster in the long, long ago;</l>
+               <l>But he stepped in a puddle in a down-pour of rain</l>
+               <l>And never will journey to Glo'ster again.</l>
+            </lg>
+         </div>
          <pb facs="page_image16" n="16"/>
+         <!-- BLANK -->
          <pb facs="page_image17" n="17"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <lg>
+               <l>
+                  <c type="subject-letter">E</c>for Elephant</l>
+               <l>E is for Elephant, doing his tricks;</l>
+               <l>Without him, the circus would be in a fix.</l>
+               <l>He is good and he's clever and does all he can</l>
+               <l>To help out his trainer, who is a kind man.</l>
+            </lg>
+         </div>
          <pb facs="page_image18" n="18"/>
+         <!-- BLANK -->
          <pb facs="page_image19" n="19"/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <lg>
+               <l>
+                  <c type="subject-letter">F</c> for FEE,- FI, FO, FUM.</l>
+               <l>F is for Fee-"Fee, Fi, Fo, Fum,</l>
+               <l>"I smell the blood of an Englishmun !</l>
+               <l>"I'll eat him alive," the giant said,</l>
+               <l>"And grind up his bones to make my bread."</l>
+            </lg>
+         </div>
          <pb facs="page_image20" n="20"/>
+         <!-- BLANK -->
          <pb facs="page_image21" n="21"/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">G</c> for GULLIVER'S TRAVELS</l>
+               <l>G is for Gulliver, whose wonderful travels</l>
+               <l>In Lilliput country Swift's romance unravels.</l>
+               <l>On the edge of the bowl, see the wee Lilliputian</l>
+               <l>Who seems to be teaching his host elocution.</l>
+            </lg>
+         </div>
          <pb facs="page_image22" n="22"/>
+         <!-- BLANK -->
          <pb facs="page_image23" n="23"/>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">H</c> for HUMPTY DUMPTY</l>
+               <l>H is for Humpty, who sat on a wall</l>
+               <l>And when he fell off—oh, my! what a fall.</l>
+               <l>I hate to inform you what really befell,</l>
+               <l>For of poor Humpty Dumpty was left but a shell.</l>
+            </lg>
+         </div>
          <pb facs="page_image24" n="24"/>
+         <!-- BLANK -->
          <pb facs="page_image25" n="25"/>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">I</c>for INDIAN</l>
+               <l>I stands for Indian with his blanket and feathers,</l>
+               <l>he stays out-of-doors in all kinds of weathers,</l>
+               <l>He has never a bed, nor a table, nor chair,</l>
+               <l>But a curious way of wearing his hair. </l>
+            </lg>
+         </div>
          <pb facs="page_image26" n="26"/>
+         <!-- BLANK -->
          <pb facs="page_image27" n="27"/>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">J</c> for JACK SPRATT</l>
+               <l>J's for Jack Spratt and for Mrs. Spratt, too ;</l>
+               <l>Not a bit of fat meat, only lean, he would chew.</l>
+               <l>She ate up the fat—and the gist of the matter</l>
+               <l>Is that, 'twixt this couple, they cleaned up the platter. </l>
+            </lg>
+         </div>
          <pb facs="page_image28" n="28"/>
+         <!-- BLANK -->
          <pb facs="page_image29" n="29"/>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">K</c> for KING COLE</l>
+               <l>K is King Cole, the hale and the hearty,</l>
+               <l>With his pipe and his bowl, a jolly old party.</l>
+               <l>"Oh, I may be a king, with my fine fiddlers three,</l>
+               <l>"But I mean to have comfort," he said, said he. </l>
+            </lg>
+         </div>
          <pb facs="page_image30" n="30"/>
+         <!-- BLANK -->
          <pb facs="page_image31" n="31"/>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">L</c> for LITTLE BO-PEEP</l>
+               <l>L is Little Bo Peep, the poor little dear,</l>
+               <l>She will make herself ill with crying, I fear,</l>
+               <l>For she's lost her fat sheep with their long tails behind them</l>
+               <l>And doesn't know where in the world she will find them.</l>
+            </lg>
+         </div>
          <pb facs="page_image32" n="32"/>
+         <!-- BLANK -->
          <pb facs="page_image33" n="33"/>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">M</c> for MOON</l>
+               <l>M is for Moon and the wink that he gave</l>
+               <l>When he saw how that naught old cow would behave,</l>
+               <l>Who heard the cat fiddling the strange little tune</l>
+               <l>Which set off the dish to elope with the spoon. </l>
+            </lg>
+         </div>
          <pb facs="page_image34" n="34"/>
+         <!-- BLANK -->
          <pb facs="page_image35" n="35"/>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">N</c> for NEEDLES AND PINS</l>
+               <l>N is for needles—for needles and pins,</l>
+               <l>When a girl marries her worry begins ;</l>
+               <l>She must cook for her husband and darn all his hose—</l>
+               <l>And never forget to powder her nose.</l>
+            </lg>
+         </div>
          <pb facs="page_image36" n="36"/>
+         <!-- BLANK -->
          <pb facs="page_image37" n="37"/>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">O</c> for OLD MOTHER GOOSE</l>
+               <l>O's for Old Mother Goose with her verses immortal</l>
+               <l>And the charmed world to which she holds open the portal.</l>
+               <l>E'en a grown-up may enter, by fancy beguiled,</l>
+               <l>If he has love and humor and the heart of a child.</l>
+            </lg>
+         </div>
          <pb facs="page_image38" n="38"/>
+         <!-- BLANK -->
          <pb facs="page_image39" n="39"/>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <lg>
+               <l>
+                  <c type="subject-letter">P</c> for PUNCH and JUDY</l>
+               <l>P stands for Punch—and Judy, his wife ;</l>
+               <l>Poor thing, he leads her a terrible life,</l>
+               <l>For his cudgel he carries to fight or to revel</l>
+               <l>And whacks every head from police-man to devil.</l>
+            </lg>
+         </div>
          <pb facs="page_image40" n="40"/>
+         <!-- BLANK -->
          <pb facs="page_image41" n="41"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <lg>
+               <l>
+                  <c type="subject-letter">Q</c> for QUEEN OF HEARTS</l>
+               <l>Q's Queen of Hearts and the tarts that she made</l>
+               <l>(She will ruin her beautiful frock, I'm afraid!)</l>
+               <l>The Jack of Hearts took them against the Queen's wishes,</l>
+               <l>But you really can't blame him, they smelled so delicious.</l>
+            </lg>
+         </div>
          <pb facs="page_image42" n="42"/>
+         <!-- BLANK -->
          <pb facs="page_image43" n="43"/>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <lg>
+               <l>
+                  <c type="subject-letter">R</c> for RED RIDING HOOD</l>
+               <l>R's for Red Riding-hood, dear little girl,</l>
+               <l>With her hood on her head and her hair all in curl.</l>
+               <l>No wonder the wicked wolf wanted to eat</l>
+               <l>A morsel so tender and juicy and sweet.</l>
+            </lg>
+         </div>
          <pb facs="page_image44" n="44"/>
+         <!-- BLANK -->
          <pb facs="page_image45" n="45"/>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <lg>
+               <l>
+                  <c type="subject-letter">S</c> for SANTA CLAUS</l>
+               <l> S stands for Santa and the toys in his pack,</l>
+               <l>For the cap on his head and the coat on his back,</l>
+               <l>For the sleigh and the reindeer, the tree and the holly</l>
+               <l>And all that makes Christmas so dear and jolly.</l>
+            </lg>
+         </div>
          <pb facs="page_image46" n="46"/>
+         <!-- BLANK -->
          <pb facs="page_image47" n="47"/>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <lg>
+               <l>
+                  <c type="subject-letter">T</c> for TREASURE ISLAND</l>
+               <l>T's "Treasure Island," the glorious tale</l>
+               <l>Of pirates and battles and the crew that set sail</l>
+               <l>To dig up the treasure and bring it home as freight</l>
+               <l>The jewels and doubloons and the pieces-of-eight.</l>
+            </lg>
+         </div>
          <pb facs="page_image48" n="48"/>
+         <!-- BLANK -->
          <pb facs="page_image49" n="49"/>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <lg>
+               <l>
+                  <c type="subject-letter">U</c> for UNICORN</l>
+               <l>U is for Unicorn, who wanted the crown</l>
+               <l>And fought with the lion all over the town</l>
+               <l>I wish they would share with me and with you</l>
+               <l>Their nice bread-and-butter and plummy-cake, too.</l>
+            </lg>
+         </div>
          <pb facs="page_image50" n="50"/>
+         <!-- BLANK -->
          <pb facs="page_image51" n="51"/>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <lg>
+               <l>
+                  <c type="subject-letter">V</c> for VALENTINE</l>
+               <l>V is for Valentines and for the saint</l>
+               <l>Whose day we all honor with emblems so quaint;</l>
+               <l>For the brave paper-lace and the cupids and darts</l>
+               <l>And to the postman who brings them to gladden our hearts.</l>
+            </lg>
+         </div>
          <pb facs="page_image52" n="52"/>
          <pb facs="page_image53" n="53"/>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <lg>
+               <l>
+                  <c type="subject-letter">W</c> for WALRUS and the CARPENTER</l>
+               <l>For Walrus, of course, the W stands ;</l>
+               <l>Who walked with the carpenter by the sea-sands ;</l>
+               <l>They talked with the oysters they met on the beaches,</l>
+               <l>Then gobbled them down with the kindest of speeches.</l>
+            </lg>
+         </div>
          <pb facs="page_image54" n="54"/>
+         <!-- BLANK -->
          <pb facs="page_image55" n="55"/>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <lg>
+               <l>
+                  <c type="subject-letter">X</c>for XMAS CAROLS</l>
+               <l>X is for Xmas and the carols we sing,</l>
+               <l>The turkeys we eat and the gifts that we bring ;</l>
+               <l>Of all the whole year, Christmas day is the best</l>
+               <l>With love and with happiness specially blest.</l>
+            </lg>
+         </div>
          <pb facs="page_image56" n="56"/>
+         <!-- BLANK -->
          <pb facs="page_image57" n="57"/>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <lg>
+               <l>
+                  <c type="subject-letter">Y</c> for YANKEE DOODLE</l>
+               <l>Y's Yankee Doodle, beloved old dandy,</l>
+               <l>With his hat and his feather, so spic and so spandy.</l>
+               <l>The children delight in this man of renown</l>
+               <l>And follow his pony all over the town.</l>
+            </lg>
+         </div>
          <pb facs="page_image58" n="58"/>
+         <!-- BLANK -->
          <pb facs="page_image59" n="59"/>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <lg>
+               <l>
+                  <c type="subject-letter">Z</c> for ZEBRA</l>
+               <l>Z is for Zebra, the pride of the Zoo,</l>
+               <l>He is dressed all in stripes and so stylishly, too.</l>
+               <l>And as Z's the last letter, my dear children, I</l>
+               <l>Must lay down my pencil and bid you good-bye.</l>
+            </lg>
+         </div>
          <pb facs="page_image60" n="60"/>
+         <!-- BLANK -->
          <pb facs="page_image61" n="61"/>
+         <!-- BLANK -->
          <pb facs="page_image62" n="62"/>
          <pb facs="page_image63" n="63"/>
          <pb facs="page_image64" n="64"/>
+         <!-- Back Cover -->
       </body>
    </text>
 </TEI>

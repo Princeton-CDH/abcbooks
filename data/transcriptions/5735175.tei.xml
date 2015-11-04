@@ -136,39 +136,174 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
+         <ab> MAYOR'S ILLUSTRATED PRIMER. THREE HUNDRED AND FIFTY PICTURES. </ab>
          <pb facs="page_image2" n="2"/>
          <pb facs="page_image3" n="3"/>
+         <ab> Mavors Illustrated Primer. three hundred and fifty pictures. London: Frederick
+            Warne and Co., BEDFORD STREET, STRAND. </ab>
          <pb facs="page_image4" n="4"/>
          <pb facs="page_image5" n="5"/>
          <pb facs="page_image6" n="6"/>
          <pb facs="page_image7" n="7"/>
          <pb facs="page_image8" n="8"/>
          <pb facs="page_image9" n="9"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>Aa</head>
+            <ab>
+               <lb/>Ass Arrow Ape <lb/>Apple Auk Archer <lb/>Ano-ler Arch Acorn </ab>
+         </div>
          <pb facs="page_image10" n="10"/>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>Bb</head>
+            <ab>
+               <lb/>Bonnet Bear Bell <lb/>Bird Bee Basket <lb/>Broom Boat Bottle</ab>
+         </div>
          <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>Cc</head>
+            <ab>
+               <lb/>Cask Cow Candle <lb/>CUp Chisel Cap <lb/>Cat Crab Cock</ab>
+         </div>
          <pb facs="page_image12" n="12"/>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>Dd</head>
+            <ab>
+               <lb/>Deer Dog Daisy <lb/>Dunce Dove Doll <lb/>Dagger Drum Duck</ab>
+         </div>
          <pb facs="page_image13" n="13"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>Ee</head>
+            <ab>
+               <lb/>Eagle Eft Elk <lb/>Eye Egg Ear <lb/>Eel Ewer Engine</ab>
+         </div>
          <pb facs="page_image14" n="14"/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>Ff</head>
+            <ab>
+               <lb/>Fox Fish Fender <lb/>Flag Fan Farmer <lb/>Fork Frog Fly</ab>
+         </div>
          <pb facs="page_image15" n="15"/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>Gg</head>
+            <ab>
+               <lb/>Goat Guinea-Pig Gridiron <lb/>Gun Gnat Glass <lb/>Gull Goose
+               Grapes</ab>
+         </div>
          <pb facs="page_image16" n="16"/>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>Hh</head>
+            <ab>
+               <lb/>Horn Horse Hive <lb/>Hoop Hay Hammer <lb/>Hound Hen Hatchet</ab>
+         </div>
          <pb facs="page_image17" n="17"/>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>Ii</head>
+            <ab>
+               <lb/>Ibex Idol Ivy <lb/>Ink-stand Image Insect <lb/>Ibis Iron Indian</ab>
+         </div>
          <pb facs="page_image18" n="18"/>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>Jj</head>
+            <ab>
+               <lb/>Jay Junk Jackdaw <lb/>Joiner Jewel Jester <lb/>Jar Jackall Jack</ab>
+         </div>
          <pb facs="page_image19" n="19"/>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>Kk</head>
+            <ab>
+               <lb/>Kid King Kitten <lb/>Kite Kettle Key <lb/>Knife Kennel Knob</ab>
+         </div>
          <pb facs="page_image20" n="20"/>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>Ll</head>
+            <ab>
+               <lb/>Lamb Lion Lizard <lb/>Lobster Lemon Lamp <lb/>Lark Leopard Leaf</ab>
+         </div>
          <pb facs="page_image21" n="21"/>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>Mm</head>
+            <ab>
+               <lb/>Motli Monkey Melon <lb/>Medal Muff Mop <lb/>Mill Mouse Magpie</ab>
+         </div>
          <pb facs="page_image22" n="22"/>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>Nn</head>
+            <ab>
+               <lb/>Net Nurse Nuthatch <lb/>Nun Negro Nut <lb/>Nail Needle Nest</ab>
+         </div>
          <pb facs="page_image23" n="23"/>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>Oo</head>
+            <ab>
+               <lb/>Otter Ox Owl <lb/>Oyster Oat Ostler <lb/>Ostrich Ounce Onion</ab>
+         </div>
          <pb facs="page_image24" n="24"/>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>Pp</head>
+            <ab>
+               <lb/>Poppy Peacock Pink <lb/>Parrot Pigeon Pie <lb/>Pump Pig Pear</ab>
+         </div>
          <pb facs="page_image25" n="25"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Qq</head>
+            <ab>
+               <lb/>Quarter Queen Quince <lb/>Quiver Quill Quoit <lb/>Quagga Quadrant
+               Quail</ab>
+         </div>
          <pb facs="page_image26" n="26"/>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>Rr</head>
+            <ab>
+               <lb/>Ram Rabbit Robin <lb/>Rose Ring Ribbon <lb/>Rake Rat" Roller</ab>
+         </div>
          <pb facs="page_image27" n="27"/>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>Ss</head>
+            <ab>
+               <lb/>Spoon Ship Shoe <lb/>Serpent Shell Sheaf <lb/>Swan Stool Sheep</ab>
+         </div>
          <pb facs="page_image28" n="28"/>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>Tt</head>
+            <ab>
+               <lb/>Tulip Tiger Top <lb/>Target Turnip Teapot <lb/>Turkey Tapir Toucan</ab>
+         </div>
          <pb facs="page_image29" n="29"/>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>Uu</head>
+            <ab>
+               <lb/>Unicorn Union-Jack Urn <lb/>Usher Uniform <lb/>Umbrella</ab>
+         </div>
          <pb facs="page_image30" n="30"/>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>Vv</head>
+            <ab>
+               <lb/>Vulture Vat Vase <lb/>Vine Vane Volunteer <lb/>Violin Vole Violet</ab>
+         </div>
          <pb facs="page_image31" n="31"/>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>Ww</head>
+            <ab>
+               <lb/>Wolf Wasp Wren <lb/>Wheat Watch Whip <lb/>Windmill Whelk Wheel</ab>
+         </div>
          <pb facs="page_image32" n="32"/>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>Xx</head>
+            <ab>
+               <lb/>Xantippe Xebec Xerxes <lb/>Xylographer Xenoplion <lb/>Xipbias</ab>
+         </div>
          <pb facs="page_image33" n="33"/>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Yy</head>
+            <ab>
+               <lb/>Yak Yaclit <lb/>Yeoman Youth <lb/>Yarn Yew Yoke</ab>
+         </div>
          <pb facs="page_image34" n="34"/>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Zz</head>
+            <ab>
+               <lb/>Zebu Zebra <lb/>Zouave Zany <lb/>Zig-zag Zibeth</ab>
+         </div>
       </body>
    </text>
 </TEI>

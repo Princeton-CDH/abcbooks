@@ -92,27 +92,450 @@
       </surface>
    </facsimile>
    <text>
-      <body>
-         <pb facs="page_image1" n="1"/>
-         <pb facs="page_image2" n="2"/>
-         <pb facs="page_image3" n="3"/>
-         <pb facs="page_image4" n="4"/>
-         <pb facs="page_image5" n="5"/>
-         <pb facs="page_image6" n="6"/>
-         <pb facs="page_image7" n="7"/>
-         <pb facs="page_image8" n="8"/>
-         <pb facs="page_image9" n="9"/>
-         <pb facs="page_image10" n="10"/>
-         <pb facs="page_image11" n="11"/>
-         <pb facs="page_image12" n="12"/>
-         <pb facs="page_image13" n="13"/>
-         <pb facs="page_image14" n="14"/>
-         <pb facs="page_image15" n="15"/>
-         <pb facs="page_image16" n="16"/>
-         <pb facs="page_image17" n="17"/>
-         <pb facs="page_image18" n="18"/>
-         <pb facs="page_image19" n="19"/>
-         <pb facs="page_image20" n="20"/>
-      </body>
+       <body>
+            <pb n="cover" facs="page_image1"/>
+            <div type="cover">
+                <ab><lb/>AN ALPHABET <lb/>OF FAIRY TALES <lb/>By DORIS PAILTHORPE </ab>
+            </div>
+            <pb facs="page_image2" n="2"/>
+            <div>
+                <ab><lb/>David W. Beach </ab>
+            </div>
+            <pb facs="page_image3" n="3"/>
+            <div>
+                <lg>
+                    <l>AN</l>
+                    <l>ALPHABET</l>
+                    <l>OF • FAIRY</l>
+                    <l>• TALES •</l>
+                    <l> by Doris Pailthorpe</l>
+                    <l>London:</l>
+                    <l>Gale &amp; Polden, LTD. 2 Amen Corner, E.C. 4</l>
+                    <l>Also at Aldershot and Portsmouth</l>
+                </lg>
+            </div>
+            <pb facs="page_image4" n="4"/>
+            <div>
+                <lg>
+                    <l>A B C D E</l>
+                    <l>F G H I J K</l>
+                    <l>L M N O P</l>
+                    <l>Q R S T U</l>
+                    <l>V W X Y Z</l>
+                    <l>a b c d e f g</l>
+                    <l>h i j k l m n</l>
+                    <l>o p q r s t</l>
+                    <l>u v w x y z</l>
+                </lg>
+            </div>
+            <pb facs="page_image5" n="5"/>
+            <div>
+                <ab><lb/>AN•ALPHABET•OF•FAIRY•TALES </ab>
+            </div>
+            <pb facs="page_image6" n="6"/>
+            <div type="alpha-group" xml:id="ag1" ana="A">
+                <lg>
+                    <l>A</l>
+                    <l>ALADDIN</l>
+                    <l>ALADDIN'S lamp, </l>
+                    <l>in robbers' camp,</l>
+                    <l>Opened caves</l>
+                    <l>of treasure,</l>
+                    <l>Within he found,</l>
+                    <l>piled on the ground,</l>
+                    <l>Gold and gems</l>
+                    <l>at pleasure.</l>
+                    <l>"Aladdin and the Wonderful Lamp</l>
+                    <l>From the "Arabian Nights."</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag2" ana="B">
+                <lg>
+                    <l>B</l>
+                    <l>BLUEBEARD</l>
+                    <l>BLUEBEARD was</l>
+                    <l>mad,</l>
+                    <l>his wife was sad,</l>
+                    <l>For she was</l>
+                    <l>doomed to die,</l>
+                    <l>She found the room,</l>
+                    <l>of awful doom,</l>
+                    <l>Where Bluebeard's</l>
+                    <l>wives did lie.</l>
+                    <l>"Bluebeard."</l>
+                    <l>From the French Fairy Tale.</l>
+                </lg>
+            </div>
+            <pb facs="page_image7" n="7"/>
+            <div type="alpha-group" xml:id="ag3" ana="C">
+                <lg>
+                    <l>C</l>
+                    <l>CINDERELLA</l>
+                    <l>A Fairy old, with</l>
+                    <l>coach of gold,</l>
+                    <l>Took Cinders to</l>
+                    <l>the ball,</l>
+                    <l>A Prince there too,</l>
+                    <l>who found her shoe,</l>
+                    <l>Wed Cinders after</l>
+                    <l>all.</l>
+                    <l>"Cinderella."</l>
+                    <l>From an old English Fairy Tale.</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag4" ana="D">
+                <lg>
+                    <l>DICK</l>
+                    <l>D</l>
+                    <l>DICK and his cat</l>
+                    <l>at Highgate sat,</l>
+                    <l>When church bells</l>
+                    <l>rang out clear-</l>
+                    <l>"Turn again, Dick</l>
+                    <l>for Fortune's trick</l>
+                    <l>Will make you</l>
+                    <l>our Lord Mayor."</l>
+                    <l>"Dick Whittington."</l>
+                    <l>From an old English Fairy Tale.</l>
+                </lg>
+            </div>
+            <pb facs="page_image8" n="8"/>
+            <div type="alpha-group" xml:id="ag5" ana="E">
+                <lg>
+                    <l>E</l>
+                    <l>ELSA</l>
+                    <l>A wicked spell</l>
+                    <l>'tis sad to tell,</l>
+                    <l>To swans her</l>
+                    <l>brothers turned,</l>
+                    <l>But soon their</l>
+                    <l>plight ELSA put</l>
+                    <l>right,</l>
+                    <l>And their devotion</l>
+                    <l>earned.</l>
+                    <l>From "The Wild Swans.'</l>
+                    <l>By Hans Andersen.</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag6" ana="F">
+                <lg>
+                    <l>F</l>
+                    <l>FIROUZ</l>
+                    <l>FIROUZ, of ocurse</l>
+                    <l>with magic horse,</l>
+                    <l>Was very quickly</l>
+                    <l>skied,</l>
+                    <l>A Princess fair,</l>
+                    <l>in palace there,</l>
+                    <l>He found, and</l>
+                    <l>made his bride.</l>
+                    <l>"The Magic Horse."</l>
+                    <l>From the "Arabian Nights."</l>
+                </lg>
+            </div>
+            <pb facs="page_image9" n="9"/>
+            <div type="alpha-group" xml:id="ag7" ana="G">
+                <lg>
+                    <l>GOOSE GIRL</l>
+                    <l>G</l>
+                    <l>The GEESE and</l>
+                    <l>GIRL, with</l>
+                    <l>golden curl,</l>
+                    <l>Lived on the</l>
+                    <l>Prince's land.</l>
+                    <l>They met one day,</l>
+                    <l>I'm glad to say,</l>
+                    <l>He wooed and</l>
+                    <l>won her hand.</l>
+                    <l>"The Goose-Girl."</l>
+                    <l>From "Grimm's Fairy Tales."</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag8" ana="H">
+                <lg>
+                    <l>H</l>
+                    <l>HANSEL</l>
+                    <l>"This hop of sweet</l>
+                    <l>is quite a treat,"</l>
+                    <l>Though HANSEL</l>
+                    <l>as he stared.</l>
+                    <l>He took a taste of</l>
+                    <l>almond paste,</l>
+                    <l>Was caught and</l>
+                    <l>badly fared.</l>
+                    <l>"Hansel and Gretel."</l>
+                    <l>From "Grimm's Fairy Tales."</l>
+                </lg>
+            </div>
+            <pb facs="page_image10" n="10"/>
+            <div type="alpha-group" xml:id="ag9" ana="I">
+                <lg>
+                    <l>I</l>
+                    <l>I</l>
+                    <l>A dainty pair of</l>
+                    <l>shoes to wear,</l>
+                    <l>I carved</l>
+                    <l>Christina's doll.</l>
+                    <l>She was so proud,</l>
+                    <l>she sang aloud</l>
+                    <l>And looked</l>
+                    <l>so very droll.</l>
+                    <l>"I and Little Christina."</l>
+                    <l>By Hsns Andersen.</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag10" ana="J">
+                <lg>
+                    <l>J</l>
+                    <l>JACK</l>
+                    <l>A Beanstalk high</l>
+                    <l>grew to the sky,</l>
+                    <l>A giant who</l>
+                    <l>lived at leisure.</l>
+                    <l>JACK, defiant,</l>
+                    <l>killed the giant,</l>
+                    <l>Ran off with</l>
+                    <l>his treasure.</l>
+                    <l>"Jack and the Beanstalk."</l>
+                    <l>From an old English Fairy Tale.</l>
+                </lg>
+            </div>
+            <pb facs="page_image11" n="11"/>
+            <div type="alpha-group" xml:id="ag11" ana="K">
+                <lg>
+                    <l>K</l>
+                    <l>KAREN</l>
+                    <l>Of shoes red, and</l>
+                    <l>bright, bright red,</l>
+                    <l>Poor KAREN</l>
+                    <l>it appears,</l>
+                    <l>Became so vain-</l>
+                    <l>to cure this strain</l>
+                    <l>She had to</l>
+                    <l>dance for years.</l>
+                    <l>"The Red Shoes."</l>
+                    <l>By Hans Andersen.</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag12" ana="K">
+                <l>L</l>
+                <lg>
+                    <l>LETTICE</l>
+                    <l>LETTICE within</l>
+                    <l>a tower grim,</l>
+                    <l>That had not</l>
+                    <l>door nor stair.</l>
+                    <l>A Prince came by,</l>
+                    <l>to rescue try,</l>
+                    <l>Climbed up</l>
+                    <l>her golden hair.</l>
+                    <l>"Lettice."</l>
+                    <l>From "Grimm's Fairy Tales."</l>
+                </lg>
+            </div>
+            <pb facs="page_image12" n="12"/>
+            <div type="alpha-group" xml:id="ag13" ana="M">
+                <lg>
+                    <l>MORGIANA</l>
+                    <l>M</l>
+                    <l>A faithful slave</l>
+                    <l>a thieving knave</l>
+                    <l>One night</l>
+                    <l>with dagger slew.</l>
+                    <l>He did intend,</l>
+                    <l>to rob his friend</l>
+                    <l>But MORGIANA</l>
+                    <l>knew.</l>
+                    <l>"The Forty Thieves."</l>
+                    <l>From the "Arabian Nights."</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag14" ana="N">
+                <lg>
+                    <l>NICOLETTE</l>
+                    <l>N</l>
+                    <l>In minstrel's dress,</l>
+                    <l>in great distress,</l>
+                    <l>Poor NICOLETTE</l>
+                    <l>did go,</l>
+                    <l>Her love to trace,</l>
+                    <l>again embrace,</l>
+                    <l>They loved</l>
+                    <l>each other so.</l>
+                    <l>From "Aucassin and Nicolette."</l>
+                    <l>An old French Story.</l>
+                </lg>
+            </div>
+            <pb facs="page_image13" n="13"/>
+            <div type="alpha-group" xml:id="ag15" ana="O">
+                <lg>
+                    <l>O</l>
+                    <l>OBERON</l>
+                    <l>To tiny King</l>
+                    <l>the Fairies sing,</l>
+                    <l>He rules</l>
+                    <l>all Fairyland.</l>
+                    <l>Goblins, Pixies,</l>
+                    <l>Elves, and Trixies</l>
+                    <l>Obey his</l>
+                    <l>least command.</l>
+                    <l>From "A Midsummer Night's Dream."</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag16" ana="P">
+                <lg>
+                    <l>P</l>
+                    <l>PUCK</l>
+                    <l>Robin, or PUCK,</l>
+                    <l>it was his luck</l>
+                    <l>To save</l>
+                    <l>King Oberon.</l>
+                    <l>He knew each place</l>
+                    <l>and fairy face,</l>
+                    <l>And errands</l>
+                    <l>used to run.</l>
+                    <l>From "A Midsummer Night's Dream."</l>
+                </lg>
+            </div>
+            <pb facs="page_image14" n="14"/>
+            <div type="alpha-group" xml:id="ag17" ana="Q">
+                <lg>
+                    <l>QUEEN</l>
+                    <l>Q</l>
+                    <l>The fairest face</l>
+                    <l>in all the place</l>
+                    <l>To magic glass</l>
+                    <l>adhered.</l>
+                    <l>It used to be</l>
+                    <l>the QUEEN'S</l>
+                    <l>you'd see,</l>
+                    <l>Till Snowdrop's</l>
+                    <l>charms appeared.</l>
+                    <l>"The Magic Mirror."</l>
+                    <l>From "Grimm's Fairy Tales."</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag18" ana="R">
+                <lg>
+                    <l>R</l>
+                    <l>RUMPELSTILZKIN</l>
+                    <l>The Queen, unless</l>
+                    <l>his name</l>
+                    <l>could guess,</l>
+                    <l>Must give</l>
+                    <l>the dwarf her son/</l>
+                    <l>She overheard</l>
+                    <l>him sing the word,</l>
+                    <l>And saved</l>
+                    <l>her darling one.</l>
+                    <l>"Rumpelstilzkin."</l>
+                    <l>From "Grimm's Fairy Tales."</l>
+                </lg>
+            </div>
+            <pb facs="page_image15" n="15"/>
+            <div type="alpha-group" xml:id="ag19" ana="S">
+                <lg>
+                    <l>S</l>
+                    <l>SINBAD</l>
+                    <l>Now brave SINBAD</l>
+                    <l>adventures had,</l>
+                    <l>The strangest</l>
+                    <l>I ahve heard.</l>
+                    <l>Lost on the sea</l>
+                    <l>when he got free,</l>
+                    <l>Was caputred</l>
+                    <l>by a bird.</l>
+                    <l>"Sinbad the Sailor."</l>
+                    <l>From the "Arabian Nights."</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag20" ana="T">
+                <lg>
+                    <l>TOM THUMB</l>
+                    <l>T</l>
+                    <l>TOM THUMB</l>
+                    <l>was small,</l>
+                    <l>few inches tall,</l>
+                    <l>And though</l>
+                    <l>so very brave,</l>
+                    <l>A spider spun</l>
+                    <l>a web round Thumb,</l>
+                    <l>And sent him</l>
+                    <l>to his grave.</l>
+                    <l>"Tom Thumb."</l>
+                    <l>An old English Fairy Tale.</l>
+                </lg>
+            </div>
+            <pb facs="page_image16" n="16"/>
+            <div type="alpha-group" xml:id="ag21" ana="U">
+                <lg>
+                    <l>U</l>
+                    <l>UNDINE</l>
+                    <l>A water sprite</l>
+                    <l>a man one night</l>
+                    <l>Adopted for</l>
+                    <l>his daughter,</l>
+                    <l>But for her bed,</l>
+                    <l>she always said,</l>
+                    <l>she much preferred</l>
+                    <l>the water.</l>
+                    <l>"Undine."</l>
+                    <l>By De la Motte Fouqué</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag22" ana="V">
+                <lg>
+                    <l>V</l>
+                    <l>VASHKA</l>
+                    <l>Sturdy and strong</l>
+                    <l>he stalked along,</l>
+                    <l>And came</l>
+                    <l>upon a tree,</l>
+                    <l>Out of the ground</l>
+                    <l>he swung it round,</l>
+                    <l>So strong</l>
+                    <l>a man was he.</l>
+                    <l>"Vashka with the Bear's Ear."</l>
+                    <l>From Norwegian Fairy Tales.</l>
+                </lg>
+            </div>
+            <pb facs="page_image17" n="17"/>
+            <div type="alpha-group" xml:id="ag23" ana="W">
+                <lg>
+                    <l>W</l>
+                    <l>WONDERLING</l>
+                    <l>Three giants great,</l>
+                    <l>we must relate,</l>
+                    <l>A princess</l>
+                    <l>meant to wed,</l>
+                    <l>But WONDERLING</l>
+                    <l>came rescuing-</l>
+                    <l>They lost thier</l>
+                    <l>heads instead.</l>
+                    <l>"Wonderling and the Giants."</l>
+                    <l>From Norwegian Fairy Tales.</l>
+                </lg>
+            </div>
+            <div type="alpha-group" xml:id="ag24" ana="X">
+                <lg>
+                    <l>XYZ</l>
+                    <l>X Y Z</l>
+                    <l>Now X. Y. Z.</l>
+                    <l>just rhymes</l>
+                    <l>with bed,</l>
+                    <l>And may sleep</l>
+                    <l>bring to you</l>
+                    <l>The sweetest</l>
+                    <l>dreams,</l>
+                    <l>until it seems</l>
+                    <l>All fair tales</l>
+                    <l>come true.</l>
+                    <l>doris Pailthorpe</l>
+                </lg>
+                <pb facs="page_image18" n="18"/>
+                <pb facs="page_image19" n="19"/>
+                <pb facs="page_image20" n="20"/>
+            </div>
+        </body>
    </text>
 </TEI>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -131,36 +130,684 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
+         <div>
+            <ab><lb/>The <lb/>BANDIT BUNNY <lb/>ALPHABET <lb/>AND OTHER <lb/>STORIES </ab>
+         </div>
          <pb facs="page_image2" n="2"/>
+         <div>
+            <lg>
+               <l>Yes! Willy is the proudest boy</l>
+               <l>In juvenile creation;</l>
+               <l>For some one said Kriss Kingle was</l>
+               <l>A family relation.</l>
+            </lg>
+            <lg>
+               <l>But as Kriss Kingle turned to go</l>
+               <l>He heard a shout, as Willy</l>
+               <l>Cried "Much obliged!" and laughed to see</l>
+               <l>Kriss Kingle look so silly.</l>
+            </lg>
+            <lg>
+               <l>"Say, why not come and live with us?</l>
+               <l>I'd love to have you, dearly;</l>
+               <l>Then I'd have presents all the time</l>
+               <l>Instead of waiting yearly.</l>
+            </lg>
+            <lg>
+               <l>So Willy kept awake that night,</l>
+               <l>When all the rest were sleeping,</l>
+               <l>And saw Kriss Kingle in the room</l>
+               <l>Come slowly, softly creeping.</l>
+            </lg>
+            <lg>
+               <l>He filled the stockings to the top</l>
+               <l>With sweets and treasure splendid;</l>
+               <l>And Willy never made a sound,</l>
+               <l>But lay there and pretended.</l>
+            </lg>
+            <lg>
+               <l>"I'll trade my Papa off for you,</l>
+               <l>I know we'd all be suited.</l>
+               <l>What do you say?" What did he say</l>
+               <l>Why nothing - he just scooted.</l>
+            </lg>
+         </div>
          <pb facs="page_image3" n="3"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
+            <lg>
+               <l>A is adventure, and here is the scamp</l>
+               <l>Who was lively enough to be in it;</l>
+               <l>But - before he got thro', why, we leave it to you</l>
+               <l>If you think he did well to be in it?</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
+            <lg>
+               <l>B was the Bunny who made up his mind</l>
+               <l>That he'd be a ferocious young Bandit;</l>
+               <l>But when the horse neighed and he ran of afraid,</l>
+               <l>Why, he never could quite understand it.</l>
+            </lg>
+         </div>
          <pb facs="page_image4" n="4"/>
+         <div>
+            <head>AN ANCIENT BABY.</head>
+            <lg>
+               <l>O the man in the moon he is centuries old,</l>
+               <l>Yes - but once in the Long Ago - maybe,</l>
+               <l>He was littlem you know,</l>
+               <l>As a willow wisp glow;</l>
+               <l>Don't we have to get started before we can grow?</l>
+               <l>Ho ho -</l>
+               <l>Why certainly so,</l>
+               <l>To be sure he was one time a baby.</l>
+            </lg>
+         </div>
+         <div>
+            <head>A MEAN TRICK.</head>
+            <lg>
+               <l>Higgledy,piggledy, my fat hen</l>
+               <l>Gets disgusted now and then;</l>
+               <l>Our Johnny roused her temper grim,</l>
+               <l>She bides her time and lays for him.</l>
+            </lg>
+            <lg>
+               <l>He put some door knobs in her nest,</l>
+               <l>And though she did her level best,</l>
+               <l>Worked over time, grew thin and sick,</l>
+               <l>She couldn't raise a single chick.</l>
+            </lg>
+         </div>
          <pb facs="page_image5" n="5"/>
+         <div>
+            <lg>
+               <head>HOW HE DID IT.</head>
+               <l>When Ted and Dick related tales.</l>
+               <l>Each of the lively two</l>
+               <l>Tried, with amazing incident,</l>
+               <l>The other to outdo.</l>
+            </lg>
+            <lg>
+               <l>And so when Ted remarked to Dick</l>
+               <l>That "Once I ate a horse;"</l>
+               <l>The other laughed because he thought</l>
+               <l>It was a fib - of course.</l>
+            </lg>
+            <lg>
+               <l>"But it is true - I did indeed!"</l>
+               <l>Exclaimed the mighty Ted;</l>
+               <l>"For I ate body, legs and all,</l>
+               <l>The horse was gingerbread."</l>
+            </lg>
+         </div>
          <pb facs="page_image6" n="6"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
+            <lg>
+               <l>C was the Chick with a delicate coat,</l>
+               <l>Which the Bandit determined to plunder;</l>
+               <l>But alas! when the hen flew to peck him, why then</l>
+               <l>The young scamp ran away - and no wonder.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <lg>
+               <l>D was the Duck with her comical brood.</l>
+               <l>Said the scamp: "I will snatch me a couple."</l>
+               <l>But the mother said: "Quack!" and he turned in his track,</l>
+               <l>And his running was really supple.</l>
+            </lg>
+         </div>
          <pb facs="page_image7" n="7"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
+            <lg>
+               <l>E was an Eel on the edge of a pool.</l>
+               <l>"Ah!" the Bunny exclaimed,"see me grab it,"</l>
+               <l>But the Eel gave a splash - and the scamp made a dash,</l>
+               <l>Which by this time had grown to a habit.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <lg>
+               <l>F was a Frog all apparelled in green,</l>
+               <l>Which the Bandit decided just suited;</l>
+               <l>And he reached for that suit - but the Frog bellowed "Scoot!"</l>
+               <l>And the Bunny, I tell you, he scooted.</l>
+            </lg>
+         </div>
          <pb facs="page_image8" n="8"/>
+         <div>
+            <head>CHARLIE'S REASON</head>
+            <lg>
+               <l>O Charlie boy, O snarley boy,</l>
+               <l>Why don;t you comb your hair?</l>
+               <l>It looks as if a mouse or two</l>
+               <l>Had come to live a while with you</l>
+               <l>And start in business there.</l>
+            </lg>
+            <lg>
+               <l>O Charlie boy, O snarley boy,</l>
+               <l>Why don't you wash your face?</l>
+               <l>I think I'll dip you in a tub,</l>
+               <l>And use you for a mop to scrub</l>
+               <l>The floors about the place.</l>
+            </lg>
+            <lg>
+               <l>O Charlie boy, O snarley boy,</l>
+               <l>You must have ink for blood;</l>
+               <l>And Charley boy, he said,said he:</l>
+               <l>"I'm made of dust - The spots you see</l>
+               <l>Is where I've turned to mud."</l>
+            </lg>
+         </div>
+         <div>
+            <head>TWISTED</head>
+            <lg>
+               <l>Our Willy started out for school</l>
+               <l>One bright and sunny day,</l>
+               <l>But somehow felt himself inclined</l>
+               <l>To go the other way.</l>
+            </lg>
+            <lg>
+               <l>He couldn't say it was the sun,</l>
+               <l>The birds, the buds, the sky,</l>
+               <l>Which made him lag - not one of them</l>
+               <l>Explained the reason why.</l>
+            </lg>
+            <lg>
+               <l>'Til in a wink he understood</l>
+               <l>Right at the school-house door,</l>
+               <l>For he had put his trousers on,</l>
+               <l>Just think! - wrong side before.</l>
+            </lg>
+         </div>
          <pb facs="page_image9" n="9"/>
+         <div>
+            <head>A GREAT NURSE.</head>
+            <lg>
+               <l>If all the babies in the land</l>
+               <l>Were nursed by JOhnny's tender hand</l>
+               <l>They would be apt to smother;</l>
+               <l>You see, he didn;t like the side</l>
+               <l>With which his baby brother cried,</l>
+               <l>So he turned it to the other.</l>
+            </lg>
+         </div>
          <pb facs="page_image10" n="10"/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
+            <lg>
+               <l>G was a Goat with a bread on his chin,</l>
+               <l>Which the Bunny desired for a pillow;</l>
+               <l>But he gave up his plan - when the Goat dropped the can</l>
+               <l>And went after him - willow, oh, willow!</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>H was the Hound with he terrible face,</l>
+               <l>Just the thing that the Bunny was lacking;</l>
+               <l>But a look was enough at that countenance bluff,</l>
+               <l>And, as usual, off he went packing.</l>
+            </lg>
+         </div>
          <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
+            <lg>
+               <l>I was the Idler, the drone of the hive,</l>
+               <l>Which the Bunny saw lazily sunning,</l>
+               <l>And he grabbed the wee thing - at the end with a sting,</l>
+               <l>The I say - oh, I say - there was running.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>J is for Jay Bird, that quarrelsome rogue,</l>
+               <l>Which can send all the other bird kiting;</l>
+               <l>And it can't be denied, when the Bunny he spied,</l>
+               <l>That the scene which occured was exciting.</l>
+            </lg>
+         </div>
          <pb facs="page_image12" n="12"/>
+         <div>
+            <head>WHY HE LIKED IT.</head>
+            <l>Taffy was a rascal and Taffy's time was brief,</l>
+            <l>For Taffy came to my house and brought the folks to grief;</l>
+            <l>'Twas made of poor molasses and turned the children ill,</l>
+            <l>And yet the Doctor likes it - or you'd think so from his bill.</l>
+         </div>
+         <div>
+            <head>WHAT CURED HIM.</head>
+            <l>Sing a song of lazy, Johnny still in bed</l>
+            <l>Didn't want to go to school, He was sick, he said.</l>
+            <l>"Sorry," said his father, With a solemn frown,</l>
+            <l>"For, you see, this afternoon, The circus comes to town."</l>
+         </div>
          <pb facs="page_image13" n="13"/>
+         <div>
+            <l>O have you heard of Grimville,</l>
+            <l>A town as black as pitch,</l>
+            <l>Where children got so dark of face</l>
+            <l>That any mother in the place</l>
+            <l>Could not tell which was which?</l>
+            <l>And so, when Parents sought their chicks,</l>
+            <l>They'd sally forth alone</l>
+            <l>And wash each dirty little brood</l>
+            <l>Throughout that grimy neighborhood</l>
+            <l>Until they found their own.</l>
+         </div>
          <pb facs="page_image14" n="14"/>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
+            <lg>
+               <l>K is for kitten, that innocent thing,</l>
+               <l>And it raised up its paw to be funny;</l>
+               <l>And the little thing meant just a kindly intent,</l>
+               <l>But it didn't seem so to the Bunny.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>L is for Lamb - here at last was the chance,</l>
+               <l>And he chuckled to think of the meeting.</l>
+               <l>But oh me! and oh my! in the wink of an eye,</l>
+               <l>Why, the Bunny ran off at the bleating.</l>
+            </lg>
+         </div>
          <pb facs="page_image15" n="15"/>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
+            <lg>
+               <l>M was a mouse. "Now," he said, "I'll be brave;"</l>
+               <l>And you'd really think he would do it,</l>
+               <l>But his valor grew weak when the Mouse gave a squeak,</l>
+               <l>Then he ran - and there's nothing more to it.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <lg>
+               <l>N was for naughty, referring, of course,</l>
+               <l>To this terrible, terrible Bunny,</l>
+               <l>As he rapped at the cot of the turtle and got</l>
+               <l>A reproval instead of his money.</l>
+            </lg>
+         </div>
          <pb facs="page_image16" n="16"/>
+         <div>
+            <head>AT THE KINDERGARTEN</head>
+            <lg>
+               <l>A bran' new scholar came to school,</l>
+               <l>His age was half-past three;</l>
+               <l>And when his grinning nurse had left,</l>
+               <l>A sorry sight was he.</l>
+            </lg>
+            <lg>
+               <l>He filled the room from floor to ceil</l>
+               <l>With his unhappy wail,</l>
+               <l>And bawled away as if he thought</l>
+               <l>The school-room was a jail.</l>
+            </lg>
+            <lg>
+               <l>But presently, adown his cheeks</l>
+               <l>The tears forbore to chase,</l>
+               <l>And then he saw that Teacher had</l>
+               <l>A very kindly face.</l>
+            </lg>
+            <lg>
+               <l>And when a tiny, little smile</l>
+               <l>Two timid dimples met,</l>
+               <l>The Teacher asked the youngster if</l>
+               <l>He knew his alphabet.</l>
+            </lg>
+            <lg>
+               <l>"Of course," he said, and so, to put</l>
+               <l>The matter to the test,</l>
+               <l>She asked the lad what followed "A"</l>
+               <l>He answered: "All the rest."</l>
+            </lg>
+         </div>
          <pb facs="page_image17" n="17"/>
+         <div>
+            <head>WHAT MADE HIM GROW.</head>
+            <lg>
+               <l>"You dirty child, O me, O my!</l>
+               <l>I do believe, indeed,</l>
+               <l>That you would sprout to weeds if I</l>
+               <l>Should sprinkle you with seed."</l>
+            </lg>
+            <lg>
+               <l>"O tourse," exclaimed the tiny tot;</l>
+               <l>"Why, Papa, don't you know</l>
+               <l>Dat every fing on earf has dot</l>
+               <l>To have some dirt to drow?"</l>
+            </lg>
+         </div>
+         <div>
+            <head>JOHNNY.</head>
+            <lg>
+               <l>Sixty tumbles down the stairs,</l>
+               <l>Sixty bangs and bruises,</l>
+               <l>Sixty rips and sixty tears,</l>
+               <l>Sixty poor excuses.</l>
+            </lg>
+            <lg>
+               <l>Sixty bumps on head and shins,</l>
+               <l>Sixty carols bonny,</l>
+               <l>Sixty laughs and sixty grins;</l>
+               <l>That's our all-day Johnny.</l>
+            </lg>
+         </div>
          <pb facs="page_image18" n="18"/>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
+            <lg>
+               <l>O is for Owl; he's a homely old bird,</l>
+               <l>And one night, with it's terrible hooting,</l>
+               <l>As the Bunny came by - on his purposes sly - </l>
+               <l>Oh, I tell you, it sent him off scooting.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <lg>
+               <l>P was a Puppy, a frolicsome thing,</l>
+               <l>Which was tearing a dolly to tatters,</l>
+               <l>And it yelped in its glee, and the Bunny, why he</l>
+               <l>Went went away to attend other matters.</l>
+            </lg>
+         </div>
          <pb facs="page_image19" n="19"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head>
+            <lg>
+               <l>Q was for quick, and refers to the way</l>
+               <l>That the Bunny ran off in a minute,</l>
+               <l>As he labored his best to steal eggs from the nest</l>
+               <l>And he found that the Partridge was in it.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>R</head>
+            <lg>
+               <l>R was for Robin whose beautiful vest</l>
+               <l>The Bunny decided he needed;</l>
+               <l>But his effort was brief, for the Robin cried "Thief!"</l>
+               <l>And again into distance he speeded.</l>
+            </lg>
+         </div>
          <pb facs="page_image20" n="20"/>
+         <div>
+            <lg>
+               <head>HULLO THERE!</head>
+               <l>"Hullo, hullo, is Baby there?"</l>
+               <l>And Papa's ringing tone</l>
+               <l>Slipped in the infant's tiny ear</l>
+               <l>From out the telephone</l>
+               <l>And then, of all the things absurd!</l>
+               <l>That youngster to express</l>
+               <l>To waiting Papa that he heard</l>
+               <l>Why simply nodded "Yes."</l>
+               <l>Again that jovial "Hullo!"</l>
+               <l>Came speeding through the air;</l>
+               <l>"Hullo, I say, I want to know</l>
+               <l>If three-year-old is there."</l>
+               <l>Then with a look of grim surprise</l>
+               <l>That words cannot express,</l>
+               <l>He answered Papa's inquiries</l>
+               <l>Again by nodding: "Yes."</l>
+               <l>"Hullo, hullo! what's wrong up there?"</l>
+               <l>Cried the familiar tone;</l>
+               <l>And this time Baby stirred the air</l>
+               <l>Within the telephone.</l>
+               <l>"What's wrong wiv you?" he shrilly cried,</l>
+               <l>And shook his tiny hand,</l>
+               <l>"Dis is de fird time I has tried</l>
+               <l>To make you under'tand."</l>
+            </lg>
+         </div>
          <pb facs="page_image21" n="21"/>
+         <div>
+            <head>SELFISH.</head>
+            <lg>
+               <l>'Twas at an evening party</l>
+               <l>Of romping and delight,</l>
+               <l>And lass and lad</l>
+               <l>Bu this time had</l>
+               <l>A robust appetite.</l>
+               <l>Two maidens sat together,</l>
+               <l>Their glances on the dish</l>
+               <l>That came their way</l>
+               <l>With a display</l>
+               <l>Of all that heart could wish.</l>
+               <l>Two ripe and rosy apples</l>
+               <l>Charmed with their tempting hue,</l>
+               <l>When one wee tot</l>
+               <l>Reached forth and got</l>
+               <l>The larger of the two.</l>
+               <l>"You mean - you selfish creature."</l>
+               <l>Exclaimed the other elf,</l>
+               <l>"It's just too bad,</l>
+               <l>Because I had</l>
+               <l>Picked thatone for myself."</l>
+            </lg>
+         </div>
          <pb facs="page_image22" n="22"/>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>S</head>
+            <lg>
+               <l>S is for shame that a Bunny could be</l>
+               <l>So evilly-minded and lazy,</l>
+               <l>For a pair of Tomtits scared him out of his witsal dew from a daisy.</l>
+               <l>As he tried to ste</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>T</head>
+            <lg>
+               <l>T was a Turkey which laid a fine egg,</l>
+               <l>And the Bunny proceeded to grab it;</l>
+               <l>But the fowl gobbled "Nay!" and the scamp ran away</l>
+               <l>In his usual good-for-naught habit</l>
+            </lg>
+         </div>
          <pb facs="page_image23" n="23"/>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>U</head>
+            <lg>
+               <l>U is for ugly, for Bunny at last</l>
+               <l>Saw his face in the streamlet while drinking.</l>
+               <l>"Goodness gracious!" cried he, "Is that possibly me?"</l>
+               <l>And the terrible change set him thinking.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>V</head>
+            <lg>
+               <l>V is for vain. "Ah!" the Bunny exclaimed,</l>
+               <l>"For a rogue I was never intended."</l>
+               <l>And a Lark overheard trilled a giggle,and said</l>
+               <l>He was glad that the business was ended.</l>
+            </lg>
+         </div>
          <pb facs="page_image24" n="24"/>
+         <div>
+            <head>TOO LATE.</head>
+            <lg>
+               <l>"If I were you</l>
+               <l>I wouldn;t do</l>
+               <l>Such things" - cried Staid and Steady.</l>
+               <l>"Why, don't you see,</l>
+               <l>If you were me</l>
+               <l>It would be done already."</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+               <head>A GOOD IDEA.</head>
+               <l>When Sammy goes to bed at night</l>
+               <l>He thinks it isn't managed right,</l>
+               <l>And he is filled with sorrow;</l>
+               <l>For he believes the only way</l>
+               <l>To ease his aches - would be to play</l>
+               <l>From dusk until to-morrow.</l>
+            </lg>
+         </div>
          <pb facs="page_image25" n="25"/>
+         <div>
+            <lg>
+               <head>A FORCED PRAYER.</head>
+               <l>"'Now I lay me' - Mamma, I</l>
+               <l>Can't be sorry ef I try;</l>
+               <l>Willy kick't me twict to-day,</l>
+               <l>He's th' one that ought to pray.</l>
+               <l>"'Now I lay me down to' - say,</l>
+               <l>Wot you think he done to-day?</l>
+               <l>Jabbed a hole in Susie's ball</l>
+               <l>N' tored th' sawdust from her doll.</l>
+               <l>"Now I lay me down to sleep,'</l>
+               <l>I pray the Lord my soul to keep.</l>
+               <l>Ef' - Mamma, don't you think that he</l>
+               <l>Should git lick't fer kickin' me?</l>
+               <l>"Yes - I know, but 'Tisn't you</l>
+               <l>That's bin bunged all black 'n' blue;</l>
+               <l>Ef Pop 'u'd spank you - could you pray</l>
+               <l>'Now I lay me' -right away?"</l>
+            </lg>
+         </div>
          <pb facs="page_image26" n="26"/>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>W</head>
+            <lg>
+               <l>W anyone knows stands for wrong,</l>
+               <l>Which was Bunny's unhappy condition,</l>
+               <l>You could tell by his face that he felt disgrace,</l>
+               <l>And was sick of his wicked ambition.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>X</head>
+            <lg>
+               <l>X is the very last thing in perplex,</l>
+               <l>And the Bunny ws nearly distracted;</l>
+               <l>He'd been wicked so long that his thoughts were all wrong,</l>
+               <l>You could tell by the way that he acted.</l>
+            </lg>
+         </div>
          <pb facs="page_image27" n="27"/>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Y</head>
+            <lg>
+               <l>Y is a youth arrested the scamp</l>
+               <l>Before he could quite understand it,</l>
+               <l>For the quick little chap pulled the string of a trap,</l>
+               <l>And there was an end of the Bandit.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>Z is for Zoo where our Bandit was caged,</l>
+               <l>Which was anything other than funny;</l>
+               <l>So be wise my young friend, and consider the end</l>
+               <l>When inclined to bad like the Bunny.</l>
+            </lg>
+         </div>
          <pb facs="page_image28" n="28"/>
+         <div>
+            <lg>
+               <head>THE LIGHTENING EXPRESS.</head>
+               <l>"Toot, toot!" cried Willy, "all aboard,</l>
+               <l>First thing you know, if you don't mind,</l>
+               <l>You'll all be left away behind;</l>
+               <l>So will you be so very kind</l>
+               <l>And get aboard this minute."</l>
+               <l>The passengers, there were but two:</l>
+               <l>His blue-eyed sister Molly,</l>
+               <l>With Papa's monster carpet bag</l>
+               <l>Which she could scarcely move or drag,</l>
+               <l>And something rip and rent and rag</l>
+               <l>Which she addressed as "Dolly."</l>
+               <l>And off they go in merry mood,</l>
+               <l>And lips with laughter parted,</l>
+               <l>Across the valley of pretend</l>
+               <l>To make believe their journey's end</l>
+               <l>Where all the trains which thither tend</l>
+               <l>Arrive before they've started.</l>
+            </lg>
+         </div>
          <pb facs="page_image29" n="29"/>
+         <div>
+            <lg>
+               <head>A DISASTER.</head>
+               <l>O Little Boy Blue,</l>
+               <l>He is in a sad plight.</l>
+               <l>He was left in the rain for a day;</l>
+               <l>Then his berry-black eyes and his apple-red lips,</l>
+               <l>And his wonderfulcoat trickled off into drips;</l>
+               <l>Now, alas! he is a little Boy Gray.</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+               <head>PROOF.</head>
+               <l>"Now, Willy, if you go to sleep</l>
+               <l>I'll give you something nice;"</l>
+               <l>And Willy tried his very best</l>
+               <l>To follow the advice.</l>
+               <l>And when his mother sought his crib</l>
+               <l>And whispered in his ear:</l>
+               <l>"O Willy, are you sound asleep?"</l>
+               <l>He said - "Yes, Mamma dear."</l>
+            </lg>
+         </div>
          <pb facs="page_image30" n="30"/>
+         <div>
+            <lg>
+               <head>WHERE THEY ARE.</head>
+               <l>Little Bo Peep</l>
+               <l>Has no more sheep,</l>
+               <l>But she doesn't care a button,</l>
+               <l>For she sold them to</l>
+               <l>The Butcher, who</l>
+               <l>Sold them again for mutton.</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+               <head>WANTED TO HELP.</head>
+               <l>This youngster took a hammer</l>
+               <l>Into the woods,they say;</l>
+               <l>It worried him because he saw</l>
+               <l>A hungry squirrel gnaw and gnaw</l>
+               <l>A hickory nut all day.</l>
+            </lg>
+         </div>
          <pb facs="page_image31" n="31"/>
+         <div>
+            <lg>
+               <head>A BRAVE GIRL.</head>
+               <l>When Mary went to shoo the hen</l>
+               <l>Out of the garden spot</l>
+               <l>The hen said "Cluck!" and ducked her head,</l>
+               <l>And Mary turned about and fled</l>
+               <l>As fast as she could trot.</l>
+               <l>"Well, Mary, " asked her mother when</l>
+               <l>She noticed her dismay;</l>
+               <l>"Where is the hen?" And Marty said</l>
+               <l>"It's coming, Ma; I went ahead</l>
+               <l>To show the hen the way."</l>
+            </lg>
+         </div>
          <pb facs="page_image32" n="32"/>
       </body>
    </text>

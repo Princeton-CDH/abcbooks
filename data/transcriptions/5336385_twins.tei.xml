@@ -1,14 +1,580 @@
-<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title>A Digital Transcription of <bibl>The Twins' A B C</bibl></title></titleStmt><publicationStmt><publisher>Princeton University</publisher><pubPlace>Princeton, New Jersey</pubPlace><idno type="voyagerid">5336385</idno><idno type="abcbooksid">5336385-twins-abc</idno></publicationStmt><sourceDesc><bibl><title>The twins' A B C</title><lb/>Title: The twins' A B C / by Olga Morgan ; engraved and printed by Edmund
-                    Evans. <lb/>Author/Artist: Morgan, Olga. <lb/>Published/Created: London :
-                    Liberty &amp; Co., Ltd. : Lawrence &amp; Bullen, Ltd., 1904 <lb/>General: [58]
-                    p. : col. ill. ; 20 cm. <lb/>Notes: Illustration and verse for letter "B" of
-                    twins and books; for letter "Z" of twins and Zulus. <lb/>CTSN copy: Inscription
-                    on front free endpaper 'Gordon B. Guftill.' <lb/>Publication date supplied from
-                    British Library Catalogue to 1975. <lb/>CTSN copy: Spine restored. <lb/>Binding
-                    Note: Later olive green spine and pub. olive green color-printed pictorial bds.
-                    <lb/>Provenance: CTSN copy: Guftill, Gordon B., owner. <lb/>Subject(s): Alphabet
-                    books ; Twins -- Juvenile poetry ; Blacks -- Juvenile poetry ; Books and reading
-                    -- Juvenile poetry <lb/>Related name(s): Evans, Edmund, 1826-1905 <lb/>Other
-                    Title: Twins' ABC <lb/>Voyager Bib ID: 5336385 </bibl></sourceDesc></fileDesc></teiHeader><facsimile><surface xml:id="page_image1"><graphic ana="lowres" mimeType="jpg" url="00000001.jp2"/></surface><surface xml:id="page_image2"><graphic ana="lowres" mimeType="jpg" url="00000002.jp2"/></surface><surface xml:id="page_image3"><graphic ana="lowres" mimeType="jpg" url="00000003.jp2"/></surface><surface xml:id="page_image4"><graphic ana="lowres" mimeType="jpg" url="00000004.jp2"/></surface><surface xml:id="page_image5"><graphic ana="lowres" mimeType="jpg" url="00000005.jp2"/></surface><surface xml:id="page_image6"><graphic ana="lowres" mimeType="jpg" url="00000006.jp2"/></surface><surface xml:id="page_image7"><graphic ana="lowres" mimeType="jpg" url="00000007.jp2"/></surface><surface xml:id="page_image8"><graphic ana="lowres" mimeType="jpg" url="00000008.jp2"/></surface><surface xml:id="page_image9"><graphic ana="lowres" mimeType="jpg" url="00000009.jp2"/></surface><surface xml:id="page_image10"><graphic ana="lowres" mimeType="jpg" url="00000010.jp2"/></surface><surface xml:id="page_image11"><graphic ana="lowres" mimeType="jpg" url="00000011.jp2"/></surface><surface xml:id="page_image12"><graphic ana="lowres" mimeType="jpg" url="00000012.jp2"/></surface><surface xml:id="page_image13"><graphic ana="lowres" mimeType="jpg" url="00000013.jp2"/></surface><surface xml:id="page_image14"><graphic ana="lowres" mimeType="jpg" url="00000014.jp2"/></surface><surface xml:id="page_image15"><graphic ana="lowres" mimeType="jpg" url="00000015.jp2"/></surface><surface xml:id="page_image16"><graphic ana="lowres" mimeType="jpg" url="00000016.jp2"/></surface><surface xml:id="page_image17"><graphic ana="lowres" mimeType="jpg" url="00000017.jp2"/></surface><surface xml:id="page_image18"><graphic ana="lowres" mimeType="jpg" url="00000018.jp2"/></surface><surface xml:id="page_image19"><graphic ana="lowres" mimeType="jpg" url="00000019.jp2"/></surface><surface xml:id="page_image20"><graphic ana="lowres" mimeType="jpg" url="00000020.jp2"/></surface><surface xml:id="page_image21"><graphic ana="lowres" mimeType="jpg" url="00000021.jp2"/></surface><surface xml:id="page_image22"><graphic ana="lowres" mimeType="jpg" url="00000022.jp2"/></surface><surface xml:id="page_image23"><graphic ana="lowres" mimeType="jpg" url="00000023.jp2"/></surface><surface xml:id="page_image24"><graphic ana="lowres" mimeType="jpg" url="00000024.jp2"/></surface><surface xml:id="page_image25"><graphic ana="lowres" mimeType="jpg" url="00000025.jp2"/></surface><surface xml:id="page_image26"><graphic ana="lowres" mimeType="jpg" url="00000026.jp2"/></surface><surface xml:id="page_image27"><graphic ana="lowres" mimeType="jpg" url="00000027.jp2"/></surface><surface xml:id="page_image28"><graphic ana="lowres" mimeType="jpg" url="00000028.jp2"/></surface><surface xml:id="page_image29"><graphic ana="lowres" mimeType="jpg" url="00000029.jp2"/></surface><surface xml:id="page_image30"><graphic ana="lowres" mimeType="jpg" url="00000030.jp2"/></surface><surface xml:id="page_image31"><graphic ana="lowres" mimeType="jpg" url="00000031.jp2"/></surface><surface xml:id="page_image32"><graphic ana="lowres" mimeType="jpg" url="00000032.jp2"/></surface><surface xml:id="page_image33"><graphic ana="lowres" mimeType="jpg" url="00000033.jp2"/></surface><surface xml:id="page_image34"><graphic ana="lowres" mimeType="jpg" url="00000034.jp2"/></surface><surface xml:id="page_image35"><graphic ana="lowres" mimeType="jpg" url="00000035.jp2"/></surface><surface xml:id="page_image36"><graphic ana="lowres" mimeType="jpg" url="00000036.jp2"/></surface><surface xml:id="page_image37"><graphic ana="lowres" mimeType="jpg" url="00000037.jp2"/></surface><surface xml:id="page_image38"><graphic ana="lowres" mimeType="jpg" url="00000038.jp2"/></surface><surface xml:id="page_image39"><graphic ana="lowres" mimeType="jpg" url="00000039.jp2"/></surface><surface xml:id="page_image40"><graphic ana="lowres" mimeType="jpg" url="00000040.jp2"/></surface><surface xml:id="page_image41"><graphic ana="lowres" mimeType="jpg" url="00000041.jp2"/></surface><surface xml:id="page_image42"><graphic ana="lowres" mimeType="jpg" url="00000042.jp2"/></surface><surface xml:id="page_image43"><graphic ana="lowres" mimeType="jpg" url="00000043.jp2"/></surface><surface xml:id="page_image44"><graphic ana="lowres" mimeType="jpg" url="00000044.jp2"/></surface><surface xml:id="page_image45"><graphic ana="lowres" mimeType="jpg" url="00000045.jp2"/></surface><surface xml:id="page_image46"><graphic ana="lowres" mimeType="jpg" url="00000046.jp2"/></surface><surface xml:id="page_image47"><graphic ana="lowres" mimeType="jpg" url="00000047.jp2"/></surface><surface xml:id="page_image48"><graphic ana="lowres" mimeType="jpg" url="00000048.jp2"/></surface><surface xml:id="page_image49"><graphic ana="lowres" mimeType="jpg" url="00000049.jp2"/></surface><surface xml:id="page_image50"><graphic ana="lowres" mimeType="jpg" url="00000050.jp2"/></surface><surface xml:id="page_image51"><graphic ana="lowres" mimeType="jpg" url="00000051.jp2"/></surface><surface xml:id="page_image52"><graphic ana="lowres" mimeType="jpg" url="00000052.jp2"/></surface><surface xml:id="page_image53"><graphic ana="lowres" mimeType="jpg" url="00000053.jp2"/></surface><surface xml:id="page_image54"><graphic ana="lowres" mimeType="jpg" url="00000054.jp2"/></surface><surface xml:id="page_image55"><graphic ana="lowres" mimeType="jpg" url="00000055.jp2"/></surface><surface xml:id="page_image56"><graphic ana="lowres" mimeType="jpg" url="00000056.jp2"/></surface><surface xml:id="page_image57"><graphic ana="lowres" mimeType="jpg" url="00000057.jp2"/></surface><surface xml:id="page_image58"><graphic ana="lowres" mimeType="jpg" url="00000058.jp2"/></surface><surface xml:id="page_image59"><graphic ana="lowres" mimeType="jpg" url="00000059.jp2"/></surface><surface xml:id="page_image60"><graphic ana="lowres" mimeType="jpg" url="00000060.jp2"/></surface><surface xml:id="page_image61"><graphic ana="lowres" mimeType="jpg" url="00000061.jp2"/></surface><surface xml:id="page_image62"><graphic ana="lowres" mimeType="jpg" url="00000062.jp2"/></surface><surface xml:id="page_image63"><graphic ana="lowres" mimeType="jpg" url="00000063.jp2"/></surface><surface xml:id="page_image64"><graphic ana="lowres" mimeType="jpg" url="00000064.jp2"/></surface></facsimile><text><body><pb facs="page_image1" n="1"/><div><ab><lb/>THE TWINS <lb/>ABC </ab></div><pb facs="page_image2" n="2"/><pb facs="page_image3" n="3"/><pb facs="page_image4" n="4"/><pb facs="page_image5" n="5"/><div><ab><lb/>THE TWINS ABC <lb/>OLGA MORGAN <lb/>LONDON <lb/>LIBERTY &amp; CO., Ltd.
-                    <lb/>REGENT STREET, W. <lb/>LAWRENCE &amp; BULLEN. LTD <lb/>16 HENRIETTA STREET,
-                    W.C. </ab></div><pb facs="page_image6" n="6"/><pb facs="page_image7" n="7"/><pb facs="page_image8" n="8"/><div type="alpha-group" xml:id="ag1" ana="A"><lg><l>A is for Arthur And Annabel - they</l><l>Would like to eat Apples The whole of the day.</l></lg></div><pb facs="page_image9" n="9"/><pb facs="page_image10" n="10"/><div type="alpha-group" xml:id="ag2" ana="B"><lg><l>B's Bertie and Bella - You can't tell their looks,</l><l>Their faces are hidden Behind two big Books.</l></lg></div><pb facs="page_image11" n="11"/><pb facs="page_image12" n="12"/><div type="alpha-group" xml:id="ag3" ana="C"><lg><l>C stands for Cakes, Here are two of great size</l><l>To Conrad and Connie They come as a prize.</l></lg></div><pb facs="page_image13" n="13"/><pb facs="page_image14" n="14"/><div type="alpha-group" xml:id="ag4" ana="D"><lg><l>D is for something delightful— That's Dancing:</l><l>David and Dorothy Think it entrancing.</l></lg></div><pb facs="page_image15" n="15"/><pb facs="page_image16" n="16"/><div type="alpha-group" xml:id="ag5" ana="E"><lg><l>E s Ethel and Ernest,</l><l>Embracing with pride</l><l>Two large Easter Eggs— Now, whatever's inside?</l></lg></div><pb facs="page_image17" n="17"/><pb facs="page_image18" n="18"/><div type="alpha-group" xml:id="ag6" ana="F"><lg><l>F stands for Florence And Ferdinand, who</l><l>Think only of Finery— Foolish, these two.</l></lg></div><pb facs="page_image19" n="19"/><pb facs="page_image20" n="20"/><div type="alpha-group" xml:id="ag7" ana="G"><lg><l>G is for Gilbert And Gertrude, you see</l><l>Who never forget To say Grace before tea.</l></lg></div><pb facs="page_image21" n="21"/><pb facs="page_image22" n="22"/><div type="alpha-group" xml:id="ag8" ana="H"><lg><l>H. Horace and Helen Are Hiding—Mamma</l><l>Is terribly anxious To know where they are.</l></lg></div><pb facs="page_image23" n="23"/><pb facs="page_image24" n="24"/><div type="alpha-group" xml:id="ag9" ana="I"><lg><l>I's Ivy and Ivan - With paper and Ink</l><l>So very industrious - That's what I think</l></lg></div><pb facs="page_image25" n="25"/><pb facs="page_image26" n="26"/><div type="alpha-group" xml:id="ag10" ana="J"><lg><l>J's Johnnie and Judith Who laugh "Ha! Ha! Ha!"</l><l>At the Jokes that are made By their funny Papa.</l></lg></div><pb facs="page_image27" n="27"/><pb facs="page_image28" n="28"/><div type="alpha-group" xml:id="ag11" ana="K"><lg><l>K stands for Kenneth And Kate, who agree</l><l>To Kiss and be friends, As good children should be.</l></lg></div><pb facs="page_image29" n="29"/><pb facs="page_image30" n="30"/><div type="alpha-group" xml:id="ag12" ana="L"><lg><l>L's Leonard and Lucy, Who take a delight</l><l>In Learning their lessons From morning to night.</l></lg></div><pb facs="page_image31" n="31"/><pb facs="page_image32" n="32"/><div type="alpha-group" xml:id="ag13" ana="M"><lg><l>M is for Money Spread out on the floor.</l><l>Matthew and Millicent Have quite a store.</l></lg></div><pb facs="page_image33" n="33"/><pb facs="page_image34" n="34"/><div type="alpha-group" xml:id="ag14" ana="N"><lg><l>N is for Noise That they make on the drums,</l><l>Naughty Noel and Nancy, When anyone comes.</l></lg></div><pb facs="page_image35" n="35"/><pb facs="page_image36" n="36"/><div type="alpha-group" xml:id="ag15" ana="O"><lg><l>O's Olive and Oscar - Two travellers brave;</l><l>They love to be out On the blue Ocean wave.</l></lg></div><pb facs="page_image37" n="37"/><pb facs="page_image38" n="38"/><div type="alpha-group" xml:id="ag16" ana="P"><lg><l>P's Paul and Priscilla All grandly arrayed.</l><l>Their beautiful partings The barber has made.</l></lg></div><pb facs="page_image39" n="39"/><pb facs="page_image40" n="40"/><div type="alpha-group" xml:id="ag17" ana="Q"><lg><l>Q's Quentin And Queechy, who cry Hip! Hip! hurrah!</l><l>As the Queen passes by.</l></lg></div><pb facs="page_image41" n="41"/><pb facs="page_image42" n="42"/><div type="alpha-group" xml:id="ag18" ana="R"><lg><l>R's Ronald and Rosa, Who wish that the Rain</l><l>Would go right away To the Country of Spain.</l></lg></div><pb facs="page_image43" n="43"/><pb facs="page_image44" n="44"/><div type="alpha-group" xml:id="ag19" ana="S"><lg><l>S stands for School, Where, it's pleasant to state,</l><l>Selina and Septimus Never are late.</l></lg></div><pb facs="page_image45" n="45"/><pb facs="page_image46" n="46"/><div type="alpha-group" xml:id="ag20" ana="T"><lg><l>T is for Tiny And Timothy too,</l><l>Who play with their Toys As children should do.</l></lg></div><pb facs="page_image47" n="47"/><pb facs="page_image48" n="48"/><div type="alpha-group" xml:id="ag21" ana="U"><lg><l>U that is Uncle, Who comes to convey</l><l>Uriah and Ursula Out to the play.</l></lg></div><pb facs="page_image49" n="49"/><pb facs="page_image50" n="50"/><div type="alpha-group" xml:id="ag22" ana="V"><lg><l>V is for Visiting, Vivian and Vere,</l><l>Whose best Sunday clothes Are those you see here.</l></lg></div><pb facs="page_image51" n="51"/><pb facs="page_image52" n="52"/><div type="alpha-group" xml:id="ag23" ana="W"><lg><l>W's for Winnie, And Will - tired out,</l><l>The wind does not cease To blow them about.</l></lg></div><pb facs="page_image53" n="53"/><pb facs="page_image54" n="54"/><div type="alpha-group" xml:id="ag24" ana="X"><lg><l>X is for Extra. We're All on our knees.</l><l>We feel extra good, So look at us, please.</l></lg></div><pb facs="page_image55" n="55"/><pb facs="page_image56" n="56"/><div type="alpha-group" xml:id="ag25" ana="Y"><lg><l>Y is for Yorick and Yelva, who yawn</l><l>They are going to bed To sleep 'till the dawn.</l></lg></div><pb facs="page_image57" n="57"/><pb facs="page_image58" n="58"/><div type="alpha-group" xml:id="ag26" ana="Z"><lg><l>Z is Zabbub and Zoe, Who cry out—"Alack!</l><l>What a pity it is That the Zulus are black!"</l></lg></div><pb facs="page_image59" n="59"/><pb facs="page_image60" n="60"/><pb facs="page_image61" n="61"/><pb facs="page_image62" n="62"/><pb facs="page_image63" n="63"/><pb facs="page_image64" n="64"/></body><back><interpGrp type="subject"><interp xml:id="A">A</interp><interp xml:id="B">B</interp><interp xml:id="C">C</interp><interp xml:id="D">D</interp><interp xml:id="E">E</interp><interp xml:id="F">F</interp><interp xml:id="G">G</interp><interp xml:id="H">H</interp><interp xml:id="I">I</interp><interp xml:id="J">J</interp><interp xml:id="K">K</interp><interp xml:id="L">L</interp><interp xml:id="M">M</interp><interp xml:id="N">N</interp><interp xml:id="O">O</interp><interp xml:id="P">P</interp><interp xml:id="Q">Q</interp><interp xml:id="R">R</interp><interp xml:id="S">S</interp><interp xml:id="T">T</interp><interp xml:id="U">U</interp><interp xml:id="V">V</interp><interp xml:id="W">W</interp><interp xml:id="X">X</interp><interp xml:id="Y">Y</interp><interp xml:id="Z">Z</interp></interpGrp></back></text></TEI>
+<?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+                    <teiHeader>
+                                        <fileDesc>
+                                                  <titleStmt>
+                                                  <title>A Digital Transcription of <bibl>The Twins'
+                                                  A B C</bibl></title>
+                                                  </titleStmt>
+                                                  <publicationStmt>
+                                                  <publisher>Princeton University</publisher>
+                                                  <pubPlace>Princeton, New Jersey</pubPlace>
+                                                  <idno type="voyagerid">5336385</idno>
+                                                  <idno type="abcbooksid">5336385-twins-abc</idno>
+                                                  </publicationStmt>
+                                                  <sourceDesc>
+                                                  <bibl><title>The twins' A B C</title><lb/>Title:
+                                                  The twins' A B C / by Olga Morgan ; engraved and
+                                                  printed by Edmund Evans. <lb/>Author/Artist:
+                                                  Morgan, Olga. <lb/>Published/Created: London :
+                                                  Liberty &amp; Co., Ltd. : Lawrence &amp; Bullen,
+                                                  Ltd., 1904 <lb/>General: [58] p. : col. ill. ; 20
+                                                  cm. <lb/>Notes: Illustration and verse for letter
+                                                  "B" of twins and books; for letter "Z" of twins
+                                                  and Zulus. <lb/>CTSN copy: Inscription on front
+                                                  free endpaper 'Gordon B. Guftill.'
+                                                  <lb/>Publication date supplied from British
+                                                  Library Catalogue to 1975. <lb/>CTSN copy: Spine
+                                                  restored. <lb/>Binding Note: Later olive green
+                                                  spine and pub. olive green color-printed pictorial
+                                                  bds. <lb/>Provenance: CTSN copy: Guftill, Gordon
+                                                  B., owner. <lb/>Subject(s): Alphabet books ; Twins
+                                                  -- Juvenile poetry ; Blacks -- Juvenile poetry ;
+                                                  Books and reading -- Juvenile poetry <lb/>Related
+                                                  name(s): Evans, Edmund, 1826-1905 <lb/>Other
+                                                  Title: Twins' ABC <lb/>Voyager Bib ID: 5336385
+                                                  </bibl>
+                                                  </sourceDesc>
+                                        </fileDesc>
+                    </teiHeader>
+                    <facsimile>
+                                        <surface xml:id="page_image1">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000001.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image2">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000002.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image3">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000003.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image4">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000004.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image5">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000005.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image6">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000006.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image7">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000007.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image8">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000008.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image9">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000009.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image10">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000010.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image11">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000011.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image12">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000012.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image13">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000013.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image14">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000014.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image15">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000015.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image16">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000016.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image17">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000017.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image18">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000018.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image19">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000019.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image20">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000020.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image21">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000021.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image22">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000022.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image23">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000023.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image24">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000024.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image25">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000025.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image26">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000026.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image27">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000027.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image28">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000028.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image29">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000029.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image30">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000030.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image31">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000031.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image32">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000032.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image33">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000033.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image34">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000034.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image35">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000035.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image36">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000036.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image37">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000037.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image38">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000038.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image39">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000039.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image40">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000040.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image41">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000041.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image42">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000042.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image43">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000043.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image44">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000044.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image45">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000045.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image46">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000046.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image47">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000047.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image48">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000048.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image49">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000049.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image50">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000050.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image51">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000051.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image52">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000052.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image53">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000053.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image54">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000054.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image55">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000055.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image56">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000056.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image57">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000057.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image58">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000058.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image59">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000059.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image60">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000060.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image61">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000061.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image62">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000062.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image63">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000063.jp2"/>
+                                        </surface>
+                                        <surface xml:id="page_image64">
+                                                  <graphic ana="lowres" mimeType="jpg"
+                                                  url="00000064.jp2"/>
+                                        </surface>
+                    </facsimile>
+                    <text>
+                                        <body>
+                                                  <pb facs="page_image1" n="1"/>
+                                                  <div>
+                                                  <ab><lb/>THE TWINS <lb/>ABC </ab>
+                                                  </div>
+                                                  <pb facs="page_image2" n="2"/>
+                                                  <pb facs="page_image3" n="3"/>
+                                                  <pb facs="page_image4" n="4"/>
+                                                  <pb facs="page_image5" n="5"/>
+                                                  <div>
+                                                  <ab><lb/>THE TWINS ABC <lb/>OLGA MORGAN
+                                                  <lb/>LONDON <lb/>LIBERTY &amp; CO., Ltd.
+                                                  <lb/>REGENT STREET, W. <lb/>LAWRENCE &amp; BULLEN.
+                                                  LTD <lb/>16 HENRIETTA STREET, W.C. </ab>
+                                                  </div>
+                                                  <pb facs="page_image6" n="6"/>
+                                                  <pb facs="page_image7" n="7"/>
+                                                  <pb facs="page_image8" n="8"/>
+                                                  <div type="alpha-group" xml:id="ag1" ana="A">
+                                                  <lg>
+                                                  <l>A is for Arthur And Annabel - they</l>
+                                                  <l>Would like to eat Apples The whole of the
+                                                  day.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image9" n="9"/>
+                                                  <pb facs="page_image10" n="10"/>
+                                                  <div type="alpha-group" xml:id="ag2" ana="B">
+                                                  <lg>
+                                                  <l>B's Bertie and Bella - You can't tell their
+                                                  looks,</l>
+                                                  <l>Their faces are hidden Behind two big
+                                                  Books.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image11" n="11"/>
+                                                  <pb facs="page_image12" n="12"/>
+                                                  <div type="alpha-group" xml:id="ag3" ana="C">
+                                                  <lg>
+                                                  <l>C stands for Cakes, Here are two of great
+                                                  size</l>
+                                                  <l>To Conrad and Connie They come as a prize.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image13" n="13"/>
+                                                  <pb facs="page_image14" n="14"/>
+                                                  <div type="alpha-group" xml:id="ag4" ana="D">
+                                                  <lg>
+                                                  <l>D is for something delightful— That's
+                                                  Dancing:</l>
+                                                  <l>David and Dorothy Think it entrancing.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image15" n="15"/>
+                                                  <pb facs="page_image16" n="16"/>
+                                                  <div type="alpha-group" xml:id="ag5" ana="E">
+                                                  <lg>
+                                                  <l>E s Ethel and Ernest,</l>
+                                                  <l>Embracing with pride</l>
+                                                  <l>Two large Easter Eggs— Now, whatever's
+                                                  inside?</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image17" n="17"/>
+                                                  <pb facs="page_image18" n="18"/>
+                                                  <div type="alpha-group" xml:id="ag6" ana="F">
+                                                  <lg>
+                                                  <l>F stands for Florence And Ferdinand, who</l>
+                                                  <l>Think only of Finery— Foolish, these two.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image19" n="19"/>
+                                                  <pb facs="page_image20" n="20"/>
+                                                  <div type="alpha-group" xml:id="ag7" ana="G">
+                                                  <lg>
+                                                  <l>G is for Gilbert And Gertrude, you see</l>
+                                                  <l>Who never forget To say Grace before tea.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image21" n="21"/>
+                                                  <pb facs="page_image22" n="22"/>
+                                                  <div type="alpha-group" xml:id="ag8" ana="H">
+                                                  <lg>
+                                                  <l>H. Horace and Helen Are Hiding—Mamma</l>
+                                                  <l>Is terribly anxious To know where they are.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image23" n="23"/>
+                                                  <pb facs="page_image24" n="24"/>
+                                                  <div type="alpha-group" xml:id="ag9" ana="I">
+                                                  <lg>
+                                                  <l>I's Ivy and Ivan - With paper and Ink</l>
+                                                  <l>So very industrious - That's what I think</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image25" n="25"/>
+                                                  <pb facs="page_image26" n="26"/>
+                                                  <div type="alpha-group" xml:id="ag10" ana="J">
+                                                  <lg>
+                                                  <l>J's Johnnie and Judith Who laugh "Ha! Ha!
+                                                  Ha!"</l>
+                                                  <l>At the Jokes that are made By their funny
+                                                  Papa.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image27" n="27"/>
+                                                  <pb facs="page_image28" n="28"/>
+                                                  <div type="alpha-group" xml:id="ag11" ana="K">
+                                                  <lg>
+                                                  <l>K stands for Kenneth And Kate, who agree</l>
+                                                  <l>To Kiss and be friends, As good children should
+                                                  be.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image29" n="29"/>
+                                                  <pb facs="page_image30" n="30"/>
+                                                  <div type="alpha-group" xml:id="ag12" ana="L">
+                                                  <lg>
+                                                  <l>L's Leonard and Lucy, Who take a delight</l>
+                                                  <l>In Learning their lessons From morning to
+                                                  night.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image31" n="31"/>
+                                                  <pb facs="page_image32" n="32"/>
+                                                  <div type="alpha-group" xml:id="ag13" ana="M">
+                                                  <lg>
+                                                  <l>M is for Money Spread out on the floor.</l>
+                                                  <l>Matthew and Millicent Have quite a store.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image33" n="33"/>
+                                                  <pb facs="page_image34" n="34"/>
+                                                  <div type="alpha-group" xml:id="ag14" ana="N">
+                                                  <lg>
+                                                  <l>N is for Noise That they make on the drums,</l>
+                                                  <l>Naughty Noel and Nancy, When anyone comes.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image35" n="35"/>
+                                                  <pb facs="page_image36" n="36"/>
+                                                  <div type="alpha-group" xml:id="ag15" ana="O">
+                                                  <lg>
+                                                  <l>O's Olive and Oscar - Two travellers brave;</l>
+                                                  <l>They love to be out On the blue Ocean wave.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image37" n="37"/>
+                                                  <pb facs="page_image38" n="38"/>
+                                                  <div type="alpha-group" xml:id="ag16" ana="P">
+                                                  <lg>
+                                                  <l>P's Paul and Priscilla All grandly arrayed.</l>
+                                                  <l>Their beautiful partings The barber has
+                                                  made.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image39" n="39"/>
+                                                  <pb facs="page_image40" n="40"/>
+                                                  <div type="alpha-group" xml:id="ag17" ana="Q">
+                                                  <lg>
+                                                  <l>Q's Quentin And Queechy, who cry Hip! Hip!
+                                                  hurrah!</l>
+                                                  <l>As the Queen passes by.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image41" n="41"/>
+                                                  <pb facs="page_image42" n="42"/>
+                                                  <div type="alpha-group" xml:id="ag18" ana="R">
+                                                  <lg>
+                                                  <l>R's Ronald and Rosa, Who wish that the Rain</l>
+                                                  <l>Would go right away To the Country of
+                                                  Spain.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image43" n="43"/>
+                                                  <pb facs="page_image44" n="44"/>
+                                                  <div type="alpha-group" xml:id="ag19" ana="S">
+                                                  <lg>
+                                                  <l>S stands for School, Where, it's pleasant to
+                                                  state,</l>
+                                                  <l>Selina and Septimus Never are late.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image45" n="45"/>
+                                                  <pb facs="page_image46" n="46"/>
+                                                  <div type="alpha-group" xml:id="ag20" ana="T">
+                                                  <lg>
+                                                  <l>T is for Tiny And Timothy too,</l>
+                                                  <l>Who play with their Toys As children should
+                                                  do.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image47" n="47"/>
+                                                  <pb facs="page_image48" n="48"/>
+                                                  <div type="alpha-group" xml:id="ag21" ana="U">
+                                                  <lg>
+                                                  <l>U that is Uncle, Who comes to convey</l>
+                                                  <l>Uriah and Ursula Out to the play.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image49" n="49"/>
+                                                  <pb facs="page_image50" n="50"/>
+                                                  <div type="alpha-group" xml:id="ag22" ana="V">
+                                                  <lg>
+                                                  <l>V is for Visiting, Vivian and Vere,</l>
+                                                  <l>Whose best Sunday clothes Are those you see
+                                                  here.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image51" n="51"/>
+                                                  <pb facs="page_image52" n="52"/>
+                                                  <div type="alpha-group" xml:id="ag23" ana="W">
+                                                  <lg>
+                                                  <l>W's for Winnie, And Will - tired out,</l>
+                                                  <l>The wind does not cease To blow them about.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image53" n="53"/>
+                                                  <pb facs="page_image54" n="54"/>
+                                                  <div type="alpha-group" xml:id="ag24" ana="X">
+                                                  <lg>
+                                                  <l>X is for Extra. We're All on our knees.</l>
+                                                  <l>We feel extra good, So look at us, please.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image55" n="55"/>
+                                                  <pb facs="page_image56" n="56"/>
+                                                  <div type="alpha-group" xml:id="ag25" ana="Y">
+                                                  <lg>
+                                                  <l>Y is for Yorick and Yelva, who yawn</l>
+                                                  <l>They are going to bed To sleep 'till the
+                                                  dawn.</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image57" n="57"/>
+                                                  <pb facs="page_image58" n="58"/>
+                                                  <div type="alpha-group" xml:id="ag26" ana="Z">
+                                                  <lg>
+                                                  <l>Z is Zabbub and Zoe, Who cry out—"Alack!</l>
+                                                  <l>What a pity it is That the Zulus are
+                                                  black!"</l>
+                                                  </lg>
+                                                  </div>
+                                                  <pb facs="page_image59" n="59"/>
+                                                  <pb facs="page_image60" n="60"/>
+                                                  <pb facs="page_image61" n="61"/>
+                                                  <pb facs="page_image62" n="62"/>
+                                                  <pb facs="page_image63" n="63"/>
+                                                  <pb facs="page_image64" n="64"/>
+                                        </body>
+                                        <back>
+                                                  <interpGrp type="subject">
+                                                  <interp xml:id="A">A</interp>
+                                                  <interp xml:id="B">B</interp>
+                                                  <interp xml:id="C">C</interp>
+                                                  <interp xml:id="D">D</interp>
+                                                  <interp xml:id="E">E</interp>
+                                                  <interp xml:id="F">F</interp>
+                                                  <interp xml:id="G">G</interp>
+                                                  <interp xml:id="H">H</interp>
+                                                  <interp xml:id="I">I</interp>
+                                                  <interp xml:id="J">J</interp>
+                                                  <interp xml:id="K">K</interp>
+                                                  <interp xml:id="L">L</interp>
+                                                  <interp xml:id="M">M</interp>
+                                                  <interp xml:id="N">N</interp>
+                                                  <interp xml:id="O">O</interp>
+                                                  <interp xml:id="P">P</interp>
+                                                  <interp xml:id="Q">Q</interp>
+                                                  <interp xml:id="R">R</interp>
+                                                  <interp xml:id="S">S</interp>
+                                                  <interp xml:id="T">T</interp>
+                                                  <interp xml:id="U">U</interp>
+                                                  <interp xml:id="V">V</interp>
+                                                  <interp xml:id="W">W</interp>
+                                                  <interp xml:id="X">X</interp>
+                                                  <interp xml:id="Y">Y</interp>
+                                                  <interp xml:id="Z">Z</interp>
+                                                  </interpGrp>
+                                        </back>
+                    </text>
+</TEI>

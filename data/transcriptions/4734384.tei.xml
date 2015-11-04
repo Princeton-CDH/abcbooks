@@ -315,100 +315,231 @@
    </facsimile>
    <text>
       <body>
-         <pb facs="page_image1" n="1"/>
-         <pb facs="page_image2" n="2"/>
-         <pb facs="page_image3" n="3"/>
-         <pb facs="page_image4" n="4"/>
-         <pb facs="page_image5" n="5"/>
-         <pb facs="page_image6" n="6"/>
-         <pb facs="page_image7" n="7"/>
-         <pb facs="page_image8" n="8"/>
-         <pb facs="page_image9" n="9"/>
-         <pb facs="page_image10" n="10"/>
-         <pb facs="page_image11" n="11"/>
-         <pb facs="page_image12" n="12"/>
-         <pb facs="page_image13" n="13"/>
-         <pb facs="page_image14" n="14"/>
-         <pb facs="page_image15" n="15"/>
-         <pb facs="page_image16" n="16"/>
-         <pb facs="page_image17" n="17"/>
-         <pb facs="page_image18" n="18"/>
-         <pb facs="page_image19" n="19"/>
-         <pb facs="page_image20" n="20"/>
-         <pb facs="page_image21" n="21"/>
-         <pb facs="page_image22" n="22"/>
-         <pb facs="page_image23" n="23"/>
-         <pb facs="page_image24" n="24"/>
-         <pb facs="page_image25" n="25"/>
-         <pb facs="page_image26" n="26"/>
-         <pb facs="page_image27" n="27"/>
-         <pb facs="page_image28" n="28"/>
-         <pb facs="page_image29" n="29"/>
-         <pb facs="page_image30" n="30"/>
-         <pb facs="page_image31" n="31"/>
-         <pb facs="page_image32" n="32"/>
-         <pb facs="page_image33" n="33"/>
-         <pb facs="page_image34" n="34"/>
-         <pb facs="page_image35" n="35"/>
-         <pb facs="page_image36" n="36"/>
-         <pb facs="page_image37" n="37"/>
-         <pb facs="page_image38" n="38"/>
-         <pb facs="page_image39" n="39"/>
-         <pb facs="page_image40" n="40"/>
-         <pb facs="page_image41" n="41"/>
-         <pb facs="page_image42" n="42"/>
-         <pb facs="page_image43" n="43"/>
-         <pb facs="page_image44" n="44"/>
-         <pb facs="page_image45" n="45"/>
-         <pb facs="page_image46" n="46"/>
-         <pb facs="page_image47" n="47"/>
-         <pb facs="page_image48" n="48"/>
-         <pb facs="page_image49" n="49"/>
-         <pb facs="page_image50" n="50"/>
-         <pb facs="page_image51" n="51"/>
-         <pb facs="page_image52" n="52"/>
-         <pb facs="page_image53" n="53"/>
-         <pb facs="page_image54" n="54"/>
-         <pb facs="page_image55" n="55"/>
-         <pb facs="page_image56" n="56"/>
-         <pb facs="page_image57" n="57"/>
-         <pb facs="page_image58" n="58"/>
-         <pb facs="page_image59" n="59"/>
-         <pb facs="page_image60" n="60"/>
-         <pb facs="page_image61" n="61"/>
-         <pb facs="page_image62" n="62"/>
-         <pb facs="page_image63" n="63"/>
-         <pb facs="page_image64" n="64"/>
-         <pb facs="page_image65" n="65"/>
-         <pb facs="page_image66" n="66"/>
-         <pb facs="page_image67" n="67"/>
-         <pb facs="page_image68" n="68"/>
-         <pb facs="page_image69" n="69"/>
-         <pb facs="page_image70" n="70"/>
-         <pb facs="page_image71" n="71"/>
-         <pb facs="page_image72" n="72"/>
-         <pb facs="page_image73" n="73"/>
-         <pb facs="page_image74" n="74"/>
-         <pb facs="page_image75" n="75"/>
-         <pb facs="page_image76" n="76"/>
-         <pb facs="page_image77" n="77"/>
-         <pb facs="page_image78" n="78"/>
-         <pb facs="page_image79" n="79"/>
-         <pb facs="page_image80" n="80"/>
-         <pb facs="page_image81" n="81"/>
-         <pb facs="page_image82" n="82"/>
-         <pb facs="page_image83" n="83"/>
-         <pb facs="page_image84" n="84"/>
-         <pb facs="page_image85" n="85"/>
-         <pb facs="page_image86" n="86"/>
-         <pb facs="page_image87" n="87"/>
-         <pb facs="page_image88" n="88"/>
-         <pb facs="page_image89" n="89"/>
-         <pb facs="page_image90" n="90"/>
-         <pb facs="page_image91" n="91"/>
-         <pb facs="page_image92" n="92"/>
-         <pb facs="page_image93" n="93"/>
-         <pb facs="page_image94" n="94"/>
+         <pb n="1" facs="page_image1"/>
+         <div type="cover">
+            <ab><lb/>A BIZARRE COMPANY </ab>
+         </div>
+         <pb n="2" facs="page_image2"/>
+         <pb n="3" facs="page_image3"/>
+         <pb n="4" facs="page_image4"/>
+         <pb n="5" facs="page_image5"/>
+         <div>
+            <ab><lb/>A BIZARRE COMPANY <lb/>By G. M. C. FRY. <lb/>London: Simpkin, Marshall,
+               Hamilton, Kent &amp; Co., Ltd. </ab>
+         </div>
+         <pb n="6" facs="page_image6"/>
+         <div>
+            <ab><lb/>ROFFEY &amp;CLARK, <lb/>PRINTERS, <lb/>12, HIGH STREET, CROYDON. </ab>
+         </div>
+         <pb n="7" facs="page_image7"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
+            <ab><lb/>Agitated Aunts Alice and Ada and <lb/>an abominably agile adder are
+               <lb/>accidentally abreast ascending an <lb/>ancient archway at an Abbey. </ab>
+         </div>
+         <pb n="8" facs="page_image8"/>
+         <pb n="9" facs="page_image9"/>
+         <pb n="10" facs="page_image10"/>
+         <pb n="11" facs="page_image11"/>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
+            <ab><lb/>Bumptious Brother Bob blissfully <lb/>brags before bashful beauty; but
+               <lb/>bumble bees, buzzing by, banish <lb/>Brother Bob's boasted but brittle
+               <lb/>bravery—Brother Bob bolts bawling <lb/>behind bushes.</ab>
+         </div>
+         <pb n="12" facs="page_image12"/>
+         <pb n="13" facs="page_image13"/>
+         <pb n="14" facs="page_image14"/>
+         <pb n="15" facs="page_image15"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
+            <ab><lb/>Curious Cousin <lb/>Caroline climbs <lb/>cliffs comically. </ab>
+         </div>
+         <pb n="16" facs="page_image16"/>
+         <pb n="17" facs="page_image17"/>
+         <pb n="18" facs="page_image18"/>
+         <pb n="19" facs="page_image19"/>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <ab><lb/>Dainty Daisy dances delightfully. <lb/>Dear, droll, dumpy Dora's
+               <lb/>deportment denotes decorum. </ab>
+         </div>
+         <pb n="20" facs="page_image20"/>
+         <pb n="21" facs="page_image21"/>
+         <pb n="22" facs="page_image22"/>
+         <pb n="23" facs="page_image23"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
+            <ab><lb/>Eminently enterprising Ernest's <lb/>effective educational efforts
+               <lb/>enlighten eager enthusiasts <lb/>every evening. <lb/>Ernest encourages
+               emulation.</ab>
+         </div>
+         <pb n="24" facs="page_image24"/>
+         <pb n="25" facs="page_image25"/>
+         <pb n="26" facs="page_image26"/>
+         <pb n="27" facs="page_image27"/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <ab><lb/>Feeble Fanny's foolish <lb/>facile fainting fits frighten <lb/>friends
+               fearfully.</ab>
+         </div>
+         <pb n="28" facs="page_image28"/>
+         <pb n="29" facs="page_image29"/>
+         <pb n="30" facs="page_image30"/>
+         <pb n="31" facs="page_image31"/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
+            <ab><lb/>Genteelly garmented Grandma's <lb/>goloshes gyrate grotesquely.
+               <lb/>Gymnastical gambols gratify <lb/>Grandma.</ab>
+         </div>
+         <pb n="32" facs="page_image32"/>
+         <pb n="33" facs="page_image33"/>
+         <pb n="34" facs="page_image34"/>
+         <pb n="35" facs="page_image35"/>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <ab><lb/>Haughty Henery hates handing hot <lb/>hentrées — hor hindeed hanythink.
+               <lb/>He hobjects helping hanyone, <lb/>hexcep' hit happen han hoccasional
+               <lb/>Hearl.</ab>
+         </div>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
+            <ab><lb/>Irish Ida is incorrigibly idle, <lb/>incapable, indolent, impertinent
+               <lb/>—indeed impossible.</ab>
+         </div>
+         <pb n="36" facs="page_image36"/>
+         <pb n="37" facs="page_image37"/>
+         <pb n="38" facs="page_image38"/>
+         <pb n="39" facs="page_image39"/>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <ab><lb/>Jocose Jane jovially jumping. <lb/>Jane's jocularity's just juvenile
+               <lb/>jauntiness.</ab>
+         </div>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
+            <ab><lb/>Kate's knitting's knotted.</ab>
+         </div>
+         <pb n="40" facs="page_image40"/>
+         <pb n="41" facs="page_image41"/>
+         <pb n="42" facs="page_image42"/>
+         <pb n="43" facs="page_image43"/>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <ab><lb/>Literary Lucy lisping <lb/>lurid legendary lore.</ab>
+         </div>
+         <pb n="44" facs="page_image44"/>
+         <pb n="45" facs="page_image45"/>
+         <pb n="46" facs="page_image46"/>
+         <pb n="47" facs="page_image47"/>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
+            <ab><lb/>Mamma musing.</ab>
+         </div>
+         <pb n="48" facs="page_image48"/>
+         <pb n="49" facs="page_image49"/>
+         <pb n="50" facs="page_image50"/>
+         <pb n="51" facs="page_image51"/>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <ab><lb/>Nurse nursing nurselings. <lb/>Nurse's nice nephew, <lb/>Nathaniel Noggs'
+               new <lb/>nieces.</ab>
+         </div>
+         <pb n="52" facs="page_image52"/>
+         <pb n="53" facs="page_image53"/>
+         <pb n="54" facs="page_image54"/>
+         <pb n="55" facs="page_image55"/>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
+            <ab><lb/>Original old Oscar <lb/>opening oysters.</ab>
+         </div>
+         <pb n="56" facs="page_image56"/>
+         <pb n="57" facs="page_image57"/>
+         <pb n="58" facs="page_image58"/>
+         <pb n="59" facs="page_image59"/>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <ab><lb/>Papa plucking primroses.</ab>
+         </div>
+         <pb n="60" facs="page_image60"/>
+         <pb n="61" facs="page_image61"/>
+         <pb n="62" facs="page_image62"/>
+         <pb n="63" facs="page_image63"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head>
+            <ab><lb/>Queer Queenie quarrels quickly.</ab>
+         </div>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>R</head>
+            <ab><lb/>Reverend Rudolpho Riggs reciting. <lb/>(Rudolpho's relatives rather revile
+               <lb/>Rudolpho's recitations.)</ab>
+         </div>
+         <pb n="64" facs="page_image64"/>
+         <pb n="65" facs="page_image65"/>
+         <pb n="66" facs="page_image66"/>
+         <pb n="67" facs="page_image67"/>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>S</head>
+            <ab><lb/>Sister Sarah's so silly. <lb/>She supposes she's <lb/>seeing spooks!</ab>
+         </div>
+         <pb n="68" facs="page_image68"/>
+         <pb n="69" facs="page_image69"/>
+         <pb n="70" facs="page_image70"/>
+         <pb n="71" facs="page_image71"/>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>T</head>
+            <ab><lb/>Tired Timothy thinking.</ab>
+         </div>
+         <pb n="72" facs="page_image72"/>
+         <pb n="73" facs="page_image73"/>
+         <pb n="74" facs="page_image74"/>
+         <pb n="75" facs="page_image75"/>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>U</head>
+            <ab><lb/>Uncle Uriah <lb/>unfurls umbrellas <lb/>unconventionally.</ab>
+         </div>
+         <pb n="76" facs="page_image76"/>
+         <pb n="77" facs="page_image77"/>
+         <pb n="78" facs="page_image78"/>
+         <pb n="79" facs="page_image79"/>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>V</head>
+            <ab><lb/>Vain Vivian's <lb/>vibrating voice <lb/>vexes.</ab>
+         </div>
+         <pb n="80" facs="page_image80"/>
+         <pb n="81" facs="page_image81"/>
+         <pb n="82" facs="page_image82"/>
+         <pb n="83" facs="page_image83"/>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>W</head>
+            <ab><lb/>Why will Winnie, writhing with wild <lb/>whoops, wink wryly while working?
+               <lb/>Wearisome wilful Winnie! Whereas <lb/>William's wonderfully worthy:
+               <lb/>William works well, without <lb/>wandering, without wriggling—wise
+               <lb/>William!</ab>
+         </div>
+         <pb n="84" facs="page_image84"/>
+         <pb n="85" facs="page_image85"/>
+         <pb n="86" facs="page_image86"/>
+         <pb n="87" facs="page_image87"/>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>X</head>
+            <ab><lb/>Xenophon.</ab>
+         </div>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Y</head>
+            <ab><lb/>Yellow Yeller.</ab>
+         </div>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Z</head>
+            <ab><lb/>Zack.</ab>
+         </div>
+         <pb n="88" facs="page_image88"/>
+         <pb n="89" facs="page_image89"/>
+         <pb n="90" facs="page_image90"/>
+         <pb n="91" facs="page_image91"/>
+         <pb n="92" facs="page_image92"/>
+         <pb n="93" facs="page_image93"/>
+         <pb n="94" facs="page_image94"/>
       </body>
    </text>
 </TEI>

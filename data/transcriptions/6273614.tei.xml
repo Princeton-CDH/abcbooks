@@ -153,46 +153,245 @@
    </facsimile>
    <text>
       <body>
-         <pb facs="page_image1" n="1"/>
-         <pb facs="page_image2" n="2"/>
-         <pb facs="page_image3" n="3"/>
-         <pb facs="page_image4" n="4"/>
-         <pb facs="page_image5" n="5"/>
-         <pb facs="page_image6" n="6"/>
-         <pb facs="page_image7" n="7"/>
-         <pb facs="page_image8" n="8"/>
-         <pb facs="page_image9" n="9"/>
-         <pb facs="page_image10" n="10"/>
-         <pb facs="page_image11" n="11"/>
-         <pb facs="page_image12" n="12"/>
-         <pb facs="page_image13" n="13"/>
-         <pb facs="page_image14" n="14"/>
-         <pb facs="page_image15" n="15"/>
-         <pb facs="page_image16" n="16"/>
-         <pb facs="page_image17" n="17"/>
-         <pb facs="page_image18" n="18"/>
-         <pb facs="page_image19" n="19"/>
-         <pb facs="page_image20" n="20"/>
-         <pb facs="page_image21" n="21"/>
-         <pb facs="page_image22" n="22"/>
-         <pb facs="page_image23" n="23"/>
-         <pb facs="page_image24" n="24"/>
-         <pb facs="page_image25" n="25"/>
-         <pb facs="page_image26" n="26"/>
-         <pb facs="page_image27" n="27"/>
-         <pb facs="page_image28" n="28"/>
-         <pb facs="page_image29" n="29"/>
-         <pb facs="page_image30" n="30"/>
-         <pb facs="page_image31" n="31"/>
-         <pb facs="page_image32" n="32"/>
-         <pb facs="page_image33" n="33"/>
-         <pb facs="page_image34" n="34"/>
-         <pb facs="page_image35" n="35"/>
-         <pb facs="page_image36" n="36"/>
-         <pb facs="page_image37" n="37"/>
-         <pb facs="page_image38" n="38"/>
-         <pb facs="page_image39" n="39"/>
-         <pb facs="page_image40" n="40"/>
+         <div>
+            <pb n="cover" facs="page_image1"/>
+            <div type="cover">
+               <l>The</l>
+               <l>Modern</l>
+               <l>ABC</l>
+               <l>Book</l>
+               <l>By C.B. Falls</l>
+            </div>
+            <pb facs="page_image2" n="2"/>
+            <pb facs="page_image3" n="3"/>
+            <pb facs="page_image4" n="4"/>
+            <pb facs="page_image5" n="5"/>
+            <div type="title">
+               <lg>
+                  <l>The</l>
+                  <l>Modern</l>
+                  <l>ABC</l>
+                  <l>Book</l>
+               </lg>
+            </div>
+            <pb facs="page_image6" n="6"/>
+            <pb facs="page_image7" n="7"/>
+            <div type="title">
+               <lg>
+                  <l>The</l>
+                  <l>Modern</l>
+                  <l>ABC</l>
+                  <l>Book</l>
+                  <l>By C.B. Falls</l>
+                  <l>New York</l>
+                  <l>The John Day Company</l>
+                  <l>1930</l>
+               </lg>
+            </div>
+            <pb facs="page_image8" n="8"/>
+            <div type="copyright">
+               <lg>
+                  <l>Copyright 1930</l>
+                  <l>Cyt C.B. Falls</l>
+                  <l>Lithographed in the U.S.A.</l>
+                  <l>By the Jersey City Printing Co</l>
+               </lg>
+            </div>
+            <pb facs="page_image9" n="9"/>
+            <div type="dedication">
+               <lg>
+                  <l>To</l>
+                  <l>BJF.</l>
+               </lg>
+            </div>
+            <pb facs="page_image10" n="10"/>
+            <pb facs="page_image11" n="11"/>
+            <div type="alpha-group" xml:id="ag1" ana="A">
+               <lg>
+                  <l><c type="subject-letter">A</c> is for</l>
+                  <l>Airplane</l>
+               </lg>
+            </div>
+            <pb facs="page_image12" n="12"/>
+            <div type="alpha-group" xml:id="ag2" ana="B">
+               <lg>
+                  <l><c type="subject-letter">B</c> is for</l>
+                  <l>Battleship</l>
+               </lg>
+            </div>
+            <pb facs="page_image13" n="13"/>
+            <div type="alpha-group" xml:id="ag3" ana="C">
+               <lg>
+                  <l><c type="subject-letter">C</c> is for</l>
+                  <l>Crane</l>
+               </lg>
+            </div>
+            <pb facs="page_image14" n="14"/>
+            <div type="alpha-group" xml:id="ag4" ana="D">
+               <lg>
+                  <l><c type="subject-letter">D</c> is for</l>
+                  <l>Dam</l>
+               </lg>
+            </div>
+            <pb facs="page_image15" n="15"/>
+            <div type="alpha-group" xml:id="ag5" ana="E">
+               <lg>
+                  <l><c type="subject-letter">E</c> is for</l>
+                  <l>Electric Engine</l>
+               </lg>
+            </div>
+            <pb facs="page_image16" n="16"/>
+            <div type="alpha-group" xml:id="ag6" ana="F">
+               <lg>
+                  <l><c type="subject-letter">F</c> is for</l>
+                  <l>Fire Pumper</l>
+               </lg>
+            </div>
+            <pb facs="page_image17" n="17"/>
+            <div type="alpha-group" xml:id="ag7" ana="G">
+               <lg>
+                  <l><c type="subject-letter">G</c> is for</l>
+                  <l>Glider</l>
+               </lg>
+            </div>
+            <pb facs="page_image18" n="18"/>
+            <div type="alpha-group" xml:id="ag8" ana="H">
+               <lg>
+                  <l><c type="subject-letter">H</c> is for</l>
+                  <l>Harvester</l>
+               </lg>
+            </div>
+            <pb facs="page_image19" n="19"/>
+            <div type="alpha-group" xml:id="ag9" ana="I">
+               <lg>
+                  <l><c type="subject-letter">I</c> is for</l>
+                  <l>Irrigation</l>
+               </lg>
+            </div>
+            <pb facs="page_image20" n="20"/>
+            <div type="alpha-group" xml:id="ag10" ana="J">
+               <lg>
+                  <l><c type="subject-letter">J</c> is for</l>
+                  <l>Jazz</l>
+               </lg>
+            </div>
+            <pb facs="page_image21" n="21"/>
+            <div type="alpha-group" xml:id="ag11" ana="K">
+               <lg>
+                  <l><c type="subject-letter">K</c> is for</l>
+                  <l>Kodak</l>
+               </lg>
+            </div>
+            <pb facs="page_image22" n="22"/>
+            <div type="alpha-group" xml:id="ag12" ana="L">
+               <lg>
+                  <l><c type="subject-letter">L</c> is for</l>
+                  <l>Locomotive</l>
+               </lg>
+            </div>
+            <pb facs="page_image23" n="23"/>
+            <div type="alpha-group" xml:id="ag13" ana="M">
+               <lg>
+                  <l><c type="subject-letter">M</c> is for</l>
+                  <l>Motor Boat</l>
+               </lg>
+            </div>
+            <pb facs="page_image24" n="24"/>
+            <div type="alpha-group" xml:id="ag14" ana="N">
+               <lg>
+                  <l><c type="subject-letter">N</c> is for</l>
+                  <l>Newspaper</l>
+               </lg>
+            </div>
+            <pb facs="page_image25" n="25"/>
+            <div type="alpha-group" xml:id="ag15" ana="O">
+               <lg>
+                  <l><c type="subject-letter">O</c> is for</l>
+                  <l>Oil Well</l>
+               </lg>
+            </div>
+            <pb facs="page_image26" n="26"/>
+            <div type="alpha-group" xml:id="ag16" ana="P">
+               <lg>
+                  <l><c type="subject-letter">P</c> is for</l>
+                  <l>Parachute</l>
+               </lg>
+            </div>
+            <pb facs="page_image27" n="27"/>
+            <div type="alpha-group" xml:id="ag17" ana="Q">
+               <lg>
+                  <l><c type="subject-letter">Q</c> is for</l>
+                  <l>Quarry</l>
+               </lg>
+            </div>
+            <pb facs="page_image28" n="28"/>
+            <div type="alpha-group" xml:id="ag18" ana="R">
+               <lg>
+                  <l><c type="subject-letter">R</c> is for</l>
+                  <l>Radio</l>
+               </lg>
+            </div>
+            <pb facs="page_image29" n="29"/>
+            <div type="alpha-group" xml:id="ag19" ana="S">
+               <lg>
+                  <l><c type="subject-letter">S</c> is for</l>
+                  <l>Skyscraper</l>
+               </lg>
+            </div>
+            <pb facs="page_image30" n="30"/>
+            <div type="alpha-group" xml:id="ag20" ana="T">
+               <lg>
+                  <l><c type="subject-letter">T</c> is for</l>
+                  <l>Tractor</l>
+               </lg>
+            </div>
+            <pb facs="page_image31" n="31"/>
+            <div type="alpha-group" xml:id="ag21" ana="U">
+               <lg>
+                  <l><c type="subject-letter">U</c> is for</l>
+                  <l>U-Boat</l>
+               </lg>
+            </div>
+            <pb facs="page_image32" n="32"/>
+            <div type="alpha-group" xml:id="ag22" ana="V">
+               <lg>
+                  <l><c type="subject-letter">V</c> is for</l>
+                  <l>Van</l>
+               </lg>
+            </div>
+            <pb facs="page_image33" n="33"/>
+            <div type="alpha-group" xml:id="ag23" ana="W">
+               <lg>
+                  <l><c type="subject-letter">W</c> is for</l>
+                  <l>Water Tank</l>
+               </lg>
+            </div>
+            <pb facs="page_image34" n="34"/>
+            <div type="alpha-group" xml:id="ag24" ana="X">
+               <lg>
+                  <l><c type="subject-letter">X</c> is for</l>
+                  <l>X-Raye</l>
+               </lg>
+            </div>
+            <pb facs="page_image35" n="35"/>
+            <div type="alpha-group" xml:id="ag25" ana="Y">
+               <lg>
+                  <l><c type="subject-letter">Y</c> is for</l>
+                  <l>Yacht</l>
+               </lg>
+            </div>
+            <pb facs="page_image36" n="36"/>
+            <div type="alpha-group" xml:id="ag26" ana="Z">
+               <lg>
+                  <l><c type="subject-letter">Z</c> is for</l>
+                  <l>Zeppelin</l>
+               </lg>
+            </div>
+            <pb facs="page_image37" n="37"/>
+            <pb facs="page_image38" n="38"/>
+            <pb facs="page_image39" n="39"/>
+            <pb facs="page_image40" n="40"/>
+         </div>
       </body>
    </text>
 </TEI>

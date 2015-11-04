@@ -248,79 +248,369 @@
       </surface>
    </facsimile>
    <text>
-      <body>
-         <pb facs="page_image1" n="1"/>
-         <pb facs="page_image2" n="2"/>
-         <pb facs="page_image3" n="3"/>
-         <pb facs="page_image4" n="4"/>
-         <pb facs="page_image5" n="5"/>
-         <pb facs="page_image6" n="6"/>
-         <pb facs="page_image7" n="7"/>
-         <pb facs="page_image8" n="8"/>
-         <pb facs="page_image9" n="9"/>
-         <pb facs="page_image10" n="10"/>
-         <pb facs="page_image11" n="11"/>
-         <pb facs="page_image12" n="12"/>
-         <pb facs="page_image13" n="13"/>
-         <pb facs="page_image14" n="14"/>
-         <pb facs="page_image15" n="15"/>
-         <pb facs="page_image16" n="16"/>
-         <pb facs="page_image17" n="17"/>
-         <pb facs="page_image18" n="18"/>
-         <pb facs="page_image19" n="19"/>
-         <pb facs="page_image20" n="20"/>
-         <pb facs="page_image21" n="21"/>
-         <pb facs="page_image22" n="22"/>
-         <pb facs="page_image23" n="23"/>
-         <pb facs="page_image24" n="24"/>
-         <pb facs="page_image25" n="25"/>
-         <pb facs="page_image26" n="26"/>
-         <pb facs="page_image27" n="27"/>
-         <pb facs="page_image28" n="28"/>
-         <pb facs="page_image29" n="29"/>
-         <pb facs="page_image30" n="30"/>
-         <pb facs="page_image31" n="31"/>
-         <pb facs="page_image32" n="32"/>
-         <pb facs="page_image33" n="33"/>
-         <pb facs="page_image34" n="34"/>
-         <pb facs="page_image35" n="35"/>
-         <pb facs="page_image36" n="36"/>
-         <pb facs="page_image37" n="37"/>
-         <pb facs="page_image38" n="38"/>
-         <pb facs="page_image39" n="39"/>
-         <pb facs="page_image40" n="40"/>
-         <pb facs="page_image41" n="41"/>
-         <pb facs="page_image42" n="42"/>
-         <pb facs="page_image43" n="43"/>
-         <pb facs="page_image44" n="44"/>
-         <pb facs="page_image45" n="45"/>
-         <pb facs="page_image46" n="46"/>
-         <pb facs="page_image47" n="47"/>
-         <pb facs="page_image48" n="48"/>
-         <pb facs="page_image49" n="49"/>
-         <pb facs="page_image50" n="50"/>
-         <pb facs="page_image51" n="51"/>
-         <pb facs="page_image52" n="52"/>
-         <pb facs="page_image53" n="53"/>
-         <pb facs="page_image54" n="54"/>
-         <pb facs="page_image55" n="55"/>
-         <pb facs="page_image56" n="56"/>
-         <pb facs="page_image57" n="57"/>
-         <pb facs="page_image58" n="58"/>
-         <pb facs="page_image59" n="59"/>
-         <pb facs="page_image60" n="60"/>
-         <pb facs="page_image61" n="61"/>
-         <pb facs="page_image62" n="62"/>
-         <pb facs="page_image63" n="63"/>
-         <pb facs="page_image64" n="64"/>
-         <pb facs="page_image65" n="65"/>
-         <pb facs="page_image66" n="66"/>
-         <pb facs="page_image67" n="67"/>
-         <pb facs="page_image68" n="68"/>
-         <pb facs="page_image69" n="69"/>
-         <pb facs="page_image70" n="70"/>
-         <pb facs="page_image71" n="71"/>
-         <pb facs="page_image72" n="72"/>
-      </body>
+      <front>
+      <pb facs="page_image1" n="1"/>
+      <ab>An Alphabet for <lb/> Boys and Girls<lb/> Rachel Field</ab>
+      <pb facs="page_image2" type="innerfrontcover"/>
+      <note>
+        <ab>An Alphabet for Boys and Girls<lb/>lb&gt;Price, net, $1.00</ab>
+        <p>In this attractive book there is a picture for every letter of the alphabet. Each letter
+          being the name of a child; each child is shown in the picture and described in the
+          accompanying rhyme. Under "L," for instance, there is a picture of a small boy turning a
+          hand organ with a monkey beside him: <lg><l>Luigi's father is so kind</l><l>He often lets
+              Luigi grind,</l><l>Or pass the monkey's cup of tin</l><l>And count the pennies that
+              fall in</l></lg></p>
+      </note>
+      <pb facs="page_image3" type="signature"/>
+      <note>Bertha E. Mahony</note>
+      <pb facs="page_image4" n="4"/>
+      <pb facs="page_image5" n="5"/>
+      <note>1st Edition with 2 orig drawings by Rachel Field presented to BMM $2500.</note>
+      <pb facs="page_image6" n="6"/>
+      <note>Ex Libris <lb/>Bertha Mahony Miller <lb/> 1882-1969</note>
+      <pb facs="page_image7" n="7"/>
+      <note>An Alphabet</note>
+      <pb facs="page_image8" n="8"/>
+      <pb facs="page_image9" n="9"/>
+      <titlePage>
+        <docTitle>
+          <titlePart>AN ALPHABET FOR BOYS AND GIRLS</titlePart>
+        </docTitle>
+        <docAuthor>RACHEL FIELD</docAuthor>
+        <docImprint>
+          <pubPlace>Garden City New York</pubPlace>
+          <publisher>Doubleday, Page &amp; Company</publisher>
+          <date>1926</date>
+        </docImprint>
+      </titlePage>
+      <pb facs="page_image10" n="10"/>
+      <div type="copyright">
+        <bibl>COPYRIGHT, <date>1926, </date>BY <publisher>DOUBLEDAY, PAGE &amp; COMPANY.
+          </publisher> ALL RIGHTS RESERVED. PRINTED IN THE UNITED STATES AT THE COUNTRY LIFE PRESS,
+          GARDEN CITY, N.Y. <lb/> FIRST EDITION</bibl>
+      </div>
+      <pb facs="page_image11" n="11"/>
+      <div>
+        <ab>An Alphabet</ab>
+      </div>
+    </front>
+    <body>
+      <pb facs="page_image12" n="12"/>
+      <div>
+        <head>A<lb/>IS FOR<lb/>ANN</head>
+        <lg>
+          <l>ANN is the clever child who can</l>
+          <l>Make pancakes fry in a frying <lb/> pan.</l>
+          <l>Yet she's not proud as I should <lb/>be</l>
+          <l>If I were such a cook as she!</l>
+        </lg>
+      </div>
+      <pb facs="page_image13" n="13"/>
+      <!--
+	<figure>
+	  <head>A</head>
+	  <figDesc>A girl holding a frying pan whose contents are on
+	  fire and dripping fro the pan.</figDesc>
+	</figure>
+      -->
+      <pb facs="page_image14" n="14"/>
+      <div>
+        <head>B<lb/>IS FOR<lb/>BILLY</head>
+        <lg>
+          <l>BILLY can never make up his<lb/>mind</l>
+          <l>Whether he wants to be</l>
+          <l>A Circus Clown in the sawdust<lb/>ring</l>
+          <l>Or a Pirate on the Sea!</l>
+        </lg>
+        <pb facs="page_image15" n="15"/>
+        <!--
+	<figure>
+	  <head>B</head> <figDesc>A bare-footed boy with a polka-dot
+	  scarf holding a sword.  He looks a a poster of a clown
+	  containing the words "CIRCUS PARADE" At his feet
+	  is an open book.</figDesc>
+	</figure>
+	-->
+      </div>
+      <pb facs="page_image16" n="16"/>
+      <div>
+        <head>C<lb/>IS FOR<lb/>CHARLOTTE</head>
+        <lg>
+          <l>THE luckiest child I know is<lb/>Charlotte—</l>
+          <l>Her Mother dresses her in<lb/>scarlet.</l>
+        </lg>
+        <pb facs="page_image17" n="17"/>
+        <!--
+	<figure>
+	  <head>C</head>
+	  <figDesc>A girl in a scarlet coat and hat holding a green balloon.</figDesc>
+	</figure>
+ -->
+      </div>
+      <pb facs="page_image18" n="18"/>
+      <div>
+        <head>D<lb/>IS FOR<lb/>DAN</head>
+        <lg>
+          <l>OH, a brown legged Gypsy Boy<lb/>is Dan.</l>
+          <l>He rides in a white-topped<lb/>Caravan.</l>
+          <l>He can't tell his letters which<lb/>from which,</l>
+          <l>But he can turn handsprings<lb/>in any ditch!</l>
+        </lg>
+        <pb facs="page_image19" n="19"/>
+        <ab>D</ab>
+      </div>
+      <pb facs="page_image20" n="20"/>
+      <div>
+        <head>E<lb/>IS FOR<lb/>ELIZA</head>
+        <lg>
+          <l>A SOLEMN child is small Eliza;</l>
+          <l>Each day she grows a little<lb/>wiser</l>
+        </lg>
+        <pb facs="page_image21" n="21"/>
+        <ab>E</ab>
+      </div>
+      <pb facs="page_image22" n="22"/>
+      <div>
+        <head>F<lb/>IS FOR<lb/>FERDINAND</head>
+        <lg>
+          <l>GREEDY little Ferdinand</l>
+          <l>Has ice-cream comes in either<lb/>hand.</l>
+        </lg>
+        <pb facs="page_image23" n="23"/>
+        <ab>F</ab>
+      </div>
+      <pb facs="page_image24" n="24"/>
+      <div>
+        <head>G<lb/>IS FOR<lb/>GRACE</head>
+        <lg>
+          <l>GRACE can dance upon her<lb/>toes.</l>
+          <l>How she learned to no one<lb/>knows.</l>
+          <l>Maybe friendly Brownies<lb/>taught her.</l>
+          <l>Or the Kind of Elfland's<lb/>daughter!</l>
+        </lg>
+        <pb facs="page_image25" n="25"/>
+        <ab>G</ab>
+      </div>
+      <pb facs="page_image26" n="26"/>
+      <div>
+        <head>H<lb/>IS FOR<lb/>HENRY</head>
+        <lg>
+          <l>HENRY and his puppy share</l>
+          <l>This gay quilt, the lucky pair!</l>
+        </lg>
+        <pb facs="page_image27" n="27"/>
+        <ab>H</ab>
+      </div>
+      <pb facs="page_image28" n="28"/>
+      <div>
+        <head>I<lb/>IS FOR<lb/>ISABEL</head>
+        <lg>
+          <l>ISABEL could sew and sing;</l>
+          <l>She could do most everything</l>
+          <l>Excepr just this, poor Isabel</l>
+          <l>Never <hi rend="italic">could</hi> learn how to spell.</l>
+        </lg>
+        <pb facs="page_image29" n="29"/>
+        <ab>I</ab>
+      </div>
+      <pb facs="page_image30" n="30"/>
+      <div>
+        <head>J<lb/>IS FOR<lb/>JIM</head>
+        <lg>
+          <l>JIM!Jim!</l>
+          <l>Come out and swim.</l>
+          <l>Fill your pail up</l>
+          <l>To the brim.</l>
+          <l>Roll in sand</l>
+          <l>And splash in sea</l>
+          <l>From breakfast till</l>
+          <l>It's time for tea!</l>
+        </lg>
+      </div>
+      <pb facs="page_image31" n="31"/>
+      <pb facs="page_image32" n="32"/>
+      <div>
+        <head>K<lb/>IS FOR<lb/>KITTY</head>
+        <lg>
+          <l>ALL dress in apple green<lb/>goes Kitty,</l>
+          <l>A-walking up and down the<lb/>City.</l>
+        </lg>
+      </div>
+      <pb facs="page_image33" n="33"/>
+      <pb facs="page_image34" n="34"/>
+      <div>
+        <head>L<lb/>IS FOR<lb/>LUIGI</head>
+        <lg>
+          <l>LUIGI'S father is so kind:</l>
+          <l>He often lets Luigu grind,</l>
+          <l>Or pass the monkey's cup of<lb/>tin</l>
+          <l>And count the pennies that<lb/>come in</l>
+        </lg>
+      </div>
+      <pb facs="page_image35" n="35"/>
+      <pb facs="page_image36" n="36"/>
+      <div>
+        <head>M<lb/>IS FOR<lb/>MAY</head>
+        <lg>
+          <l>OH, MAY'S the sweetest month<lb/>of Spring</l>
+          <l>With flowers to bloom and<lb/>birds to sing;</l>
+          <l>But Molly, Meg, and Marjorie</l>
+          <l>Are sweeter far to hear and<lb/>see,</l>
+          <l>Playing on the flower-strewn<lb/>green</l>
+          <l>Each in turn a May Day<lb/>Queen.</l>
+        </lg>
+      </div>
+      <pb facs="page_image37" n="37"/>
+      <pb facs="page_image38" n="38"/>
+      <div>
+        <head>N<lb/>IS FOR<lb/>NED</head>
+        <lg>
+          <l>BATH is over; prayers are<lb/>said</l>
+          <l>Ned is on his way to bed!</l>
+        </lg>
+      </div>
+      <pb facs="page_image39" n="39"/>
+      <pb facs="page_image40" n="40"/>
+      <div>
+        <head>O<lb/>IS FOR<lb/>OLIVE</head>
+        <lg>
+          <l>OLIVE dust the parlor;</l>
+          <l>Olive sweep the floor;</l>
+          <l>Brush away the cobwebs</l>
+          <l>Behind the pantry door!</l>
+        </lg>
+      </div>
+      <pb facs="page_image41" n="41"/>
+      <pb facs="page_image42" n="42"/>
+      <div>
+        <head>P<lb/>IS FOR<lb/>PETER PAN</head>
+        <lg>
+          <l>OH, PETER PAN was the boy<lb/>who could</l>
+          <l>Play on his pipe in a leafy<lb/>wood.</l>
+          <l>Beasts and Bunnies brown<lb/>crept near him,</l>
+          <l>And all the birds grew still to<lb/>hear him.</l>
+        </lg>
+      </div>
+      <pb facs="page_image43" n="43"/>
+      <pb facs="page_image44" n="44"/>
+      <div>
+        <head>Q<lb/>IS FOR<lb/>QUAKER</head>
+        <lg>
+          <l>THIS Quaker child of Quality</l>
+          <l>Lived in another century,</l>
+          <l>Dressed all in gray with ker-<lb/>chief neat,</l>
+          <l>She trod Nantucket's long<lb/>Main street;</l>
+          <l>Climbed to the roof walk;<lb/>heard the din</l>
+          <l>Of square-rigged whalers sail-<lb/>ing in.</l>
+        </lg>
+      </div>
+      <pb facs="page_image45" n="45"/>
+      <pb facs="page_image46" n="46"/>
+      <div>
+        <head>R<lb/>IS FOR<lb/>ROGER</head>
+        <lg>
+          <l>NEARLY always, Roger goes</l>
+          <l>Slipping, sliding on his toes,</l>
+          <l>Over ice and cobblestones.</l>
+          <l>People tremble for his bones!</l>
+        </lg>
+      </div>
+      <pb facs="page_image47" n="47"/>
+      <pb facs="page_image48" n="48"/>
+      <div>
+        <head>S<lb/>IS FOR<lb/>SOPHIA</head>
+        <lg>
+          <l>SOPHIA'S picking raspberries;</l>
+          <l>Her basket's green and new;</l>
+          <l>The raspberries are crimson,</l>
+          <l>Her hands and lips are too!</l>
+        </lg>
+      </div>
+      <pb facs="page_image49" n="49"/>
+      <pb facs="page_image50" n="50"/>
+      <div>
+        <head>I<lb/>IS FOR<lb/>TIMOTHY</head>
+        <lg>
+          <l>TIME for tea,<lb/>Timothy;</l>
+          <l>Kettle's humming<lb/>Cozily;</l>
+          <l>Toast and jam <lb/>For you and Me!</l>
+        </lg>
+      </div>
+      <pb facs="page_image51" n="51"/>
+      <pb facs="page_image52" n="52"/>
+      <div>
+        <head>U<lb/>IS FOR<lb/>UNA</head>
+        <lg>
+          <l>UNA loves to carry things--</l>
+          <l>Paper parcels tied with strings,</l>
+          <l>Bags and bundles fascinate<lb/>her,</l>
+          <l>Shopping does not irritate<lb/>her.</l>
+        </lg>
+      </div>
+      <pb facs="page_image53" n="53"/>
+      <pb facs="page_image54" n="54"/>
+      <div>
+        <head>V<lb/>IS FOR<lb/>VINCENT</head>
+        <lg>
+          <l>LITTLE Vincent Vanderpool</l>
+          <l>Cannot bear to go to school,</l>
+          <l>Any day he'll leave his books</l>
+          <l>For woods and fields and<lb/>wading-brooks.</l>
+        </lg>
+      </div>
+      <pb facs="page_image55" n="55"/>
+      <pb facs="page_image56" n="56"/>
+      <div>
+        <head>W<lb/>IS FOR<lb/>WINNIE</head>
+        <lg>
+          <l>PINK of cheek and brown of<lb/>eye,</l>
+          <l>Winnie's sweet, but rather<lb/>shy.</l>
+          <l>Once she brought me tulips<lb/>gay</l>
+          <l>From her house across the<lb/>way.</l>
+        </lg>
+      </div>
+      <pb facs="page_image57" n="57"/>
+      <pb facs="page_image58" n="58"/>
+      <div>
+        <head>X<lb/>IS FOR<lb/>LITTLE X</head>
+        <lg>
+          <l>X IS the little unknown boy</l>
+          <l>I passed at the crossroads<lb/>sign;</l>
+          <l>He didn't tell his name to me,</l>
+          <l>I didn't tell him mine!</l>
+        </lg>
+      </div>
+      <pb facs="page_image59" n="59"/>
+      <pb facs="page_image60" n="60"/>
+      <div>
+        <head>Y<lb/>IS FOR<lb/>YETTA</head>
+        <lg>
+          <l>YETTA lives across the sea</l>
+          <l>In a place called Italy.</l>
+        </lg>
+      </div>
+      <pb facs="page_image61" n="61"/>
+      <pb facs="page_image62" n="62"/>
+      <div>
+        <head>Z<lb/>IS FOR<lb/>ZACHARY</head>
+        <lg>
+          <l>ZACHARY is not to blame</l>
+          <l>For having such an awful<lb/>name.</l>
+        </lg>
+      </div>
+      <pb facs="page_image63" n="63"/>
+      <pb facs="page_image64" n="64"/>
+      <pb facs="page_image65" n="65"/>
+      <pb facs="page_image66" n="66"/>
+      <pb facs="page_image67" n="67"/>
+      <pb facs="page_image68" n="68"/>
+      <pb facs="page_image69" n="69"/>
+      <pb facs="page_image70" n="70"/>
+      <pb facs="page_image71" type="innerbackcover"/>
+      <note>Parents . . . .<lb/>Send for out free illustrated catalog of books for boys and girls.
+        You will find it a splendid guide for your sons and daughters. Address
+        <lb/><address><name>Doubleday, Page Co.</name><lb/><postCode>Garden City, N.Y.</postCode></address></note>
+      <pb facs="page_image72" n="72"/>
+    </body>
    </text>
 </TEI>

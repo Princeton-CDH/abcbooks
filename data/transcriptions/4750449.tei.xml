@@ -81,20 +81,110 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image2" n="2"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image3" n="3"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image4" n="4"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image5" n="5"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image6" n="6"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image7" n="7"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image8" n="8"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image9" n="9"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image10" n="10"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image11" n="11"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image12" n="12"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image13" n="13"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image14" n="14"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image15" n="15"/>
+         <div>
+            <head></head>
+            <lg>
+               <l></l>
+            </lg>
+         </div>
          <pb facs="page_image16" n="16"/>
       </body>
    </text>

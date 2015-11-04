@@ -82,20 +82,270 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
+         <div type="cover">
+            <ab>
+               <lb/>THE
+               <lb/>CHILDREN
+               <lb/>OF MANY
+               <lb/>NATIONS
+               <lb/>AND THE
+               <lb/>ABC
+            </ab>
+         </div>
          <pb facs="page_image2" n="2"/>
+         <div>
+            <ab>
+               <lb/>THE
+               <lb/>CHILDREN
+               <lb/>OF MANY
+               <lb/>NATIONS
+               <lb/>AND THE
+               <lb/>ABC
+            </ab>
+         </div>
          <pb facs="page_image3" n="3"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
+            <lg>
+               <l>Congress of Children</l>
+               <l>We show to you here,</l>
+               <l>American first, </l>
+               <l>For our Country is dear.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
+            <lg>
+               <l>Behold this small Briton,</l>
+               <l>A tar bold and free,</l>
+               <l>By helm he is standing,</l>
+               <l>He rules on the sea.</l>
+            </lg>
+         </div>
          <pb facs="page_image4" n="4"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
+            <lg>
+               <l>Come, see a Chinese girl</l>
+               <l>With joss-stick alight.</l>
+               <l>She sits on the floor here,</l>
+               <l>Her feet out of sight.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <lg>
+               <l>Do look at this Dutch maid,</l>
+               <l>Near wind-mill she sits.</l>
+               <l>In wooden shoes clumsy,</l>
+               <l>She quietly knits.</l>
+            </lg>
+         </div>
          <pb facs="page_image5" n="5"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
+            <lg>
+               <l>for the Egyptian, </l>
+               <l>A lad with bare legs,</l>
+               <l>He's poor and so hungry</l>
+               <l>For alms oft he begs.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <lg>
+               <l>French school-boy and poodle,</l>
+               <l>You next here will mark,</l>
+               <l>Fine tricks does the doggie</l>
+               <l>They're having a lark !</l>
+            </lg>
+         </div>
          <pb facs="page_image6" n="6"/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
+            <lg>
+               <l>Greece gives us a stripling</l>
+               <l>In skirts—a strange sight!</l>
+               <l>He greets us from gardens</l>
+               <l>Of classic delight.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>Here happy Hawaii</l>
+               <l>Holds high holiday,</l>
+               <l>And dances the "hula"</l>
+               <l>With frolicsome sway.</l>
+            </lg>
+         </div>
          <pb facs="page_image7" n="7"/>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
+            <lg>
+               <l>pictures an Indian,</l>
+               <l>"Papoose" is its name.</l>
+               <l>Though tied to its cradle,</l>
+               <l>It coos just the same.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>Japan's little lady</l>
+               <l>Is yellow of skin.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
+            <lg>
+               <l>Korea, her playmate,</l>
+               <l>To her is akin.</l>
+            </lg>
+         </div>
          <pb facs="page_image8" n="8"/>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>Look, here is a Lapp,</l>
+               <l>He's a child of the snows;</l>
+               <l>With reindeer for horse,</l>
+               <l>All fur-clad he goes.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
+            <lg>
+               <l>M's Moorish, a maiden</l>
+               <l>Who lives far away,</l>
+               <l>She eats figs and sweeties</l>
+               <l>In plenty all day.</l>
+            </lg>
+         </div>
          <pb facs="page_image9" n="9"/>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <lg>
+               <l>next, she's of Naples,</l>
+               <l>A bright, pretty lass,</l>
+               <l>She holds her tambourine,</l>
+               <l>And smiles as you pass.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
+            <lg>
+               <l>O, see now this dancer,</l>
+               <l>The Orient's slave;</l>
+               <l>A scarf thin and flowing,</l>
+               <l>Her graceful arms wave.</l>
+            </lg>
+         </div>
          <pb facs="page_image10" n="10"/>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <lg>
+               <l>Pray, look at this child—</l>
+               <l>Philippino is she;</l>
+               <l>Once a savage quite wild,</l>
+               <l>Now a school-girl, you</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head>
+            <lg>
+               <l>Quebec gives a laddie,</l>
+               <l>Canadian by birth;</l>
+               <l>His flying toboggan</l>
+               <l>Upsets, to his mirth.</l>
+            </lg>
+         </div>
          <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>R</head>
+            <lg>
+               <l>shows us a Russian,</l>
+               <l>In bright, broidered gown;</l>
+               <l>pity 'twould be,</l>
+               <l>If her pail should fall down.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>S</head>
+            <lg>
+               <l>S surely's a Spaniard,</l>
+               <l>With loud castanets;</l>
+               <l>For dancing and clapping,</l>
+               <l>Great praise oft he gets.</l>
+            </lg>
+         </div>
          <pb facs="page_image12" n="12"/>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>T</head>
+            <lg>
+               <l>Turn now to the Turk,</l>
+               <l>Who has roses to sell;</l>
+               <l>He haunts the bazaars,</l>
+               <l>His red fez suits him well.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>U</head>
+            <lg>
+               <l>Uruguay's daughter</l>
+               <l>The pampas lives near,</l>
+               <l>Winsome and happy</l>
+               <l>The face you see here.</l>
+            </lg>
+         </div>
          <pb facs="page_image13" n="13"/>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>V</head>
+            <lg>
+               <l>View next, Viennese,</l>
+               <l>And surely you'll say</l>
+               <l>That these little kiddies</l>
+               <l>Look happy and gay.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>W</head>
+            <lg>
+               <l>West Indian Isles</l>
+               <l>Pickaninnies can boast;</l>
+               <l>Bananas they bear,</l>
+               <l>Walking straight as a post</l>
+            </lg>
+         </div>
          <pb facs="page_image14" n="14"/>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>X</head>
+            <lg>
+               <l>for Xalapan,</l>
+               <l>He's of Mexican strain;</l>
+               <l>Both donkey and boy</l>
+               <l>Make a live water-main.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Y</head>
+            <lg>
+               <l>Y for Yucatan,</l>
+               <l>In a far away spot;</l>
+               <l>Tamales she eats,</l>
+               <l>And flat corn cakes quite hot.</l>
+            </lg>
+         </div>
          <pb facs="page_image15" n="15"/>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>And now with this Zulu,</l>
+               <l>last shown here in turn,</l>
+               <l>You'll plainly and surely</l>
+               <l>your Alphabet learn.</l>
+            </lg>
+         </div>
          <pb facs="page_image16" n="16"/>
       </body>
    </text>
