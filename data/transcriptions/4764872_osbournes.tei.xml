@@ -72,21 +72,9 @@
         <body>
             <pb facs="page_image1" n="1"/>
             <pb facs="page_image2" n="2"/>
-            <div>
-                <head/>
-                <lg>
-                    <l/>
-                </lg>
-            </div>
-            <div>
-                <head/>
-                <lg>
-                    <l/>
-                </lg>
-            </div>
             <pb facs="page_image3" n="3"/>
             <div>
-                <head/>
+                <head>AN ILLUSTRATION OF OSBORNE'S PICTORAL ALPHABET.</head>
                 <lg>
                     <l/>
                 </lg>
