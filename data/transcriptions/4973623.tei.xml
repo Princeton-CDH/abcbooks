@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -11,6 +11,7 @@
             <publisher>Princeton University</publisher>
             <pubPlace>Princeton, New Jersey</pubPlace>
             <idno type="voyagerid">4973623</idno>
+           <idno type="abcbooksid">4973623-boys-girls</idno>
          </publicationStmt>
       </fileDesc>
       <sourceDesc>
