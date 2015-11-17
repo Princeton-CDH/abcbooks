@@ -164,7 +164,6 @@
     </facsimile>
     <text>
         <body>
-            <div>
                 <pb n="cover" facs="page_image1"/>
                 <div type="cover">
                     <ab><lb/>ARTHUR'S <lb/>BOOK <lb/>OF <lb/>ALPHABETS </ab>
@@ -609,7 +608,7 @@
                 <pb facs="page_image36" n="36"/>
                 <pb facs="page_image37" n="37"/>
                 <pb facs="page_image38" n="38"/>
-            </div>
+            
         </body>
         <back>
             <interpGrp type="subject">

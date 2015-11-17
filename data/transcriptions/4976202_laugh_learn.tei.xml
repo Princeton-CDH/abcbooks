@@ -1,108 +1,91 @@
 <?xml-model href="http://etc.princeton.edu/abcbooks-xml/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-                    <teiHeader>
-                                        <fileDesc>
-                                                  <titleStmt>
-                                                  <title>A Digital Transcription of <bibl>Laugh and
-                                                  learn ABC book</bibl></title>
-                                                  </titleStmt>
-                                                  <publicationStmt>
-                                                  <idno type="voyagerid">4976202</idno>
-                                                  <idno type="abcbooksid">4976202-laugh-learn</idno>
-                                                  </publicationStmt>
-                                                  <sourceDesc>
-                                                  <bibl><title>Laugh and learn ABC
-                                                  book</title><lb/>Title: Laugh and learn ABC book.
-                                                  <lb/>Published/Created: New York : McLoughlin
-                                                  Bros. Inc., c1900. <lb/>General: [16] p. : col.
-                                                  ill. ; 26 cm. <lb/>Series: McLoughlin Bros., 57.
-                                                  <lb/>Notes: Cover title. <lb/>Pagination includes
-                                                  cover. <lb/>Features of images anthropomorphic
-                                                  animals. <lb/>Binding Note: Grey, col. ill.
-                                                  wrappers, lettering in red, pink and green,
-                                                  stapled. <lb/>Subject(s): Animals -- Juvenile
-                                                  poetry <lb/>Other Title: Alphabet of talkative
-                                                  animals. <lb/>Voyager Bib ID: 4976202 </bibl>
-                                                  </sourceDesc>
-                                        </fileDesc>
-                    </teiHeader>
-                    <facsimile>
-                                        <surface xml:id="page_image1">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000001.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image2">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000002.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image3">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000003.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image4">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000004.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image5">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000005.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image6">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000006.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image7">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000007.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image8">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000008.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image9">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000009.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image10">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000010.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image11">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000011.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image12">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000012.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image13">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000013.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image14">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000014.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image15">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000015.jp2"/>
-                                        </surface>
-                                        <surface xml:id="page_image16">
-                                                  <graphic ana="lowres" mimeType="jpg"
-                                                  url="00000016.jp2"/>
-                                        </surface>
-                    </facsimile>
-                    <text>
-                                        <body>
-                                                  <div>
-                                                  <pb n="1" facs="page_image1"/>
-                                                  <div>
-                                                  <ab><lb/>LAUGH AND LEARN <lb/>ABC BOOK </ab>
-                                                  </div>
-                                                  <pb n="2" facs="page_image2"/>
-                                                  <div type="alpha-group" xml:id="ag1" ana="A">
-                                                  <head>A</head>
-                                                  <lg>
+          <teiHeader>
+                    <fileDesc>
+                              <titleStmt>
+                                        <title>A Digital Transcription of <bibl>Laugh and learn ABC
+                                                  book</bibl></title>
+                              </titleStmt>
+                              <publicationStmt>
+                                        <idno type="voyagerid">4976202</idno>
+                                        <idno type="abcbooksid">4976202-laugh-learn</idno>
+                              </publicationStmt>
+                              <sourceDesc>
+                                        <bibl><title>Laugh and learn ABC book</title><lb/>Title:
+                                                  Laugh and learn ABC book. <lb/>Published/Created:
+                                                  New York : McLoughlin Bros. Inc., c1900.
+                                                  <lb/>General: [16] p. : col. ill. ; 26 cm.
+                                                  <lb/>Series: McLoughlin Bros., 57. <lb/>Notes:
+                                                  Cover title. <lb/>Pagination includes cover.
+                                                  <lb/>Features of images anthropomorphic animals.
+                                                  <lb/>Binding Note: Grey, col. ill. wrappers,
+                                                  lettering in red, pink and green, stapled.
+                                                  <lb/>Subject(s): Animals -- Juvenile poetry
+                                                  <lb/>Other Title: Alphabet of talkative animals.
+                                                  <lb/>Voyager Bib ID: 4976202 </bibl>
+                              </sourceDesc>
+                    </fileDesc>
+          </teiHeader>
+          <facsimile>
+                    <surface xml:id="page_image1">
+                              <graphic ana="lowres" mimeType="jpg" url="00000001.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image2">
+                              <graphic ana="lowres" mimeType="jpg" url="00000002.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image3">
+                              <graphic ana="lowres" mimeType="jpg" url="00000003.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image4">
+                              <graphic ana="lowres" mimeType="jpg" url="00000004.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image5">
+                              <graphic ana="lowres" mimeType="jpg" url="00000005.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image6">
+                              <graphic ana="lowres" mimeType="jpg" url="00000006.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image7">
+                              <graphic ana="lowres" mimeType="jpg" url="00000007.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image8">
+                              <graphic ana="lowres" mimeType="jpg" url="00000008.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image9">
+                              <graphic ana="lowres" mimeType="jpg" url="00000009.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image10">
+                              <graphic ana="lowres" mimeType="jpg" url="00000010.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image11">
+                              <graphic ana="lowres" mimeType="jpg" url="00000011.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image12">
+                              <graphic ana="lowres" mimeType="jpg" url="00000012.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image13">
+                              <graphic ana="lowres" mimeType="jpg" url="00000013.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image14">
+                              <graphic ana="lowres" mimeType="jpg" url="00000014.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image15">
+                              <graphic ana="lowres" mimeType="jpg" url="00000015.jp2"/>
+                    </surface>
+                    <surface xml:id="page_image16">
+                              <graphic ana="lowres" mimeType="jpg" url="00000016.jp2"/>
+                    </surface>
+          </facsimile>
+          <text>
+                    <body>
+                              <pb n="1" facs="page_image1"/>
+                              <div>
+                                        <ab><lb/>LAUGH AND LEARN <lb/>ABC BOOK </ab>
+                              </div>
+                              <pb n="2" facs="page_image2"/>
+                              <div type="alpha-group" xml:id="ag1" ana="A">
+                                        <head>A</head>
+                                        <lg>
                                                   <l>An Ape and Ass, who took a walk in company, one
                                                   day</l>
                                                   <l>Were startled by an Adder, that rose hissing in
@@ -111,11 +94,11 @@
                                                   "I have no fear;</l>
                                                   <l>But it makes me somewhat nervous, and I'd
                                                   rather not go near."</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag2" ana="B">
-                                                  <head>B</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag2" ana="B">
+                                        <head>B</head>
+                                        <lg>
                                                   <l>"A THING they call by your name, I observe the
                                                   ladies wear,</l>
                                                   <l>Around their necks in this way," to the Boa
@@ -124,11 +107,11 @@
                                                   with a smile,</l>
                                                   <l>I'll take it as a favor, for I love to be in
                                                   style."</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag3" ana="C">
-                                                  <head>C</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag3" ana="C">
+                                        <head>C</head>
+                                        <lg>
                                                   <l>"IT is not grief that makes me weep," a
                                                   crocodile replied,</l>
                                                   <l>To a Camel, who, with kindly words to ease his
@@ -137,12 +120,12 @@
                                                   friend, you know,</l>
                                                   <l>So, just for practice, every day, I let a
                                                   gallon flow."</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="3" facs="page_image3"/>
-                                                  <div type="alpha-group" xml:id="ag4" ana="D">
-                                                  <head>D</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="3" facs="page_image3"/>
+                              <div type="alpha-group" xml:id="ag4" ana="D">
+                                        <head>D</head>
+                                        <lg>
                                                   <l>THIS Duckling is his loving parents' treasure
                                                   and their pride;</l>
                                                   <l>He has a Bow-wow Nursie, that takes him out to
@@ -151,11 +134,11 @@
                                                   pretty and so sweet,</l>
                                                   <l>He's gushed o'er by all lady Ducks the road
                                                   they meet.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag5" ana="E">
-                                                  <head>E</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag5" ana="E">
+                                        <head>E</head>
+                                        <lg>
                                                   <l>AN Elephant went fishing, once, but though he
                                                   fished with zeal,</l>
                                                   <l>He didn't catch a single thing, except a
@@ -164,11 +147,11 @@
                                                   dear boy!" he cried;</l>
                                                   <l>"I can not bear to part with you; I dearly love
                                                   Eels - fried!"</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag6" ana="F">
-                                                  <head>F</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag6" ana="F">
+                                        <head>F</head>
+                                        <lg>
                                                   <l>A FROG that met a Fox, one morning, walking on
                                                   the shore ;</l>
                                                   <l>Cried, " Foxy, why, I never knew you cared for
@@ -177,11 +160,11 @@
                                                   Fox said, with a grin, </l>
                                                   <l>"And if I don't eat something, I'm afraid I'll
                                                   get too thin."</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="4" facs="page_image4"/>
-                                                  <div>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="4" facs="page_image4"/>
+                              <div>
+                                        <lg>
                                                   <l>FOR the game of Croquet, Tommy Purr didn't
                                                   care</l>
                                                   <l>Till he met Kitty Mouser, so sweet and so
@@ -190,10 +173,10 @@
                                                   -</l>
                                                   <l>There will soon be a wedding, the gossips all
                                                   say !</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div>
+                                        <lg>
                                                   <l>MRS. GOAT must go shopping, and leave by
                                                   themselves</l>
                                                   <l>Her dear little Kids, seven playful young
@@ -210,13 +193,13 @@
                                                   obey,</l>
                                                   <l>And that she bargain-hunting too long will not
                                                   stay.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="5" facs="page_image5"/>
-                                                  <pb n="6" facs="page_image6"/>
-                                                  <div type="alpha-group" xml:id="ag7" ana="G">
-                                                  <head>G</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="5" facs="page_image5"/>
+                              <pb n="6" facs="page_image6"/>
+                              <div type="alpha-group" xml:id="ag7" ana="G">
+                                        <head>G</head>
+                                        <lg>
                                                   <l>A DREADFUL time this poor Giraffe had with the
                                                   Grippe last spring!</l>
                                                   <l>It settled in his throat - just think! Three
@@ -225,11 +208,11 @@
                                                   what to do,</l>
                                                   <l>Or else I hardly think he would have managed to
                                                   pull through.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag8" ana="H">
-                                                  <head>H</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag8" ana="H">
+                                        <head>H</head>
+                                        <lg>
                                                   <l>I LIKE you all except your name," the pert
                                                   Hyena said; </l>
                                                   <l>"Hippo—Hippo—Bother! I can't keep it in my
@@ -238,12 +221,12 @@
                                                   beast replied; </l>
                                                   <l>"I shall not take offence at you : I have no
                                                   silly pride."</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag9" ana="IJ">
-                                                  <head>I</head>
-                                                  <head>J</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag9" ana="IJ">
+                                        <head>I</head>
+                                        <head>J</head>
+                                        <lg>
                                                   <l>I J</l>
                                                   <l>THESE Pyramids," the Ibex said, "are ancient
                                                   works of men.</l>
@@ -253,11 +236,11 @@
                                                   to hear;</l>
                                                   <l>He didn't know, and didn't wish his ignorance
                                                   to appear.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="7" facs="page_image7"/>
-                                                  <div type="alpha-group" xml:id="ag10" ana="K">
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="7" facs="page_image7"/>
+                              <div type="alpha-group" xml:id="ag10" ana="K">
+                                        <lg>
                                                   <head>K</head>
                                                   <l>WHY, bless me!" said a Kangaroo, out walking
                                                   with his wife;</l>
@@ -267,10 +250,10 @@
                                                   will);</l>
                                                   <l>It hasn't got a wing at all, but - mercy!—what
                                                   a bill!</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag11" ana="L">
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag11" ana="L">
+                                        <lg>
                                                   <head>L</head>
                                                   <l>I'LL teach you," said the Lion "not to call an
                                                   officer 'Cop!'</l>
@@ -280,10 +263,10 @@
                                                   become of Law,</l>
                                                   <l>If I am not regarded with the right amount of
                                                   awe?"</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag12" ana="M">
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag12" ana="M">
+                                        <lg>
                                                   <head>M</head>
                                                   <l>No creature more ungrateful than this Mouse,
                                                   I'm sure, could be! </l>
@@ -292,14 +275,14 @@
                                                   <l>He bit the Monkey, till with paii</l>
                                                   <l>nearly double,— Now, was not that a</l>
                                                   <l>nice return for helping him in trouble ?</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="8" facs="page_image8"/>
-                                                  <pb n="9" facs="page_image9"/>
-                                                  <pb n="10" facs="page_image10"/>
-                                                  <div type="alpha-group" xml:id="ag13" ana="N">
-                                                  <head>N</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="8" facs="page_image8"/>
+                              <pb n="9" facs="page_image9"/>
+                              <pb n="10" facs="page_image10"/>
+                              <div type="alpha-group" xml:id="ag13" ana="N">
+                                        <head>N</head>
+                                        <lg>
                                                   <l>LTHOUGH the Newts as dancers have no grace or
                                                   skill at all, </l>
                                                   <l>They strangely took a notion that they ought to
@@ -308,11 +291,11 @@
                                                   splendid show;</l>
                                                   <l>But if they were not funny, then I would not
                                                   tell you so!</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag14" ana="O">
-                                                  <head>O</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag14" ana="O">
+                                        <head>O</head>
+                                        <lg>
                                                   <l>'THAT the Owl is full of wisdom, we so
                                                   frequently have heard, </l>
                                                   <l>We are likely to suppose that it's an always
@@ -320,11 +303,11 @@
                                                   <l>But you see it's not unwilling to unbend,</l>
                                                   <l>And lay aside its dignity, to frolic with a
                                                   friend.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag15" ana="P">
-                                                  <head>P</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag15" ana="P">
+                                        <head>P</head>
+                                        <lg>
                                                   <l>WHAT the Porcupine and Pelican are up to, I
                                                   can't say; </l>
                                                   <l>But we safely may assume, I think, it's only
@@ -333,12 +316,12 @@
                                                   in the other's pouch,</l>
                                                   <l>not at all unlikely would be a cry of "
                                                   Ouch!"</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="11" facs="page_image11"/>
-                                                  <div type="alpha-group" xml:id="ag16" ana="Q">
-                                                  <head>Q</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="11" facs="page_image11"/>
+                              <div type="alpha-group" xml:id="ag16" ana="Q">
+                                        <head>Q</head>
+                                        <lg>
                                                   <l>THANK Fortune! " said the Quagga, " I, at last,
                                                   have hit a bird. </l>
                                                   <l>My luck has been just dreadful,— really
@@ -346,11 +329,11 @@
                                                   <l>I fired off every cartridge, and miss, and
                                                   riiiss, and miss! </l>
                                                   <l>d go home empty, if I had not potted this."</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag17" ana="R">
-                                                  <head>R</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag17" ana="R">
+                                        <head>R</head>
+                                        <lg>
                                                   <l>the Rhi: An unoffending party that you happen,
                                                   sir, to meet!</l>
                                                   <l>You need a little, toning down; you're plainly
@@ -358,11 +341,11 @@
                                                   <l>And, oh, that Ram he did tone down ; and served
                                                   him right,</l>
                                                   <l>I say 1</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag18" ana="S">
-                                                  <head>S</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag18" ana="S">
+                                        <head>S</head>
+                                        <lg>
                                                   <l>A STORK was one day painting, as he thought,
                                                   with great success;</l>
                                                   <l>But a Squirrel dared the contrary to express. </l>
@@ -370,11 +353,11 @@
                                                   Stork, "you may be smart; </l>
                                                   <l>"But you simply show your ignorance when you
                                                   try to talk of Art!'</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="12" facs="page_image12"/>
-                                                  <div>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="12" facs="page_image12"/>
+                              <div>
+                                        <lg>
                                                   <l>MR. LION imagines he makes a good nurse,</l>
                                                   <l>But I really don't think you could find a much
                                                   worse.</l>
@@ -384,8 +367,8 @@
                                                   <l>Mrs. Lion should scold, and oblige him to
                                                   try</l>
                                                   <l>To keep baby quiet, and not let him cry.</l>
-                                                  </lg>
-                                                  <lg>
+                                        </lg>
+                                        <lg>
                                                   <l>SIR Rowley De Powley's a gallant young
                                                   Frog,</l>
                                                   <l>Who has journeyed this morning from Greenwater
@@ -397,14 +380,14 @@
                                                   expect</l>
                                                   <l>That the lovely adored one his suit will
                                                   reject.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="13" facs="page_image13"/>
-                                                  <pb n="14" facs="page_image14"/>
-                                                  <div type="alpha-group" xml:id="ag19" ana="TU">
-                                                  <head>T</head>
-                                                  <head>U</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="13" facs="page_image13"/>
+                              <pb n="14" facs="page_image14"/>
+                              <div type="alpha-group" xml:id="ag19" ana="TU">
+                                        <head>T</head>
+                                        <head>U</head>
+                                        <lg>
                                                   <l>ARE you well, sir?" asked the Tortoise, as
                                                   politely as he could.</l>
                                                   <l>"My health," replied the Turkey, " would, I
@@ -413,11 +396,11 @@
                                                   will be here:</l>
                                                   <l>We Turkeys can't feel gay, you know, with that
                                                   dread time so near!"</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag20" ana="V">
-                                                  <head>V</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag20" ana="V">
+                                        <head>V</head>
+                                        <lg>
                                                   <l>THE Vampire and the Vulture had, one day, a
                                                   little spat;</l>
                                                   <l>The Vampire shouted "Baldy!" at the Vulture, -
@@ -426,11 +409,11 @@
                                                   scorn you ; </l>
                                                   <l>for you're but a beast, though like a bird you
                                                   fly !</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag21" ana="W">
-                                                  <head>W</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag21" ana="W">
+                                        <head>W</head>
+                                        <lg>
                                                   <l>A WOLF there was who had, -along with other
                                                   curious whims,</l>
                                                   <l>A most surprising mania fior singing psalms and
@@ -439,13 +422,13 @@
                                                   free,— </l>
                                                   <l>A very worthy fellow, (for a Wolf), indeed, was
                                                   he</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="15" facs="page_image15"/>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag22" ana="X">
-                                                  <head>X</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <pb n="15" facs="page_image15"/>
+
+                              <div type="alpha-group" xml:id="ag22" ana="X">
+                                        <head>X</head>
+                                        <lg>
                                                   <l>NOT many are the " creatures that with X their
                                                   names begin:</l>
                                                   <l>To find one we must search amongst the tribes
@@ -454,11 +437,11 @@
                                                   a sword, you see: </l>
                                                   <l>I think I'd hardly wish to have him point it
                                                   thus at me.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag23" ana="Y">
-                                                  <head>Y</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag23" ana="Y">
+                                        <head>Y</head>
+                                        <lg>
                                                   <l>THE Yamma and the Yak rehearsing for the
                                                   stage</l>
                                                   <l>For Amateur Theatricals they both have caught
@@ -467,11 +450,11 @@
                                                   think that they can render</l>
                                                   <l>The parts of two fond lovers, in a style most
                                                   sweet and tender</l>
-                                                  </lg>
-                                                  </div>
-                                                  <div type="alpha-group" xml:id="ag24" ana="Z">
-                                                  <head>Z</head>
-                                                  <lg>
+                                        </lg>
+                              </div>
+                              <div type="alpha-group" xml:id="ag24" ana="Z">
+                                        <head>Z</head>
+                                        <lg>
                                                   <l>THE Zebra is the animal that's last upon the
                                                   list;</l>
                                                   <l>He's pictured, to amuse En-to-mol-o-gist. </l>
@@ -479,38 +462,38 @@
                                                   on one who tries</l>
                                                   <l>To find out all about such things bugs and
                                                   butterflies.</l>
-                                                  </lg>
-                                                  </div>
-                                                  <pb n="16" facs="page_image16"/>
-                                        </body>
-                                        <back>
-                                                  <interpGrp type="subject">
-                                                  <interp xml:id="A">A</interp>
-                                                  <interp xml:id="B">B</interp>
-                                                  <interp xml:id="C">C</interp>
-                                                  <interp xml:id="D">D</interp>
-                                                  <interp xml:id="E">E</interp>
-                                                  <interp xml:id="F">F</interp>
-                                                  <interp xml:id="G">G</interp>
-                                                  <interp xml:id="H">H</interp>
-                                                  <interp xml:id="IJ">I</interp>
-                                                  <interp xml:id="K">K</interp>
-                                                  <interp xml:id="L">L</interp>
-                                                  <interp xml:id="M">M</interp>
-                                                  <interp xml:id="N">N</interp>
-                                                  <interp xml:id="O">O</interp>
-                                                  <interp xml:id="P">P</interp>
-                                                  <interp xml:id="Q">Q</interp>
-                                                  <interp xml:id="R">R</interp>
-                                                  <interp xml:id="S">S</interp>
-                                                  <interp xml:id="T">T</interp>
-                                                  <interp xml:id="U">U</interp>
-                                                  <interp xml:id="V">V</interp>
-                                                  <interp xml:id="W">W</interp>
-                                                  <interp xml:id="X">X</interp>
-                                                  <interp xml:id="Y">Y</interp>
-                                                  <interp xml:id="Z">Z</interp>
-                                                  </interpGrp>
-                                        </back>
-                    </text>
+                                        </lg>
+                              </div>
+                              <pb n="16" facs="page_image16"/>
+                    </body>
+                    <back>
+                              <interpGrp type="subject">
+                                        <interp xml:id="A">A</interp>
+                                        <interp xml:id="B">B</interp>
+                                        <interp xml:id="C">C</interp>
+                                        <interp xml:id="D">D</interp>
+                                        <interp xml:id="E">E</interp>
+                                        <interp xml:id="F">F</interp>
+                                        <interp xml:id="G">G</interp>
+                                        <interp xml:id="H">H</interp>
+                                        <interp xml:id="IJ">I</interp>
+                                        <interp xml:id="K">K</interp>
+                                        <interp xml:id="L">L</interp>
+                                        <interp xml:id="M">M</interp>
+                                        <interp xml:id="N">N</interp>
+                                        <interp xml:id="O">O</interp>
+                                        <interp xml:id="P">P</interp>
+                                        <interp xml:id="Q">Q</interp>
+                                        <interp xml:id="R">R</interp>
+                                        <interp xml:id="S">S</interp>
+                                        <interp xml:id="T">T</interp>
+                                        <interp xml:id="U">U</interp>
+                                        <interp xml:id="V">V</interp>
+                                        <interp xml:id="W">W</interp>
+                                        <interp xml:id="X">X</interp>
+                                        <interp xml:id="Y">Y</interp>
+                                        <interp xml:id="Z">Z</interp>
+                              </interpGrp>
+                    </back>
+          </text>
 </TEI>
