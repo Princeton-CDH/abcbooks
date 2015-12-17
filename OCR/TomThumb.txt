@@ -4,14 +4,13 @@ B h
 B was a Butcher, that had a great Dog.
 C c
 C was a Captain, all cover’d with Lace.
-1) d
-D was a Drunkard,
-that had a red Face.
+D d
+D was a Drunkard, that had a red Face.
 E e
 E was an Esquire, with pride on his Brow.
 F f
 F was a Farmer, that follow’d the Plough.
-
+G g
 G was a Gamester, and he had ill Luck.
 H h
 H was a Hunter, that hunted a Buck.
@@ -22,14 +21,13 @@ L 1
 L was a Lady, that had a white Hand.
 If in
 M was a Merchant, to some foreign Land.
-N 11
+N n
 N was a Nobleman, gallant and bold.
-O
-o
+O o
 O was an Oyster-wench, one that would scold.
 p p
 P was a Parson, that wore a black Gown.
-<1
+Q q
 Q was a Quaker, that would not bow down.
 R r
 R was a Robber, that wanted a Whip.
