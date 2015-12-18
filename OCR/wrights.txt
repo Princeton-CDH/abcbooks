@@ -1,112 +1,151 @@
-A is the Artist,
-Who drew in these pages-
-He's not had his hair cut-
-For ages and ages.
-
-B is the baby
-Who is crowing with joy,
-But isn't that diggie
-A bad, greedy boy?
-
-C is for Cook
-Bow how very absurd,
-For such a large cook to cook
-Such a small bird
-
-D is for Doctor
-Who comes when you're ill
-He looks at your tongue,
-Then gives you a pill.
-
-
-E is for Errand Boy,
-Who loves to watch dogs fight,
-his master’s meat is eaten
-by the bow-wows on the right.
-
-F is for Fireman,
-This one is very brave,
-He's climbed up the ladder
-Poor pussy to save.
-
-G  is for Gardener,
-His enemies are snails:
-He catches them with salt you know,
-Then drowns hem in pails.
-
-H is for Horse,
-No wonder Cabby smiles ;
-It’s only taken three short hours
-To travel three long miles.
-
-I is for Italian,
-Who is fond of Macaroni
-We don't know what his name is
-We rather think it's Tony.
-
-J is for Judy
-Her husband's name is Punch,
-And  together with
-dog Toby
-They are a happy bunch.
-
-K is for Kitchen Maid,
-Who's dropped the buttered scones.
-We hope she hasn't hurt herself
-Or broken any bones.
-
-L is for Laundress
-Her washing's very fine
-When Fido fell into the tub
-She hung him on the line.
-
-M is for Milkman,
-Why is he smiling so?
-He likes a rainy day, for then
-The milk is sure to grow.
-
-N is for Nurse
-Who says (and she knows)
-That Wright's Coal Tar Soap
-is as pure as a rose.
-
-
-O is for Office-Boy,
-in blue serge suit so neat,
-Who points to the point of this picture,
-Do you see it on that seat ?
-
-Q is for Quarrel—
-To be friends is better far—
-We don’t like naughty children,
-So let’s turn the page to R.
-
-R is for Ride,
-Also for Rotten Row,
-The doggie runs beside and barks
-To make the gee-gee go
-
-S is for Sweep,
-Whose face is very dirty,
-And when he smiled and showed his
-It frightened little Bertie, [teeth.
-
-U is for Uncle,
-Who brings pockets full of Toys,
-UAnd always loves to romp and play
-With little girls and boys.
-
-
-W is for Willie,
-Who is writing on the wall,
-To let you know he uses
-Wright’s Coal Tar Soap—
-that’s	all
-
-XYZ
-At last - so we've been told-
-The artist's had his hair cut
-And caught a fearful cold.
+<head>A</head>
+  <lg>
+  <l>A is the Artist,</l>
+  <l>Who drew in these pages-</l>
+  <l>He's not had his hair cut-</l>
+  <l>For ages and ages.</l>
+  </lg>
+<head>B</head>
+  <lg>
+  <l>B is the baby</l>
+  <l>Who is crowing with joy,</l>
+  <l>But isn't that diggie</l>
+  <l>A bad, greedy boy?</l>
+  </lg>
+<head>C</head>
+  <lg>
+  <l>C is for Cook</l>
+  <l>Bow how very absurd,</l>
+  <l>For such a large cook to cook</l>
+  <l>Such a small bird</l>
+  </lg>
+<head>D</head>
+  <lg>
+  <l>D is for Doctor</l>
+  <l>Who comes when you're ill</l>
+  <l>He looks at your tongue,</l>
+  <l>Then gives you a pill.</l>
+  </lg>
+<head>E</head>
+  <lg>
+  <l>E is for Errand Boy,</l>
+  <l>Who loves to watch dogs fight,</l>
+  <l>his master’s meat is eaten</l>
+  <l>by the bow-wows on the right.</l>
+  </lg>
+<head>F</head>
+  <lg>
+  <l>F is for Fireman,</l>
+  <l>This one is very brave,</l>
+  <l>He's climbed up the ladder</l>
+  <l>Poor pussy to save.</l>
+  </lg>
+<head>G</head>
+  <lg>
+  <l>G  is for Gardener,</l>
+  <l>His enemies are snails:</l>
+  <l>He catches them with salt you know,</l>
+  <l>Then drowns hem in pails.</l>
+  </lg>
+<head>H</head>
+  <lg>
+  <l>H is for Horse,</l>
+  <l>No wonder Cabby smiles ;</l>
+  <l>It’s only taken three short hours</l>
+  <l>To travel three long miles.</l>
+  </lg>
+<head>I</head>
+  <lg>
+  <l>I is for Italian,</l>
+  <l>Who is fond of Macaroni</l>
+  <l>We don't know what his name is</l>
+  <l>We rather think it's Tony.</l>
+  </lg>
+<head>J</head>
+  <lg>
+  <l>J is for Judy</l>
+  <l>Her husband's name is Punch,</l>
+  <l>And  together with</l>
+  <l>dog Toby</l>
+  <l>They are a happy bunch.</l>
+  </lg>
+<head>K</head>
+  <lg>
+  <l>K is for Kitchen Maid,</l>
+  <l>Who's dropped the buttered scones.</l>
+  <l>We hope she hasn't hurt herself</l>
+  <l>Or broken any bones.</l>
+  </lg>
+<head>L</head>
+  <lg>
+  <l>L is for Laundress</l>
+  <l>Her washing's very fine</l>
+  <l>When Fido fell into the tub</l>
+  <l>She hung him on the line.</l>
+  </lg>
+<head>M</head>
+  <lg>
+  <l>M is for Milkman,</l>
+  <l>Why is he smiling so?</l>
+  <l>He likes a rainy day, for then</l>
+  <l>The milk is sure to grow.</l>
+  </lg>
+<head>N</head>
+  <lg>
+  <l>N is for Nurse</l>
+  <l>Who says (and she knows)</l>
+  <l>That Wright's Coal Tar Soap</l>
+  <l>is as pure as a rose.</l>
+  </lg>
+<head>O</head>
+  <lg>
+  <l>O is for Office-Boy,</l>
+  <l>in blue serge suit so neat,</l>
+  <l>Who points to the point of this picture,</l>
+  <l>Do you see it on that seat ?</l>
+  </lg>
+<head>Q</head>
+  <lg>
+  <l>Q is for Quarrel—</l>
+  <l>To be friends is better far—</l>
+  <l>We don’t like naughty children,</l>
+  <l>So let’s turn the page to R.</l>
+  </lg>
+<head>R</head>
+  <lg>
+  <l>R is for Ride,</l>
+  <l>Also for Rotten Row,</l>
+  <l>The doggie runs beside and barks</l>
+  <l>To make the gee-gee go</l>
+  </lg>
+<head>S</head>
+  <lg>
+  <l>S is for Sweep,</l>
+  <l>Whose face is very dirty,</l>
+  <l>And when he smiled and showed his</l>
+  <l>It frightened little Bertie, [teeth.</l>
+  </lg>
+<head>U</head>
+  <lg>
+  <l>U is for Uncle,</l>
+  <l>Who brings pockets full of Toys,</l>
+  <l>UAnd always loves to romp and play</l>
+  <l>With little girls and boys.</l>
+  </lg>
+<head>W</head>
+  <lg>
+  <l>W is for Willie,</l>
+  <l>Who is writing on the wall,</l>
+  <l>To let you know he uses</l>
+  <l>Wright’s Coal Tar Soap—</l>
+  <l>that’s	all</l>
+  </lg>
+<head>XYZ</head>
+  <lg>
+  <l>XYZ</l>
+  <l>At last - so we've been told-</l>
+  <l>The artist's had his hair cut</l>
+  <l>And caught a fearful cold.</l>
 
 
 
