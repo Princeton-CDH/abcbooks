@@ -1,7 +1,5 @@
 
 
-
-
 <div type="alpha-group" xml:id="ag2" ana="">
     <head>A</head>
   <lg>
