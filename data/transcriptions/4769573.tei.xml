@@ -95,137 +95,225 @@
       <body>
          <pb facs="page_image1" n="1"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <ab>
+               <lb/>Bowden's
+               <lb/>A.B.C.
+               <lb/>Book of India
+            </ab>
          </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+         <ab>
+            
+            <lb/>Published by
+            <lb/>A.C. Bowden
+            <lb/>Bombay
+            <lb/>India.
+            
+            <lb/>REGISTERED COPYRIGHT    
+         </ab>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
+         <pb facs="page_image5" n="5"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
             <lg>
-               <l></l>
+               <l>A for the Ayah</l>
+               <l>with baby so dear.</l>
             </lg>
          </div>
-         <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
             <lg>
-               <l></l>
+               <l>B for the Butler</l>
+               <l>who always is near.</l>
             </lg>
          </div>
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
             <lg>
-               <l></l>
+               <l>C for the Coolie</l>
+               <l>so fond of a doze.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <lg>
+               <l>D for the Dhobie</l>
+               <l>who bangs out the clothes.</l>
             </lg>
          </div>
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
             <lg>
-               <l></l>
+               <l>E for the Elephant</l>
+               <l>mighty and round.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <lg>
+               <l>F for the forest</l>
+               <l>where tigers are found.</l>
             </lg>
          </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
             <lg>
-               <l></l>
+               <l>G for the Glare</l>
+               <l>of the tropical sun.</l>
+            </lg>
+         </div>
+ 
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>H for the Hamal</l>
+               <l>whose work’s never done.</l>
             </lg>
          </div>
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
             <lg>
-               <l></l>
+               <l>I for the Indian Juggler</l>
+               <l>and snake.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>J for the Jingle</l>
+               <l>the bullock carts make.</l>
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
             <lg>
-               <l></l>
+               <l>K for the Khoja</l>
+               <l>all flipoty flop.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>L for the Lascar</l>
+               <l>who’s seen at the dock.</l>
             </lg>
          </div>
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
             <lg>
-               <l></l>
+               <l>M for the Monkeys</l>
+               <l>so fond of the nuts.</l>
+            </lg>
+         </div>
+         
+         
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <lg>
+               <l>N for the Natives</l>
+               <l>who live in the huts.</l>
             </lg>
          </div>
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
             <lg>
-               <l></l>
+               <l>O for the Orders</l>
+               <l>each night for the cook.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <lg>
+               <l>P for the Parsi</l>
+               <l>who prays from the book.</l>
             </lg>
          </div>
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head>
             <lg>
-               <l></l>
+               <l>Q for the Quails</l>
+               <l>at rest ’neath the tree.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>R</head>
+            <lg>
+               <l>R for the Rivers</l>
+               <l>that run to the sea.</l>
             </lg>
          </div>
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>S</head>
             <lg>
-               <l></l>
+               <l>S for the Sepoy</l>
+               <l>who comes at your call.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>T</head>
+            <lg>
+               <l>T for the Temple</l>
+               <l>with large golden ball.</l>
             </lg>
          </div>
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>U</head>
             <lg>
-               <l></l>
+               <l>U for the Uniform</l>
+               <l>worn by the Sikh.</l>
+            </lg>
+         </div>
+         
+         <div type="alpha-group" xml:id="ag22" ana="">
+            <head>V</head>
+            <lg>
+               <l>V for &amp; Vulture</l>
+               <l>with terrible beak.</l>
             </lg>
          </div>
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>W</head>
             <lg>
-               <l></l>
+               <l>W for Wedding</l>
+               <l>so quaint in the East.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>X</head>
+            <lg>
+               <l>X for the 'Xcellent</l>
+               <l>fruit at the feast.</l>
             </lg>
          </div>
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Y</head>
             <lg>
-               <l></l>
+               <l>Y for the Yoke</l>
+               <l>of the man with the milk.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>Z for the Zemindar</l>
+               <l>with turban of silk.</l>
             </lg>
          </div>
          <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image20" n="20"/>
       </body>
    </text>
