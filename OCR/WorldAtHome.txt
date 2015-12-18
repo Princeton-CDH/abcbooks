@@ -281,6 +281,10 @@
             </lg>
          </div>
          <pb facs="page_image11" n="11"/>
+                  <div>
+            <title>B</title>
+            <lg> <l>BRITON</l></lg>
+         </div>
          <pb facs="page_image12" n="12"/>
          <div type="alpha-group" xml:id="ag1" ana="A">
             <lg><l>
@@ -291,10 +295,8 @@
          </div>
          <pb facs="page_image13" n="13"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>C</title>
+            <lg> <l>COSSACK</l></lg>
          </div>
          <pb facs="page_image14" n="14"/>
          <div type="alpha-group" xml:id="ag1" ana="A">
@@ -306,10 +308,8 @@
          </div>
          <pb facs="page_image15" n="15"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>D</title>
+            <lg> <l>DUTCH</l></lg>
          </div>
          <pb facs="page_image16" n="16"/>
          <div type="alpha-group" xml:id="ag1" ana="A">
@@ -320,10 +320,8 @@
          </div>
          <pb facs="page_image17" n="17"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>E</title>
+            <lg> <l>EGYPTIAN</l></lg>
          </div>
          <pb facs="page_image18" n="18"/>
          <div type="alpha-group" xml:id="ag1" ana="A">
@@ -334,10 +332,8 @@
          </div>
          <pb facs="page_image19" n="19"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>F</title>
+            <lg> <l>FRENCHMAN</l></lg>
          </div>
          <pb facs="page_image20" n="20"/>
          <div>
@@ -348,10 +344,8 @@
          </div>
          <pb facs="page_image21" n="21"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>G</title>
+            <lg> <l>GREEK</l></lg>
          </div>
          <pb facs="page_image22" n="22"/>
          <div>
@@ -362,10 +356,8 @@
          </div>
          <pb facs="page_image23" n="23"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>H</title>
+            <lg> <l>HINDU</l></lg>
          </div>
          <pb facs="page_image24" n="24"/>
          <div>
@@ -376,10 +368,8 @@
          </div>
          <pb facs="page_image25" n="25"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>I</title>
+            <lg> <l>IRISHMAN</l></lg>
          </div>
          <pb facs="page_image26" n="26"/>
          <div>
@@ -392,10 +382,8 @@
          </div>
          <pb facs="page_image27" n="27"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>J</title>
+            <lg> <l>JAPANESE</l></lg>
          </div>
          <pb facs="page_image28" n="28"/>
          <div>
@@ -406,10 +394,8 @@
          </div>
          <pb facs="page_image29" n="29"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>K</title>
+            <lg> <l>KAFFIR</l></lg>
          </div>
          <pb facs="page_image30" n="30"/>
          <div>
@@ -422,10 +408,8 @@
          </div>
          <pb facs="page_image31" n="31"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>L</title>
+            <lg> <l>LAPLANDER</l></lg>
          </div>
          <pb facs="page_image32" n="32"/>
          <div>
@@ -436,10 +420,8 @@
          </div>
          <pb facs="page_image33" n="33"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>M</title>
+            <lg> <l>MONGOL</l></lg>
          </div>
          <pb facs="page_image34" n="34"/>
          <div>
@@ -450,10 +432,8 @@
          </div>
          <pb facs="page_image35" n="35"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>N</title>
+            <lg> <l>NORWEGIAN</l></lg>
          </div>
          <pb facs="page_image36" n="36"/>
          <div>
@@ -464,10 +444,8 @@
          </div>
          <pb facs="page_image37" n="37"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>O</title>
+            <lg> <l>OJIBWA INDIAN</l></lg>
          </div>
          <pb facs="page_image38" n="38"/>
          <div>
@@ -478,10 +456,8 @@
          </div>
          <pb facs="page_image39" n="39"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>P</title>
+            <lg> <l>PERSIAN</l></lg>
          </div>
          <pb facs="page_image40" n="40"/>
          <div>
@@ -493,10 +469,8 @@
          </div>
          <pb facs="page_image41" n="41"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>Q</title>
+            <lg> <l>QUEENSLANDER</l></lg>
          </div>
          <pb facs="page_image42" n="42"/>
          <div>
@@ -507,10 +481,8 @@
          </div>
          <pb facs="page_image43" n="43"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>R</title>
+            <lg> <l>ROUMANIAN</l></lg>
          </div>
          <pb facs="page_image44" n="44"/>
          <div>
@@ -521,10 +493,8 @@
          </div>
          <pb facs="page_image45" n="45"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>S</title>
+            <lg> <l>SPANIARD</l></lg>
          </div>
          <pb facs="page_image46" n="46"/>
          <div>
@@ -535,7 +505,8 @@
          </div>
          <pb facs="page_image47" n="47"/>
          <div>
-
+            <title>T</title>
+            <lg> <l>TURK</l></lg>
          </div>
          <pb facs="page_image48" n="48"/>
          <div>
@@ -546,10 +517,8 @@
          </div>
          <pb facs="page_image49" n="49"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>U</title>
+            <lg> <l>UNITED STATES</l></lg>
          </div>
          <pb facs="page_image50" n="50"/>
          <div>
@@ -560,10 +529,8 @@
          </div>
          <pb facs="page_image51" n="51"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>V</title>
+            <lg> <l>VENETIAN</l></lg>
          </div>
          <pb facs="page_image52" n="52"/>
          <div>
@@ -574,10 +541,8 @@
          </div>
          <pb facs="page_image53" n="53"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>W</title>
+            <lg> <l>WEST INDIAN</l></lg>
          </div>
          <pb facs="page_image54" n="54"/>
          <div>
@@ -588,10 +553,7 @@
          </div>
          <pb facs="page_image55" n="55"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <lg> <l>SCOTSMAN</l></lg>
          </div>
          <pb facs="page_image56" n="56"/>
          <div>
@@ -602,10 +564,8 @@
          </div>
          <pb facs="page_image57" n="57"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>Y</title>
+            <lg> <l>YORUBA</l></lg>
          </div>
          <pb facs="page_image58" n="58"/>
          <div>
@@ -615,10 +575,8 @@
          </div>
          <pb facs="page_image59" n="59"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <title>Z</title>
+            <lg> <l>ZULU</l></lg>
          </div>
          <pb facs="page_image60" n="60"/>
          <pb facs="page_image61" n="61"/>
