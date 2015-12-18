@@ -84,109 +84,204 @@
       <body>
          <pb facs="page_image1" n="1"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <ab>
+               <lb/>THE ADVENTURES OF
+               <lb/>ABC
+            </ab>
          </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
             <lg>
-               <l></l>
+               <l>Arthur's and Annie's new And Attraxctive Atlas makes the children, Anxious for Adventures, resolve to start At once on a A trip Around the world.</l>
             </lg>
          </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="">
+            <head>B</head>
             <lg>
-               <l></l>
+               <l>Headed By Brother Bertie they Bravely, emnbark in Baskets for the Blue waters of the Bay of Biscay, and then visit</l>
             </lg>
          </div>
-         <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="C">
+            <head>C</head>
             <lg>
-               <l></l>
+               <l>the Canary Islands where Cousin Charlie feeds the Canary-birds with Crumbs of Currant Cake.</l>
+            </lg>
+         </div>
+         
+         
+         
+         <pb facs="page_image4" n="4"/>
+         <div type="alpha-group" xml:id="ag2" ana="D">
+            <head>D</head>
+            <lg>
+               <l>Landing in Africa Dolly gives a Dinner-party in the Dusty Desert</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="E">
+            <head>E</head>
+            <lg>
+               <l>On Entering Egypt, Eddie plants the English Ensign on a Sphinx</l>
             </lg>
          </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="F">
+            <head>F</head>
             <lg>
-               <l></l>
+               <l>Flying Fishes carry our little Friends Far over the Sea.</l>
             </lg>
          </div>
-         <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="G">
+            <head>G</head>
             <lg>
-               <l></l>
+               <l>to Goa, and Georgie Gives all the little Girls a ride in the Go-cart on the way to the Ganges.</l>
+            </lg>
+         </div>
+         
+         
+         <pb facs="page_image6" n="6"/>
+         <div type="alpha-group" xml:id="ag2" ana="">
+            <head>H</head>
+            <lg>
+               <l>They Hasten on to Hong-King, where Harry rides through the street on a Hobby Horse.</l>
             </lg>
          </div>
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="I">
+            <head>I</head>
             <lg>
-               <l></l>
+               <l>Away they sail amoung the Indian Islands In a Junk, till they come to Java</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag2" ana="J">
+            <head>J</head>
+            <lg>
+               <l>where Johnny eats edible birdsnests with Jam.</l>
+            </lg>
+         </div>
+
+         
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="K">
+            <head>K</head>
             <lg>
-               <l></l>
+               <l>The Southward to Australia where the Kincking Kangaroos call on Katie.</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag2" ana="L">
+            <head>L</head>
+            <lg>
+               <l>Turning their Log-hut into a Log-raft, called the Lily, they embark for America.</l>
+            </lg>
+         </div>
+
+         
+         
+         
+         
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="M">
+            <head>M</head>
             <lg>
-               <l></l>
+               <l>After Marching through Mexico, and trying to Mop up the Mississippi, they </l>
+
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag2" ana="N">
+            <head>N</head>
+            <lg>
+               <l>take a Nap in new York.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="O">
+            <head>O</head>
+            <lg>
+               <l>Provided with oranges they cross Over Brooklyn Bridge and catch the Omnibus for the northern Ocean.</l>
+            </lg>
+         </div>
+         
+         
+         
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="P">
+            <head>P</head>
             <lg>
-               <l></l>
+               <l>At the North Pols Polly feedsd the Polar bear with Porridge in a Pail, and</l>
             </lg>
          </div>
-         <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="Q">
+            <head>Q</head>
             <lg>
-               <l></l>
+               <l>the Queen gives a Party at which they dance a Queer Quadrille.</l>
+            </lg>
+         </div>
+         
+         <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag2" ana="R">
+            <head>R</head>
+            <lg>
+               <l>Hurrah for a Rare Reindeer Race</l>
+
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="S">
+            <head>S</head>
+            <lg>
+               <l>along the Roads of Russia in a Snug Sleigh axcross the Soft Snow to the Southern Steppes!</l>
             </lg>
          </div>
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="T">
+            <head>T</head>
             <lg>
-               <l></l>
+               <l>To The astonishment of The Turks They Travel in Tubs along The Telegraph wires of Turkey.</l>
             </lg>
          </div>
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="U">
+            <head>U</head>
             <lg>
-               <l></l>
+               <l>Una sits Under an Umbrella on the top of</l>
             </lg>
          </div>
-         <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="V">
+            <head>V</head>
             <lg>
-               <l></l>
+               <l>Vesuvius, while Valentine plays the Violin in the Vineyard.</l>
+            </lg>
+         </div>
+         
+         
+         <pb facs="page_image14" n="14"/>
+         <div type="alpha-group" xml:id="ag2" ana="W">
+            <head>W</head>
+            <lg>
+               <l>Whence they go in Wheelbarrows to the land of Windmills and Water,</l>
+               <l>Where the Wind Whistles in the Winter Weather, and Where they are Welcomed by the Wee children Who Wear and Walk in Wonderful Wooden shoes.</l>
             </lg>
          </div>
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="X">
+            <head>X</head>
             <lg>
-               <l></l>
+               <l>They cross the sea once more, and landing X miles from</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag2" ana="Y">
+            <head>Y</head>
+            <lg>
+               <l>Yarmouth they leave their Yacht the Zephyr.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>And Zoe welcomes the little travellers home.</l>
+            </lg>
+         </div>
+         
+         
          <pb facs="page_image16" n="16"/>
       </body>
    </text>
