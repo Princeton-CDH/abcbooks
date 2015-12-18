@@ -1,98 +1,244 @@
-AN ALPHABET.
-ALLEGORICAL & ALLITERATIVE
-AMUSING
-APPRECIABLE AT ALL AGES
-LONDON
-EFFINGHAM. WILSON. II, ROYAL EXCHANGE.
-MD CCC,LXXL
+<pb facs="page_image1" n="1"/>
+<pb facs="page_image2" n="2"/>
+<pb facs="page_image3" n="3"/>
+<pb facs="page_image4" n="4"/>
+<pb facs="page_image5" n="5"/>
+  <div type="cover">
+    <ab>
+    <lb/>AN ALPHABET.
+    <lb/>ALLEGORICAL & ALLITERATIVE
+    <lb/>AMUSING
+    <lb/>APPRECIABLE AT ALL AGES
+    <lb/>LONDON
+    <lb/>EFFINGHAM. WILSON. II, ROYAL EXCHANGE.
+    <lb/>MD CCC,LXXL
+    </ab>
+  </div>
 
+<pb facs="page_image6" n="6"/>
+  <div type="cover">
+    <ab>
+    <lb/>A Beautiful Collection, Delightfully
+    <lb/>Etched, Finely Grouped, Highly
+    <lb/>Imaginative, Jestingly Knavish,
+    <lb/>Ludicrously Mischievous, Notably
+    <lb/>Odd, Puliarly Queer, Recreative,
+    <lb/>Sensational, Tittering, Unquestionably
+    <lb/>Volatile,Whimsically XYZite.
+    </ab>
+  </div>
 
-A Beautiful Collection, Delightfully
-Etched, Finely Grouped, Highly
-Imaginative, Jestingly Knavish,
-Ludicrously Mischievous, Notably
-Odd, Peculiarly Queer, Recreative,
-Sensational, Tittering, Unquestionably
-Volatile,Whimsically XYZite.
+<pb facs="page_image7" n="7"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+  <lg>
+  <l>Alderman Artichoke always adjudicated</l>
+  <l>with admirable ability.</l>
+</lg>
+  </div>
 
+<pb facs="page_image8" n="8"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Benjamin Bluster beat and battered a brown</l>
+  <l>Bear with a Blunderbuss.</l>
+</lg>
+  </div>
 
+<pb facs="page_image9" n="9"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Christopher Cuthbertson was cross, crabbed,</l>
+  <l>and captious.</l>
+</lg>
+  </div>
 
-Alderman Artichoke always adjudicated 
-with admirable ability.
+<pb facs="page_image10" n="10"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Deborah Diligent did dance her Doll</l>
+  <l>with droll dexterity.</l>
+</lg>
+  </div>
 
-Benjamin Bluster beat and battered a brown
-Bear with a Blunderbuss.
+<pb facs="page_image11" n="11"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Elizabeth Edmondstone eats eleven excellent</l>
+  <l>Eggs, etcetera, etcetera.</l>
+</lg>
+  </div>
 
-Christopher Cuthbertson was cross, crabbed,
-and captious.
+<pb facs="page_image12" n="12"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Ferdinand Firebrand fiercely fought and</l>
+  <l>fenced a Fiddler.</l>
+</lg>
+  </div>
 
-Deborah Diligent did dance her Doll
-with droll dexterity.
+<pb facs="page_image13" n="13"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Gregory Grimshaw gaped and gabbled like</l>
+  <l>a Goose, or Gander.</l>
+</lg>
+  </div>
 
-Elizabeth Edmondstone eats eleven excellent
-Eggs, etcetera, etcetera.
+<pb facs="page_image14" n="14"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Hercules Hardcastle hit a Hawk on the</l>
+  <l>head with a Hatchet.</l>
+</lg>
+  </div>
 
-Ferdinand Firebrand fiercely fought and
-fenced a Fiddler.
+<pb facs="page_image15" n="15"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Isaac Ingram inhabitied an inclement, and</l>
+  <l>isolated Island.</l>
+</lg>
+  </div>
 
-Gregory Grimshaw gaped and gabbled like
-a Goose, or Gander.
+<pb facs="page_image16" n="16"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Jemima Jocund did jump and jig with</l>
+  <l>joy in jeopardy.</l>
+</lg>
+  </div>
 
-Hercules Hardcastle hit a Hawk on the
-head with a Hatchet.
+<pb facs="page_image17" n="17"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Katherine Kindham kindly kissed her </l>
+  <l>kith and kinsfolk.</l>
+</lg>
+  </div>
 
-Isaac Ingram inhabitied an inclement, and
-isolated Island.
+<pb facs="page_image18" n="18"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Lionel Lincoln was a learned, and</l>
+  <l>literary lexicographer.</l>
+</lg>
+  </div>
 
-Jemima Jocund did jump and jig with
-joy in jeopardy.
+<pb facs="page_image19" n="19"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Maximilian Mettlesome magnanimously</l>
+  <l>mollified a mutinous Mountaineer.</l>
+</lg>
+  </div>
 
-Katherine Kindham kindly kissed her 
-kith and kinsfolk.
+<pb facs="page_image20" n="20"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Nancy Nimble with a nice new Needle</l>
+  <l>netted some nickbacks.</l>
+</lg>
+  </div>
 
-Lionel Lincoln was a learned, and
-literary lexicographer.
+<pb facs="page_image21" n="21"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Oliver Oddfish obstreperously obstructed</l>
+  <l>an original overture.</l>
+</lg>
+  </div>
 
-Maximilian Mettlesome magnanimously
-mollified a mutinous Mountaineer.
+<pb facs="page_image22" n="22"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Penelope Posslethwaite pampered a proud,</l>
+  <l>and pursy Palfry.</l>
+</lg>
+  </div>
 
-Nancy Nimble with a nice new Needle
-netted some nickbacks.
+<pb facs="page_image23" n="23"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Quixote Quibble questioned a queer,</l>
+  <l>and quarrelsome Quaker.</l>
+</lg>
+  </div>
 
-Oliver Oddfish obstreperously obstructed
-an original overture.
+<pb facs="page_image24" n="24"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Roderick Random ran a ridiculous race</l>
+  <l>on the railroad.</l>
+</lg>
+  </div>
 
-Penelope Posslethwaite pampered a proud,
-and pursy Palfry.
+<pb facs="page_image25" n="25"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Sophonisba Scribblewell sang songs</l>
+  <l>and sonatas like Sontag.</l>
+</lg>
+  </div>
 
-Quixote Quibble questioned a queer,
-and quarrelsome Quaker.
+<pb facs="page_image26" n="26"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Timothy Talkative told tales tremendous</l>
+  <l>and terrible.</l>
+</lg>
+  </div>
 
-Roderick Random ran a ridiculous race
-on the railroad.
+<pb facs="page_image27" n="27"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Ursula Urquhart unexpectedly, and</l>
+  <l>uncerimoniously used an Umbrella.</l>
+</lg>
+  </div>
 
-Sophonisba Scribblewell sang songs
-and sonatas like Sontag.
+<pb facs="page_image28" n="28"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Valentine Vortex victoriously vanquished</l>
+  <l>a vindictive villager.</l>
+</lg>
+  </div>
 
-Timothy Talkative told tales tremendous
-and terrible.
+<pb facs="page_image29" n="29"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Wilhelmina Whirligig warbled with</l>
+  <l>winning witchery.</l>
+</lg>
+  </div>
 
-Ursula Urquhart unexpectedly, and
-uncerimoniously used an Umbrella.
+<pb facs="page_image30" n="30"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Execrable Xantippe excited Xerxes to</l>
+  <l>xylographic exertions.</l>
+</lg>
+  </div>
 
-Valentine Vortex victoriously vanquished
-a vindictive villager.
+<pb facs="page_image31" n="31"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Youthful Yankey yearned and yelled</l>
+  <l>to be a yeoman.</l>
+</lg>
+  </div>
 
-Wilhelmina Whirligig warbled with
-winning witchery.
+<pb facs="page_image32" n="32"/>
+  <div type="alpha-group" xml:id="ag2" ana="A">
+<lg>
+  <l>Zedekiah Zigzag was a zealous</l>
+  <l>zoological zany.</l>
+</lg>
+  </div>
 
-Execrable Xantippe excited Xerxes to
-xylographic exertions.
-
-Youthful Yankey yearned and yelled
-to be a yeoman.
-
-Zedekiah Zigzag was a zealous
-zoological zany.
+<pb facs="page_image33" n="33"/>
+<pb facs="page_image34" n="34"/>
+<pb facs="page_image35" n="35"/>
+<pb facs="page_image36" n="36"/>
 
 
