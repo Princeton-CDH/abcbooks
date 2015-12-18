@@ -1,68 +1,288 @@
+<?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The Adventures of ABC</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Princeton University</publisher>
+            <pubPlace>Princeton, New Jersey</pubPlace>
+            <idno type="voyagerid">4736902</idno>
+            <idno type="abcbooksid">4736902_adventures</idno>
+         </publicationStmt>
+      </fileDesc>
+      <sourceDesc>
+         <biblStruct xmlns="">
+            <monogr>
+               <title level="m">
+                  <seg type="nonSort">The </seg>
+                  <seg type="main">Adventures of ABC</seg>
+               </title>
+               <imprint>
+                  <pubPlace>London Paris</pubPlace>
+                  <publisher>Raphael Tuck &amp; Sons.</publisher>
+                  <date>[1900] 1900</date>
+               </imprint>
+            </monogr>
+         </biblStruct>
+      </sourceDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="page_image1">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000001.jp2"/>
+      </surface>
+      <surface xml:id="page_image2">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000002.jp2"/>
+      </surface>
+      <surface xml:id="page_image3">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000003.jp2"/>
+      </surface>
+      <surface xml:id="page_image4">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000004.jp2"/>
+      </surface>
+      <surface xml:id="page_image5">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000005.jp2"/>
+      </surface>
+      <surface xml:id="page_image6">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000006.jp2"/>
+      </surface>
+      <surface xml:id="page_image7">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000007.jp2"/>
+      </surface>
+      <surface xml:id="page_image8">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000008.jp2"/>
+      </surface>
+      <surface xml:id="page_image9">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000009.jp2"/>
+      </surface>
+      <surface xml:id="page_image10">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000010.jp2"/>
+      </surface>
+      <surface xml:id="page_image11">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000011.jp2"/>
+      </surface>
+      <surface xml:id="page_image12">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000012.jp2"/>
+      </surface>
+      <surface xml:id="page_image13">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000013.jp2"/>
+      </surface>
+      <surface xml:id="page_image14">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000014.jp2"/>
+      </surface>
+      <surface xml:id="page_image15">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000015.jp2"/>
+      </surface>
+      <surface xml:id="page_image16">
+         <graphic ana="lowres" mimeType="image/jp2" url="00000016.jp2"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <pb facs="page_image1" n="1"/>
+         <div>
+            <ab>
+               <lb/>THE ADVENTURES OF
+               <lb/>ABC
+            </ab>
+         </div>
+         <pb facs="page_image2" n="2"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
+            <lg>
+               <l>Arthur's and Annie's new And Attraxctive Atlas makes the children, Anxious for Adventures, resolve to start At once on a A trip Around the world.</l>
+            </lg>
+         </div>
+         <pb facs="page_image3" n="3"/>
+         <div type="alpha-group" xml:id="ag2" ana="">
+            <head>B</head>
+            <lg>
+               <l>Headed By Brother Bertie they Bravely, emnbark in Baskets for the Blue waters of the Bay of Biscay, and then visit</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="C">
+            <head>C</head>
+            <lg>
+               <l>the Canary Islands where Cousin Charlie feeds the Canary-birds with Crumbs of Currant Cake.</l>
+            </lg>
+         </div>
+         
+         
+         
+         <pb facs="page_image4" n="4"/>
+         <div type="alpha-group" xml:id="ag2" ana="D">
+            <head>D</head>
+            <lg>
+               <l>Landing in Africa Dolly gives a Dinner-party in the Dusty Desert</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="E">
+            <head>E</head>
+            <lg>
+               <l>On Entering Egypt, Eddie plants the English Ensign on a Sphinx</l>
+            </lg>
+         </div>
+         <pb facs="page_image5" n="5"/>
+         <div type="alpha-group" xml:id="ag2" ana="F">
+            <head>F</head>
+            <lg>
+               <l>Flying Fishes carry our little Friends Far over the Sea.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="G">
+            <head>G</head>
+            <lg>
+               <l>to Goa, and Georgie Gives all the little Girls a ride in the Go-cart on the way to the Ganges.</l>
+            </lg>
+         </div>
+         
+         
+         <pb facs="page_image6" n="6"/>
+         <div type="alpha-group" xml:id="ag2" ana="">
+            <head>H</head>
+            <lg>
+               <l>They Hasten on to Hong-King, where Harry rides through the street on a Hobby Horse.</l>
+            </lg>
+         </div>
+         <pb facs="page_image7" n="7"/>
+         <div type="alpha-group" xml:id="ag2" ana="I">
+            <head>I</head>
+            <lg>
+               <l>Away they sail amoung the Indian Islands In a Junk, till they come to Java</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="J">
+            <head>J</head>
+            <lg>
+               <l>where Johnny eats edible birdsnests with Jam.</l>
+            </lg>
+         </div>
 
-A
-Arthur's and Annie's new And Attraxctive Atlas
-makes the children, Anxious for
-Adventures, resolve to start At once on a A trip Around the world.
+         
+         <pb facs="page_image8" n="8"/>
+         <div type="alpha-group" xml:id="ag2" ana="K">
+            <head>K</head>
+            <lg>
+               <l>The Southward to Australia where the Kincking Kangaroos call on Katie.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="L">
+            <head>L</head>
+            <lg>
+               <l>Turning their Log-hut into a Log-raft, called the Lily, they embark for America.</l>
+            </lg>
+         </div>
 
-B
-Headed By Brother Bertie they Bravely, emnbark in Baskets for the Blue
-waters of the Bay of Biscay, and then visit
+         
+         
+         
+         
+         <pb facs="page_image9" n="9"/>
+         <div type="alpha-group" xml:id="ag2" ana="M">
+            <head>M</head>
+            <lg>
+               <l>After Marching through Mexico, and trying to Mop up the Mississippi, they </l>
 
-C
-the Canary Islands where Cousin Charlie feeds the Canary-birds with Crumbs of Currant Cake.
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="N">
+            <head>N</head>
+            <lg>
+               <l>take a Nap in new York.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="O">
+            <head>O</head>
+            <lg>
+               <l>Provided with oranges they cross Over Brooklyn Bridge and catch the Omnibus for the northern Ocean.</l>
+            </lg>
+         </div>
+         
+         
+         
+         <pb facs="page_image10" n="10"/>
+         <div type="alpha-group" xml:id="ag2" ana="P">
+            <head>P</head>
+            <lg>
+               <l>At the North Pols Polly feedsd the Polar bear with Porridge in a Pail, and</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="Q">
+            <head>Q</head>
+            <lg>
+               <l>the Queen gives a Party at which they dance a Queer Quadrille.</l>
+            </lg>
+         </div>
+         
+         <pb facs="page_image11" n="11"/>
+         <div type="alpha-group" xml:id="ag2" ana="R">
+            <head>R</head>
+            <lg>
+               <l>Hurrah for a Rare Reindeer Race</l>
 
-D
-Landing in Africa Dolly gives a Dinner-party in the Dusty Desert
-
-E
-On Entering Egypt, Eddie plants the English Ensign on a Sphinx
-
-F
-Flying Fishes carry our little Friends Far over the Sea.
-
-G
-to Goa, and Georgie Gives all the little Girls a ride in the Go-cart on the way to the Ganges.
-
-H
-They Hasten on to Hong-King, where Harry rides through the street on a Hobby Horse.
-
-IJ
-Away they sail amoung the Indian Islands In a Junk,
-till they come to Java
-where Johnny eats edible birdsnests with Jam.
-
-K
-The Southward to Australia where the Kincking Kangaroos call on Katie.
-
-L
-Turning their Log-hut into a Log-raft, called the Lily, they embark for America.
-
-MNO
-After Marching through Mexico, and trying to Mop up the Mississippi, they take a Nap in new York.
-
-Provided with oranges
-they cross Over Brooklyn Bridge and catch the Omnibus for the northern Ocean.
-
-PQ
-At the North Pols Polly feedsd the Polar bear with Porridge in a Pail, and the Queen gives a Party at which they dance a Queer Quadrille.
-
-RS
-Hurrah for a Rare Reindeer Race along the Roads of Russia in a Snug Sleigh axcross the Soft Snow to the Southern Steppes!
-
-T
-To The astonishment of The Turks They Travel in Tubs along The Telegraph wires of Turkey.
-
-UV
-Una sites Under an Umbrella on the top of Vesuvius, while Valentine plays the Violin in the Vineyard.
-
-W
-Whence they go in Wheelbarrows to the land of Windmills and Water,
-Where the Wind Whistles in the Winter Weather, and Where they are Welcomed by the Wee children Who Wear and Walk in Wonderful Wooden shoes.
-
-XYZ
-They cross the sea once more, and landing X miles from
-Yarmouth they leave
-their Yacht the Zephyr.
-And Zoe welcomes the little travellers home.
-
-
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="S">
+            <head>S</head>
+            <lg>
+               <l>along the Roads of Russia in a Snug Sleigh axcross the Soft Snow to the Southern Steppes!</l>
+            </lg>
+         </div>
+         <pb facs="page_image12" n="12"/>
+         <div type="alpha-group" xml:id="ag2" ana="T">
+            <head>T</head>
+            <lg>
+               <l>To The astonishment of The Turks They Travel in Tubs along The Telegraph wires of Turkey.</l>
+            </lg>
+         </div>
+         <pb facs="page_image13" n="13"/>
+         <div type="alpha-group" xml:id="ag2" ana="U">
+            <head>U</head>
+            <lg>
+               <l>Una sits Under an Umbrella on the top of</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="V">
+            <head>V</head>
+            <lg>
+               <l>Vesuvius, while Valentine plays the Violin in the Vineyard.</l>
+            </lg>
+         </div>
+         
+         
+         <pb facs="page_image14" n="14"/>
+         <div type="alpha-group" xml:id="ag2" ana="W">
+            <head>W</head>
+            <lg>
+               <l>Whence they go in Wheelbarrows to the land of Windmills and Water,</l>
+               <l>Where the Wind Whistles in the Winter Weather, and Where they are Welcomed by the Wee children Who Wear and Walk in Wonderful Wooden shoes.</l>
+            </lg>
+         </div>
+         <pb facs="page_image15" n="15"/>
+         <div type="alpha-group" xml:id="ag2" ana="X">
+            <head>X</head>
+            <lg>
+               <l>They cross the sea once more, and landing X miles from</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="Y">
+            <head>Y</head>
+            <lg>
+               <l>Yarmouth they leave their Yacht the Zephyr.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag2" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>And Zoe welcomes the little travellers home.</l>
+            </lg>
+         </div>
+         
+         
+         <pb facs="page_image16" n="16"/>
+      </body>
+   </text>
+</TEI>
