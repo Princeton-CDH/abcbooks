@@ -155,279 +155,249 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>A</head>
             <lg>
-               <l></l>
+               ﻿<l>A is an Abolitionist—</l>
+               <l>A man who wants to free</l>
+               <l>The wretched slave—</l>
+               <l>and give to all</l>
+               <l>An equal liberty.</l>
+               </lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>B</head>
+            <lg>
+               <l>B is a Brother with a skin</l>
+               <l>Of somewhat darker hue,</l>
+               <l>But in our Heavenly Father’s sight.</l>
+               <l>He is as dear as you.</l>
             </lg>
          </div>
-         <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
+         
+         <pb facs="page_image2" n="13"/>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>C</head><lg>
+               <l>C is the Cotton-field, to which</l>
+               <l>This injured brother’s driven,</l>
+               <l>When, as the white man’s slave, he toils</l>
+               <l>From early morn till even.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>D</head><lg>
+               <l>D is the Driver, cold and stern,</l>
+               <l>Who follows, whip in hand,</l>
+               <l>To punish those who dare to rest,</l>
+               <l>Or disobey command.</l></lg>
+         </div>
+         <pb facs="page_image3" n="14"/>
+         <pb facs="page_image4" n="15"/>
+         <pb facs="page_image5" n="16"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>E</head><lg>
+               <l>E is the Eagle, soaring high;</l>
+               <l>An emblem of the free;</l>
+               <l>But while we chain our brother man,</l>
+               <l>Our type he cannot be.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>F</head><lg>
+               <l>F is the heart-sick Fugitive,</l>
+               <l>The slave who runs away,</l>
+               <l>And travels through the dreary night,</l>
+               <l>But hides himself by day.</l></lg>
+         </div>
+         <pb facs="page_image6" n="17"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>G</head><lg>
+               <l>G is the Gong, whose rolling sound,</l>
+               <l>Before the morning light,</l>
+               <l>Calls up the little sleeping slave,</l>
+               <l>To labor until night.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>H</head><lg>
+               <l>H is the Hound his master trained,</l>
+               <l>And called to scent the track.</l>
+               <l>Of the unhappy fugitive,</l>
+               <l>And bring him trembling back.</l></lg>
+         </div>
+         <pb facs="page_image7" n="18"/>
+         <pb facs="page_image8" n="19"/>
+         <pb facs="page_image9" n="20"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>I</head><lg>
+               <l>I is the Infant, from the arms</l>
+               <l>Of its fond mother torn,</l>
+               <l>And, at a public auction, sold</l>
+               <l>With horses, cows, and corn.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>J</head><lg>
+               <l>J is the Jail, upon whose floor</l>
+               <l>That wretched mother lay,</l>
+               <l>Until her cruel master came,</l>
+               <l>And carried her away.</l></lg>
+         </div>
+         <pb facs="page_image10" n="21"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>K</head><lg>
+               <l>K is the Kidnapper,who stole</l>
+               <l>That little child and mother—</l>
+               <l>Shrieking, it clung around her, but</l>
+               <l>He tore them from each other.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>L</head><lg>
+               <l>L is the Lash, that brutally</l>
+               <l>He swung around its head,</l>
+               <l>Threatening that “if it cried again,</l>
+               <l>He’d whip it till ’twas dead.”</l></lg>
+         </div>
+         <pb facs="page_image11" n="22"/>
+         <pb facs="page_image12" n="23"/>
+         <pb facs="page_image13" n="24"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>M</head><lg>
+               <l>M is the Merchant of the north,</l>
+               <l>Who buys what slaves produce—</l>
+               <l>So they are stolen, whipped and worked,</l>
+               <l>For his, and for our use.</l></lg>
+         </div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>N</head><lg>
+               <l>N is the Negro, rambling free</l>
+               <l>In his far distant home,</l>
+               <l>Delighting ’neath the palm trees’ shade</l>
+               <l>And cocoa-nut to roam.</l></lg>
+         </div>
+         <pb facs="page_image14" n="25"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>O</head><lg>
+               <l>O is the Orange tree, that bloomed</l>
+               <l>Beside his cabin door,</l>
+               <l>When white men stole him from his home</l>
+               <l>To see it never more.</l></lg>
+         </div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>P</head><lg>
+               <l>P is the Parent, sorrowing,</l>
+               <l>And weeping all alone—</l>
+               <l>The child he loved to lean upon,</l>
+               <l>His only son, is gone !</l></lg>
+         </div>
+         <pb facs="page_image15" n="26"/>
+         <pb facs="page_image16" n="27"/>
+         <pb facs="page_image17" n="28"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head><lg>
+               <l>Q is the Quarter, where the slave</l>
+               <l>On coarsest food is fed,</l>
+               <l>And where, with toil and sorrow worn,</l>
+               <l>He seeks his wretched bed.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>R</head><lg>
+               <l>R is the “Rice-swamp, dank and lone,"</l>
+               <l>Where, weary, day by day,</l>
+               <l>He labors till the fever wastes</l>
+               <l>His strength and life away.</l></lg>
+         </div>
+         <pb facs="page_image18" n="29"/>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>S</head><lg>
+               <l>S is the Sugar, that the slave</l>
+               <l>Is toiling hard to make,</l>
+               <l>To put into your pie and tea,</l>
+               <l>Your candy, and your cake.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>T</head><lg>
+               <l>T is the rank Tobacco plant,</l>
+               <l>Raised by slave labor too:</l>
+               <l>A poisonous and nasty thing,</l>
+               <l>For gentlemen to chew.</l></lg>
+         </div>
+         <pb facs="page_image19" n="30"/>
+         <pb facs="page_image20" n="31"/>
+         <pb facs="page_image21" n="32"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>U</head><lg>
+               <l>U is for Upper Canada,</l>
+               <l>Where the poor slave has found</l>
+               <l>Rest after all his wanderings,</l>
+               <l>For it is British ground !</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>V</head><lg>
+               <l>V is the Vessel, in whose dark,</l>
+               <l>Noisome, and stifling hold,</l>
+               <l>Hundreds of Africans are packed,</l>
+               <l>Brought o’er the seas, and sold.</l></lg>
+         </div>
+         <pb facs="page_image22" n="33"/>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>W</head><lg>
+               <l>W is the Whipping post,</l>
+               <l>To which the slave is bound,</l>
+               <l>While on his naked back,</l>
+               <l>the lash Makes many a bleeding wound.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>X</head><lg>
+               <l>X is for Xerxes, famed of yore;</l>
+               <l>A warrior stern was he</l>
+               <l>He fought with swords;</l>
+               <l>let truth and love Our only weapons be.</l></lg>
+         </div>
+         <pb facs="page_image23" n="34"/>
+         <pb facs="page_image24" n="35"/>
+         <pb facs="page_image25" n="36"/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Y</head><lg>
+               <l>Y is for Youth—the time for all</l>
+               <l>Bravely to war with sin;</l>
+               <l>And think not it can ever he</l>
+               <l>Too early to begin.</l></lg>
+         </div>
+
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Z</head><lg>
+               <l>Z is a Zealous man, sincere,</l>
+               <l>Faithful, and just, and true;</l>
+               <l>An earnest pleader for the slave—</l>
+               <l>Will you not be so too ?</l>
             </lg>
          </div>
-         <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image20" n="20"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image21" n="21"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image22" n="22"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image23" n="23"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image24" n="24"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image25" n="25"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image26" n="26"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image27" n="27"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image28" n="28"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image29" n="29"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image30" n="30"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image31" n="31"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image32" n="32"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image33" n="33"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image34" n="34"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image35" n="35"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image36" n="36"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image37" n="37"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image38" n="38"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image39" n="39"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image40" n="40"/>
+         <pb facs="page_image26" n="37"/>
+         <pb facs="page_image27" n="38"/>
+         <pb facs="page_image28" n="39"/>
+         <pb facs="page_image29" n="40"/>
       </body>
    </text>
 </TEI>

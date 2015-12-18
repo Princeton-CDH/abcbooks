@@ -1,132 +1,167 @@
-﻿A is an Abolitionist—
-A man who wants to free
-The wretched slave—
-and give to all
-An equal liberty.
 
-B is a Brother with a skin
-Of somewhat darker hue,
-But in our Heavenly Father’s sight.
-He is as dear as you.
 
-C is the Cotton-field, to which
-This injured brother’s driven,
-When, as the white man’s slave, he toils
-From early morn till even.
 
-D is the Driver, cold and stern,
-Who follows, whip in hand,
-To punish those who dare to rest,
-Or disobey command.
 
-E is the Eagle, soaring high;
-An emblem of the free;
-But while we chain our brother man,
-Our type he cannot be.
+<head>A</head>
+  <lg>
+﻿  <l>A is an Abolitionist—</l>
+  <l>A man who wants to free</l>
+  <l>The wretched slave—</l>
+  <l>and give to all</l>
+  <l>An equal liberty.</l></lg>
+  </lg>
 
-F is the heart-sick Fugitive,
-The slave who runs away,
-And travels through the dreary night,
-But hides himself by day.
+<head>B</head>
+<lg>
+  <l>B is a Brother with a skin</l>
+  <l>Of somewhat darker hue,</l>
+  <l>But in our Heavenly Father’s sight.</l>
+  <l>He is as dear as you.</l>
+</lg>
 
-G is the Gong, whose rolling sound,
-Before the morning light,
-Calls up the little sleeping slave,
-To labor until night.
+<head>C</head><lg>
+  <l>C is the Cotton-field, to which</l>
+  <l>This injured brother’s driven,</l>
+  <l>When, as the white man’s slave, he toils</l>
+  <l>From early morn till even.</l></lg>
 
-H is the Hound his master trained,
-And called to scent the track.
-Of the unhappy fugitive,
-And bring him trembling back.
+<head>D</head><lg>
+  <l>D is the Driver, cold and stern,</l>
+  <l>Who follows, whip in hand,</l>
+  <l>To punish those who dare to rest,</l>
+  <l>Or disobey command.</l></lg>
 
-I is the Infant, from the arms
-Of its fond mother torn,
-And, at a public auction, sold
-With horses, cows, and corn.
+<head>E</head><lg>
+  <l>E is the Eagle, soaring high;</l>
+  <l>An emblem of the free;</l>
+  <l>But while we chain our brother man,</l>
+  <l>Our type he cannot be.</l></lg>
 
-J is the Jail, upon whose floor
-That wretched mother lay,
-Until her cruel master came,
-And carried her away.
+<head>F</head><lg>
+  <l>F is the heart-sick Fugitive,</l>
+  <l>The slave who runs away,</l>
+  <l>And travels through the dreary night,</l>
+  <l>But hides himself by day.</l></lg>
 
-K is the Kidnapper,who stole
-That little child and mother—
-Shrieking, it clung around her, but
-He tore them from each other.
+<head>G</head><lg>
+  <l>G is the Gong, whose rolling sound,</l>
+  <l>Before the morning light,</l>
+  <l>Calls up the little sleeping slave,</l>
+  <l>To labor until night.</l></lg>
 
-L is the Lash, that brutally
-He swung around its head,
-Threatening that “if it cried again,
-He’d whip it till ’twas dead.”
+<head>H</head><lg>
+  <l>H is the Hound his master trained,</l>
+  <l>And called to scent the track.</l>
+  <l>Of the unhappy fugitive,</l>
+  <l>And bring him trembling back.</l></lg>
 
-M is the Merchant of the north,
-Who buys what slaves produce—
-So they are stolen, whipped and worked,
-For his, and for our use.
+<head>I</head><lg>
+  <l>I is the Infant, from the arms</l>
+  <l>Of its fond mother torn,</l>
+  <l>And, at a public auction, sold</l>
+  <l>With horses, cows, and corn.</l></lg>
 
-N is the Negro, rambling free
-In his far distant home,
-Delighting ’neath the palm trees’ shade
-And cocoa-nut to roam.
+<head>J</head><lg>
+  <l>J is the Jail, upon whose floor</l>
+  <l>That wretched mother lay,</l>
+  <l>Until her cruel master came,</l>
+  <l>And carried her away.</l></lg>
 
-O is the Orange tree, that bloomed
-Beside his cabin door,
-When white men stole him from his home
-To see it never more.
+<head>K</head><lg>
+  <l>K is the Kidnapper,who stole</l>
+  <l>That little child and mother—</l>
+  <l>Shrieking, it clung around her, but</l>
+  <l>He tore them from each other.</l></lg>
 
-P is the Parent, sorrowing,
-And weeping all alone—
-The child he loved to lean upon,
-His only son, is gone !
+<head>L</head><lg>
+  <l>L is the Lash, that brutally</l>
+  <l>He swung around its head,</l>
+  <l>Threatening that “if it cried again,</l>
+  <l>He’d whip it till ’twas dead.”</l></lg>
 
-Q is the Quarter, where the slave
-On coarsest food is fed,
-And where, with toil and sorrow worn,
-He seeks his wretched bed.
+<head>M</head><lg>
+  <l>M is the Merchant of the north,</l>
+  <l>Who buys what slaves produce—</l>
+  <l>So they are stolen, whipped and worked,</l>
+  <l>For his, and for our use.</l></lg>
 
-R is the “Rice-swamp, dank and lone,"
-Where, weary, day by day,
-He labors till the fever wastes
-His strength and life away.
+<head>N</head><lg>
+  <l>N is the Negro, rambling free</l>
+  <l>In his far distant home,</l>
+  <l>Delighting ’neath the palm trees’ shade</l>
+  <l>And cocoa-nut to roam.</l></lg>
 
-S is the Sugar, that the slave
-Is toiling hard to make,
-To put into your pie and tea,
-Your candy, and your cake.
+<head>O</head><lg>
+  <l>O is the Orange tree, that bloomed</l>
+  <l>Beside his cabin door,</l>
+  <l>When white men stole him from his home</l>
+  <l>To see it never more.</l></lg>
 
-T is the rank Tobacco plant,
-Raised by slave labor too:
-A poisonous and nasty thing,
-For gentlemen to chew.
+<head>P</head><lg>
+  <l>P is the Parent, sorrowing,</l>
+  <l>And weeping all alone—</l>
+  <l>The child he loved to lean upon,</l>
+  <l>His only son, is gone !</l></lg>
 
-U is for Upper Canada,
-Where the poor slave has found
-Rest after all his wanderings,
-For it is British ground !
+<head>Q</head><lg>
+  <l>Q is the Quarter, where the slave</l>
+  <l>On coarsest food is fed,</l>
+  <l>And where, with toil and sorrow worn,</l>
+  <l>He seeks his wretched bed.</l></lg>
 
-V is the Vessel, in whose dark,
-Noisome, and stifling hold,
-Hundreds of Africans are packed,
-Brought o’er the seas, and sold.
+<head>R</head><lg>
+  <l>R is the “Rice-swamp, dank and lone,"</l>
+  <l>Where, weary, day by day,</l>
+  <l>He labors till the fever wastes</l>
+  <l>His strength and life away.</l></lg>
 
-W is the Whipping post,
-To which the slave is bound,
-While on his naked back,
-the lash Makes many a bleeding wound.
+<head>S</head><lg>
+  <l>S is the Sugar, that the slave</l>
+  <l>Is toiling hard to make,</l>
+  <l>To put into your pie and tea,</l>
+  <l>Your candy, and your cake.</l></lg>
 
-X is for Xerxes, famed of yore;
-A warrior stern was he
-He fought with swords;
-let truth and love Our only weapons be.
+<head>T</head><lg>
+  <l>T is the rank Tobacco plant,</l>
+  <l>Raised by slave labor too:</l>
+  <l>A poisonous and nasty thing,</l>
+  <l>For gentlemen to chew.</l></lg>
 
-Y is for Youth—the time for all
-Bravely to war with sin;
-And think not it can ever he
-Too early to begin.
+<head>U</head><lg>
+  <l>U is for Upper Canada,</l>
+  <l>Where the poor slave has found</l>
+  <l>Rest after all his wanderings,</l>
+  <l>For it is British ground !</l></lg>
 
-Z is a Zealous man, sincere,
-Faithful, and just, and true;
-An earnest pleader for the slave—
-Will you not be so too ?
+<head>V</head><lg>
+  <l>V is the Vessel, in whose dark,</l>
+  <l>Noisome, and stifling hold,</l>
+  <l>Hundreds of Africans are packed,</l>
+  <l>Brought o’er the seas, and sold.</l></lg>
+
+<head>W</head><lg>
+  <l>W is the Whipping post,</l>
+  <l>To which the slave is bound,</l>
+  <l>While on his naked back,</l>
+  <l>the lash Makes many a bleeding wound.</l></lg>
+
+<head>X</head><lg>
+  <l>X is for Xerxes, famed of yore;</l>
+  <l>A warrior stern was he</l>
+  <l>He fought with swords;</l>
+  <l>let truth and love Our only weapons be.</l></lg>
+
+<head>Y</head><lg>
+  <l>Y is for Youth—the time for all</l>
+  <l>Bravely to war with sin;</l>
+  <l>And think not it can ever he</l>
+  <l>Too early to begin.</l></lg>
+
+<head>Z</head><lg>
+  <l>Z is a Zealous man, sincere,</l>
+  <l>Faithful, and just, and true;</l>
+  <l>An earnest pleader for the slave—</l>
+  <l>Will you not be so too ?</l>
+</lg>
 
 
