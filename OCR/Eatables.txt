@@ -1,78 +1,187 @@
 
-A is an Apple, both mellow and sweet, A really good one is a very nice treat.
 
-B is the Butter, just fresh from the churn. At breakfast and tea it serves a good turn.
 
-C is a Cabbage, sound in its heart,
-To Beef, Veal, or Pork ...
 
-D is the ..., whoever will try,
-Must acknowledge 'tis famous in Pudding or Pie.
-
-E is the Egg, unless I'm mistaken,
-Is certainly good with a ... of bacon
-
-F is a Fowl, but your pardon I beg,
-To talk of a Fowl so soon after Egg.
-
-G is the Goose, so don't be at a loss,
-To take the first opne of these rhymes for the ...
-
-H is the Honey obtained by the Bee.
-Whose industrious habits we all like to see.
-
-I stands for Ice, which I'll show in a trice,
-In the hot sumnmer weather is sure to be nice.
-
-J .... mind of my Grandmother's Jam
-With which she delighted my stomach to cram.
-
-K is a Kidney, nice if well broil'd,
-But burn it too much and 'tis sure to be spoil'd.
-
-L is a Lobster, he must not be o'erlooked,
-Tho' mind how you touch him before he is cook'd.
-
-M stands for Mutton, do pray boil the leg,
-With Turnips, and Capers, and a plateful I'll beg.
-
-N is the Nectarine, sweetest of fruit,
-For dessert after dinner 'twill you and I suit.
-
-O is an Oyster, to please all beholders,
-As a capital sauce to the Cod's head and shoulders.
-
-P stands for ..., of my dinner I've ...
-When ... I have had with a leg of Lamb roasted.
-
-Q is a Quince, 'twill a flavour impart,
-In a Pie, but alone it is rather too tart.
-
-R stands for Rabbit, I think you'll agree,
-A nice one for dinner would satisfy three.
-
-S is the king of all dishes, the Salmon,
-Either ... or fresh, he's good and so ....
-
-T is for Turtle, the Aldermen's pride,
-For they stick to Turtle, who ....
-
-U
-is for Utensils at which you are looking.
-You perceive thet they're all adapted for cooking.
-
-V stands for Veal, nicely stuff'd it is prime,
-If you chance to be hungry about dinner-time.
-
-W is the Wine your dinner to crown,
-Only don't take too much to wash it all down.
-
-Y is the Youth with Appetite rare,
-Who eats all he can, and leaves nothing to spare.
-
-X is the letter I thought to o'erlook,
-Bit it means a good thing, an ex-cellent cook.
-
-Z is the Zest which everyone feels,
-Who is healthy and hungry at each of his meals.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>A</head>
+  <lg>
+    <l>is an Apple, both mellow and sweet,</l>
+    <l>A really good one is a very nice treat.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>B</head>
+  <lg>
+    <l>is the Butter, just fresh from the churn.</l>
+    <l>At breakfast and tea it serves a good turn.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>C</head>
+  <lg>
+    <l>is a Cabbage, sound in its heart,</l>
+    <l>To Beef, Veal, or Pork ...</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>D</head>
+  <lg>
+    <l>is the ..., whoever will try,</l>
+    <l>Must acknowledge 'tis famous in Pudding or Pie.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>E</head>
+  <lg>
+    <l>is the Egg, unless I'm mistaken,</l>
+    <l>Is certainly good with a ... of bacon</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>F</head>
+  <lg>
+    <l>is a Fowl, but your pardon I beg,</l>
+    <l>To talk of a Fowl so soon after Egg.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>G</head>
+  <lg>
+    <l>is the Goose, so don't be at a loss,</l>
+    <l>To take the first opne of these rhymes for the ...</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>H</head>
+  <lg>
+    <l>is the Honey obtained by the Bee.</l>
+    <l>Whose industrious habits we all like to see.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>I</head>
+  <lg>
+    <l>stands for Ice, which I'll show in a trice,</l>
+    <l>In the hot sumnmer weather is sure to be nice.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>J</head>
+  <lg>
+    <l>.... mind of my Grandmother's Jam</l>
+    <l>With which she delighted my stomach to cram.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>K</head>
+  <lg>
+    <l>is a Kidney, nice if well broil'd,</l>
+    <l>But burn it too much and 'tis sure to be spoil'd.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>L</head>
+  <lg>
+    <l>is a Lobster, he must not be o'erlooked,</l>
+    <l>Tho' mind how you touch him before he is cook'd.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>M</head>
+  <lg>
+    <l>stands for Mutton, do pray boil the leg,</l>
+    <l>With Turnips, and Capers, and a plateful I'll beg.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>N</head>
+  <lg>
+    <l>s the Nectarine, sweetest of fruit,</l>
+    <l>For dessert after dinner 'twill you and I suit.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>O</head>
+  <lg>
+    <l>is an Oyster, to please all beholders,</l>
+    <l>As a capital sauce to the Cod's head and shoulders.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>P</head>
+  <lg>
+    <l>stands for ..., of my dinner I've ...</l>
+    <l>When ... I have had with a leg of Lamb roasted.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Q</head>
+  <lg>
+    <l>is a Quince, 'twill a flavour impart,</l>
+    <l>In a Pie, but alone it is rather too tart.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>R</head>
+  <lg>
+    <l>stands for Rabbit, I think you'll agree,</l>
+    <l>A nice one for dinner would satisfy three.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>S</head>
+  <lg>
+    <l>is the king of all dishes, the Salmon,</l>
+    <l>Either ... or fresh, he's good and so ....</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>T</head>
+  <lg>
+    <l>is for Turtle, the Aldermen's pride,</l>
+    <l>For they stick to Turtle, who ....</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>U</head>
+  <lg>
+    <l>is for Utensils at which you are looking.</l>
+    <l>You perceive thet they're all adapted for cooking.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>V</head>
+  <lg>
+    <l>stands for Veal, nicely stuff'd it is prime,</l>
+    <l>If you chance to be hungry about dinner-time.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>W</head>
+  <lg>
+    <l>is the Wine your dinner to crown,</l>
+    <l>Only don't take too much to wash it all down.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Y</head>
+  <lg>
+    <l>is the Youth with Appetite rare,</l>
+    <l>Who eats all he can, and leaves nothing to spare.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>X</head>
+  <lg>
+    <l>is the letter I thought to o'erlook,</l>
+    <l>Bit it means a good thing, an ex-cellent cook.</l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Z</head>
+  <lg>
+    <l>is the Zest which everyone feels,</l>
+    <l>Who is healthy and hungry at each of his meals.</l>
+  </lg>
+</div>  
 
