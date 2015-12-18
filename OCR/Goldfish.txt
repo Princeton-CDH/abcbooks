@@ -1,97 +1,193 @@
-A
-Through distant seas, in lordlypride
-Behold the ARUANUS glide.
 
-B
-The BARREL is a River Fish,
-But maes a course unwholesomedish.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>A</head>
+  <lg>
+     <l>Through distant seas, in lordlypride</l>
+     <l>Behold the ARUANUS glide.</l>
+  </lg>
+</div>
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>B</head>
+  <lg>
+     <l>The BARREL is a River Fish,</l>
+     <l>But maes a course unwholesomedish.</l>
+  </lg>
+</div>
 
-C
-The long liv'd CARP so often sought,
-By strategem is easiest caught.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>C</head>
+  <lg>
+     <l>The long liv'd CARP so often sought,</l>
+     <l>By strategem is easiest caught.</l>
+  </lg>
+</div>
 
-D
-See the fierce DOLPHIN in his wroth,
-Lie a proud whale send waters forth.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>D</head>
+  <lg>
+     <l>See the fierce DOLPHIN in his wroth,</l>
+     <l>Lie a proud whale send waters forth.</l>
+  </lg>
+</div>
 
-E
-How often does the EEL survive
-Some minutes after skinn'd alive.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>E</head>
+  <lg>
+     <l>How often does the EEL survive</l>
+     <l>Some minutes after skinn'd alive.</l>
+  </lg>
+</div>
 
-F
-The FLYING FISH to escape its foes,
-Oft through the air with quickness goes.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>F</head>
+  <lg>
+     <l>The FLYING FISH to escape its foes,</l>
+     <l>Oft through the air with quickness goes.</l>
+  </lg>
+</div>
 
-G
-The GRAYLING in swift steams resides
-Down which as quick as light she glides.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>G</head>
+  <lg>
+     <l>The GRAYLING in swift steams resides</l>
+     <l>Down which as quick as light she glides.</l>
+  </lg>
+</div>
 
-H
-The HADDOCKS migrate, like some birds,
-And quit the shores in shoals or herds.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>H</head>
+  <lg>
+     <l>The HADDOCKS migrate, like some birds,</l>
+     <l>And quit the shores in shoals or herds.</l>
+  </lg>
+</div>
 
-J
-Poor JACK,himself so much despis'd
-But to catch other fish is prizd!
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>J</head>
+  <lg>
+     <l>Poor JACK,himself so much despis'd</l>
+     <l>But to catch other fish is prizd!</l>
+  </lg>
+</div>
 
-K
-The KURTUS, oft the hunch-back nam'd,
-As wholesome fish is not much fam'd
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>K</head>
+  <lg>
+     <l>The KURTUS, oft the hunch-back nam'd,</l>
+     <l>As wholesome fish is not much fam'd</l>
+  </lg>
+</div>
 
-L
-The curious LUMP FISH oft is found,
-To stic like cement to the ground.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>L</head>
+  <lg>
+     <l>The curious LUMP FISH oft is found,</l>
+     <l>To stic like cement to the ground.</l>
+  </lg>
+</div>
 
-M
-The fish for savageness so fam'd,
-The MEDITERRANEAN SEA WOLF'S nam'd
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>M</head>
+  <lg>
+     <l>The fish for savageness so fam'd,</l>
+     <l>The MEDITERRANEAN SEA WOLF'S nam'd</l>
+  </lg>
+</div>
 
-N
-ThePE FISH is seldom caught;
-The reason'splain 'tis good for nought.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>N</head>
+  <lg>
+     <l>The NILE SNIPE FISH is seldom caught;</l>
+     <l>The reason'splain 'tis good for nought.</l>
+  </lg>
+</div>
 
-O
-The ORIENTAL SAWFISH, here,
-Is not much priz'd, nor very dear.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>O</head>
+  <lg>
+     <l>The ORIENTAL SAWFISH, here,</l>
+     <l>Is not much priz'd, nor very dear.</l>
+  </lg>
+</div>
 
-P
-How often do our angler's search,
-With anxious care, for this fish, PERCH.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>P</head>
+  <lg>
+     <l>How often do our angler's search,</l>
+     <l>With anxious care, for this fish, PERCH.</l>
+  </lg>
+</div>
 
-Q
-The QUEBEC RINGENS, curious fish,
-Affords a scarce but wholesome fish.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Q</head>
+  <lg>
+     <l>The QUEBEC RINGENS, curious fish,</l>
+     <l>Affords a scarce but wholesome fish.</l>
+  </lg>
+</div>
 
-R
-The silly, unsuspecting ROACH
-Will seldom flee at your approach.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>R</head>
+  <lg>
+     <l>The silly, unsuspecting ROACH</l>
+     <l>Will seldom flee at your approach.</l>
+  </lg>
+</div>
 
-S
-The SALMON, prince of River Fish,
-Makes a most good substantial fish.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>S</head>
+  <lg>
+     <l>The SALMON, prince of River Fish,</l>
+     <l>Makes a most good substantial fish.</l>
+  </lg>
+</div>
 
-T
-Angler, mind well what you're about,
-If you would take the cunning TROUT.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>T</head>
+  <lg>
+     <l>Angler, mind well what you're about,</l>
+     <l>If you would take the cunning TROUT.</l>
+  </lg>
+</div>
 
-V
-Full bodied VESPERILLOS seem,
-To love the cataract and the stream.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>V</head>
+  <lg>
+     <l>Full bodied VESPERILLOS seem,</l>
+     <l>To love the cataract and the stream.</l>
+  </lg>
+</div>
 
-W
-Great Monarch of the Ocean wide,
-The WHALE'S subdu'd with all his pride.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>W</head>
+  <lg>
+     <l>Great Monarch of the Ocean wide,</l>
+     <l>The WHALE'S subdu'd with all his pride.</l>
+  </lg>
+</div>
 
-X
-Well is the XERXES DOG FISH nam'd,
-For'tis for courage greatly fam'd.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>X</head>
+  <lg>
+     <l>Well is the XERXES DOG FISH nam'd,</l>
+     <l>For'tis for courage greatly fam'd.</l>
+  </lg>
+</div>
 
-Y
-Behold the YELLOW GOLD FISH swim,
-In playful mood from brim to brim.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Y</head>
+  <lg>
+     <l>Behold the YELLOW GOLD FISH swim,</l>
+     <l>In playful mood from brim to brim.</l>
+  </lg>
+</div>
 
-Z
-The ZEALAND ACULATUS where,
-'Tis caught affords a wholesome cheer.
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Z</head>
+  <lg>
+     <l>The ZEALAND ACULATUS where,</l>
+     <l>'Tis caught affords a wholesome cheer.</l>
+  </lg>
+</div>
 
 
