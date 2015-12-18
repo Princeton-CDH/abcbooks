@@ -1,45 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -216,26 +174,26 @@
          <pb facs="page_image3" n="3"/>
          <pb facs="page_image4" n="4"/>
          <pb facs="page_image5" n="5"/>
-         <div>
+         <div type="alpha-group" xml:id="ag1" ana="A">
             <head>A a</head>
             <lg>
                <l>A was an Archer, that shot at a Frog.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
             <head>B b</head>
             <lg>
                <l>B was a Butcher, that had a great Dog.</l>
             </lg>
          </div>
          <pb facs="page_image6" n="6"/>
-         <div>
+         <div type="alpha-group" xml:id="ag3" ana="C">
             <head>C c</head>
             <lg>
                <l>C was a Captain, all cover’d with Lace.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
             <head>D d</head>
             <lg>
                <l>D was a Drunkard, that had a red Face.</l>
@@ -249,13 +207,13 @@
          <pb facs="page_image11" n="11"/>
 
          <pb facs="page_image12" n="12"/>
-         <div>
+         <div type="alpha-group" xml:id="ag5" ana="E">
             <head>E e</head>
             <lg>
                <l>E was an Esquire, with pride on his Brow.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
             <head>F f</head>
             <lg>
                <l>F was a Farmer, that follow’d the Plough.</l>
@@ -266,29 +224,29 @@
          <pb facs="page_image15" n="15"/>
          <pb facs="page_image16" n="16"/>
          <pb facs="page_image17" n="17"/>
-         <div>
+         <div type="alpha-group" xml:id="ag7" ana="G">
             <head>G g</head>
             <lg>
                <l>G was a Gamester, and he had ill Luck.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
             <head>H h</head>
             <lg>
                <l>H was a Hunter, that hunted a Buck.</l>
             </lg>
          </div>
          <pb facs="page_image18" n="18"/>
-         <div>
+         <div type="alpha-group" xml:id="ag9" ana="J">
             <head>J j</head>
             <lg>
                <l>J was a Joiner, that built up a House.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag10" ana="K">
             <head>K k</head>
             <lg>
-               <l>R was a King, that govern’d a Mouse.</l>
+               <l>K was a King, that govern’d a Mouse.</l>
             </lg>
          </div>
          <pb facs="page_image19" n="19"/>
@@ -296,26 +254,26 @@
          <pb facs="page_image21" n="21"/>
          <pb facs="page_image22" n="22"/>
          <pb facs="page_image23" n="23"/>
-         <div>
+         <div type="alpha-group" xml:id="ag11" ana="L">
             <head>L l</head>
             <lg>
                <l>L was a Lady, that had a white Hand.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag12" ana="M">
             <head>M m</head>
             <lg>
                <l>M was a Merchant, to some foreign Land.</l>
             </lg>
          </div>
          <pb facs="page_image24" n="24"/>
-         <div>
+         <div type="alpha-group" xml:id="ag13" ana="N">
             <head>N n</head>
             <lg>
                <l>N was a Nobleman, gallant and bold.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag14" ana="O">
             <head>O o</head>
             <lg>
                <l>O was an Oyster-wench, one that would scold.</l>
@@ -327,26 +285,26 @@
          <pb facs="page_image27" n="27"/>
          <pb facs="page_image28" n="28"/>
          <pb facs="page_image29" n="29"/>
-         <div>
+         <div type="alpha-group" xml:id="ag15" ana="P">
             <head>P p</head>
             <lg>
                <l>P was a Parson, that wore a black Gown.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag16" ana="Q">
             <head>Q q</head>
             <lg>
                <l>Q was a Quaker, that would not bow down.</l>
             </lg>
          </div>
          <pb facs="page_image30" n="30"/>
-         <div>
+         <div type="alpha-group" xml:id="ag17" ana="R">
             <head>R r</head>
             <lg>
                <l>R was a Robber, that wanted a Whip.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag18" ana="S">
             <head>S s</head>
             <lg>
                <l>S was a Sailor, that lived in a Ship.</l>
@@ -358,26 +316,26 @@
          <pb facs="page_image33" n="33"/>
          <pb facs="page_image34" n="34"/>
          <pb facs="page_image35" n="35"/>
-         <div>
+         <div type="alpha-group" xml:id="ag19" ana="T">
             <head>T t</head>
             <lg>
                <l>T was a Tinker, that mended a Pot.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag20" ana="V">
             <head>V v</head>
             <lg>
                <l>V was a Vintner, a very great Sot.</l>
             </lg>
          </div>
          <pb facs="page_image36" n="36"/>
-         <div>
+         <div type="alpha-group" xml:id="ag21" ana="W">
             <head>W w</head>
             <lg>
                <l>W was a Watchman, that guarded the door.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag22" ana="X">
             <head>X x</head>
             <lg>
                <l>X was expensive, and so became poor.</l>
@@ -385,13 +343,13 @@
          </div>
          <pb facs="page_image37" n="37"/>
          <pb facs="page_image38" n="38"/>
-         <div>
+         <div type="alpha-group" xml:id="ag23" ana="Y">
             <head>Y y</head>
             <lg>
                <l>Y was a Youth, that did not love School.</l>
             </lg>
          </div>
-         <div>
+         <div type="alpha-group" xml:id="ag24" ana="Z">
             <head>Z z</head>
             <lg>
                <l>Z was a Zany, that looked like a Fool.</l>
