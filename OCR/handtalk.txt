@@ -1,0 +1,159 @@
+
+
+
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>A</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>B</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>C</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>D</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>E</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>F</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>G</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>H</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>I</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>J</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>K</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>L</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>M</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>N</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>O</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>P</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Q</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>R</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>S</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>T</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>U</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>V</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>W</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Y</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>X</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
+<div type="alpha-group" xml:id="ag2" ana="">
+    <head>Z</head>
+  <lg>
+     <l></l>
+  </lg>
+</div>  
