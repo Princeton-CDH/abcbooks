@@ -111,182 +111,221 @@
    </facsimile>
    <text>
       <body>
+         
+         
+        
+         
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag1" ana="A">
             <lg>
-               <l></l>
+               <l>A is for Apples and also for Air;</l>
+               <l>Children need both and we have them to spare.</l>
             </lg>
          </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag2" ana="B">
             <lg>
-               <l></l>
+               <l>B is for Butter spread thick on Brown Bread,</l>
+               <l>Also for Baths before Breafast and Bed.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag3" ana="C">
             <lg>
-               <l></l>
+               <l>C is for Cereals and Cocoa too;</l>
+               <l>Consider the Calories coming to You.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag4" ana="D">
             <lg>
-               <l></l>
+               <l>D is for Dates, the kind that You eat,</l>
+               <l>Deliciously sweet and far cheaper than Meat.</l>
             </lg>
          </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag5" ana="E">
             <lg>
-               <l></l>
+               <l>E is teh Excellent Edible Egg,</l>
+               <l>One daily at least, dear Children, we beg.</l>
             </lg>
          </div>
+        
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag6" ana="F">
             <lg>
-               <l></l>
+               <l>F is for Fruits whether fresh, dried,or stewed;</l>
+               <l>Dried, at the Grocer's, you'll buy them, if shrewd.</l>
             </lg>
          </div>
+         
+
+         
+         
+         
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag7" ana="G">
             <lg>
-               <l></l>
+               <l>G is for Gaining, as every Child could;</l>
+               <l>A half pound a Month is the least that he should.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag8" ana="H">
             <lg>
-               <l></l>
+               <l>H is for Height, be as tall as you can,</l>
+               <l>Weight up to Height makes a healthy strong Man</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag9" ana="I">
             <lg>
-               <l></l>
+               <l>I is for Iron in Spinach and Eggs,</l>
+               <l>Builds Red Blood and Sinews for strong Arms and Legs.</l>
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag10" ana="J">
             <lg>
-               <l></l>
+               <l>J is for Jam and also for Joy,</l>
+               <l>Which spread on his Bread it brings to a Boy.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag11" ana="K">
             <lg>
-               <l></l>
+               <l>K is for Kitchen so spick and so span,</l>
+               <l>We all like our Food from shining clean Pan.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag12" ana="L">
             <lg>
-               <l></l>
+               <l>L is for .... served hot in the School;</l>
+               <l>We wish all the Teachers could follow this Rule.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag13" ana="M">
             <lg>
-               <l></l>
+               <l>M is for Milk which makes Muscle and Bone;</l>
+               <l>One pint a day would be best till you're grown.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag14" ana="N">
             <lg>
-               <l></l>
+               <l>N is for News of habits you need,</l>
+               <l>To grow up so healthy You're bound to succeed.</l>
             </lg>
          </div>
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag15" ana="O">
             <lg>
-               <l></l>
+               <l>O is for Oatmeal, the finest of Food;</l>
+               <l>With Milk for your Breakfast, there's nothing so good.</l>
             </lg>
          </div>
+
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag16" ana="P">
             <lg>
-               <l></l>
+               <l>P is for Prunes, Potatoes and Peas,</l>
+               <l>And Patriots who will be glad to eat these.</l>
             </lg>
          </div>
+         
+
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag17" ana="Q">
             <lg>
-               <l></l>
+               <l>Q is for Quiet, we frequently need;</l>
+               <l>after Meals don't run at the top of your speed.</l>
             </lg>
          </div>
+
          <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
+         
+         <div  type="alpha-group" xml:id="ag18" ana="R">
             <lg>
-               <l></l>
+               <l>R is for Rest and Round .... Faces</l>
+               <l>Rest is a thing which nothing replaces.</l>
             </lg>
          </div>
+
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag19" ana="S">
             <lg>
-               <l></l>
+               <l>S is important and therefore I hope</l>
+               <l>You'll pardon my specially mentioning Soap.</l>
             </lg>
          </div>
          <pb facs="page_image20" n="20"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag20" ana="T">
             <lg>
-               <l></l>
+               <l>T is a Topic which Trouble begins;</l>
+               <l>Both Tea and Coffee for Chidren are Sins.</l>
             </lg>
          </div>
          <pb facs="page_image21" n="21"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag21" ana="U">
             <lg>
-               <l></l>
+               <l>U Understanding the best way to live,</l>
+               <l>United for Service our Country to give.</l>
             </lg>
          </div>
          <pb facs="page_image22" n="22"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag22" ana="V">
             <lg>
-               <l></l>
+               <l>V is for Vegetables; if your're too slim,</l>
+               <l>These Victuals are full of Vigor and Vim.</l>
             </lg>
          </div>
          <pb facs="page_image23" n="23"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag23" ana="W">
             <lg>
-               <l></l>
+               <l>W is for Water the best thing to drink</l>
+               <l>Between Meals as often as ever we think.</l>
             </lg>
          </div>
          <pb facs="page_image24" n="24"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag24" ana="X">
             <lg>
-               <l></l>
+               <l>X is for Xtras of Soup or of Milk,</l>
+               <l>For a thin little Girl till she's finer than Silk</l>
             </lg>
          </div>
          <pb facs="page_image25" n="25"/>
-         <div>
-            <head></head>
+         <div  type="alpha-group" xml:id="ag25" ana="Y">
             <lg>
-               <l></l>
+               <l>Y is for You, and I tell you the Truth,</l>
+               <l>Learn to be Healthy and Strong in your Youth.</l>
             </lg>
          </div>
          <pb facs="page_image26" n="26"/>
+         <div  type="alpha-group" xml:id="ag26" ana="Z">
+            <lg>
+               <l>Z is the Zest which Health gives to Life,</l>
+               <l>Now march for it, Children, with Drum and with Fife.</l>
+            </lg>
+         </div>   
+
       </body>
    </text>
 </TEI>
