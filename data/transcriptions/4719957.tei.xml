@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -24,7 +23,8 @@
                </title>
                <imprint>
                   <pubPlace>London</pubPlace>
-                  <publisher>Printed by and for Hodgson &amp; Co., Juvenile Press, No. 10, Newgate-Street</publisher>
+                  <publisher>Printed by and for Hodgson &amp; Co., Juvenile Press, No. 10,
+                     Newgate-Street</publisher>
                   <date>[between 1822 and 1824] 1822 1824</date>
                </imprint>
             </monogr>
@@ -143,251 +143,225 @@
    </facsimile>
    <text>
       <body>
+
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image7" n="7"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <ab>
+               <lb/>INFANT’S POSTURE ALPHABET; <lb/>OR,HARLEQUIN’S A, B, C. <lb/>EMBELLISHED WITH
+               <lb/> NUMEROUS COLOURED ENGRAVINGS. <lb/>London: <lb/>PRINTED BY AND FOR HODGSON
+               &amp; CO. <lb/>JUVENILE PRESS, <lb/>No. 10, NEWGATE STREET. <lb/>SIXPENCE. </ab>
          </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <pb facs="page_image10" n="10"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A a</head>
             <lg>
-               <l></l>
+               <l>Come here, my boy, and tell me, pray,</l>
+               <l>Is not this just like an A ?</l>
             </lg>
          </div>
-         <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B b</head>
             <lg>
-               <l></l>
+               <l>Spur-red and boot-ed, quite a Dan-dy,</l>
+               <l>See, he makes great B, for bran-dy.</l>
             </lg>
          </div>
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C c</head>
             <lg>
-               <l></l>
+               <l>It makes one laugh a man to see,</l>
+               <l>Bend his bo-dy like a C.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D d</head>
+            <lg>
+               <l>Hold-ing fast by ei-ther show,</l>
+               <l>Well e-nough for D will do.</l>
             </lg>
          </div>
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <pb facs="page_image14" n="14"/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E e</head>
             <lg>
-               <l></l>
+               <l>With his glass, quite full of glee,</l>
+               <l>See him sit, in shape like E.</l>
             </lg>
          </div>
-         <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F f</head>
             <lg>
-               <l></l>
+               <l>With emp-ty hot-tie, once so jol-ly,</l>
+               <l>See him stand like F, for fol-ly.</l>
+
             </lg>
          </div>
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G g</head>
             <lg>
-               <l></l>
+               <l>If you could bend as well as he,</l>
+               <l>You would al-so make a G.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H h</head>
+            <lg>
+               <l>Hold-ing by each o-ther’s hand,</l>
+               <l>Like an H this cou-ple stand.</l>
             </lg>
          </div>
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
+         <pb facs="page_image18" n="18"/>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I i</head>
             <lg>
-               <l></l>
+               <l>You need not cock your head so high,</l>
+               <l>To make your-self look like an I.</l>
             </lg>
          </div>
-         <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag10" ana="K">
+            <head>K k</head>
             <lg>
-               <l></l>
+               <l>March-ing bold-ly on his way,</l>
+               <l>He looks just like the let-ter K.</l>
+
             </lg>
          </div>
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag11" ana="L">
+            <head>L l</head>
             <lg>
-               <l></l>
+               <l>Now, if the truth is man could tell,</l>
+               <l>He'd say, "Am I not like an L?"</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag12" ana="M">
+            <head> M m</head>
+            <lg>
+               <l>If you could place your-self like this,</l>
+               <l>You'd make an M, that stands for miss.</l>
             </lg>
          </div>
          <pb facs="page_image20" n="20"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image21" n="21"/>
-         <div>
-            <head></head>
+         <pb facs="page_image22" n="22"/>
+         <div type="alpha-group" xml:id="ag13" ana="N">
+            <head> N n</head>
             <lg>
-               <l></l>
+               <l>Sit thus, my lit-tie boy, and then</l>
+               <l>We’ll say you look just like an N.</l>
             </lg>
          </div>
-         <pb facs="page_image22" n="22"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag14" ana="O">
+            <head>O o</head>
             <lg>
-               <l></l>
+               <l>If you could bend your bo-dy so,</l>
+               <l>You would make a great round O.</l>
             </lg>
+
          </div>
          <pb facs="page_image23" n="23"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag15" ana="P">
+            <head>P p</head>
             <lg>
-               <l></l>
+               <l>He pulls his cap, and then you see</l>
+               <l>How much he looks like let-ter P.</l>
             </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag16" ana="Q">
+            <head>Q q</head>
+            <lg>
+               <l>This man he laughs, and so would you,</l>
+               <l>If you could make so a good a Q.</l>
+            </lg>
+
          </div>
          <pb facs="page_image24" n="24"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image25" n="25"/>
-         <div>
-            <head></head>
+         <pb facs="page_image26" n="26"/>
+         <div type="alpha-group" xml:id="ag17" ana="R">
+            <head>R r</head>
             <lg>
-               <l></l>
+               <l>Danc-ing with his mug or jar,</l>
+               <l>He lit-tle thinks how like an R.</l>
             </lg>
          </div>
-         <pb facs="page_image26" n="26"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag18" ana="S">
+            <head>S s</head>
             <lg>
-               <l></l>
+               <l>Bend your legs and arms, then guess,</l>
+               <l>Whe-ther you would make an S.</l>
             </lg>
+
          </div>
          <pb facs="page_image27" n="27"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag19" ana="T">
+            <head>T t</head>
             <lg>
-               <l></l>
+               <l>Do but, do but, come and see,</l>
+               <l>How much this man looks like a T.</l>
             </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag20" ana="U">
+            <head>U u</head>
+            <lg>
+               <l>Lean back, raise legs, then you will be,</l>
+               <l>For all the world just like a V.</l>
+            </lg>
+
          </div>
          <pb facs="page_image28" n="28"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image29" n="29"/>
-         <div>
-            <head></head>
+         <pb facs="page_image30" n="30"/>
+         <div type="alpha-group" xml:id="ag21" ana="W">
+
+            <head>W w</head>
             <lg>
-               <l></l>
+               <l>Bend-ing so might ra-ther trou-ble you,</l>
+               <l>Yet, two so bent will make a W.</l>
             </lg>
          </div>
-         <pb facs="page_image30" n="30"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag22" ana="X">
+            <head>X x</head>
             <lg>
-               <l></l>
+               <l>Some-thing must this cou-ple vex,</l>
+               <l>They stand so much like let-ter X.</l>
             </lg>
+
          </div>
          <pb facs="page_image31" n="31"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag23" ana="Y">
+            <head>Y y</head>
             <lg>
-               <l></l>
+               <l>Head straight down, and feet up high,</l>
+               <l>Stretch’d wide as any let-ter Y.</l>
             </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag24" ana="Z">
+            <head>Z z</head>
+            <lg>
+               <l>He holds his arms, his legs, and head,</l>
+               <l>As if he wish’d to make a Z.</l>
+            </lg>
+
          </div>
          <pb facs="page_image32" n="32"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image33" n="33"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image34" n="34"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image35" n="35"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image36" n="36"/>
       </body>
    </text>
