@@ -1,11 +1,15 @@
-THE
-ALPHABET
-or
-GOODY TWO SHOES
-BY LEARNING WHICH SHE SOON' GOT RICH.
-LONDON:
-PRINTED FOR J. HARRIS AND SON, CORNER OF ST. PAULS CHURCH-YARD.
-1820.
+    <lb/>THE
+    <lb/>ALPHABET
+    <lb/>or
+    <lb/>GOODY TWO SHOES
+    <lb/>BY LEARNING WHICH SHE SOON' GOT RICH.
+    <lb/>LONDON:
+    <lb/>PRINTED FOR J. HARRIS AND SON, CORNER OF ST. PAULS CHURCH-YARD.
+    <lb/>1820.
+
+
+
+
 A B C D E F G H I J K L M N O P Q R S T
 u v wx
 y z.
@@ -196,140 +200,238 @@ work-man
 Yel-low
 young-est
 
-A, was an Apple,
-And put in a pie,
-With ten or twelve others,
-All piled up so high.
-
-And B, was tall Biddy, 
-Who made the puff paste, 
-And put sugar and lemon-peel 
-Quite to my taste.
 
 
-Oy, is a Cheese,
-But don’t ask for a slice,
-For it serves to maintain
-A whole nation of Mice.
+<div type="alpha-group" xml:id="ag1" ana="A">
+<lg>
+  <l>A, was an Apple,</l>
+  <l>And put in a pie,</l>
+  <l>With ten or twelve others,</l>
+  <l>All piled up so high.</l>
+</lg>
+</div>
 
+<div type="alpha-group" xml:id="ag2" ana="B">
+<lg>
+  <l>And B, was tall Biddy, </l>
+  <l>Who made the puff paste, </l>
+  <l>And put sugar and lemon-peel </l>
+  <l>Quite to my taste.</l>
+</lg>
+</div>
 
-D , was Dick Dump,
-Who did nothing but eat.
-And would leave book and play
-For a nice bit of meat.
+<div type="alpha-group" xml:id="ag3" ana="C">
+<lg>
+  <l>C, is a Cheese,</l>
+  <l>But don’t ask for a slice,</l>
+  <l>For it serves to maintain</l>
+  <l>A whole nation of Mice.</l>
+</lg>
+</div>
 
-E, is an Egg
-In a basket with more,
-Which Jenny will sell
-For a shilling a score.
+<div type="alpha-group" xml:id="ag4" ana="D">
+<lg>
+  <l>D , was Dick Dump,</l>
+  <l>Who did nothing but eat.</l>
+  <l>And would leave book and play</l>
+  <l>For a nice bit of meat.</l>
+</lg>
+</div>
 
-F was a Forester,
-Dress’d all in green,
-With a Cap of fine fur,
-Like a King or a Queen.
+<div type="alpha-group" xml:id="ag5" ana="E">
+<lg>
+  <l>E, is an Egg</l>
+  <l>In a basket with more,</l>
+  <l>Which Jenny will sell</l>
+  <l>For a shilling a score.</l>
+</lg>
+</div>
 
+<div type="alpha-group" xml:id="ag6" ana="F">
+<lg>
+  <l>F was a Forester,</l>
+  <l>Dress’d all in green,</l>
+  <l>With a Cap of fine fur,</l>
+  <l>Like a King or a Queen.</l>
+</lg>
+</div>
 
-And G, was a Greyhound,
-As swift as the wind ;
-In the race or the course
-Left all others behind.
+<div type="alpha-group" xml:id="ag7" ana="G">
+<lg>
+  <l>And G, was a Greyhound,</l>
+  <l>As swift as the wind ;</l>
+  <l>In the race or the course</l>
+  <l>Left all others behind.</l>
+</lg>
+</div>
 
-H, was a Hoyden,
-Not like you, nor like me,
-For she tumbled about
-Like the waves of the sea.
+<div type="alpha-group" xml:id="ag8" ana="H">
+<lg>
+  <l>H, was a Hoyden,</l>
+  <l>Not like you, nor like me,</l>
+  <l>For she tumbled about</l>
+  <l>Like the waves of the sea.</l>
+</lg>
+</div>
 
-I, was the Ice
-On which William would skate,
-So up went his heels.
-And down went his pate.
+<div type="alpha-group" xml:id="ag9" ana="I">
+<lg>
+  <l>I, was the Ice</l>
+  <l>On which William would skate,</l>
+  <l>So up went his heels.</l>
+  <l>And down went his pate.</l>
+</lg>
+</div>
 
-J, was Joe Jenkins,
-Who play’d on the fiddle,
-And began twenty tunes,
-But left off in the middle.
+<div type="alpha-group" xml:id="ag10" ana="J">
+<lg>
+  <l>J, was Joe Jenkins,</l>
+  <l>Who play’d on the fiddle,</l>
+  <l>And began twenty tunes,</l>
+  <l>But left off in the middle.</l>
+</lg>
+</div>
 
-K , was a Kitten,
-Who jump’d at a Cork,
-And learn'd to eat mice
-Without plate, knife, or fork.
+<div type="alpha-group" xml:id="ag11" ana="K">
+<lg>
+  <l>K , was a Kitten,</l>
+  <l>Who jump’d at a Cork,</l>
+  <l>And learn'd to eat mice</l>
+  <l>Without plate, knife, or fork.</l>
+</lg>
+</div>
 
+<div type="alpha-group" xml:id="ag12" ana="L">
+<lg>
+  <l>And L, was the Lady,</l>
+  <l>Who made him so wise;</l>
+  <l>But he tore her long train,</l>
+  <l>And she cried out her eyes.</l>
+</lg>
+</div>
 
-And L, was the Lady,
-Who made him so wise;
-But he tore her long train,
-And she cried out her eyes.
+<div type="alpha-group" xml:id="ag13" ana="M">
+<lg>
+  <l>M, was Miss Mira,</l>
+  <l>Who turn'd in her toes,</l>
+  <l>And poked down her head</l>
+  <l>Till her knees met her nose.</l>
+</lg>
+</div>
 
+<div type="alpha-group" xml:id="ag14" ana="N">
+<lg>
+  <l>And N, Mr. Nobody,</l>
+  <l>Just come from France,</l>
+  <l>Said he'd set her upright,</l>
+  <l>And teach her to dance.</l>
+</lg>
+</div>
 
-M, was Miss Mira,
-Who turn'd in her toes,
-And poked down her head
-Till her knees met her nose.
+<div type="alpha-group" xml:id="ag15" ana="O">
+<lg>
+  <l>O, a grave Owl:</l>
+  <l>To look like him,</l>
+  <l>Tom tried, So he put on a mask,</l>
+  <l>And sat down by his side.</l>
+</lg>
+</div>
 
-And N, Mr. Nobody,
-Just come from France,
-Said he'd set her upright,
-And teach her to dance.
+<div type="alpha-group" xml:id="ag16" ana="P">
+<lg>
+  <l>P, was a Pilgrim,</l>
+  <l>With a staff in his hand,</l>
+  <l>Return’d weary and faint</l>
+  <l>From a far distant land.</l>
+</lg>
+</div>
 
+<div type="alpha-group" xml:id="ag17" ana="Q">
+<lg>
+  <l>Q, was the Queen Of Spades,</l>
+  <l>I've heard say,</l>
+  <l>In her black velvet girdle,</l>
+  <l>Just dress’d for the play.</l>
+</lg>
+</div>
 
-O, a grave Owl:
-To look like him,
-Tom tried, So he put on a mask,
-And sat down by his side.
+<div type="alpha-group" xml:id="ag18" ana="R">
+<lg>
+  <l>Here’s Ralph with his Raree-show, </l>
+  <l>Calling so loud,</l>
+  <l>But I’d rather give two-pence</l>
+  <l>To look at the crowd.</l>
+</lg>
+</div>
 
-P, was a Pilgrim,
-With a staff in his hand,
-Return’d weary and faint
-From a far distant land.
+<div type="alpha-group" xml:id="ag19" ana="S">
+<lg>
+  <l>S, was a Soldier</l>
+  <l>Ready to fly</l>
+  <l>To kill all the French,</l>
+  <l>Or to eat a mince pie.</l>
+</lg>
+</div>
 
-Q, was the Queen Of Spades,
-I've heard say,
-In her black velvet girdle,
-Just dress’d for the play.
+<div type="alpha-group" xml:id="ag20" ana="T">
+<lg>
+  <l>T, was a Traveller,</l>
+  <l>Hast’ning on while ’twas light,</l>
+  <l>In the hope of a Cottage</l>
+  <l>To rest in at night.</l>
+</lg>
+</div>
 
-Here’s Ralph with his Raree-show, 
-Calling so loud,
-But I’d rather give two-pence
-To look at the crowd.
+<div type="alpha-group" xml:id="ag21" ana="U">
+<lg>
+  <l>And U, an Umbrella,</l>
+  <l>Saved Bell, t’ other day</l>
+  <l>From a shower that fell,</l>
+  <l>Whilst she turn’d the new hay.</l>
+</lg>
+</div>
 
-S, was a Soldier
-Ready to fly
-To kill all the French,
-Or to eat a mince pie.
+<div type="alpha-group" xml:id="ag22" ana="V">
+<lg>
+  <l>V,was a Village,</l>
+  <l>Where liv’d near the brook</l>
+  <l>The renown’d Goody Two Shoes,</l>
+  <l>Who sends you this Book.</l>
+</lg>
+</div>
 
-T, was a Traveller,
-Hast’ning on while ’twas light,
-In the hope of a Cottage
-To rest in at night.
+<div type="alpha-group" xml:id="ag23" ana="W">
+<lg>
+  <l>W, was a Witch,</l>
+  <l>Who set off at noon</l>
+  <l>To visit her Cousin,</l>
+  <l>The Man in the Moon.</l>
+</lg>
+</div>
 
-And U, an Umbrella,
-Saved Bell, t’ other day
-From a shower that fell,
-Whilst she turn’d the new hay.
+<div type="alpha-group" xml:id="ag24" ana="X">
+<lg>
+  <l>X, was Xantippe,</l>
+  <l>As you ,ve heart belore;</l>
+  <l>But not to forget her,</l>
+  <l>I name her once more.</l>
+</lg>
+</div>
 
-V,was a Village,
-Where liv’d near the brook
-The renown’d Goody Two Shoes,
-Who sends you this Book.
+<div type="alpha-group" xml:id="ag25" ana="Y">
+<lg>
+  <l>Y, was a Youth,</l>
+  <l>Who walk’d in the Park,</l>
+  <l>And play’d on the Flute,</l>
+  <l>Till he made the Dogs bark.</l>
+</lg>
+</div>
 
-W, was a Witch,
-Who set off at noon
-To visit her Cousin,
-The Man in the Moon.
-
-X, was Xantippe,
-As you ,ve heart belore;
-But not to forget her,
-I name her once more.
-
-Y, was a Youth,
-Who walk’d in the Park,
-And play’d on the Flute,
-Till he made the Dogs bark.
-
-Z, was a Zealander,
-Whose name was Van Bley:
-So here ends my song,
-And I wish you Good-day.
-
-
+<div type="alpha-group" xml:id="ag26" ana="Z">
+<lg>
+  <l>Z, was a Zealander,</l>
+  <l>Whose name was Van Bley:</l>
+  <l>So here ends my song,</l>
+  <l>And I wish you Good-day.</l>
+</lg>
+</div>

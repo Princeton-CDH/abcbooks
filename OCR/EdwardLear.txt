@@ -1,24 +1,31 @@
 
-EDWARD LEAR"S ABC
-LONDON
-HENRY-FROWDE
-HODDER &
-STOUGHTON
+    <lb/>EDWARD LEAR"S ABC
+    <lb/>LONDON
+    <lb/>HENRY-FROWDE
+    <lb/>HODDER &
+    <lb/>STOUGHTON
 
+<lg>
 A were some Ants,
 Who never stood still,
 But they made a nice house
 On the side of the a hill
 A!
 Nice little ants!
+</lg>
 
-B wa sa Bat,
+
+<lg>
+B was a Bat,
 Who flew out at night
 When the stars are seen,
 And the moon gioves a light.
 b!
 Brown little bat!
+</lg>
 
+
+<lg>
 C
 D
 E
