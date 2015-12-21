@@ -3,6 +3,7 @@
 <pb facs="page_image3" n="3"/>
 <pb facs="page_image4" n="4"/>
 <pb facs="page_image5" n="5"/>
+
   <div type="cover">
     <ab>
     <lb/>AN ALPHABET.

@@ -1,79 +1,181 @@
+<div  type="alpha-group" xml:id="ag" ana="A">
+<lg>
+    <l>A is for Apples and also for Air;</l>
+    <l>Children need both and we have them to spare.</l>
+</lg>
+</div>
 
-A is for Apples and also for Air;
-Children need both and we have them to spare.
+<div  type="alpha-group" xml:id="ag" ana="B">
+<lg>
+    <l>B is for Butter spread thick on Brown Bread,</l>
+    <l>Also for Baths before Breafast and Bed.</l>
+</lg>
+</div>
 
-B is for Butter spread thick on Brown Bread,
-Also for Baths before Breafast and Bed.
+<div  type="alpha-group" xml:id="ag" ana="C">
+<lg>
+    <l>C is for Cereals and Cocoa too;</l>
+    <l>Consider the Calories coming to You.</l>
+</lg>
+</div>
 
-C is for Cereals and Cocoa too;
-Consider the Calories coming to You.
+<div  type="alpha-group" xml:id="ag" ana="D">
+<lg>
+    <l>D is for Dates, the kind that You eat,</l>
+    <l>Deliciously sweet and far cheaper than Meat.</l>
+</lg>
+</div>
 
-D is for Dates, the kind that You eat,
-Deliciously sweet and far cheaper than Meat.
+<div  type="alpha-group" xml:id="ag" ana="E">
+<lg>
+    <l>E is teh Excellent Edible Egg,</l>
+    <l>One daily at least, dear Children, we beg.</l>
+</lg>
+</div>
 
-E is teh Excellent Edible Egg,
-One daily at least, dear Children, we beg.
+<div  type="alpha-group" xml:id="ag" ana="F">
+<lg>
+    <l>F is for Fruits whether fresh, dried,or stewed;</l>
+    <l>Dried, at the Grocer's, you'll buy them, if shrewd.</l>
+</lg>
+</div>
 
-F is for Fruits whether fresh, dried,or stewed;
-Dried, at the Grocer's, you'll buy them, if shrewd.
+<div  type="alpha-group" xml:id="ag" ana="G">
+<lg>
+    <l>G is for Gaining, as every Child could;</l>
+    <l>A half pound a Month is the least that he should.</l>
+</lg>
+</div>
 
-G is for Gaining, as every Child could;
-A half pound a Month is the least that he should.
+<div  type="alpha-group" xml:id="ag" ana="H">
+<lg>
+    <l>H is for Height, be as tall as you can,</l>
+    <l>Weight up to Height makes a healthy strong Man</l>
+</lg>
+</div>
 
-H is for Height, be as tall as you can,
-Weight up to Height makes a healthy strong Man
+<div  type="alpha-group" xml:id="ag" ana="I">
+<lg>
+    <l>I is for Iron in Spinach and Eggs,</l>
+    <l>Builds Red Blood and Sinews for strong Arms and Legs.</l>
+</lg>
+</div>
 
-I is for Iron in Spinach and Eggs,
-Builds Red Blood and Sinews for strong Arms and Legs.
+<div  type="alpha-group" xml:id="ag" ana="J">
+<lg>
+    <l>J is for Jam and also for Joy,</l>
+    <l>Which spread on his Bread it brings to a Boy.</l>
+</lg>
+</div>
 
-J is for Jam and also for Joy,
-Which spread on his Bread it brings to a Boy.
+<div  type="alpha-group" xml:id="ag" ana="K">
+<lg>
+    <l>K is for Kitchen so spick and so span,</l>
+    <l>We all like our Food from shining clean Pan.</l>
+</lg>
+</div>
 
-K is for Kitchen so spick and so span,
-We all like our Food from shining clean Pan.
+<div  type="alpha-group" xml:id="ag" ana="L">
+<lg>
+    <l>L is for .... served hot in the School;</l>
+    <l>We wish all the Teachers could follow this Rule.</l>
+</lg>
+</div>
 
-L is for .... served hot in the School;
-We wish all the Teachers could follow this Rule.
+<div  type="alpha-group" xml:id="ag" ana="M">
+<lg>
+    <l>M is for Milk which makes Muscle and Bone;</l>
+    <l>One pint a day would be best till you're grown.</l>
+</lg>
+</div>
 
-M is for Milk which makes Muscle and Bone;
-One pint a day would be best till you're grown.
+<div  type="alpha-group" xml:id="ag" ana="N">
+<lg>
+    <l>N is for News of habits you need,</l>
+    <l>To grow up so healthy You're bound to succeed.</l>
+</lg>
+</div>
 
-N is for News of habits you need,
-To grow up so healthy You're bound to succeed.
+<div  type="alpha-group" xml:id="ag" ana="O">
+<lg>
+    <l>O is for Oatmeal, the finest of Food;</l>
+    <l>With Milk for your Breakfast, there's nothing so good.</l>
+</lg>
+</div>
 
-O is for Oatmeal, the finest of Food;
-With Milk for your Breakfast, there's nothing so good.
+<div  type="alpha-group" xml:id="ag" ana="P">
+<lg>
+    <l>P is for Prunes, Potatoes and Peas,</l>
+    <l>And Patriots who will be glad to eat these.</l>
+</lg>
+</div>
 
-P is for Prunes, Potatoes and Peas,
-And Patriots who will be glad to eat these.
+<div  type="alpha-group" xml:id="ag" ana="Q">
+<lg>
+    <l>Q is for Quiet, we frequently need;</l>
+    <l>after Meals don't run at the top of your speed.</l>
+</lg>
+</div>
 
-Q is for Quiet, we frequently need;
-after Meals don't run at the top of your speed.
+<div  type="alpha-group" xml:id="ag" ana="R">
+<lg>
+    <l>R is for Rest and Round .... Faces</l>
+    <l>Rest is a thing which nothing replaces.</l>
+</lg>
+</div>
 
-R is for Rest and Round .... Faces
-Rest is a thing which nothing replaces.
+<div  type="alpha-group" xml:id="ag" ana="S">
+<lg>
+    <l>S is important and therefore I hope</l>
+    <l>You'll pardon my specially mentioning Soap.</l>
+</lg>
+</div>
 
-S is important and therefore I hope
-You'll pardon my specially mentioning Soap.
+<div  type="alpha-group" xml:id="ag" ana="T">
+<lg>
+    <l>T is a Topic which Trouble begins;</l>
+    <l>Both Tea and Coffee for Chidren are Sins.</l>
+</lg>
+</div>
 
-T is a Topic which Trouble begins;
-Both Tea and Coffee for Chidren are Sins.
+<div  type="alpha-group" xml:id="ag" ana="U">
+<lg>
+    <l>U Understanding the best way to live,</l>
+    <l>United for Service our Country to give.</l>
+</lg>
+</div>
 
-U Understanding the best way to live,
-United for Service our Country to give.
+<div  type="alpha-group" xml:id="ag" ana="V">
+<lg>
+    <l>V is for Vegetables; if your're too slim,</l>
+    <l>These Victuals are full of Vigor and Vim.</l>
+</lg>
+</div>
 
-V is for Vegetables; if your're too slim,
-These Victuals are full of Vigor and Vim.
+<div  type="alpha-group" xml:id="ag" ana="W">
+<lg>
+    <l>W is for Water the best thing to drink</l>
+    <l>Between Meals as often as ever we think.</l>
+</lg>
+</div>
 
-W is for Water the best thing to drink
-Between Meals as often as ever we think.
+<div  type="alpha-group" xml:id="ag" ana="X">
+<lg>
+    <l>X is for Xtras of Soup or of Milk,</l>
+    <l>For a thin little Girl till she's finer than Silk</l>
+</lg>
+</div>
 
-X is for Xtras of Soup or of Milk,
-For a thin little Girl till she's finer than Silk
+<div  type="alpha-group" xml:id="ag" ana="Y">
+<lg>
+    <l>Y is for You, and I tell you the Truth,</l>
+    <l>Learn to be Healthy and Strong in your Youth.</l>
+</lg>
+</div>
 
-Y is for You, and I tell you the Truth,
-Learn to be Healthy and Strong in your Youth.
-
-Z is the Zest which Health gives to Life,
-Now march for it, Children, with Drum and with Fife.
-
+<div  type="alpha-group" xml:id="ag" ana="Z">
+<lg>
+    <l>Z is the Zest which Health gives to Life,</l>
+    <l>Now march for it, Children, with Drum and with Fife.</l>
+</lg>
+</div>
