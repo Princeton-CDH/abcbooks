@@ -13,22 +13,23 @@
             <idno type="voyagerid">4844148</idno>
             <idno type="abcbooksid">4844148_naval</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">A </seg>
+                     <seg type="main">naval alphabet</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Sands &amp; Co.</publisher>
+                     <date>[not after 1905] 1900 1905</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">A </seg>
-                  <seg type="main">naval alphabet</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Sands &amp; Co.</publisher>
-                  <date>[not after 1905] 1900 1905</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

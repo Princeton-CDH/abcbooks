@@ -12,22 +12,23 @@
             <idno type="voyagerid">4719468</idno>
             <idno type="abcbooksid">4719468_scripture</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">scripture alphabet for children</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>John Harris, corner of St. Paul's Church-Yard</publisher>
+                     <date>[1824] 1824</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">scripture alphabet for children</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>John Harris, corner of St. Paul's Church-Yard</publisher>
-                  <date>[1824] 1824</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">
@@ -396,7 +397,7 @@
          </div>
          <pb facs="page_image54" n="58"/>
          <pb facs="page_image55" n="59"/>
-         <div type="alpha-group" xml:id="ag21" ana="">
+         <div type="alpha-group" xml:id="ag21" ana="X">
             <head>Xx</head>
             <lg>
                <l>Though backward to begin, I know,</l>

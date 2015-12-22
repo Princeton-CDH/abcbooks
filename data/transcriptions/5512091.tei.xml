@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,21 +12,23 @@
             <idno type="voyagerid">5512091</idno>
             <idno type="abcbooksid">5512091-apple-pie</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">A apple pie</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London (Broadway, Ludgate Hill) New York (9 Lafayette
+                        Place)</pubPlace>
+                     <publisher>George Routledge and Sons</publisher>
+                     <date>[1886] 1886</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">A apple pie</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London (Broadway, Ludgate Hill) New York (9 Lafayette Place)</pubPlace>
-                  <publisher>George Routledge and Sons</publisher>
-                  <date>[1886] 1886</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">
@@ -365,8 +366,7 @@
          <pb facs="page_image47" n="47"/>
          <div type="alpha-group" xml:id="ag20" ana="U">
             <lg>
-               <l><c type="subject-letter">UVWXYZ</c> ALL HAD A LARGE SLICE
-                  AND WENT OFF TO BED </l>
+               <l><c type="subject-letter">UVWXYZ</c> ALL HAD A LARGE SLICE AND WENT OFF TO BED </l>
             </lg>
          </div>
          <pb facs="page_image48" n="48"/>
@@ -383,9 +383,8 @@
          </div>
          <pb n="cover" facs="page_image53"/>
          <div type="cover">
-            <ab><lb/>A Apple Pie <lb/>EENAWAY <lb/>BY EDMUND EVANS <lb/>LONDON:
-               GEORGE ROUTLEDGE AND SONS <lb/>BROADWAY, LUDGATE
-               HILL<lb/>NEW YORK: 9 LAFAYETTE PLACE</ab>
+            <ab><lb/>A Apple Pie <lb/>EENAWAY <lb/>BY EDMUND EVANS <lb/>LONDON: GEORGE ROUTLEDGE AND
+               SONS <lb/>BROADWAY, LUDGATE HILL<lb/>NEW YORK: 9 LAFAYETTE PLACE</ab>
          </div>
       </body>
    </text>

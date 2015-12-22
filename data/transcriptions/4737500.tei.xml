@@ -13,21 +13,22 @@
             <idno type="voyagerid">4737500</idno>
             <idno type="abcbooksid">4737500_health_cards</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">[ABC health cards]</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>New York</pubPlace>
+                     <publisher>American Child Health Association</publisher>
+                     <date>[1915] 1915</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">[ABC health cards]</seg>
-               </title>
-               <imprint>
-                  <pubPlace>New York</pubPlace>
-                  <publisher>American Child Health Association</publisher>
-                  <date>[1915] 1915</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

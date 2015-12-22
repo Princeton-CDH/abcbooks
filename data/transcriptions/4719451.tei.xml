@@ -12,25 +12,26 @@
             <idno type="voyagerid">4719451</idno>
             <idno type="abcbooksid">4719451_invited</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">invited alphabet, or, Address of A to B</seg>
+                     <seg type="sub">containing his friendly proposal for the amusement and instruction
+                        of good children</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Published by B. Tabart and Co., Juvenile and School Library, New
+                        Bond-Street</publisher>
+                     <date>1809</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">invited alphabet, or, Address of A to B</seg>
-                  <seg type="sub">containing his friendly proposal for the amusement and instruction
-                     of good children</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Published by B. Tabart and Co., Juvenile and School Library, New
-                     Bond-Street</publisher>
-                  <date>1809</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

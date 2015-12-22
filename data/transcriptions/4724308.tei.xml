@@ -13,22 +13,23 @@
             <idno type="voyagerid">4724308</idno>
             <idno type="abcbooksid">4724308-bicycleabc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">Bicycle ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Salem, MA</pubPlace>
+                     <publisher>Parker Brothers [ca.</publisher>
+                     <date>1890s] 189u</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">Bicycle ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Salem, MA</pubPlace>
-                  <publisher>Parker Brothers [ca.</publisher>
-                  <date>1890s] 189u</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

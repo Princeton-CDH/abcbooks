@@ -13,23 +13,24 @@
             <idno type="voyagerid">4770717</idno>
             <idno type="abcbooksid">4770717-union-label</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">union label alphabet</seg>
+                     <seg type="sub">for little and big children</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Chicago</pubPlace>
+                     <publisher>Bakery and Confectionery Workers' International Union of America</publisher>
+                     <date>190-] 1905</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">union label alphabet</seg>
-                  <seg type="sub">for little and big children</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Chicago</pubPlace>
-                  <publisher>Bakery and Confectionery Workers' International Union of America</publisher>
-                  <date>190-] 1905</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

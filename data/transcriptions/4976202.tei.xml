@@ -12,21 +12,22 @@
             <idno type="voyagerid">4976202</idno>
             <idno type="abcbooksid">4976202-laugh-learn</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Laugh and learn ABC book</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>New York</pubPlace>
+                     <publisher>McLoughlin Bros. Inc.</publisher>
+                     <date>c1900 1900</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Laugh and learn ABC book</seg>
-               </title>
-               <imprint>
-                  <pubPlace>New York</pubPlace>
-                  <publisher>McLoughlin Bros. Inc.</publisher>
-                  <date>c1900 1900</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

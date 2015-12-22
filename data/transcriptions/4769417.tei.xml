@@ -13,22 +13,23 @@
             <idno type="voyagerid">4769417</idno>
             <idno type="abcbooksid">4769417_billy_van</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">jolly adventures of Billy Van and Betty Camp</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Indianapolis]</pubPlace>
+                     <publisher>Van Camp Products Company</publisher>
+                     <date>c1923 1923</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">jolly adventures of Billy Van and Betty Camp</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Indianapolis]</pubPlace>
-                  <publisher>Van Camp Products Company</publisher>
-                  <date>c1923 1923</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

@@ -12,21 +12,22 @@
             <idno type="voyagerid">4753534</idno>
             <idno type="abcbooksid">4753534-abcfun</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">ABC fun</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Los Angeles</pubPlace>
+                     <publisher>The Broadway Department Store</publisher>
+                     <date>[1910s] 191u</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">ABC fun</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Los Angeles</pubPlace>
-                  <publisher>The Broadway Department Store</publisher>
-                  <date>[1910s] 191u</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

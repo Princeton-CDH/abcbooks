@@ -13,22 +13,23 @@
             <idno type="voyagerid">4734384</idno>
             <idno type="abcbooksid">4734384-bizarre-company</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">A </seg>
+                     <seg type="main">bizarre company</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Simpkin, Marshall, Hamilton, Kent &amp; Co.</publisher>
+                     <date>[1917] 1917</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">A </seg>
-                  <seg type="main">bizarre company</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Simpkin, Marshall, Hamilton, Kent &amp; Co.</publisher>
-                  <date>[1917] 1917</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

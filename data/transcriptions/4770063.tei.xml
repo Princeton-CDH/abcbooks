@@ -12,23 +12,24 @@
             <idno type="voyagerid">4770063</idno>
             <idno type="abcbooksid">4770063_banditbunny</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">Bandit bunny alphabet</seg>
+                     <seg type="sub">and other stories</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Philadelphia</pubPlace>
+                     <publisher>s.n.]</publisher>
+                     <date>c1901 1901</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">Bandit bunny alphabet</seg>
-                  <seg type="sub">and other stories</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Philadelphia</pubPlace>
-                  <publisher>s.n.]</publisher>
-                  <date>c1901 1901</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

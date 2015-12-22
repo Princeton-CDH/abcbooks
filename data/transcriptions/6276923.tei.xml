@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,21 +12,22 @@
             <idno type="voyagerid">6276923</idno>
             <idno type="abcbooksid">6276923-denslows</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Denslow's ABC book</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>New York</pubPlace>
+                     <publisher>G.W. Dillingham Co.</publisher>
+                     <date>1903</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Denslow's ABC book</seg>
-               </title>
-               <imprint>
-                  <pubPlace>New York</pubPlace>
-                  <publisher>G.W. Dillingham Co.</publisher>
-                  <date>1903</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">
@@ -84,13 +84,12 @@
          <div>
             <pb facs="page_image1" n="1"/>
             <div>
-               <ab><lb/>Denslow's <lb/>ABC <lb/>BOOK <lb/>G.W Dillingham Co. <lb/>Publishers
-                  New York. </ab>
+               <ab><lb/>Denslow's <lb/>ABC <lb/>BOOK <lb/>G.W Dillingham Co. <lb/>Publishers New
+                  York. </ab>
             </div>
             <pb facs="page_image2" n="2"/>
             <div>
-               <ab><lb/>Copyright 1903 by <lb/>W.W. Denslow. <lb/>Published, August <lb/>1903
-               </ab>
+               <ab><lb/>Copyright 1903 by <lb/>W.W. Denslow. <lb/>Published, August <lb/>1903 </ab>
             </div>
             <pb facs="page_image3" n="3"/>
             <div type="alpha-group" xml:id="ag1" ana="A">

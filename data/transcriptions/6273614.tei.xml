@@ -1,11 +1,10 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-           <title>The Modern ABC Book</title>
+            <title>The Modern ABC Book</title>
          </titleStmt>
          <publicationStmt>
             <publisher>Princeton University</publisher>
@@ -13,22 +12,23 @@
             <idno type="voyagerid">6273614</idno>
             <idno type="abcbooksid">6273614-modern-abc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">modern ABC book</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>New York</pubPlace>
+                     <publisher>John Day</publisher>
+                     <date>1930</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">modern ABC book</seg>
-               </title>
-               <imprint>
-                  <pubPlace>New York</pubPlace>
-                  <publisher>John Day</publisher>
-                  <date>1930</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

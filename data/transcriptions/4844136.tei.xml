@@ -13,22 +13,23 @@
             <idno type="voyagerid">4844136</idno>
              <idno type="abcbooksid">4844136-an-alphabet</idno>
          </publicationStmt>
+          <sourceDesc>
+              <biblStruct>
+                  <monogr>
+                      <title level="m">
+                          <seg type="main">ABC</seg>
+                          <seg type="sub">An alphabet written &amp; pictured</seg>
+                      </title>
+                      <imprint>
+                          <pubPlace>London Chicago</pubPlace>
+                          <publisher>Elkin Mathews. A.C. McClurg</publisher>
+                          <date>1895</date>
+                      </imprint>
+                  </monogr>
+              </biblStruct>
+          </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">ABC</seg>
-                  <seg type="sub">An alphabet written &amp; pictured</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London Chicago</pubPlace>
-                  <publisher>Elkin Mathews. A.C. McClurg</publisher>
-                  <date>1895</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

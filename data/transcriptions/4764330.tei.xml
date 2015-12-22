@@ -13,22 +13,23 @@
             <idno type="voyagerid">4764330</idno>
              <idno type="abcbooksid">4764330-babes-empire</idno>
          </publicationStmt>
+          <sourceDesc>
+              <biblStruct>
+                  <monogr>
+                      <title level="m">
+                          <seg type="main">Babes of the empire</seg>
+                          <seg type="sub">an alphabet for young England</seg>
+                      </title>
+                      <imprint>
+                          <pubPlace>London</pubPlace>
+                          <publisher>William Heinemann</publisher>
+                          <date>1902</date>
+                      </imprint>
+                  </monogr>
+              </biblStruct>
+          </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Babes of the empire</seg>
-                  <seg type="sub">an alphabet for young England</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>William Heinemann</publisher>
-                  <date>1902</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

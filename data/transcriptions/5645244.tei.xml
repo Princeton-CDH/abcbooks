@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,22 +12,23 @@
             <idno type="voyagerid">5645244</idno>
             <idno type="abcbooksid">5645244-many-nations</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">children of many nations and the ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Rochester, N.Y</pubPlace>
+                     <publisher>Stecher Lith. Co.</publisher>
+                     <date>c1916 1916</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">children of many nations and the ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Rochester, N.Y</pubPlace>
-                  <publisher>Stecher Lith. Co.</publisher>
-                  <date>c1916 1916</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">
@@ -85,24 +85,12 @@
          <pb facs="page_image1" n="1"/>
          <div type="cover">
             <ab>
-               <lb/>THE
-               <lb/>CHILDREN
-               <lb/>OF MANY
-               <lb/>NATIONS
-               <lb/>AND THE
-               <lb/>ABC
-            </ab>
+               <lb/>THE <lb/>CHILDREN <lb/>OF MANY <lb/>NATIONS <lb/>AND THE <lb/>ABC </ab>
          </div>
          <pb facs="page_image2" n="2"/>
          <div>
             <ab>
-               <lb/>THE
-               <lb/>CHILDREN
-               <lb/>OF MANY
-               <lb/>NATIONS
-               <lb/>AND THE
-               <lb/>ABC
-            </ab>
+               <lb/>THE <lb/>CHILDREN <lb/>OF MANY <lb/>NATIONS <lb/>AND THE <lb/>ABC </ab>
          </div>
          <pb facs="page_image3" n="3"/>
          <div type="alpha-group" xml:id="ag1" ana="A">

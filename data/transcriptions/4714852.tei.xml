@@ -13,21 +13,22 @@
             <idno type="voyagerid">4714852</idno>
             <idno type="abcbooksid">4714852_elspa</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Old Aunt Elspa's ABC  We'll soon learn to read, Then -- how clever we'll be</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Field &amp; Tuer, Ye Leadenhalle Press. Simpkin, Marshall [.</publisher>
+                     <date>1884] 1884</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Old Aunt Elspa's ABC  We'll soon learn to read, Then -- how clever we'll be</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Field &amp; Tuer, Ye Leadenhalle Press. Simpkin, Marshall [.</publisher>
-                  <date>1884] 1884</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

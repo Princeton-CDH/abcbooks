@@ -13,21 +13,22 @@
             <idno type="voyagerid">4968972</idno>
             <idno type="abcbooksid">4968972_littlefolksabc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Little folks' ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Dean's Rag Book Co., Ltd.</publisher>
+                     <date>[not before 1923] uuuu</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Little folks' ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Dean's Rag Book Co., Ltd.</publisher>
-                  <date>[not before 1923] uuuu</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

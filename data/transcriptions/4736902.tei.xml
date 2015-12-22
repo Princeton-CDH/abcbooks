@@ -13,22 +13,23 @@
             <idno type="voyagerid">4736902</idno>
             <idno type="abcbooksid">4736902_adventures</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">Adventures of ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London Paris</pubPlace>
+                     <publisher>Raphael Tuck &amp; Sons.</publisher>
+                     <date>[1900] 1900</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">Adventures of ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London Paris</pubPlace>
-                  <publisher>Raphael Tuck &amp; Sons.</publisher>
-                  <date>[1900] 1900</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

@@ -13,22 +13,23 @@
             <idno type="voyagerid">4719680</idno>
              <idno type="abcbooksid">4719680-mothers</idno>
          </publicationStmt>
+          <sourceDesc>
+              <biblStruct>
+                  <monogr>
+                      <title level="m">
+                          <seg type="nonSort">The </seg>
+                          <seg type="main">mother's picture alphabet</seg>
+                      </title>
+                      <imprint>
+                          <pubPlace>London</pubPlace>
+                          <publisher>Office of the Children's Friend no. 9 Paternoster Row.</publisher>
+                          <date>[ca. 185-] 1850 1859</date>
+                      </imprint>
+                  </monogr>
+              </biblStruct>
+          </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">mother's picture alphabet</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Office of the Children's Friend no. 9 Paternoster Row.</publisher>
-                  <date>[ca. 185-] 1850 1859</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

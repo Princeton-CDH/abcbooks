@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,22 +12,23 @@
             <idno type="voyagerid">5735175</idno>
             <idno type="abcbooksid">5735175-mavors</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Mavor's illustrated primer</seg>
+                     <seg type="sub">with three hundred and fifty illustrations</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Frederick Warne and Co.</publisher>
+                     <date>[before 1871?] 1871</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Mavor's illustrated primer</seg>
-                  <seg type="sub">with three hundred and fifty illustrations</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Frederick Warne and Co.</publisher>
-                  <date>[before 1871?] 1871</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">
@@ -140,8 +140,8 @@
          <ab> MAYOR'S ILLUSTRATED PRIMER. THREE HUNDRED AND FIFTY PICTURES. </ab>
          <pb facs="page_image2" n="2"/>
          <pb facs="page_image3" n="3"/>
-         <ab> Mavors Illustrated Primer. three hundred and fifty pictures. London: Frederick
-            Warne and Co., BEDFORD STREET, STRAND. </ab>
+         <ab> Mavors Illustrated Primer. three hundred and fifty pictures. London: Frederick Warne
+            and Co., BEDFORD STREET, STRAND. </ab>
          <pb facs="page_image4" n="4"/>
          <pb facs="page_image5" n="5"/>
          <pb facs="page_image6" n="6"/>
@@ -187,8 +187,7 @@
          <div type="alpha-group" xml:id="ag7" ana="G">
             <head>Gg</head>
             <ab>
-               <lb/>Goat Guinea-Pig Gridiron <lb/>Gun Gnat Glass <lb/>Gull Goose
-               Grapes</ab>
+               <lb/>Goat Guinea-Pig Gridiron <lb/>Gun Gnat Glass <lb/>Gull Goose Grapes</ab>
          </div>
          <pb facs="page_image16" n="16"/>
          <div type="alpha-group" xml:id="ag8" ana="H">
@@ -248,8 +247,7 @@
          <div type="alpha-group" xml:id="ag17" ana="Q">
             <head>Qq</head>
             <ab>
-               <lb/>Quarter Queen Quince <lb/>Quiver Quill Quoit <lb/>Quagga Quadrant
-               Quail</ab>
+               <lb/>Quarter Queen Quince <lb/>Quiver Quill Quoit <lb/>Quagga Quadrant Quail</ab>
          </div>
          <pb facs="page_image26" n="26"/>
          <div type="alpha-group" xml:id="ag18" ana="R">

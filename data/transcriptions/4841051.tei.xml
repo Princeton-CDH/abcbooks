@@ -13,21 +13,22 @@
             <idno type="voyagerid">4841051</idno>
             <idno type="abcbooksid">4841051_peep</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Take your choice!, or, A peep at my playmates</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Printed for J. Harris and Son, corner of St. Paul's Church-Yard</publisher>
+                     <date>1822</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Take your choice!, or, A peep at my playmates</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Printed for J. Harris and Son, corner of St. Paul's Church-Yard</publisher>
-                  <date>1822</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

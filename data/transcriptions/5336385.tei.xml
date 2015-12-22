@@ -13,22 +13,23 @@
             <idno type="voyagerid">5336385</idno>
             <idno type="abcbooksid">5336385-twins-abc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">twins' A B C</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Liberty &amp; Co., Ltd. Lawrence &amp; Bullen, Ltd.</publisher>
+                     <date>[1904] 1904</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">twins' A B C</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Liberty &amp; Co., Ltd. Lawrence &amp; Bullen, Ltd.</publisher>
-                  <date>[1904] 1904</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

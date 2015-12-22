@@ -12,24 +12,25 @@
             <idno type="voyagerid">4719957</idno>
             <idno type="abcbooksid">4719957_posture</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">infant's posture alphabet, or, Harlequin's A, B, C</seg>
+                     <seg type="sub">embellished with numerous coloured engravings</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Printed by and for Hodgson &amp; Co., Juvenile Press, No. 10,
+                        Newgate-Street</publisher>
+                     <date>[between 1822 and 1824] 1822 1824</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">infant's posture alphabet, or, Harlequin's A, B, C</seg>
-                  <seg type="sub">embellished with numerous coloured engravings</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Printed by and for Hodgson &amp; Co., Juvenile Press, No. 10,
-                     Newgate-Street</publisher>
-                  <date>[between 1822 and 1824] 1822 1824</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

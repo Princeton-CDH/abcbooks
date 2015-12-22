@@ -13,21 +13,22 @@
             <idno type="voyagerid">4840337</idno>
             <idno type="abcbooksid">4840337_tom_thumb</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Tom Thumb's alphabet</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>William Darton and Son, Holborn Hill</publisher>
+                     <date>[ca. 1836] 1836</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Tom Thumb's alphabet</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>William Darton and Son, Holborn Hill</publisher>
-                  <date>[ca. 1836] 1836</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

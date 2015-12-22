@@ -12,21 +12,22 @@
             <pubPlace>Princeton, New Jersey</pubPlace>
             <idno type="voyagerid">4750449</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Wright's alphabet book</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London]</pubPlace>
+                     <publisher>Wright's Coal Tar Soap</publisher>
+                     <date>[1910s] 191u</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Wright's alphabet book</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London]</pubPlace>
-                  <publisher>Wright's Coal Tar Soap</publisher>
-                  <date>[1910s] 191u</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

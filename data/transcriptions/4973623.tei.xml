@@ -13,22 +13,23 @@
             <idno type="voyagerid">4973623</idno>
            <idno type="abcbooksid">4973623-boys-girls</idno>
          </publicationStmt>
-      </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
+        <sourceDesc>
+          <biblStruct>
             <monogr>
-               <title level="m">
-                  <seg type="nonSort">An </seg>
-                  <seg type="main">alphabet for boys and girls</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Garden City, N.Y</pubPlace>
-                  <publisher>Doubleday, Page &amp; Company</publisher>
-                  <date>1926</date>
-               </imprint>
+              <title level="m">
+                <seg type="nonSort">An </seg>
+                <seg type="main">alphabet for boys and girls</seg>
+              </title>
+              <imprint>
+                <pubPlace>Garden City, N.Y</pubPlace>
+                <publisher>Doubleday, Page &amp; Company</publisher>
+                <date>1926</date>
+              </imprint>
             </monogr>
-         </biblStruct>
-      </sourceDesc>
+          </biblStruct>
+        </sourceDesc>
+      </fileDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

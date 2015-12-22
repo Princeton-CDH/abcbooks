@@ -13,23 +13,24 @@
             <idno type="voyagerid">4718903</idno>
             <idno type="abcbooksid">4718903_goody</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">alphabet of Goody Two Shoes</seg>
+                     <seg type="sub">by learning which she soon got rich</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Printed by J. Harris and Son, corner of St. Paul's Church-Yard</publisher>
+                     <date>1820</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">alphabet of Goody Two Shoes</seg>
-                  <seg type="sub">by learning which she soon got rich</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Printed by J. Harris and Son, corner of St. Paul's Church-Yard</publisher>
-                  <date>1820</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

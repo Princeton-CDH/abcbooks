@@ -13,21 +13,22 @@
             <idno type="voyagerid">4721015</idno>
             <idno type="abcbooksid">4721015_grandmama</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Grandmama Goodsoul's ABC of eatables</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Read, Brooks and Co., printers &amp; publishers, 25 &amp; 26, New Street, Cloth Fair, E.C.</publisher>
+                     <date>[between 1877 and 1885] 1877 1885</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Grandmama Goodsoul's ABC of eatables</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Read, Brooks and Co., printers &amp; publishers, 25 &amp; 26, New Street, Cloth Fair, E.C.</publisher>
-                  <date>[between 1877 and 1885] 1877 1885</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

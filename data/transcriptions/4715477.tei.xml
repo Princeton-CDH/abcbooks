@@ -13,22 +13,23 @@
             <idno type="voyagerid">4715477</idno>
             <idno type="abcbooksid">4715477_unionabc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">Union ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Boston</pubPlace>
+                     <publisher>Degen Estes &amp; Co.  [n.d. ca,.</publisher>
+                     <date>1860s] 186u</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">Union ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Boston</pubPlace>
-                  <publisher>Degen Estes &amp; Co.  [n.d. ca,.</publisher>
-                  <date>1860s] 186u</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

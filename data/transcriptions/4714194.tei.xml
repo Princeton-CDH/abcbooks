@@ -14,28 +14,22 @@
             <idno type="abcbooksid">4714194_allegorical</idno>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title level="a">The Interesting story of the Children in the Wood</title>. In
-               <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
-               <publisher>OUP</publisher>
-               <date>1968</date>. </bibl>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">An </seg>
+                     <seg type="main">Alphabet Allegorical, Alliterative &amp; Amusing.  Appreciable at all Ages</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Effingham Wilson.</publisher>
+                     <date>1871</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
          </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">An </seg>
-                  <seg type="main">Alphabet Allegorical, Alliterative &amp; Amusing.  Appreciable at all Ages</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Effingham Wilson.</publisher>
-                  <date>1871</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

@@ -13,22 +13,23 @@
             <idno type="voyagerid">4714501</idno>
             <idno type="abcbooksid">4714501_moral</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">Children's Moral Alphabet</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Kettering</pubPlace>
+                     <publisher>J.H. Waddington.</publisher>
+                     <date>1879</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">Children's Moral Alphabet</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Kettering</pubPlace>
-                  <publisher>J.H. Waddington.</publisher>
-                  <date>1879</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

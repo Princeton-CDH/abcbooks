@@ -13,22 +13,23 @@
             <idno type="voyagerid">5328640</idno>
             <idno type="abcbooksid">5328640_teddybearabc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">teddy bear ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Boston New York</pubPlace>
+                     <publisher>H.M. Caldwell Co.</publisher>
+                     <date>c1907 1907</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">teddy bear ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Boston New York</pubPlace>
-                  <publisher>H.M. Caldwell Co.</publisher>
-                  <date>c1907 1907</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

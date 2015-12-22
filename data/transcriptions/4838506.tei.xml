@@ -13,21 +13,22 @@
             <idno type="voyagerid">4838506</idno>
             <idno type="abcbooksid">4838506_cruikshank</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">R. Cruikshank's comic alphabet</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London</pubPlace>
+                     <publisher>Darton and Clark (Holborn Hill)</publisher>
+                     <date>[ca. 1840] 1840</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">R. Cruikshank's comic alphabet</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London</pubPlace>
-                  <publisher>Darton and Clark (Holborn Hill)</publisher>
-                  <date>[ca. 1840] 1840</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

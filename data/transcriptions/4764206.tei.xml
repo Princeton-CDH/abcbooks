@@ -13,22 +13,23 @@
             <idno type="voyagerid">4764206</idno>
              <idno type="abcbooksid">4764206-alphabet-fairy-tales</idno>
          </publicationStmt>
+          <sourceDesc>
+              <biblStruct>
+                  <monogr>
+                      <title level="m">
+                          <seg type="nonSort">An </seg>
+                          <seg type="main">alphabet of fairy tales</seg>
+                      </title>
+                      <imprint>
+                          <pubPlace>London Aldershot Portsmouth</pubPlace>
+                          <publisher>Gale &amp; Polden, Ltd.</publisher>
+                          <date>[193-?] 1920</date>
+                      </imprint>
+                  </monogr>
+              </biblStruct>
+          </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">An </seg>
-                  <seg type="main">alphabet of fairy tales</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London Aldershot Portsmouth</pubPlace>
-                  <publisher>Gale &amp; Polden, Ltd.</publisher>
-                  <date>[193-?] 1920</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

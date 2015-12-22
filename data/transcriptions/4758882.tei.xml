@@ -13,21 +13,22 @@
             <idno type="voyagerid">4758882</idno>
              <idno type="abcbooksid">4758882_arthursalphabets</idno>
          </publicationStmt>
+          <sourceDesc>
+              <biblStruct>
+                  <monogr>
+                      <title level="m">
+                          <seg type="main">Arthur's book of alphabets: with illustrations printed in colours</seg>
+                      </title>
+                      <imprint>
+                          <pubPlace>New York London</pubPlace>
+                          <publisher>George Routledge and Sons, Broadway, Ludgate Hill; New York: 9, Lafayette place.</publisher>
+                          <date>[between 1865 and 1889] 1860</date>
+                      </imprint>
+                  </monogr>
+              </biblStruct>
+          </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Arthur's book of alphabets: with illustrations printed in colours</seg>
-               </title>
-               <imprint>
-                  <pubPlace>New York London</pubPlace>
-                  <publisher>George Routledge and Sons, Broadway, Ludgate Hill; New York: 9, Lafayette place.</publisher>
-                  <date>[between 1865 and 1889] 1860</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

@@ -13,21 +13,22 @@
             <idno type="voyagerid">4720877</idno>
             <idno type="abcbooksid">4720877_barnumabc</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Barnum and Jumbo's ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>London &amp; New York</pubPlace>
+                     <publisher>Frederick Warne [ca.</publisher>
+                     <date>[188-?] 188u</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Barnum and Jumbo's ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>London &amp; New York</pubPlace>
-                  <publisher>Frederick Warne [ca.</publisher>
-                  <date>[188-?] 188u</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">
@@ -144,14 +145,14 @@
                <l>For what would a Hippodrome be like without them.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag10" ana="I">
+         <div type="alphagroup" xml:id="ag9" ana="I">
             <lg>
                <l>I for the Indians fresh from the Prairie,</l>
                <l>And the Intelligent Cow that deserted the Dairy.</l>
             </lg>
          </div>
          <pb facs="page_image6" n="6"/>
-         <div type="alphagroup" xml:id="ag9" ana="J">
+         <div type="alphagroup" xml:id="ag10" ana="J">
             <lg>
                <l>J is for Jumbo, the pride of
                   the Zoo,</l>
@@ -159,33 +160,33 @@
                   can do.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag10" ana="K">
+         <div type="alphagroup" xml:id="ag11" ana="K">
             <lg>
                <l>K for the Kickers that call themselves Komic,</l>
                <l>And the Kangaroo gloves of the Dude anatomic.</l>
             </lg>
          </div>
          <pb facs="page_image7" n="7"/>
-         <div type="alphagroup" xml:id="ag11" ana="L">
+         <div type="alphagroup" xml:id="ag12" ana="L">
             <lg>
                <l>L for the Ladies, the Lictors, and Leopards,</l>
                <l>the Lions, and Llamas that trouble their shepherds.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag12" ana="M">
+         <div type="alphagroup" xml:id="ag13" ana="M">
             <lg>
                <l>M for the monkey that mimicked young Margery</l>
                <l>The Mules, the nine Mooses, and all the Menagerie.</l>
             </lg>
          </div>
          <pb facs="page_image8" n="8"/>
-         <div type="alphagroup" xml:id="ag13" ana="N">
+         <div type="alphagroup" xml:id="ag14" ana="N">
             <lg>
                <l>N is for Nero, the tyrant of Rome,</l>
                <l>Who judges the sports in the great Hippodrom</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag14" ana="O">
+         <div type="alphagroup" xml:id="ag15" ana="O">
             <lg>
                <l>O for the Otters, Opossums, and
                   Owls</l>
@@ -193,46 +194,46 @@
                   other strange fowls.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag15" ana="P">
+         <div type="alphagroup" xml:id="ag16" ana="P">
             <lg>
                <l>P for the Ponies, in tandems and gigs,</l>
                <l>And the peripatetical prize-winning pigs.</l>
             </lg>
          </div>
          <pb facs="page_image9" n="9"/>
-         <div type="alphagroup" xml:id="ag16" ana="Q">
+         <div type="alphagroup" xml:id="ag17" ana="Q">
             <lg>
                <l>Q for the Quadrupeds, worthy of mention,</l>
                <l>Whose queerness and quaintness compel your attention.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag17" ana="R">
+         <div type="alphagroup" xml:id="ag18" ana="R">
             <lg>
                <l>R for the Racing, the Running, and Riding,</l>
                <l>And the long-horn ed Rhinoceros one man is guiding.</l>
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div type="alphagroup" xml:id="ag18" ana="S">
+         <div type="alphagroup" xml:id="ag19" ana="S">
             <lg>
                <l>S for the skilful and sensible Seals,</l>
                <l>And the Sheep of Bo-peep that much humour
                   reveals.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag19" ana="T">
+         <div type="alphagroup" xml:id="ag20" ana="T">
             <lg>
                <l>T for the Tiger so fierce and defiant,</l>
                <l>The thin, tiny dwarf, and the tall Texan giant.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag20" ana="U">
+         <div type="alphagroup" xml:id="ag21" ana="U">
             <lg>
                <l>U is for Uno, of serpents the
                   charmer,</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag21" ana="V">
+         <div type="alphagroup" xml:id="ag22" ana="V">
             <lg>
                <l>V Not one of her
                   Venomous
@@ -240,14 +241,14 @@
             </lg>
          </div>
          <pb facs="page_image11" n="11"/>
-         <div type="alphagroup" xml:id="ag22" ana="WX">
+         <div type="alphagroup" xml:id="ag23" ana="WX">
             <lg>
                <l>W AND X with the Weird Aztecs,</l>
                <l>The Wolves and the Wizard
                   extremely perplex.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="a23" ana="Y">
+         <div type="alphagroup" xml:id="a24" ana="Y">
             <lg>
                <l>Y for the sheep which the Yellowstone
                   rears,</l>
@@ -255,7 +256,7 @@
                   Yankee-taught steers.</l>
             </lg>
          </div>
-         <div type="alphagroup" xml:id="ag24" ana="Z">
+         <div type="alphagroup" xml:id="ag25" ana="Z">
             <lg>
                <l>Z for Zeno and Zarah and no one can
                   better her,</l>
