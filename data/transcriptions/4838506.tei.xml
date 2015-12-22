@@ -148,264 +148,242 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image9" n="9"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <ab>
+               <lb/>R. CRUIKSHANK'S
+               <lb/>COMIC
+               <lb/>ALPHABET
+               <lb/>LONDON
+               <lb/>DALTON AND CLARK, HOLBORN HILL
+               <lb/>Price Sixpence, coloured
+            </ab>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
+            <head>a</head>
             <lg>
-               <l></l>
+               <l>ANATOMICAL RESEARCHES.</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
+            <head>b</head>
+            <lg>
+               <l>BOUND IN BOARDS,</l>
+            </lg>
+         </div>
+         
+         
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
+            <head>c</head>
             <lg>
-               <l></l>
+               <l>COLLISION.c</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <head>d</head>
+            <lg>
+               <l>DIFFERENCE OF OPINION.</l>
+            </lg>
+         </div>
+         
+         
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
+            <head>e</head>
             <lg>
-               <l></l>
+               <l>EXPECTATION</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <head>f</head>
+            <lg>
+               <l>FOUR-IN-HAND</l>
+            </lg>
+         </div>
+                  
+                  
+                  
+
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag7" ana="G">
+                     <head>G</head>
+                     <head>g</head>
+                     <lg>
+                        <l>GRAVITY.</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag8" ana="H">
+                     <head>H</head>
+                     <head>h</head>
+                     <lg>
+                        <l>HYDRAULICS.</l>
+                     </lg>
+                  </div>
+                  
+                  
+                  
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag9" ana="I">
+                     <head>I</head>
+                     <head>i</head>
+                     <lg>
+                        <l>IMPOSSIBILITY.</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag10" ana="K">
+                     <head>K</head>
+                     <head>k</head>
+                     <lg>
+                        <l>KILLING NO MURDER,</l>
+                     </lg>
+                  </div>
+                  
+                  
+
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag11" ana="L">
+                     <head>L</head>
+                     <head>l</head>
+                     <lg>
+                        <l>LIGHT AND SHADE,</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag12" ana="M">
+                     <head>M</head>
+                     <head>m</head>
+                     <lg>
+                        <l>MOCK TURTLE</l>
+                     </lg>
+                  </div>
          <pb facs="page_image20" n="20"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image21" n="21"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image22" n="22"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag13" ana="N">
+                     <head>N</head>
+                     <head>n</head>
+                     <lg>
+                        <l>NUTS TO CRACK</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag14" ana="O">
+                     <head>O</head>
+                     <head>o</head>
+                     <lg>
+                        <l>OLD BOGIE,</l>
+                     </lg>
+                  </div>
          <pb facs="page_image23" n="23"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag15" ana="P">
+                     <head>P</head>
+                     <head>p</head>
+                     <lg>
+                        <l>PLASTER OF PARIS</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag16" ana="Q">
+                     <head>Q</head>
+                     <head>q</head>
+                     <lg>
+                        <l>QUILL-DRIVING.</l>
+                     </lg>
+                  </div>
          <pb facs="page_image24" n="24"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image25" n="25"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image26" n="26"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag17" ana="R">
+                     <head>R</head>
+                     <head>r</head>
+                     <lg>
+                        <l>RUNNING FOR A DINNER,</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag18" ana="S">
+                     <head>S</head>
+                     <head>s</head>
+                     <lg>
+                        <l>SHAVING A GREENHORN,</l>
+                     </lg>
+                  </div>
+                  
+                  
+
          <pb facs="page_image27" n="27"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag19" ana="T">
+                     <head>T</head>
+                     <head>t</head>
+                     <lg>
+                        <l>TIME FLIES.</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag20" ana="U">
+                     <head>U</head>
+                     <head>u</head>
+                     <lg>
+                        <l>USHER OF THE BLACK ROD.</l>
+                     </lg>
+                  </div>
          <pb facs="page_image28" n="28"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image29" n="29"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image30" n="30"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag21" ana="W">
+                     <head>W</head>
+                     <head>w</head>
+                     <lg>
+                        <l>WET-NURSE.</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag22" ana="X">
+                     <head>X</head>
+                     <head>x</head>
+                     <lg>
+                        <l>X-TRA-ORDINARY,</l>
+                     </lg>
+                  </div>
+                  
+                  
+
+                  
          <pb facs="page_image31" n="31"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+                  <div type="alpha-group" xml:id="ag23" ana="Y">
+                     <head>Y</head>
+                     <head>y</head>
+                     <lg>
+                        <l>YARD-ARM AND YARD-ARM</l>
+                     </lg>
+                  </div>
+                  <div type="alpha-group" xml:id="ag24" ana="Z">
+                     <head>Z</head>
+                     <head>z</head>
+                     <lg>
+                        <l>ZOOGRAPHER.</l>
+                     </lg>
+                  </div>
          <pb facs="page_image32" n="32"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image33" n="33"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image34" n="34"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image35" n="35"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image36" n="36"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image37" n="37"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image38" n="38"/>
       </body>
    </text>

@@ -103,6 +103,7 @@
          </div>
          <pb facs="page_image2" n="2"/>
          <pb facs="page_image3" n="3"/>
+         <div>
          <ab>
             
             <lb/>Published by
@@ -112,6 +113,7 @@
             
             <lb/>REGISTERED COPYRIGHT    
          </ab>
+         </div>
          <pb facs="page_image4" n="4"/>
          <pb facs="page_image5" n="5"/>
          <div type="alpha-group" xml:id="ag1" ana="A">
@@ -275,7 +277,7 @@
             </lg>
          </div>
          
-         <div type="alpha-group" xml:id="ag22" ana="">
+         <div type="alpha-group" xml:id="ag22" ana="V">
             <head>V</head>
             <lg>
                <l>V for &amp; Vulture</l>

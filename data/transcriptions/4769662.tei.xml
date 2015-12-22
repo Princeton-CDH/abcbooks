@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -142,281 +141,275 @@
    </facsimile>
    <text>
       <body>
-     <pb facs="page_image1" n="1"/>
-     <div>
-     <ab>
-       <lb />THE
-       <lb />KEITH
-       <lb />A
-       <lb />BC
-       <lb />FOR
-       <lb />CHILDREN
-     </ab>
-     </div>
+         <pb facs="page_image1" n="1"/>
+         <div>
+            <ab>
+               <lb/>THE <lb/>KEITH <lb/>A <lb/>BC <lb/>FOR <lb/>CHILDREN </ab>
+         </div>
 
          <pb facs="page_image2" n="2"/>
          <pb facs="page_image3" n="3"/>
          <pb facs="page_image4" n="4"/>
          <pb facs="page_image5" n="5"/>
-<div>
-    <head>A</head>
-    <lg>
-     <l>Stands for Acrobat,</l>
-     <l>So agile and quick;</l>
-     <l>Who poses and smiles</l>
-     <l>After each wondrous trick.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
+            <lg>
+               <l>Stands for Acrobat,</l>
+               <l>So agile and quick;</l>
+               <l>Who poses and smiles</l>
+               <l>After each wondrous trick.</l>
+            </lg>
+         </div>
          <pb facs="page_image6" n="6"/>
-<div>
-    <head>B</head>
-    <lg>
-     <l>For the Ballet, “Starlight”— </l>
-     <l>Whose beauty and grace</l>
-     <l>No other stage picture</l>
-     <l>Can ever efface.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
+            <lg>
+               <l>For the Ballet, “Starlight”— </l>
+               <l>Whose beauty and grace</l>
+               <l>No other stage picture</l>
+               <l>Can ever efface.</l>
+            </lg>
+         </div>
          <pb facs="page_image7" n="7"/>
-<div>
-    <head>C</head>
-    <lg>
-     <l>Is for Clown,</l>
-     <l>That jolly old soul,</l>
-     <l>Who’s never a bore</l>
-     <l>With his humor so droll.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
+            <lg>
+               <l>Is for Clown,</l>
+               <l>That jolly old soul,</l>
+               <l>Who’s never a bore</l>
+               <l>With his humor so droll.</l>
+            </lg>
+         </div>
          <pb facs="page_image8" n="8"/>
-<div>
-    <head>D</head>
-    <lg>
-     <l>Stands for Dog,</l>
-     <l>Just plain D-O-G,</l>
-     <l>Though quite a fine actor</l>
-     <l>He’s gotten to be.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <lg>
+               <l>Stands for Dog,</l>
+               <l>Just plain D-O-G,</l>
+               <l>Though quite a fine actor</l>
+               <l>He’s gotten to be.</l>
+            </lg>
+         </div>
          <pb facs="page_image9" n="9"/>
-<div>
-    <head>E</head>
-    <lg>
-     <l>Is for Engine Room —</l>
-     <l>Clean, wholesome and bright</l>
-     <l>A marvel of neatness —</l>
-     <l>A wonderful sight.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
+            <lg>
+               <l>Is for Engine Room —</l>
+               <l>Clean, wholesome and bright</l>
+               <l>A marvel of neatness —</l>
+               <l>A wonderful sight.</l>
+            </lg>
+         </div>
          <pb facs="page_image10" n="10"/>
-<div>
-    <head>F</head>
-    <lg>
-     <l>For Fadettes —</l>
-     <l>Fair, feminine band;</l>
-     <l>Who play popular music</l>
-     <l>And opera grand,</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <lg>
+               <l>For Fadettes —</l>
+               <l>Fair, feminine band;</l>
+               <l>Who play popular music</l>
+               <l>And opera grand,</l>
+            </lg>
+         </div>
          <pb facs="page_image11" n="11"/>
-<div>
-    <head>G</head>
-    <lg>
-     <l>Stands for Girl —</l>
-     <l>The matinee queen</l>
-     <l>In her most stunning raiment</l>
-     <l>At Keith’s can be seen.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
+            <lg>
+               <l>Stands for Girl —</l>
+               <l>The matinee queen</l>
+               <l>In her most stunning raiment</l>
+               <l>At Keith’s can be seen.</l>
+            </lg>
+         </div>
          <pb facs="page_image12" n="12"/>
-<div>
-    <head>H</head>
-    <lg>
-     <l>For Houdini,</l>
-     <l>The great Handcuff King,</l>
-     <l>Who wriggles to freedom</l>
-     <l>From any old thing.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>For Houdini,</l>
+               <l>The great Handcuff King,</l>
+               <l>Who wriggles to freedom</l>
+               <l>From any old thing.</l>
+            </lg>
+         </div>
          <pb facs="page_image13" n="13"/>
-<div>
-    <head>I</head>
-    <lg>
-     <l>For Inspection —</l>
-     <l>When every Keith man</l>
-     <l>From his head to his feet</l>
-     <l>Must appear spic and span.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
+            <lg>
+               <l>For Inspection —</l>
+               <l>When every Keith man</l>
+               <l>From his head to his feet</l>
+               <l>Must appear spic and span.</l>
+            </lg>
+         </div>
          <pb facs="page_image14" n="14"/>
-<div>
-    <head>J</head>
-    <lg>
-     <l>Stands for Juggler —</l>
-     <l>Disguised as a tramp,</l>
-     <l>He juggles most anything,</l>
-     <l>Even a lamp.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>Stands for Juggler —</l>
+               <l>Disguised as a tramp,</l>
+               <l>He juggles most anything,</l>
+               <l>Even a lamp.</l>
+            </lg>
+         </div>
          <pb facs="page_image15" n="15"/>
-<div>
-    <head>K</head>
-    <lg>
-     <l>Stands for Keith,</l>
-     <l>The Vaudeville King —</l>
-     <l>Let’s wish him long life,</l>
-     <l>While his praises we sing.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
+            <lg>
+               <l>Stands for Keith,</l>
+               <l>The Vaudeville King —</l>
+               <l>Let’s wish him long life,</l>
+               <l>While his praises we sing.</l>
+            </lg>
+         </div>
          <pb facs="page_image16" n="16"/>
-<div>
-    <head>L</head>
-    <lg>
-     <l>Stands for Leader,</l>
-     <l>Who, baton in hand,</l>
-     <l>While he watches the stage</l>
-     <l>Is directing the band.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>Stands for Leader,</l>
+               <l>Who, baton in hand,</l>
+               <l>While he watches the stage</l>
+               <l>Is directing the band.</l>
+            </lg>
+         </div>
          <pb facs="page_image17" n="17"/>
-<div>
-    <head>M</head>
-    <lg>
-     <l>For Monologist,</l>
-     <l>Rich with story and jest,</l>
-     <l>Makes you laugh till you cry—</l>
-     <l>To tired brains he brings rest.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
+            <lg>
+               <l>For Monologist,</l>
+               <l>Rich with story and jest,</l>
+               <l>Makes you laugh till you cry—</l>
+               <l>To tired brains he brings rest.</l>
+            </lg>
+         </div>
          <pb facs="page_image18" n="18"/>
-<div>
-    <head>N</head>
-    <lg>
-     <l>Is for Necromancer,</l>
-     <l>Who baffles at will</l>
-     <l>With his feats of black art</l>
-     <l>And his wonderful skill.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <lg>
+               <l>Is for Necromancer,</l>
+               <l>Who baffles at will</l>
+               <l>With his feats of black art</l>
+               <l>And his wonderful skill.</l>
+            </lg>
+         </div>
          <pb facs="page_image19" n="19"/>
-<div>
-    <head>O</head>
-    <lg>
-     <l>For the Orchestra,</l>
-     <l>Whose music so bright</l>
-     <l>Lends sparkle and zest,</l>
-     <l>While it captivates quite.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
+            <lg>
+               <l>For the Orchestra,</l>
+               <l>Whose music so bright</l>
+               <l>Lends sparkle and zest,</l>
+               <l>While it captivates quite.</l>
+            </lg>
+         </div>
          <pb facs="page_image20" n="20"/>
-<div>
-    <head>P</head>
-    <lg>
-     <l>Stands for Patrons —</l>
-     <l>Gay youth and old age</l>
-     <l>Are equally pleased</l>
-     <l>With the show on Keith’s stage.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <lg>
+               <l>Stands for Patrons —</l>
+               <l>Gay youth and old age</l>
+               <l>Are equally pleased</l>
+               <l>With the show on Keith’s stage.</l>
+            </lg>
+         </div>
          <pb facs="page_image21" n="21"/>
-<div>
-    <head>Q</head>
-    <lg>
-     <l>Is for Queen —</l>
-     <l>The best one of all —</l>
-     <l>The good Queen of Fairies,</l>
-     <l>So graceful and tall.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head>
+            <lg>
+               <l>Is for Queen —</l>
+               <l>The best one of all —</l>
+               <l>The good Queen of Fairies,</l>
+               <l>So graceful and tall.</l>
+            </lg>
+         </div>
          <pb facs="page_image22" n="22"/>
-<div>
-    <head>R</head>
-    <lg>
-     <l>For Rehearsal,</l>
-     <l>Without which the show</l>
-     <l>Would drag in its action.</l>
-     <l>Be tedious and slow.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>R</head>
+            <lg>
+               <l>For Rehearsal,</l>
+               <l>Without which the show</l>
+               <l>Would drag in its action.</l>
+               <l>Be tedious and slow.</l>
+            </lg>
+         </div>
          <pb facs="page_image23" n="23"/>
-<div>
-    <head>S</head>
-    <lg>
-     <l>Stands for Stage,</l>
-     <l>Where life’s counterpart</l>
-     <l>Is played by the actor</l>
-     <l>With consummate art.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>S</head>
+            <lg>
+               <l>Stands for Stage,</l>
+               <l>Where life’s counterpart</l>
+               <l>Is played by the actor</l>
+               <l>With consummate art.</l>
+            </lg>
+         </div>
          <pb facs="page_image24" n="24"/>
-<div>
-    <head>T</head>
-    <lg>
-     <l>For the Tree</l>
-     <l>Of the glad Yuletide</l>
-     <l>With its tinsel and lights</l>
-     <l>And its presents beside.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>T</head>
+            <lg>
+               <l>For the Tree</l>
+               <l>Of the glad Yuletide</l>
+               <l>With its tinsel and lights</l>
+               <l>And its presents beside.</l>
+            </lg>
+         </div>
          <pb facs="page_image25" n="25"/>
-<div>
-    <head>U</head>
-    <lg>
-     <l>Is for Usher,</l>
-     <l>So courteous, polite —</l>
-     <l>He helps make your visit</l>
-     <l>A constant delight.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>U</head>
+            <lg>
+               <l>Is for Usher,</l>
+               <l>So courteous, polite —</l>
+               <l>He helps make your visit</l>
+               <l>A constant delight.</l>
+            </lg>
+         </div>
          <pb facs="page_image26" n="26"/>
-<div>
-    <head>V</head>
-    <lg>
-     <l>Stands for Vaudeville,</l>
-     <l>Varied and bright —</l>
-     <l>A gay pot-pourri</l>
-     <l>That satisfies quite.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>V</head>
+            <lg>
+               <l>Stands for Vaudeville,</l>
+               <l>Varied and bright —</l>
+               <l>A gay pot-pourri</l>
+               <l>That satisfies quite.</l>
+            </lg>
+         </div>
          <pb facs="page_image27" n="27"/>
-<div>
-    <head>W</head>
-    <lg>
-     <l>For Wreath,</l>
-     <l>And the laurel you know,</l>
-     <l>Belongs without question</l>
-     <l>To the Keith Theatre show,</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>W</head>
+            <lg>
+               <l>For Wreath,</l>
+               <l>And the laurel you know,</l>
+               <l>Belongs without question</l>
+               <l>To the Keith Theatre show,</l>
+            </lg>
+         </div>
          <pb facs="page_image28" n="28"/>
-<div>
-    <head>X</head>
-    <lg>
-     <l>Is for Xmas —</l>
-     <l>Best day of the year —</l>
-     <l>It gladdens the heart,</l>
-     <l>Brings to all much good cheer.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>X</head>
+            <lg>
+               <l>Is for Xmas —</l>
+               <l>Best day of the year —</l>
+               <l>It gladdens the heart,</l>
+               <l>Brings to all much good cheer.</l>
+            </lg>
+         </div>
          <pb facs="page_image29" n="29"/>
-<div>
-    <head>Y</head>
-    <lg>
-     <l>Stands for Young Folks,</l>
-     <l>Whose parents, you know,</l>
-     <l>Never worry about them</l>
-     <l>When they’re at the Keith show.</l>
-      </lg>
-</div>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Y</head>
+            <lg>
+               <l>Stands for Young Folks,</l>
+               <l>Whose parents, you know,</l>
+               <l>Never worry about them</l>
+               <l>When they’re at the Keith show.</l>
+            </lg>
+         </div>
          <pb facs="page_image30" n="30"/>
-<div>
-    <head>Z</head>
-    <lg>
-     <l>Is for Zylophone,</l>
-     <l>Mellow and sweet —</l>
-     <l>When played by an artist,</l>
-     <l>A musical treat.</l>
-     </lg>
-     </div>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>Is for Zylophone,</l>
+               <l>Mellow and sweet —</l>
+               <l>When played by an artist,</l>
+               <l>A musical treat.</l>
+            </lg>
+         </div>
          <pb facs="page_image31" n="31"/>
          <pb facs="page_image32" n="32"/>
          <pb facs="page_image33" n="33"/>

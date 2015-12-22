@@ -81,103 +81,310 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+         <div type="cover">
+            <ab>
+               <lb/>WRIGHT'S
+               <lb/>ALPHABET BOOK
+               <lb/>ISSUES BY THE PROPRIETORS OF WRIGHT'S COAL TAR SOAP
+            </ab>
          </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
             <lg>
-               <l></l>
+               <l>A is the Artist,</l>
+               <l>Who drew in these pages-</l>
+               <l>He's not had his hair cut-</l>
+               <l>For ages and ages.</l>
             </lg>
-         </div>
+         </div>  
+         
+         
+         <div type="alpha-group" xml:id="ag2" ana="B"> 
+            <head>B</head>
+            <lg>
+               <l>B is the baby</l>
+               <l>Who is crowing with joy,</l>
+               <l>But isn't that diggie</l>
+               <l>A bad, greedy boy?</l>
+            </lg>
+         </div>  
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
             <lg>
-               <l></l>
+               <l>C is for Cook</l>
+               <l>Bow how very absurd,</l>
+               <l>For such a large cook to cook</l>
+               <l>Such a small bird</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <lg>
+               <l>D is for Doctor</l>
+               <l>Who comes when you're ill</l>
+               <l>He looks at your tongue,</l>
+               <l>Then gives you a pill.</l>
+            </lg>
+         </div>
+         
+         
+         
+         
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
             <lg>
-               <l></l>
+               <l>E is for Errand Boy,</l>
+               <l>Who loves to watch dogs fight,</l>
+               <l>his master’s meat is eaten</l>
+               <l>by the bow-wows on the right.</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <lg>
+               <l>F is for Fireman,</l>
+               <l>This one is very brave,</l>
+               <l>He's climbed up the ladder</l>
+               <l>Poor pussy to save.</l>
+            </lg>
+         </div>
+         
+         
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
             <lg>
-               <l></l>
+               <l>G  is for Gardener,</l>
+               <l>His enemies are snails:</l>
+               <l>He catches them with salt you know,</l>
+               <l>Then drowns hem in pails.</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>H is for Horse,</l>
+               <l>No wonder Cabby smiles ;</l>
+               <l>It’s only taken three short hours</l>
+               <l>To travel three long miles.</l>
+            </lg>
+         </div>
+         
+         
+         
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
             <lg>
-               <l></l>
+               <l>I is for Italian,</l>
+               <l>Who is fond of Macaroni</l>
+               <l>We don't know what his name is</l>
+               <l>We rather think it's Tony.</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>J is for Judy</l>
+               <l>Her husband's name is Punch,</l>
+               <l>And  together with</l>
+               <l>dog Toby</l>
+               <l>They are a happy bunch.</l>
+            </lg>
+         </div>
+         
+         
+         
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
             <lg>
-               <l></l>
+               <l>K is for Kitchen Maid,</l>
+               <l>Who's dropped the buttered scones.</l>
+               <l>We hope she hasn't hurt herself</l>
+               <l>Or broken any bones.</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>L is for Laundress</l>
+               <l>Her washing's very fine</l>
+               <l>When Fido fell into the tub</l>
+               <l>She hung him on the line.</l>
+            </lg>
+         </div>
+         
+         
+         
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
             <lg>
-               <l></l>
+               <l>M is for Milkman,</l>
+               <l>Why is he smiling so?</l>
+               <l>He likes a rainy day, for then</l>
+               <l>The milk is sure to grow.</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="a14g" ana="N">
+            <head>N</head>
+            <lg>
+               <l>N is for Nurse</l>
+               <l>Who says (and she knows)</l>
+               <l>That Wright's Coal Tar Soap</l>
+               <l>is as pure as a rose.</l>
+            </lg>
+         </div>
+         
+         
+         
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
             <lg>
-               <l></l>
+               <l>O is for Office-Boy,</l>
+               <l>in blue serge suit so neat,</l>
+               <l>Who points to the point of this picture,</l>
+               <l>Do you see it on that seat ?</l>
             </lg>
          </div>
+         
+         
+         <div type="alpha-group" xml:id="ag16" ana="Q">
+            <head>Q</head>
+            <lg>
+               <l>Q is for Quarrel—</l>
+               <l>To be friends is better far—</l>
+               <l>We don’t like naughty children,</l>
+               <l>So let’s turn the page to R.</l>
+            </lg>
+         </div>
+         
+         
+         
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag17" ana="R">
+            <head>R</head>
             <lg>
-               <l></l>
+               <l>R is for Ride,</l>
+               <l>Also for Rotten Row,</l>
+               <l>The doggie runs beside and barks</l>
+               <l>To make the gee-gee go</l>
             </lg>
          </div>
+         
+         
+
+         
+         
+         
+         
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         
+         
+         <div type="alpha-group" xml:id="ag18" ana="S">
+            <head>S</head>
             <lg>
-               <l></l>
+               <l>S is for Sweep,</l>
+               <l>Whose face is very dirty,</l>
+               <l>And when he smiled and showed his</l>
+               <l>It frightened little Bertie, [teeth.</l>
             </lg>
          </div>
+         
+         <div type="alpha-group" xml:id="ag19" ana="T">
+            <head>T</head>
+            <lg>
+               <l>T is for Treacle,</l>
+               <l>All over Tommy's face;</l>
+               <l>He stole it from the pantry,</l>
+               <l>And now he's in disgrace.</l>
+            </lg>
+         </div> 
+
+         
+         
+         
+         
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag20" ana="U">
+            <head>U</head>
             <lg>
-               <l></l>
+               <l>U is for Uncle,</l>
+               <l>Who brings pockets full of Toys,</l>
+               <l>And always loves to romp and play</l>
+               <l>With little girls and boys.</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag21" ana="V">
+            <head>V</head>
+            <lg>
+               <l>V is for the Vestry-man</l>
+               <l>Who comes round with the plate;</l>
+               <l>He's very good at singing hymns</l>
+               <l>and never comes in late.</l>
+            </lg>
+         </div>
+         
+
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag22" ana="W">
+            <head>W</head>
             <lg>
-               <l></l>
+               <l>W is for Willie,</l>
+               <l>Who is writing on the wall,</l>
+               <l>To let you know he uses</l>
+               <l>Wright’s Coal Tar Soap—</l>
+               <l>that’s	all</l>
             </lg>
          </div>
+         <div type="alpha-group" xml:id="ag23" ana="X">
+            <head>XYZ</head>
+            <lg>
+               <l>XYZ</l>
+               <l>At last - so we've been told-</l>
+               <l>The artist's had his hair cut</l>
+               <l>And caught a fearful cold.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag24" ana="Y">
+            <head>XYZ</head>
+            <lg>
+               <l>XYZ</l>
+               <l>At last - so we've been told-</l>
+               <l>The artist's had his hair cut</l>
+               <l>And caught a fearful cold.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag25" ana="Z">
+            <head>XYZ</head>
+            <lg>
+               <l>XYZ</l>
+               <l>At last - so we've been told-</l>
+               <l>The artist's had his hair cut</l>
+               <l>And caught a fearful cold.</l>
+            </lg>
+         </div>         
+         
+         
+         
          <pb facs="page_image15" n="15"/>
          <div>
             <head></head>

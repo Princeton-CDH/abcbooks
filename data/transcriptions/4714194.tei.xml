@@ -1,4 +1,4 @@
-<?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -13,6 +13,13 @@
             <idno type="voyagerid">4714194</idno>
             <idno type="abcbooksid">4714194_allegorical</idno>
          </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title level="a">The Interesting story of the Children in the Wood</title>. In
+               <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
+               <publisher>OUP</publisher>
+               <date>1968</date>. </bibl>
+         </sourceDesc>
       </fileDesc>
       <sourceDesc>
          <biblStruct xmlns="">
@@ -143,251 +150,258 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+         <div type="cover">
+            <ab>
+               <lb/>AN ALPHABET.
+               <lb/>ALLEGORICAL &amp; ALLITERATIVE
+               <lb/>AMUSING
+               <lb/>APPRECIABLE AT ALL AGES
+               <lb/>LONDON
+               <lb/>EFFINGHAM. WILSON. II, ROYAL EXCHANGE.
+               <lb/>MD CCC,LXXL
+            </ab>
          </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+         <div type="cover">
+            <ab>
+               <lb/>AN ALPHABET.
+               <lb/>ALLEGORICAL &amp; ALLITERATIVE
+               <lb/>AMUSING
+               <lb/>APPRECIABLE AT ALL AGES
+               <lb/>LONDON
+               <lb/>EFFINGHAM. WILSON. II, ROYAL EXCHANGE.
+               <lb/>MD CCC,LXXL
+            </ab>
          </div>
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+         <div type="cover">
+            <ab>
+               <lb/>A Beautiful Collection, Delightfully
+               <lb/>Etched, Finely Grouped, Highly
+               <lb/>Imaginative, Jestingly Knavish,
+               <lb/>Ludicrously Mischievous, Notably
+               <lb/>Odd, Puliarly Queer, Recreative,
+               <lb/>Sensational, Tittering, Unquestionably
+               <lb/>Volatile,Whimsically XYZite.
+            </ab>
          </div>
+         
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag1" ana="A">
             <lg>
-               <l></l>
+               <l>Alderman Artichoke always adjudicated</l>
+               <l>with admirable ability.</l>
             </lg>
          </div>
+         
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag2" ana="B">
             <lg>
-               <l></l>
+               <l>Benjamin Bluster beat and battered a brown</l>
+               <l>Bear with a Blunderbuss.</l>
             </lg>
          </div>
+         
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag3" ana="C">
             <lg>
-               <l></l>
+               <l>Christopher Cuthbertson was cross, crabbed,</l>
+               <l>and captious.</l>
             </lg>
          </div>
+         
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag4" ana="D">
             <lg>
-               <l></l>
+               <l>Deborah Diligent did dance her Doll</l>
+               <l>with droll dexterity.</l>
             </lg>
          </div>
+         
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag5" ana="E">
             <lg>
-               <l></l>
+               <l>Elizabeth Edmondstone eats eleven excellent</l>
+               <l>Eggs, etcetera, etcetera.</l>
             </lg>
          </div>
+         
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag6" ana="F">
             <lg>
-               <l></l>
+               <l>Ferdinand Firebrand fiercely fought and</l>
+               <l>fenced a Fiddler.</l>
             </lg>
          </div>
+         
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag7" ana="G">
             <lg>
-               <l></l>
+               <l>Gregory Grimshaw gaped and gabbled like</l>
+               <l>a Goose, or Gander.</l>
             </lg>
          </div>
+         
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag8" ana="H">
             <lg>
-               <l></l>
+               <l>Hercules Hardcastle hit a Hawk on the</l>
+               <l>head with a Hatchet.</l>
             </lg>
          </div>
+         
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag9" ana="I">
             <lg>
-               <l></l>
+               <l>Isaac Ingram inhabitied an inclement, and</l>
+               <l>isolated Island.</l>
             </lg>
          </div>
+         
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag10" ana="J">
             <lg>
-               <l></l>
+               <l>Jemima Jocund did jump and jig with</l>
+               <l>joy in jeopardy.</l>
             </lg>
          </div>
+         
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag11" ana="K">
             <lg>
-               <l></l>
+               <l>Katherine Kindham kindly kissed her </l>
+               <l>kith and kinsfolk.</l>
             </lg>
          </div>
+         
          <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag12" ana="L">
             <lg>
-               <l></l>
+               <l>Lionel Lincoln was a learned, and</l>
+               <l>literary lexicographer.</l>
             </lg>
          </div>
+         
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag13" ana="M">
             <lg>
-               <l></l>
+               <l>Maximilian Mettlesome magnanimously</l>
+               <l>mollified a mutinous Mountaineer.</l>
             </lg>
          </div>
+         
          <pb facs="page_image20" n="20"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag14" ana="N">
             <lg>
-               <l></l>
+               <l>Nancy Nimble with a nice new Needle</l>
+               <l>netted some nickbacks.</l>
             </lg>
          </div>
+         
          <pb facs="page_image21" n="21"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag15" ana="O">
             <lg>
-               <l></l>
+               <l>Oliver Oddfish obstreperously obstructed</l>
+               <l>an original overture.</l>
             </lg>
          </div>
+         
          <pb facs="page_image22" n="22"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag16" ana="P">
             <lg>
-               <l></l>
+               <l>Penelope Posslethwaite pampered a proud,</l>
+               <l>and pursy Palfry.</l>
             </lg>
          </div>
+         
          <pb facs="page_image23" n="23"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
             <lg>
-               <l></l>
+               <l>Quixote Quibble questioned a queer,</l>
+               <l>and quarrelsome Quaker.</l>
             </lg>
          </div>
+         
          <pb facs="page_image24" n="24"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag18" ana="R">
             <lg>
-               <l></l>
+               <l>Roderick Random ran a ridiculous race</l>
+               <l>on the railroad.</l>
             </lg>
          </div>
+         
          <pb facs="page_image25" n="25"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag19" ana="S">
             <lg>
-               <l></l>
+               <l>Sophonisba Scribblewell sang songs</l>
+               <l>and sonatas like Sontag.</l>
             </lg>
          </div>
+         
          <pb facs="page_image26" n="26"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag20" ana="T">
             <lg>
-               <l></l>
+               <l>Timothy Talkative told tales tremendous</l>
+               <l>and terrible.</l>
             </lg>
          </div>
+         
          <pb facs="page_image27" n="27"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag21" ana="U">
             <lg>
-               <l></l>
+               <l>Ursula Urquhart unexpectedly, and</l>
+               <l>uncerimoniously used an Umbrella.</l>
             </lg>
          </div>
+         
          <pb facs="page_image28" n="28"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag22" ana="V">
             <lg>
-               <l></l>
+               <l>Valentine Vortex victoriously vanquished</l>
+               <l>a vindictive villager.</l>
             </lg>
          </div>
+         
          <pb facs="page_image29" n="29"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag23" ana="W">
             <lg>
-               <l></l>
+               <l>Wilhelmina Whirligig warbled with</l>
+               <l>winning witchery.</l>
             </lg>
          </div>
+         
          <pb facs="page_image30" n="30"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag24" ana="X">
             <lg>
-               <l></l>
+               <l>Execrable Xantippe excited Xerxes to</l>
+               <l>xylographic exertions.</l>
             </lg>
          </div>
+         
          <pb facs="page_image31" n="31"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
             <lg>
-               <l></l>
+               <l>Youthful Yankey yearned and yelled</l>
+               <l>to be a yeoman.</l>
             </lg>
          </div>
+         
          <pb facs="page_image32" n="32"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
             <lg>
-               <l></l>
+               <l>Zedekiah Zigzag was a zealous</l>
+               <l>zoological zany.</l>
             </lg>
          </div>
+         
          <pb facs="page_image33" n="33"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image34" n="34"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image35" n="35"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image36" n="36"/>
+         
       </body>
    </text>
 </TEI>

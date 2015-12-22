@@ -232,7 +232,7 @@
          </div>
          <pb facs="page_image6" n="6"/>
          <pb facs="page_image7" n="7"/>
-         <div>
+         <div type="alpha-group" xml:id="ag1" ana="A">
             <head>A</head>
             <lg>
                <l>Stands for the Ass: this burden he bore,—</l>
@@ -243,7 +243,7 @@
          </div>
          <pb facs="page_image8" n="8"/>
          <pb facs="page_image9" n="9"/>
-         <div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
             <head>B</head>
             <lg>
                <l>Stands for Bible, the book of all truth,</l>
@@ -254,7 +254,7 @@
          </div>
             <pb facs="page_image10" n="10"/>
             <pb facs="page_image11" n="11"/>
-            <div>
+            <div type="alpha-group" xml:id="ag3" ana="C">
                <head>C</head>
                <lg>
                   <l>Stands for Coat, that keeps me so warm,</l>
@@ -265,7 +265,7 @@
             </div>
             <pb facs="page_image12" n="12"/>
             <pb facs="page_image13" n="13"/>
-            <div>
+            <div type="alpha-group" xml:id="ag4" ana="D">
                <head>D</head>
                <lg>
                   <l>Stands for Drunkard—oh, shocking the sight!</l>
@@ -276,7 +276,7 @@
             </div>
          <pb facs="page_image14" n="14"/>
          <pb facs="page_image15" n="15"/>
-         <div>
+         <div type="alpha-group" xml:id="ag5" ana="E">
             <head>E</head>
             <lg>
                <l>Stands for Eagle, who soars as he flies,</l>
@@ -287,7 +287,7 @@
          </div>
          <pb facs="page_image16" n="16"/>
          <pb facs="page_image17" n="17"/>
-         <div>
+         <div type="alpha-group" xml:id="ag6" ana="F">
             <head>F</head>
             <lg>
                <l>Stands for a Fool, an Atheist he;</l>
@@ -298,7 +298,7 @@
          </div>
          <pb facs="page_image18" n="18"/>
          <pb facs="page_image19" n="19"/>
-         <div>
+         <div type="alpha-group" xml:id="ag7" ana="G">
             <head>G</head>
             <lg>
                <l>G Stands for Goliath, six cubits in height,</l>
@@ -309,7 +309,7 @@
          </div>
          <pb facs="page_image20" n="20"/>
          <pb facs="page_image21" n="21"/>
-         <div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
             <head>H</head>
             <lg>
                <l>Stands for Home, so sweet and so comely,</l>
@@ -320,7 +320,7 @@
          </div>
          <pb facs="page_image22" n="22"/>
          <pb facs="page_image23" n="23"/>
-         <div>
+         <div type="alpha-group" xml:id="ag9" ana="I">
             <head>I</head>
             <lg>
                <l>Stands for Ink, let all try to use it,</l>
@@ -331,7 +331,7 @@
          </div>
          <pb facs="page_image24" n="24"/>
          <pb facs="page_image25" n="25"/>
-         <div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
             <head>J</head>
             <lg>
                <l>Stands for the Judge, who solemnly sits</l>
@@ -342,7 +342,7 @@
          </div>
          <pb facs="page_image26" n="26"/>
          <pb facs="page_image27" n="27"/>
-         <div>
+         <div type="alpha-group" xml:id="ag11" ana="K">
             <head>K</head>
             <lg>
                <l>Stands for the King, who sits on the Throne;</l>
@@ -354,7 +354,7 @@
          <pb facs="page_image28" n="28"/>
          <pb facs="page_image29" n="29"/>
          
-         <div>
+         <div type="alpha-group" xml:id="ag12" ana="L">
             <head>L</head>
             <lg>
                <l>Stands for lamb, what a time honoured name!</l>
@@ -365,7 +365,7 @@
          </div>
          <pb facs="page_image30" n="30"/>
          <pb facs="page_image31" n="31"/>
-         <div>
+         <div type="alpha-group" xml:id="ag13" ana="M">
             <head>M</head>
             <lg>
                <l>Stands for Mother, fair emblem of love,</l>
@@ -376,7 +376,7 @@
          </div>
          <pb facs="page_image32" n="32"/>
          <pb facs="page_image33" n="33"/>
-         <div>
+         <div type="alpha-group" xml:id="ag14" ana="N">
             <head>N</head>
             <lg>
                <l>Stands for Neighbour, oh, what says the lord ?</l>
@@ -387,7 +387,7 @@
          </div>
          <pb facs="page_image34" n="34"/>
          <pb facs="page_image35" n="35"/>
-         <div>
+         <div type="alpha-group" xml:id="ag15" ana="O">
             <head>O</head>
             <lg>
                <l>Stands for Oyster, with rough-coated shell;</l>
@@ -398,7 +398,7 @@
          </div>
          <pb facs="page_image36" n="36"/>
          <pb facs="page_image37" n="37"/>
-         <div>
+         <div type="alpha-group" xml:id="ag16" ana="P">
             <head>P</head>
             <lg>
                <l>Stands for Peter, sad storj to tell,—</l>
@@ -409,7 +409,7 @@
          </div>
          <pb facs="page_image38" n="38"/>
          <pb facs="page_image39" n="39"/>
-         <div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
             <head>Q</head>
             <lg>
                <l>Stands for Quick: it’s no nse delaying;</l>
@@ -420,7 +420,7 @@
          </div>
          <pb facs="page_image40" n="40"/>
          <pb facs="page_image41" n="41"/>
-         <div>
+         <div type="alpha-group" xml:id="ag18" ana="R">
             <head>R</head>
             <lg>
                <l>Stands for a Rose, the garden’s fair queen;</l>
@@ -431,7 +431,7 @@
          </div>
          <pb facs="page_image42" n="42"/>
          <pb facs="page_image43" n="43"/>
-         <div>
+         <div type="alpha-group" xml:id="ag19" ana="S">
             <head>S</head>
             <lg>
                <l>Stands for the Sun, he sends out his rays,</l>
@@ -442,7 +442,7 @@
          </div>
          <pb facs="page_image44" n="44"/>
          <pb facs="page_image45" n="45"/>
-         <div>
+         <div type="alpha-group" xml:id="ag20" ana="T">
             <head>T</head>
             <lg>
                <l>Stands for Tiger, whose nature is cruel,</l>
@@ -453,7 +453,7 @@
          </div>
          <pb facs="page_image46" n="46"/>
          <pb facs="page_image47" n="47"/>
-         <div>
+         <div type="alpha-group" xml:id="ag21" ana="U">
             <head>U</head>
             <lg>
                <l>Stands for "Ursus," in English, the Bear;</l>
@@ -464,7 +464,7 @@
          </div>
          <pb facs="page_image48" n="48"/>
          <pb facs="page_image49" n="49"/>
-         <div>
+         <div type="alpha-group" xml:id="ag22" ana="V">
             <head>V</head>
             <lg>
                <l>H, Holy Father, no culture but Thine,</l>
@@ -476,7 +476,7 @@
          
          <pb facs="page_image50" n="50"/>
          <pb facs="page_image51" n="51"/>
-         <div>
+         <div type="alpha-group" xml:id="ag23" ana="W">
             <head>W</head>
             <lg>
                <l>WEATHERCOCK, Weathercock, turned by the wind,</l>
@@ -487,7 +487,7 @@
          </div>
          <pb facs="page_image52" n="52"/>
          <pb facs="page_image53" n="53"/>
-         <div>
+         <div type="alpha-group" xml:id="ag24" ana="X">
             <head>X</head>
             <lg>
                <l>NOT a word in our language begins with an X,</l>
@@ -497,7 +497,7 @@
             </lg>
          </div>
          <pb facs="page_image54" n="54"/>
-         <div>
+         <div type="alpha-group" xml:id="ag25" ana="XYZ">
             <head>XYZ</head>
             <lg>
                <l>BUT oh, Mr. Rhymer, you spoke of politeness:</l>
