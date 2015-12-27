@@ -1,26 +1,26 @@
-Archduke Charles
-Sold by: A. Keith
+    <lb />Archduke Charles
+    <lb />Sold by: A. Keith
 
-THE
-CHILD'S ALPHABET,
-EMBLEMATICALLY
-Described and Embellished
-BY
-TWENTY-FOUR PICTURES.
-BROUGHT INTO
-EASY VERSE,
-FOR THE
-TENDER CAPACITIES
-OF
-Y0UNG READERS.
-The whole contrived
-TO ALLURE CHILDREN
-INTO THE
-LOVE OF LEARNING.
+    <lb />THE
+    <lb />CHILD'S ALPHABET,
+    <lb />EMBLEMATICALLY
+    <lb />Described and Embellished
+    <lb />BY
+    <lb />TWENTY-FOUR PICTURES.
+    <lb />BROUGHT INTO
+    <lb />EASY VERSE,
+    <lb />FOR THE
+    <lb />TENDER CAPACITIES
+    <lb />OF
+    <lb />Y0UNG READERS.
+    <lb />The whole contrived
+    <lb />TO ALLURE CHILDREN
+    <lb />INTO THE
+    <lb />LOVE OF LEARNING.
 
-GLASGOW,
-PRINTED JBY J. AND M. ROBERTSON,
-1805.
+    <lb />GLASGOW,
+    <lb />PRINTED JBY J. AND M. ROBERTSON,
+    <lb />1805.
 
 A
 The Tree of Life,
