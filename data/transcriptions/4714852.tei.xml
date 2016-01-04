@@ -1,7 +1,6 @@
 <?xml-model href="https://etc.princeton.edu/abcbooks/schema/abcbooks.schema.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,11 +16,13 @@
             <biblStruct>
                <monogr>
                   <title level="m">
-                     <seg type="main">Old Aunt Elspa's ABC  We'll soon learn to read, Then -- how clever we'll be</seg>
+                     <seg type="main">Old Aunt Elspa's ABC We'll soon learn to read, Then -- how
+                        clever we'll be</seg>
                   </title>
                   <imprint>
                      <pubPlace>London</pubPlace>
-                     <publisher>Field &amp; Tuer, Ye Leadenhalle Press. Simpkin, Marshall [.</publisher>
+                     <publisher>Field &amp; Tuer, Ye Leadenhalle Press. Simpkin, Marshall
+                        [.</publisher>
                      <date>1884] 1884</date>
                   </imprint>
                </monogr>
@@ -119,195 +120,452 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+         <div type="cover">
+            <ab>
+               <lb/>PRICE ONE SHILLING <lb/>OR COLOURED THROUGHOUT <lb/>TWO-AND-SIXPENCE <lb/>OLD
+               <lb/>AUNT <lb/>ELSPA'S <lb/>ABC </ab>
          </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <ab>
+               <lb/>OLD <lb/>AUNT <lb/>ELSPA'S <lb/>ABC <lb/>WE'LL SOON LEARN TO READ, <lb/>THEN -
+               HOW CLEVER WE'LL BE. <lb/>Imagined &amp; Adorned by Joseph Crawhall. <lb/>LONDON
+               <lb/>Field &amp; Tuer, Ye Leadenhalle Preffe, E.C. <lb/>Simpkin, Marshall &amp; Co.;
+               Hamilton, Adams &amp; Co. <lb/>All you Book-loving Chubbies, <lb/>Come - gather round
+               me: <lb/>You shall have such a treat - <lb/>(Mind - there'snothing to eat!) <lb/>But
+               all my fine Pictures you'll certainly see, <lb/>Andwe'll play such a jolly Game
+               <lb/>call'd <lb/>ABC </ab>
          </div>
+
+
+
+
+
+
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image5" n="5"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <ab>
+               <lb/>All you Book-loving Chubbies, <lb/>Come-gather round me: <lb/>You shall have
+               such a treat- <lb/>(Mind-there's nothing to eat!) <lb/>But all my fine Pictures
+               you'll certainly see, <lb/>And you'll play such a jolly Game <lb/>call'd <lb/>ABC
+            </ab>
          </div>
          <pb facs="page_image6" n="6"/>
          <div>
-            <head></head>
+            <head>a</head>
             <lg>
-               <l></l>
+               <l>Was an Archer</l>
+               <l>who shot at a Frog.</l>
             </lg>
          </div>
+         <div>
+            <head>b</head>
+            <lg>
+               <l>Was a Butcher who</l>
+               <l>had a big Dog.</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+               <l>Tuts! these are the Rhymes</l>
+               <l>That our Grandmothers knew;</l>
+               <l>They’re far too old-fashioned:</l>
+               <l>Let’s have something new.</l>
+            </lg>
+         </div>
+
+
+
+
+
+
          <pb facs="page_image7" n="7"/>
          <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
+            <p>SURELY that Archer who's been shooting at that Frog for so many Generations must be a
+               bad shot, or he'd have killed him long ago.</p>
+
+            <p>We all know that the Sparrow killed Cock Robin, because the Fly saw him die, and
+               think, as Froggy's gone a wooin', he's much better employed than being shot at, so
+               pack him off with his Opera hat to make room for new matter for our present
+               generation of little learners.</p>
          </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <pb facs="page_image9" n="9"/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>Aa</head>
             <lg>
-               <l></l>
+               <l>For an Artist,</l>
+               <l>and</l>
+               <l>Alphabet too.</l>
             </lg>
          </div>
-         <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>Bb</head>
             <lg>
-               <l></l>
+               <l>For Birch-rod,</l>
+               <l>a Bad Boy, and</l>
+               <l>Boo-hoo!</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+               <l>You needn't loo fancy</l>
+               <l>And shae upyour curls,</l>
+               <l>For some o' these B's</l>
+               <l>Do as well for the Girls.</l>
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
+
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>Cc</head>
             <lg>
-               <l></l>
+               <l>For Circus and</l>
+               <l>Clown, Colon</l>
+               <l>Comma</l>
+               <l>and Cat.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>Dd</head>
+            <lg>
+               <l>For Daisies, Duck,</l>
+               <l>Dinner ; you’re</l>
+               <l>all good at that!</l>
             </lg>
          </div>
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>Ee</head>
             <lg>
-               <l></l>
+               <l>Stands for</l>
+               <l>Every-thing</l>
+               <l>under the Sun.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>Ff</head>
+            <lg>
+               <l>For Fox, Fruit,</l>
+               <l>and Flower, for</l>
+               <l>Fiddle, and Fun.</l>
+            </lg>
+         </div>
+
+
+
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>Gg</head>
             <lg>
-               <l></l>
+               <l>For Giant and</l>
+               <l>Goofe, Giddy,</l>
+               <l>Girl, and</l>
+               <l>Giggle.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>Hh</head>
+            <lg>
+               <l>For Harp,</l>
+               <l>Ha! ha! ha!</l>
+               <l>Hautboy,</l>
+               <l>and Higgle.</l>
+            </lg>
+         </div>
+
+
+
+
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>Ii</head>
             <lg>
-               <l></l>
+               <l>Ignoramus, and</l>
+               <l>Idle, and</l>
+               <l>Ill.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>Jj</head>
+            <lg>
+               <l>For Jumbles,</l>
+               <l>Jam, Jelly,</l>
+               <l>for Jack and for</l>
+               <l>Jill</l>
+            </lg>
+         </div>
+
+
+
+
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>Kk</head>
             <lg>
-               <l></l>
+               <l>For a eepsae,</l>
+               <l>a Kiss, ey,</l>
+               <l>and Kic.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>Ll</head>
+            <lg>
+               <l>Stands for Latin,</l>
+               <l>and Lessons,</l>
+               <l>and Lick.</l>
+            </lg>
+         </div>
+
+
+
+
+
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>Mm</head>
             <lg>
-               <l></l>
+               <l>For Mischief and</l>
+               <l>Monkey,</l>
+               <l>Mend, Manners,</l>
+               <l>and Map.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>Nn</head>
+            <lg>
+               <l>For Noisy and</l>
+               <l>Naughty, Nest,</l>
+               <l>Nursery, Nap.</l>
+            </lg>
+         </div>
+
+
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>Oo</head>
             <lg>
-               <l></l>
+               <l>For an Ogre,</l>
+               <l>Owl, Orange</l>
+               <l>and Oak.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>Pp</head>
+            <lg>
+               <l>For Proboseis,</l>
+               <l>Paul Pry, Pull</l>
+               <l>and Poke.</l>
+            </lg>
+         </div>
+
+
+
+
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Qq</head>
             <lg>
-               <l></l>
+               <l>For a Queen,</l>
+               <l>Quadrille,</l>
+               <l>Quarrel, and</l>
+               <l>Quiet.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>Rr</head>
+            <lg>
+               <l>For a Rumpus,</l>
+               <l>Rage, Racket,</l>
+               <l>and Riot</l>
+            </lg>
+         </div>
+
+
+
+
+
          <pb facs="page_image18" n="18"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>Ss</head>
             <lg>
-               <l></l>
+               <l>Semicolon</l>
+               <l>Scot, Soup, Ship,</l>
+               <l>and Sail</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>Tt</head>
+            <lg>
+               <l>For Tongue,</l>
+               <l>Tea and Toast,</l>
+               <l>Tittle-tattle,</l>
+               <l>Tell-tale.</l>
+            </lg>
+         </div>
+
+
+
+
+
+
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head></head>
+
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>Uu</head>
             <lg>
-               <l></l>
+               <l>Unbecoming,</l>
+               <l>Unable to</l>
+               <l>Read.</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>Vv</head>
+            <lg>
+               <l>For a Volume;</l>
+               <l>with this you'll</l>
+               <l>succeed.</l>
+               <l>V also for Vowels,</l>
+               <l>a,e,i,o,u.</l>
+               <l>You may just as</l>
+               <l>well know them</l>
+               <l>Before we get through.</l>
+            </lg>
+         </div>
+
+
+
          <pb facs="page_image20" n="20"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>Ww</head>
             <lg>
-               <l></l>
+               <l>For Woodcut:</l>
+               <l>(see next Paragraph.)</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>Xx</head>
+            <lg>
+               <l>For what Wood-</l>
+               <l>cut's now called:</l>
+               <l>Xylograph.</l>
+            </lg>
+         </div>
+
+
+
          <pb facs="page_image21" n="21"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>Yy</head>
             <lg>
-               <l></l>
+               <l>For Youngsters,</l>
+               <l>and Yawning,</l>
+               <l>and Yelling,</l>
+               <l>Yahoo!</l>
             </lg>
          </div>
+
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Zz</head>
+            <lg>
+               <l>For Zany and</l>
+               <l>Zebra: for</l>
+               <l>Zebu and Zoo.</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+
+               <l>Well read, little Maidens!</l>
+               <l>Well read, little Men!</l>
+               <l>Turn over the leaf</l>
+               <l>And we'll try to count ten.</l>
+            </lg>
+         </div>
+
+
+
          <pb facs="page_image22" n="22"/>
          <div>
-            <head></head>
+            <head>1.2.</head>
             <lg>
-               <l></l>
+               <l>Some Prizes</l>
+               <l>due.</l>
             </lg>
          </div>
+
+         <div>
+            <head>3.4.</head>
+            <lg>
+               <l>More and</l>
+               <l>more.</l>
+            </lg>
+         </div>
+         <div>
+            <head>5.6.</head>
+            <lg>
+               <l>Had no</l>
+               <l>Licks.</l>
+            </lg>
+         </div>
+         <div>
+            <head>7.8.</head>
+            <lg>
+               <l>And never</l>
+               <l>Late.</l>
+            </lg>
+         </div>
+         <div>
+            <head>9.10.</head>
+            <lg>
+               <l>Lay down</l>
+               <l>Pen.</l>
+            </lg>
+         </div>
+         <div>
+            <lg>
+               <l>Well done, Maidens!</l>
+               <l>Well done, Men!</l>
+               <l>You'll soon count a thousand,</l>
+               <l>Now you know ten.</l>
+            </lg>
+         </div>
+
+
          <pb facs="page_image23" n="23"/>
          <div>
-            <head></head>
             <lg>
-               <l></l>
+               <l>We've finished our lessons,</l>
+               <l>And had a good day:</l>
+               <l>Let’s give old Aunt Elfpa</l>
+               <l>Just one—HIP HOORAY!</l>
+               <l>(Now then.)</l>
+               <l>HIP-HIP-HIP-</l>
+               <l>Hooray!</l>
+
+               <l>FINIS</l>
             </lg>
          </div>
          <pb facs="page_image24" n="24"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image25" n="25"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image26" n="26"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image27" n="27"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image28" n="28"/>
+
+
       </body>
    </text>
 </TEI>
