@@ -1,9 +1,12 @@
-
+<div type="cover">
+  <ab>
     <lb/>EDWARD LEAR"S ABC
     <lb/>LONDON
     <lb/>HENRY-FROWDE
     <lb/>HODDER &
     <lb/>STOUGHTON
+      </ab>
+ </div>
 
 <lg>
 A were some Ants,
@@ -27,6 +30,15 @@ Brown little bat!
 
 <lg>
 C
+C was a Cat
+Who ran after a rat
+Whose courage did fail
+When Puss seized on his tail
+C!
+Clever old Cat!
+
+
+
 D
 E
 F
