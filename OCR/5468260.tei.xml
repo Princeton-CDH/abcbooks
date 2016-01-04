@@ -232,461 +232,393 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image7" n="7"/>
          <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
+            <ab>
+               <lb/>A CANADIAN
+               <lb/>CHILD’S
+               <lb/>ABC
+               <lb/>VERSES BY R.K. GORDON II DRAWINGS BY THOREAU MACDONALD
+               <lb/>Dent .Toronto S. Vancouver
+               
+               <lb/>ALL RIGHTS RESERVED PRINTED IN GREAT BRITAIN AT THE TEMPLE PRESS, LETCHWORTH, HERTS FIRST PUBLISHED IN I931
+            </ab>
          </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image9" n="9"/>
          <div>
-            <head/>
+            <head>CANADA</head>
             <lg>
-               <l/>
+               <l>TWO thousand miles of forest,</l>
+               <l>A thousand miles of plain,</l>
+               <l>A thousand miles of mountains,</l>
+               <l>And then the sea again.</l>
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>APPLES</head>
             <lg>
-               <l/>
+               <l>McINTOSH Reds and Russets,</l>
+               <l>Wealthys and Northern Spies,</l>
+               <l>Winesaps, Snows, and Newtons:</l>
+               <l>Which of them takes the prize ?</l>
             </lg>
          </div>
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>BEAVER</head>
             <lg>
-               <l/>
+               <l>UPON our stamps he used to stand</l>
+               <l>For he is emblem of the land.</l>
+               <l>No more we see him on the stamp;</l>
+               <l>Our only chance is when we camp.</l>
+               
+               <l>But he is shy, and when he goes</l>
+               <l>A-swimming, you can see his nose,</l>
+               <l>And nothing more except his track.</l>
+               <l>If he ’s alarmed, a mighty smack</l>
+               
+               <l>Of his flat tail, and he ’s gone clean,</l>
+               <l>Like any other submarine.</l>
             </lg>
          </div>
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>CHINOOK</head>
             <lg>
-               <l/>
+               <l>UP goes the mercury,</l>
+               <l>Away goes the snow,</l>
+               <l>Off go overcoats</l>
+               <l>When chinooks blow.</l>
             </lg>
          </div>
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image16" n="16"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>DAULAC</head>
             <lg>
-               <l/>
+               <l>WHEN their canoes left Montreal</l>
+               <l>They knew that they would not come back;</l>
+               <l>But they were proud to give their all</l>
+               <l>For France and die beside Daulac.</l>
+               
+               <l>Eight times day slowly dimmed to night;</l>
+               <l>Eight times night slowly wore to day ;</l>
+               <l>While at Long Sault they fought their fight,</l>
+               <l>And held the Iroquois at bay.</l>
             </lg>
          </div>
+         
          <pb facs="page_image17" n="17"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image18" n="18"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>EXPLORERS</head>
             <lg>
-               <l/>
+               <l>COLD, want, and hunger could not turn</l>
+               <l>Them back from their great quest—</l>
+               <l>Mackenzie, Henry Hudson, Hearne—</l>
+               <l>Till utmost north and west,</l>
+               
+               <l>Forest and lake and far-spread plain,</l>
+               <l>Arctic and western sea</l>
+               <l>Surrendered to Franklin and Champlain,</l>
+               <l>Kelsey, Laverendrye.</l>
             </lg>
          </div>
          <pb facs="page_image19" n="19"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image20" n="20"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>FATHER POINT</head>
             <lg>
-               <l/>
+               <l>IT ’s there you drop the pilot</l>
+               <l>When you are outward-bound ;</l>
+               <l>It ’s there they have a foghorn</l>
+               <l>Of strange and doleful sound ;</l>
+               
+               <l>It ’s there you start to wonder</l>
+               <l>Just how you ’re going to be</l>
+               <l>Next day, when you’re surrounded</l>
+               <l>By nothing but the sea.</l>
+               
+               <l>But when you ’re headed westward,</l>
+               <l>And the sea is all behind,</l>
+               <l>There you pick up the pilot,</l>
+               <l>And Father Point seems kind.</l>
             </lg>
          </div>
          <pb facs="page_image21" n="21"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image22" n="22"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>GRAIN</head>
             <lg>
-               <l/>
+               <l>WHEAT for the English bakers</l>
+               <l>And oats that are soon to be rolled,</l>
+               <l>Thousands and thousands of acres</l>
+               <l>Covered with prairie gold.</l>
             </lg>
          </div>
          <pb facs="page_image23" n="23"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image24" n="24"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>HUDSON BAY COMPANY</head>
             <lg>
-               <l/>
+               <l>TWAS Charles the Second gave the charter</l>
+               <l>Allowing them to trade and barter,</l>
+               <l>And they have done so ever since</l>
+               <l>That generous and merry prince</l>
+               
+               <l>Gave their wide powers and mighty sway</l>
+               <l>To the Governor and Company</l>
+               <l>of Adventurers of England</l>
+               <l>trading into Hudson Bay.</l>
             </lg>
          </div>
          <pb facs="page_image25" n="25"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image26" n="26"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>INDIANS</head>
             <lg>
-               <l/>
+               <l>ABOUT four hundred, years ago</l>
+               <l>They first looked on a white man’s</l>
+               <l>And welcomed him, and did not know</l>
+               <l>That one day he would take their place.</l>
+               
+               <l>They still are here, but their fierce pride</l>
+               <l>And wild free life have passed away ; Another race has thrust aside</l>
+               <l>The children of a bygone day.</l>
             </lg>
          </div>
          <pb facs="page_image27" n="27"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image28" n="28"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>JESUITS</head>
             <lg>
-               <l/>
+               <l>TO light dark Indian souls they came,</l>
+               <l>And suffered for their dear Faith’s sake;</l>
+               <l>They passed unflinching to the flame;</l>
+               <l>They stood unconquered at the stake.</l>
             </lg>
          </div>
          <pb facs="page_image29" n="29"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image30" n="30"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>KICKING HORSE PASS</head>
             <lg>
-               <l/>
+               <l>THE thing, some said, could not be done,</l>
+               <l>But pluck and brains persisted till</l>
+               <l>Through that wild pass the rails were run,</l>
+               <l>And it was conquered by man’s will.</l>
             </lg>
          </div>
          <pb facs="page_image31" n="31"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image32" n="32"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>LAKES</head>
             <lg>
-               <l/>
+               <l>THERE are five Great Lakes, all deep and wide,</l>
+               <l>And when the wind makes a commotion,</l>
+               <l>If you ’re on shipboard, your inside</l>
+               <l>Will feel the same as on the ocean.</l>
             </lg>
          </div>
          <pb facs="page_image33" n="33"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image34" n="34"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>MOUNTIES</head>
             <lg>
-               <l/>
+               <l>THEY came before the railways came,</l>
+               <l>And to the west brought law and order.</l>
+               <l>They ’ve won themselves a right fair name</l>
+               <l>From Herschel Island to the border.</l>
             </lg>
          </div>
          <pb facs="page_image35" n="35"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image36" n="36"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>NIAGARA</head>
             <lg>
-               <l/>
+               <l>WHAT a great thing to have been</l>
+               <l>First of white men to have seen</l>
+               <l>Niagara, and stood in wonder</l>
+               <l>At the water’s rush and thunder !</l>
+               
+               <l>Father Hennepin saw that show</l>
+               <l>Two centuries and a half ago,</l>
+               <l>But, though we can’t feel quite his thrill,</l>
+               <l>The Falls are strange and mighty still.</l>
             </lg>
          </div>
          <pb facs="page_image37" n="37"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image38" n="38"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>OTTAWA</head>
             <lg>
-               <l/>
+               <l>TO Ottawa from coast to coast</l>
+               <l>The chosen come to make the laws.</l>
+               <l>For weeks they talk about a lot</l>
+               <l>Of different things</l>
+               <l>with scarce a pause : The railway line to Hudson Bay,</l>
+               <l>Taxes and tariff, immigration,</l>
+               <l>The great St. Lawrence waterway,</l>
+               <l>And whether we are yet a nation.</l>
             </lg>
          </div>
          <pb facs="page_image39" n="39"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image40" n="40"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>PRAIRIES</head>
             <lg>
-               <l/>
+               <l>THE prairies stretch from Winnipeg</l>
+               <l>To where the foothills start,</l>
+               <l>The pioneer jogged all that way</l>
+               <l>In a slow Red River cart.</l>
             </lg>
          </div>
          <pb facs="page_image41" n="41"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image42" n="42"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>QUEBEC</head>
             <lg>
-               <l/>
+               <l>THE Indians lived there, then the French,</l>
+               <l>And last the English came;</l>
+               <l>Three hundred years of history</l>
+               <l>Are wrapped up in the name.</l>
             </lg>
          </div>
          <pb facs="page_image43" n="43"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image44" n="44"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>RIVERS</head>
             <lg>
-               <l/>
+               <l>BIG and small, swift and slow,</l>
+               <l>North, south, east and west</l>
+               <l>they flow Fraser, Red, Saskatchewan,</l>
+               <l>Tobique, Saguenay, St. John,</l>
+               <l>Peace, Mackenzie, Montreal,</l>
+               <l>Great St. Lawrence, king of all.</l>
             </lg>
          </div>
          <pb facs="page_image45" n="45"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image46" n="46"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>SUGAR</head>
             <lg>
-               <l/>
+               <l>IT's not the kind you put in tea,</l>
+               <l>But what comes from the maple tree</l>
+               <l>When men go out in Spring and tap</l>
+               <l>The trunks and catch the fresh sweet sap,</l>
+               
+               <l>Which, after proper boiling, makes</l>
+               <l>Brown maple sugar in hard cakes;</l>
+               <l>And all one maple tree can do</l>
+               <l>Is to make just a pound or two.</l>
             </lg>
          </div>
          <pb facs="page_image47" n="47"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image48" n="48"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>TUMP</head>
             <lg>
-               <l/>
+               <l>WHEN the portage is long and the footing is	rough,</l>
+               <l>And the load on your back weighs far more than enough,</l>
+               
+               <l>When each muscle has its own separate ache,</l>
+               <l>And mosquitoes are with you each step that you take,</l>
+               <l>The tump seems a tyrant. But then through the trees</l>
+               <l>Comes on your face sudden a freshening breeze,</l>
+               <l>You see the trail's end and a ripple of blue,</l>
+               <l>And bless the good tump line that helped you get through.</l>
             </lg>
          </div>
          <pb facs="page_image49" n="49"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image50" n="50"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>UNEXPLORED</head>
             <lg>
-               <l/>
+               <l>THE best thing on the old-fashioned maps</l>
+               <l>Of Canada was those great gaps Marked ‘‘Unexplored'</l>
+               <l>You felt you could Fill them up any way you would—</l>
+               <l>With herds of charging buffalo,</l>
+               <l>With Indian and Eskimo,</l>
+               <l>With teepee, dogsled and igloo,</l>
+               <l>With grizzly bears and caribou.</l>
+               
+               <l>But since the railways have got there,</l>
+               <l>The maps are not so nice and bare.</l>
             </lg>
          </div>
          <pb facs="page_image51" n="51"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image52" n="52"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>VANCOUVER</head>
             <lg>
-               <l/>
+               <l>SHE lies beyond the mountains,</l>
+               <l>And from within her bay</l>
+               <l>She sends the great ships sailing</l>
+               <l>To ports in far Cathay.</l>
             </lg>
          </div>
          <pb facs="page_image53" n="53"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image54" n="54"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>WOLFE</head>
             <lg>
-               <l/>
+               <l>WITH muffled oars upstream they crept,</l>
+               <l>Wolfe and his men, on that dark night.</l>
+               <l>They clambered up the narrow path,</l>
+               <l>And morning found them on the height.</l>
+               
+               <l>And New France fell, and Montcalm died,</l>
+               <l>And what France lost old England won;</l>
+               <l>But Wolfe, thrice wounded, only lived</l>
+               <l>To hear with dying ears: “They run.”</l>
             </lg>
          </div>
          <pb facs="page_image55" n="55"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image56" n="56"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>X</head>
             <lg>
-               <l/>
+               <l>X marks the spot where Jacques Cartier landed</l>
+               <l>And found true romance if ever a man did</l>
             </lg>
          </div>
          <pb facs="page_image57" n="57"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image58" n="58"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>YUKON</head>
             <lg>
-               <l/>
+               <l>GOLD gave the Yukon sudden fame,</l>    <l>And from the world’s four quarters came</l>
+               <l>Adventurers to stake a claim And risk their fate.</l>
+               <l>Some won, and many lost that game In Ninety-Eight.</l>
             </lg>
          </div>
          <pb facs="page_image59" n="59"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image60" n="60"/>
-         <div>
-            <head/>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>ZERO</head>
             <lg>
-               <l/>
+               <l>WHEN zero comes and ground is hard,</l>
+               <l>We take the hose and flood the yard;</l>
+               <l>I like the garden, but I think</l>
+               <l>I like it better as a rink.</l>
             </lg>
          </div>
          <pb facs="page_image61" n="61"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image62" n="62"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image63" n="63"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image64" n="64"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image65" n="65"/>
-         <div>
-            <head/>
-            <lg>
-               <l/>
-            </lg>
-         </div>
          <pb facs="page_image66" n="66"/>
+         
       </body>
    </text>
 </TEI>
