@@ -96,177 +96,324 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
+         <div type='cover'>
+            <ab>
+               <lb/>Archduke Charles
+               <lb/>Sold by: A. Keith
+            </ab>
+         </div>
          <pb facs="page_image2" n="2"/>
+         
+         
+         <pb facs="page_image3" n="3"/>
+         <div>
+            <ab>
+               <lb/>THE
+               <lb/>CHILD'S ALPHABET,
+               <lb/>EMBLEMATICALLY
+               <lb/>Described and Embellished
+               <lb/>BY
+               <lb/>TWENTY-FOUR PICTURES.
+               <lb/>BROUGHT INTO
+               <lb/>EASY VERSE,
+               <lb/>FOR THE
+               <lb/>TENDER CAPACITIES
+               <lb/>OF
+               <lb/>Y0UNG READERS.
+               <lb/>The whole contrived
+               <lb/>TO ALLURE CHILDREN
+               <lb/>INTO THE
+               <lb/>LOVE OF LEARNING.
+               
+               <lb/>GLASGOW,
+               <lb/>PRINTED JBY J. AND M. ROBERTSON,
+               <lb/>1805.
+            </ab>
+         </div>
+         <pb facs="page_image4" n="4"/>
+         <pb facs="page_image5" n="5"/>
          <div type="alpha-group" xml:id="ag1" ana="A">
-            <head>A</head>
-            <lg>
-               <l></l>
-            </lg>
+               <head>A</head>
+               <lg>
+               <l>The Tree of Life,</l>
+               <l>And Adam's Wife.</l>
+               <l>In Adam's Fall,</l>
+               <l>We sinned all.</l>
+               </lg>
          </div>
          <div type="alpha-group" xml:id="ag2" ana="B">
             <head>B</head>
             <lg>
-               <l></l>
+               <l>Pray read the Bible,</l>
+               <l>Be not idle.</l>
+               <l>This Book attend,</l>
+               <l>Thy Life amend.</l>
             </lg>
          </div>
-         <pb facs="page_image3" n="3"/>
+         <pb facs="page_image6" n="6"/>
          <div type="alpha-group" xml:id="ag3" ana="C">
             <head>C</head>
             <lg>
-               <l></l>
+               <l>The Cat and Fiddle,</l>
+               <l>High diddle, diddle,</l>
+               <l>The Cat doth play,</l>
+               <l>And after slay.</l>
             </lg>
          </div>
          <div type="alpha-group" xml:id="ag4" ana="D">
             <head>D</head>
             <lg>
-               <l></l>
+               <l>The careful Beast,</l>
+               <l>Pleaseth best.</l>
+               <l>The dog doth bite,</l>
+               <l>A Thief at Night.</l>
             </lg>
          </div>
-         <pb facs="page_image4" n="4"/>
+         
+         
+         <pb facs="page_image7" n="7"/>
          <div type="alpha-group" xml:id="ag5" ana="E">
             <head>E</head>
             <lg>
-               <l></l>
+               <l>The Eagle’s Eye,</l>
+               <l>Mounts the Sky.</l>
+               <l>An Eagl’e Flight,</l>
+               <l>Is out of Sight.</l>
             </lg>
          </div>
          <div type="alpha-group" xml:id="ag6" ana="F">
             <head>F</head>
             <lg>
-               <l></l>
+               <l>A Fool will brag,</l>
+               <l>Tho’ not worth a rag.</l>
+               <l>The idle Fool,</l>
+               <l>Is whipt at School.</l>
             </lg>
          </div>
-         <pb facs="page_image5" n="5"/>
+         
+         
+         <pb facs="page_image8" n="8"/>
          <div type="alpha-group" xml:id="ag7" ana="G">
             <head>G</head>
             <lg>
-               <l></l>
+               <l>Thus flies Time,</l>
+               <l>Make much of thine.</l>
+               <l>As runs the Glass,</l>
+               <l>Man's Life doth pass.</l>
             </lg>
          </div>
          <div type="alpha-group" xml:id="ag8" ana="H">
             <head>H</head>
             <lg>
-               <l></l>
+               <l>Strive Heart and Hand</l>
+               <l>To obey Command.</l>
+               <l>My Book and Heart,</l>
+               <l>Shall never part.</l>
             </lg>
          </div>
-         <pb facs="page_image6" n="6"/>
-         <div type="alpha-group" xml:id="ag9" ana="I">
-            <head>I</head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+         
+         
+         <pb facs="page_image9" n="9"/>
          <div type="alpha-group" xml:id="ag10" ana="J">
             <head>J</head>
             <lg>
-               <l></l>
+               <l>Job feels the Rod,</l>
+               <l>Yet blesses God.</l>
+               <l>His present Pain,</l>
+               <l>Was future Gain.</l>
             </lg>
          </div>
          <pb facs="page_image7" n="7"/>
          <div type="alpha-group" xml:id="ag11" ana="K">
             <head>K</head>
             <lg>
-               <l></l>
+               <l>The King obey,</l>
+               <l>So doth God say.</l>
+               <l>King Charles the good,</l>
+               <l>Was of high Blood.</l>
             </lg>
          </div>
+         
+         <pb facs="page_image10" n="10"/>
          <div type="alpha-group" xml:id="ag12" ana="L">
             <head>L</head>
             <lg>
-               <l></l>
+               <l>Sweet Innocence</l>
+               <l>Gives no offence.</l>
+               <l>The Lion bold</l>
+               <l>The Lamb doth hold.</l>
             </lg>
          </div>
          <pb facs="page_image8" n="8"/>
          <div type="alpha-group" xml:id="ag13" ana="M">
             <head>M</head>
             <lg>
-               <l></l>
+               <l>How kind is Heaven</l>
+               <l>Thus to have given.</l>
+               <l>The Moon at Night</l>
+               <l>To Shine so bright.</l>
             </lg>
          </div>
+         
+         <pb facs="page_image11" n="11"/>
          <div type="alpha-group" xml:id="ag14" ana="N">
             <head>N</head>
             <lg>
-               <l></l>
+               <l>The lofty Tree</l>
+               <l>Is here you see.</l>
+               <l>The Nightingale doth sing,</l>
+               <l>Most lovely in the Spring.</l>
             </lg>
          </div>
          <pb facs="page_image9" n="9"/>
          <div type="alpha-group" xml:id="ag15" ana="O">
             <head>O</head>
             <lg>
-               <l></l>
+               <l>The Royal Oak</l>
+               <l>Is not a Joke.</l>
+               <l>The Oak we sing,</l>
+               <l>Did save the King.</l>
             </lg>
          </div>
+         
+         
+         <pb facs="page_image12" n="12"/>
          <div type="alpha-group" xml:id="ag16" ana="P">
             <head>P</head>
             <lg>
-               <l></l>
+               <l>Peter's Sins</l>
+               <l>Repentance brings.</l>
+               <l>Peter denies</l>
+               <l>His Lord, and cries.</l>
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
          <div type="alpha-group" xml:id="ag17" ana="Q">
             <head>Q</head>
             <lg>
-               <l></l>
+               <l>Quaint words and behaviour,</l>
+               <l>Gains the King's Favour.</l>
+               <l>Queen Esther came in state,</l>
+               <l>The Jews to save from fate.</l>
             </lg>
          </div>
+         
+         <pb facs="page_image13" n="13"/>
          <div type="alpha-group" xml:id="ag18" ana="R">
             <head>R</head>
             <lg>
-               <l></l>
+               <l>From Earth we come,</l>
+               <l>To Earth return.</l>
+               <l>Rachel doth mourn</l>
+               <l>For her first-born.</l>
             </lg>
          </div>
-         <pb facs="page_image11" n="11"/>
          <div type="alpha-group" xml:id="ag19" ana="S">
             <head>S</head>
             <lg>
-               <l></l>
+               <l>Anointed David</l>
+               <l>Well behaved.</l>
+               <l>Samuel anoints,</l>
+               <l>Whom God appoints.</l>
             </lg>
          </div>
+         
+         
+         <pb facs="page_image14" n="14"/>
          <div type="alpha-group" xml:id="ag20" ana="T">
             <head>T</head>
             <lg>
-               <l></l>
+               <l>The Scythe and Glass</l>
+               <l>Shew Time will pass.</l>
+               <l>Time cuts down all,</l>
+               <l>Both great and small.</l>
             </lg>
          </div>
-         <pb facs="page_image12" n="12"/>
          <div type="alpha-group" xml:id="ag21" ana="U">
             <head>U</head>
             <lg>
-               <l></l>
+               <l>Wickedness brings on,</l>
+               <l>A doleful Song.</l>
+               <l>Uriah's beauteous Wife,</l>
+               <l>Makes David seek his Life.</l>
             </lg>
          </div>
-         <div type="alpha-group" xml:id="ag22" ana="V">
-            <head>V</head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
-         <pb facs="page_image13" n="13"/>
+         
+         
+         <pb facs="page_image15" n="15"/>
          <div type="alpha-group" xml:id="ag23" ana="W">
             <head>W</head>
             <lg>
-               <l></l>
+               <l>In the Whale's Belly Jonah lay,</l>
+               <l>Three whole Nights and Days.</l>
+               <l>Whales in the Sea</l>
+               <l>God's Voice obey.</l>
             </lg>
          </div>
          <div type="alpha-group" xml:id="ag24" ana="X">
             <head>X</head>
             <lg>
-               <l></l>
+               <l>A King from Death</l>
+               <l>Can't save his Breath.</l>
+               <l>Xerxes the Great did die.</l>
+               <l>And so must you and I.</l>
             </lg>
          </div>
-         <pb facs="page_image14" n="14"/>
+         
+         
+         
+         <pb facs="page_image16" n="16"/>
          <div type="alpha-group" xml:id="ag25" ana="Y">
             <head>Y</head>
             <lg>
-               <l></l>
+               <l>Death and his Dart,</l>
+               <l>Strikes the youngest Heart.</l>
+               <l>Youth forward skips,</l>
+               <l>Death soonest nips.</l>
             </lg>
          </div>
          <div type="alpha-group" xml:id="ag26" ana="Z">
             <head>Z</head>
             <lg>
-               <l></l>
+               <l>A willing mind for good,</l>
+               <l>Makes Intention understood.</l>
+               <l>Zaccheus climes the Tree,</l>
+               <l>His Lord to see.</l>
             </lg>
          </div>
-         <pb facs="page_image15" n="15"/>
-         <pb facs="page_image16" n="16"/>
+         
+         
+         <pb facs="page_image17" n="17"/>
+         <pb facs="page_image18" n="18"/>
+         <div>
+            <ab>
+               <lb/>ADVERTISEMENT.
+               <lb/>To all the pretty little Masters Blisses,
+               <lb/>And all the pretty little Misses,
+               <lb/>Who are in London Town,
+               <lb/>And Country up and down,
+               <lb/>To many hundreds more,
+               <lb/>From three Year, to threescore.
+               <lb/>Come buy this little Book,
+               <lb/>And on it deign to look,
+               <lb/>Then soon will come another,
+               <lb/>For size will be his Brother;
+               <lb/>Pretty Prints it will contain,
+               <lb/>You’ll look it o’er and o’er again.
+               <lb/>FINIS.
+               
+               <lb/>GLASGOW,
+               <lb/>Printed by J. and M. Robertson, Saltmarket, 1805.
+            </ab>
+         </div>
+         <pb facs="page_image19" n="19"/>
+         <pb facs="page_image20" n="20"/>
+         <div>
+            <ab>
+               
+               <lb/>Emperor of Russia
+            </ab>
+         </div>
       </body>
    </text>
 </TEI>
