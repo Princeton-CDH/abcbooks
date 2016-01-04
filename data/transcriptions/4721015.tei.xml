@@ -83,110 +83,210 @@
    <text>
       <body>
          <pb facs="page_image1" n="1"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
+         <div type="cover">
+            <ab>
+               <lb/>GRANDMA GOODSOUL'S
+               <lb/>ABC
+               <lb/>EATABLES
+               <lb/>
+            </ab>
+         </div>  
          <pb facs="page_image2" n="2"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image3" n="3"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image4" n="4"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag1" ana="A">
+            <head>A</head>
             <lg>
-               <l></l>
+               <l>is an Apple, both mellow and sweet,</l>
+               <l>A really good one is a very nice treat.</l>
             </lg>
-         </div>
+         </div>  
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <head>B</head>
+            <lg>
+               <l>is the Butter, just fresh from the churn.</l>
+               <l>At breakfast and tea it serves a good turn.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <head>C</head>
+            <lg>
+               <l>is a Cabbage, sound in its heart,</l>
+               <l>To Beef, Veal, or Pork t'will a flavour impart.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <head>D</head>
+            <lg>
+               <l>is the Damson, whoever will try,</l>
+               <l>Must acknowledge 'tis famous in Pudding or Pie.</l>
+            </lg>
+         </div>  
          <pb facs="page_image5" n="5"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <head>E</head>
             <lg>
-               <l></l>
+               <l>is the Egg, unless I'm mistaken,</l>
+               <l>Is certainly good with a rasher of bacon</l>
             </lg>
-         </div>
+         </div>  
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <head>F</head>
+            <lg>
+               <l>is a Fowl, but your pardon I beg,</l>
+               <l>To talk of a Fowl so soon after Egg.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag7" ana="G">
+            <head>G</head>
+            <lg>
+               <l>is the Goose, so don't be at a loss,</l>
+               <l>To take the first opne of these rhymes for the sauce</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag8" ana="H">
+            <head>H</head>
+            <lg>
+               <l>is the Honey obtained by the Bee.</l>
+               <l>Whose industrious habits we all like to see.</l>
+            </lg>
+         </div>  
          <pb facs="page_image6" n="6"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image7" n="7"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image8" n="8"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag9" ana="I">
+            <head>I</head>
             <lg>
-               <l></l>
+               <l>stands for Ice, which I'll show in a trice,</l>
+               <l>In the hot sumnmer weather is sure to be nice.</l>
             </lg>
-         </div>
+         </div>  
+         <div type="alpha-group" xml:id="ag10" ana="J">
+            <head>J</head>
+            <lg>
+               <l>J puts me in mind of my Grandmother's Jam</l>
+               <l>With which she delighted my stomach to cram.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag11" ana="K">
+            <head>K</head>
+            <lg>
+               <l>is a Kidney, nice if well broil'd,</l>
+               <l>But burn it too much and 'tis sure to be spoil'd.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag12" ana="L">
+            <head>L</head>
+            <lg>
+               <l>is a Lobster, he must not be o'erlooked,</l>
+               <l>Tho' mind how you touch him before he is cook'd.</l>
+            </lg>
+         </div>  
          <pb facs="page_image9" n="9"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag13" ana="M">
+            <head>M</head>
             <lg>
-               <l></l>
+               <l>stands for Mutton, do pray boil the leg,</l>
+               <l>With Turnips, and Capers, and a plateful I'll beg.</l>
             </lg>
-         </div>
+         </div>  
+         <div type="alpha-group" xml:id="ag14" ana="N">
+            <head>N</head>
+            <lg>
+               <l>s the Nectarine, sweetest of fruit,</l>
+               <l>For dessert after dinner 'twill you and I suit.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag15" ana="O">
+            <head>O</head>
+            <lg>
+               <l>is an Oyster, to please all beholders,</l>
+               <l>As a capital sauce to the Cod's head and shoulders.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag16" ana="P">
+            <head>P</head>
+            <lg>
+               <l>stands for Peas, of my dinner I've boasted</l>
+               <l>When Peas I have had with a leg of Lamb roasted.</l>
+            </lg>
+         </div>  
          <pb facs="page_image10" n="10"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image11" n="11"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image12" n="12"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
+            <head>Q</head>
             <lg>
-               <l></l>
+               <l>is a Quince, 'twill a flavour impart,</l>
+               <l>In a Pie, but alone it is rather too tart.</l>
             </lg>
-         </div>
+         </div>  
+         <div type="alpha-group" xml:id="ag18" ana="R">
+            <head>R</head>
+            <lg>
+               <l>stands for Rabbit, I think you'll agree,</l>
+               <l>A nice one for dinner would satisfy three.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag19" ana="S">
+            <head>S</head>
+            <lg>
+               <l>is the king of all dishes, the Salmon,</l>
+               <l>Either pickled or fresh, he's good and no gammon.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag20" ana="T">
+            <head>T</head>
+            <lg>
+               <l>is for Turtle, the Aldermen's pride,</l>
+               <l>For they stick to Turtle, whate'er may betide..</l>
+            </lg>
+         </div>  
          <pb facs="page_image13" n="13"/>
-         <div>
-            <head></head>
+         <div type="alpha-group" xml:id="ag21" ana="U">
+            <head>U</head>
             <lg>
-               <l></l>
+               <l>is for Utensils at which you are looking.</l>
+               <l>You perceive thet they're all adapted for cooking.</l>
             </lg>
-         </div>
+         </div>  
+         <div type="alpha-group" xml:id="ag22" ana="V">
+            <head>V</head>
+            <lg>
+               <l>stands for Veal, nicely stuff'd it is prime,</l>
+               <l>If you chance to be hungry about dinner-time.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag23" ana="W">
+            <head>W</head>
+            <lg>
+               <l>is the Wine your dinner to crown,</l>
+               <l>Only don't take too much to wash it all down.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag24" ana="X">
+            <head>Y</head>
+            <lg>
+               <l>is the Youth with Appetite rare,</l>
+               <l>Who eats all he can, and leaves nothing to spare.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag25" ana="Y">
+            <head>X</head>
+            <lg>
+               <l>is the letter I thought to o'erlook,</l>
+               <l>Bit it means a good thing, an ex-cellent cook.</l>
+            </lg>
+         </div>  
+         <div type="alpha-group" xml:id="ag26" ana="Z">
+            <head>Z</head>
+            <lg>
+               <l>is the Zest which everyone feels,</l>
+               <l>Who is healthy and hungry at each of his meals.</l>
+            </lg>
+         </div>  
          <pb facs="page_image14" n="14"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image15" n="15"/>
-         <div>
-            <head></head>
-            <lg>
-               <l></l>
-            </lg>
-         </div>
          <pb facs="page_image16" n="16"/>
       </body>
    </text>
