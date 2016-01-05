@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Routledge, Warne, &amp; Routledge</publisher>
-                     <date>[1858] 1858</date>
+                     <date notBefore="1858">[1858] 1858</date>
                   </imprint>
                </monogr>
             </biblStruct>

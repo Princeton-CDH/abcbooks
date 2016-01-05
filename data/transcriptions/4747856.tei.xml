@@ -21,7 +21,7 @@
                   <imprint>
                      <pubPlace>New York</pubPlace>
                      <publisher>F.A. Stokes Co.</publisher>
-                     <date>[c1904] 1904</date>
+                     <date notBefore="1904">[c1904] 1904</date>
                   </imprint>
                </monogr>
             </biblStruct>

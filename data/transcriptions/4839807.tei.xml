@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>Philadelphia</pubPlace>
                      <publisher>Merrihew &amp; Thompson, printed for the Anti-Slavery Fair.</publisher>
-                     <date>1847</date>
+                     <date notBefore="1847">1847</date>
                   </imprint>
                </monogr>
             </biblStruct>

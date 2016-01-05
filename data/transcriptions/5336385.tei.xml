@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Liberty &amp; Co., Ltd. Lawrence &amp; Bullen, Ltd.</publisher>
-                     <date>[1904] 1904</date>
+                     <date notBefore="1904">[1904] 1904</date>
                   </imprint>
                </monogr>
             </biblStruct>

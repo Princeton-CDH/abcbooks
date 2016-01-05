@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>New York</pubPlace>
                      <publisher>John Day</publisher>
-                     <date>1930</date>
+                     <date notBefore="1930">1930</date>
                   </imprint>
                </monogr>
             </biblStruct>

@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Effingham Wilson.</publisher>
-                     <date>1871</date>
+                     <date notBefore="1871">1871</date>
                   </imprint>
                </monogr>
             </biblStruct>

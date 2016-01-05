@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Pubd. ... by Hodgson &amp; Co., 10 Newgate Str.</publisher>
-                     <date>March 27, 1823 1823</date>
+                     <date notBefore="1823">March 27, 1823 1823</date>
                   </imprint>
                </monogr>
             </biblStruct>

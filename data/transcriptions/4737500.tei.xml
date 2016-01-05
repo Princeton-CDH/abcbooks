@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>New York</pubPlace>
                      <publisher>American Child Health Association</publisher>
-                     <date>[1915] 1915</date>
+                     <date notBefore="1915">[1915] 1915</date>
                   </imprint>
                </monogr>
             </biblStruct>

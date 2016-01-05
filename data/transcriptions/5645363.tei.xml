@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Thomas Nelson and Sons</publisher>
-                     <date>[1903?] 1903</date>
+                     <date notBefore="1903">[1903?] 1903</date>
                   </imprint>
                </monogr>
             </biblStruct>
@@ -273,7 +273,7 @@
             </lg>
          </div>
          <pb facs="page_image10" n="10"/>
-         <div type="alpha-group" xml:id="ag1" ana="B">
+         <div type="alpha-group" xml:id="ag2" ana="B">
 
             <lg>
                <l> B for Briton. Though his home is in little isles set in a northern sea, you will
@@ -295,7 +295,7 @@
             </lg>
          </div>
          <pb facs="page_image12" n="12"/>
-         <div type="alpha-group" xml:id="ag1" ana="A">
+         <div type="alpha-group" xml:id="ag3" ana="C">
             <lg>
                <l> C for Cossack. His home-is on the wide, dreary plains or steppes of south-east
                   Russia. His forefathers were fierce warriors who feared nothing, and loved liberty
@@ -317,7 +317,7 @@
             </lg>
          </div>
          <pb facs="page_image14" n="14"/>
-         <div type="alpha-group" xml:id="ag1" ana="A">
+         <div type="alpha-group" xml:id="ag4" ana="D">
             <lg>
                <l> D for Dutch. Here is a Dutch girl with her little dog-cart full of milk-cans. You
                   see how smart and neat she is ; and you need not be surprised, for the Dutch are
@@ -340,7 +340,7 @@
             </lg>
          </div>
          <pb facs="page_image16" n="16"/>
-         <div type="alpha-group" xml:id="ag1" ana="A">
+         <div type="alpha-group" xml:id="ag5" ana="E">
             <lg>
                <l> E for Egyptian. He lives in Egypt, the land of the pyramids. And his country
                   would be nothing but a desert were it not for the river Nile, which makes a strip
@@ -365,7 +365,7 @@
             </lg>
          </div>
          <pb facs="page_image18" n="18"/>
-         <div type="alpha-group" xml:id="ag1" ana="A">
+         <div type="alpha-group" xml:id="ag6" ana="F">
             <lg>
                <l> F for Frenchman. Fie calls his land “ Beautiful France,” and loves it very
                   dearly. The French people have been called the “liveliest nation in the world.”
@@ -389,7 +389,7 @@
             </lg>
          </div>
          <pb facs="page_image20" n="20"/>
-         <div>
+         <div type="alpha-group" xml:id="ag7" ana="G">
             <lg>
                <l> G for Greek. In ancient clays the Greeks were a strong and gifted race. Among
                   them were some of the greatest poets, historians, speakers, and thinkers that the
@@ -414,7 +414,7 @@
             </lg>
          </div>
          <pb facs="page_image22" n="22"/>
-         <div>
+         <div type="alpha-group" xml:id="ag8" ana="H">
             <lg>
                <l> H for Hindu. In the vast country of India, which belongs to Britain, live about
                   one-fifth of all the people in the world, and most of them are Hindus. Though they
@@ -438,7 +438,7 @@
             </lg>
          </div>
          <pb facs="page_image24" n="24"/>
-         <div>
+         <div type="alpha-group" xml:id="ag9" ana="I">
             <lg>
                <l> I for Irishman. Ireland is the land of the colleen bawn, the broth of a bhoy, the
                   pratie, the jaunting-car, the shamrock, the Blarney stone, the brogue, “ the
@@ -462,7 +462,7 @@
             </lg>
          </div>
          <pb facs="page_image26" n="26"/>
-         <div>
+         <div type="alpha-group" xml:id="ag10" ana="J">
             <lg>
                <l> J for the Jap. He lives in Japan—a group of islands to the east of Northern Asia.
                   He is a little fellow, with a sallow face and lank, black hair. When he wears his
@@ -489,7 +489,7 @@
             </lg>
          </div>
          <pb facs="page_image28" n="28"/>
-         <div>
+         <div type="alpha-group" xml:id="ag11" ana="K">
             <lg>
                <l> K for the Kafir. He lives in South Africa, and is a fine, tall, strong fellow,
                   with thick lips and woolly hair. He used to be very fond of fighting, and with his
@@ -512,7 +512,7 @@
             </lg>
          </div>
          <pb facs="page_image30" n="30"/>
-         <div>
+         <div type="alpha-group" xml:id="ag12" ana="L">
             <lg>
                <l> L for Laplander. The Lapps are a small, hardy people, who live in the extreme
                   north of Europe. Their land is barren and dreary, but they love it very dearly for
@@ -533,7 +533,7 @@
             </lg>
          </div>
          <pb facs="page_image32" n="32"/>
-         <div>
+         <div type="alpha-group" xml:id="ag13" ana="M">
             <lg>
                <l> M for Mongol. The word “Mongol” means “brave,” and in ancient times the Mongols
                   were the fiercest and most warlike race in the whole of Asia. Much of their
@@ -557,7 +557,7 @@
             </lg>
          </div>
          <pb facs="page_image34" n="34"/>
-         <div>
+         <div type="alpha-group" xml:id="ag14" ana="N">
             <lg>
                <l> N for Norwegian. In the picture you see a pretty Norse girl, who looks very gay
                   in her bright holiday dress. She lives at Tromsoe, far up in the north, where the
@@ -582,7 +582,7 @@
             </lg>
          </div>
          <pb facs="page_image36" n="36"/>
-         <div>
+         <div type="alpha-group" xml:id="ag15" ana="O">
             <lg>
                <l> O for Ojibwa Indian. When Europeans first settled in North America, the “noble
                   redskin” was the monarch of all he surveyed. Now, alas! he is fast disappearing.
@@ -603,7 +603,7 @@
             </lg>
          </div>
          <pb facs="page_image38" n="38"/>
-         <div>
+         <div type="alpha-group" xml:id="ag16" ana="P">
             <lg>
                <l> P for Persian. He lives in Persia, a country of Asia, and his ruler is called the
                   Shah. The Shah has been several times to this country, so you may have seen him.
@@ -627,7 +627,7 @@
             </lg>
          </div>
          <pb facs="page_image40" n="40"/>
-         <div>
+         <div type="alpha-group" xml:id="ag17" ana="Q">
             <head/>
             <lg>
                <l> Q for Queenslander. Queensland is a large country in the east and north-east of
@@ -650,7 +650,7 @@
             </lg>
          </div>
          <pb facs="page_image42" n="42"/>
-         <div>
+         <div type="alpha-group" xml:id="ag18" ana="R">
             <lg>
                <l> R for Roumanian. He lives in the north of the Balkan Peninsula of Europe, and is
                   a light-hearted and cheerful fellow, though, unhappily, he is very ignorant.
@@ -676,7 +676,7 @@
             </lg>
          </div>
          <pb facs="page_image44" n="44"/>
-         <div>
+         <div type="alpha-group" xml:id="ag19" ana="S">
             <lg>
                <l> S for Spaniard. He lives in “ Sunny Spain,” which is one of the most interesting
                   countries of Europe. As a rule, he is ignorant and cruel, but he has very noble
@@ -703,7 +703,7 @@
             </lg>
          </div>
          <pb facs="page_image46" n="46"/>
-         <div>
+         <div type="alpha-group" xml:id="ag20" ana="T">
             <lg>
                <l> T for Turk. He lives in Turkey and in the south-west of Asia. He is brave and
                   intelligent, but very lazy, and only likes work when he can get somebody to do it
@@ -726,7 +726,7 @@
             </lg>
          </div>
          <pb facs="page_image48" n="48"/>
-         <div>
+         <div type="alpha-group" xml:id="ag21" ana="U">
             <lg>
                <l> U or United States, the land of the “Stars and Stripes,” a vast and wealthy
                   country of North America. Though the United States has only been an independent
@@ -749,7 +749,7 @@
             </lg>
          </div>
          <pb facs="page_image50" n="50"/>
-         <div>
+         <div type="alpha-group" xml:id="ag22" ana="V">
             <lg>
                <l> V for Venetian. He lives in Venice, a beautiful city of Italy. Venice is
                   sea-born. It is built in the sea, and has the sea for its streets and highways.
@@ -773,7 +773,7 @@
             </lg>
          </div>
          <pb facs="page_image52" n="52"/>
-         <div>
+         <div type="alpha-group" xml:id="ag23" ana="W">
             <lg>
                <l> W for West Indian. Most of the people who live in the West Indies are negroes,
                   with coal-black faces, woolly hair, and teeth like ivory. Their forefathers were
@@ -797,7 +797,7 @@
             </lg>
          </div>
          <pb facs="page_image54" n="54"/>
-         <div>
+         <div type="alpha-group" xml:id="ag24" ana="X">
             <lg>
                <l> X for the Cross of St. Andrew, which stands for Bonny Scotland. The Crosses of
                   St. Andrew and St. Patrick are united with the Cross of St. George to form the
@@ -815,7 +815,7 @@
             </lg>
          </div>
          <pb facs="page_image56" n="56"/>
-         <div>
+         <div type="alpha-group" xml:id="ag25" ana="Y">
             <lg>
                <l> Y for Yoruba man. He lives in the British part of West Africa. As you see, he is
                   a negro. But look at his hair. Instead of growing smoothly, as ours does, it grows
@@ -839,7 +839,7 @@
             </lg>
          </div>
          <pb facs="page_image58" n="58"/>
-         <div>
+         <div type="alpha-group" xml:id="ag26" ana="Z">
             <lg>
                <l> Z for Zulu. The Zulus are the most interesting of all the Kafirs. They are strong
                   and well-built, and many ot them are over six feet in height. Their hair is thick

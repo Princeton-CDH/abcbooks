@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Sands &amp; Co.</publisher>
-                     <date>[not after 1905] 1900 1905</date>
+                     <date notBefore="1900">[not after 1905] 1900 1905</date>
                   </imprint>
                </monogr>
             </biblStruct>

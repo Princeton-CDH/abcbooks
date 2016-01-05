@@ -23,7 +23,7 @@
                         <imprint>
                             <pubPlace>London</pubPlace>
                             <publisher>Dean &amp; Son</publisher>
-                            <date>[1902?] 1902</date>
+                            <date notBefore="1902">[1902?] 1902</date>
                         </imprint>
                     </monogr>
                 </biblStruct>

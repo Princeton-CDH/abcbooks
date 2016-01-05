@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>Philadelphia</pubPlace>
                      <publisher>s.n.]</publisher>
-                     <date>c1901 1901</date>
+                     <date notBefore="1901">c1901 1901</date>
                   </imprint>
                </monogr>
             </biblStruct>

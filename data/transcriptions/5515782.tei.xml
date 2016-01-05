@@ -13,22 +13,23 @@
             <idno type="voyagerid">5515782</idno>
             <idno type="abcbooksid">5515782_handtalk</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="main">Handtalk</seg>
+                     <seg type="sub">an ABC of finger spelling &amp; sign language</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>New York</pubPlace>
+                     <publisher>Parents' Magazine Press</publisher>
+                     <date notBefore="1974">c1974 1974</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="main">Handtalk</seg>
-                  <seg type="sub">an ABC of finger spelling &amp; sign language</seg>
-               </title>
-               <imprint>
-                  <pubPlace>New York</pubPlace>
-                  <publisher>Parents' Magazine Press</publisher>
-                  <date>c1974 1974</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

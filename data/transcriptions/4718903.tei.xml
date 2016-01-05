@@ -24,7 +24,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Printed by J. Harris and Son, corner of St. Paul's Church-Yard</publisher>
-                     <date>1820</date>
+                     <date notBefore="1820">1820</date>
                   </imprint>
                </monogr>
             </biblStruct>

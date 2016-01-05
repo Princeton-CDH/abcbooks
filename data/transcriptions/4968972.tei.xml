@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Dean's Rag Book Co., Ltd.</publisher>
-                     <date>[not before 1923] uuuu</date>
+                     <date notBefore="1923">[not before 1923] uuuu</date>
                   </imprint>
                </monogr>
             </biblStruct>

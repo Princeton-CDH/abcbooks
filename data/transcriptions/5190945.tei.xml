@@ -13,23 +13,24 @@
             <idno type="voyagerid">5190945</idno>
             <idno type="abcbooksid">2987277_childs_alphabet</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">The </seg>
+                     <seg type="main">child's alphabet</seg>
+                     <seg type="sub">emblematically described and embellished by twenty-four pictures : brought into easy verse, for the tender capacities of young readers :  the whole contrived to allure children into the love of learning</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace/>
+                     <publisher/>
+                     <date notBefore="1805">1805</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">The </seg>
-                  <seg type="main">child's alphabet</seg>
-                  <seg type="sub">emblematically described and embellished by twenty-four pictures : brought into easy verse, for the tender capacities of young readers :  the whole contrived to allure children into the love of learning</seg>
-               </title>
-               <imprint>
-                  <pubPlace/>
-                  <publisher/>
-                  <date>1805</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

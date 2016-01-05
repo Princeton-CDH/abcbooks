@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>Kettering</pubPlace>
                      <publisher>J.H. Waddington.</publisher>
-                     <date>1879</date>
+                     <date notBefore="1879">1879</date>
                   </imprint>
                </monogr>
             </biblStruct>

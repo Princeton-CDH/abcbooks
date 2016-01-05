@@ -21,7 +21,7 @@
                   <imprint>
                      <pubPlace>New York</pubPlace>
                      <publisher>McLoughlin Bros. Inc.</publisher>
-                     <date>c1900 1900</date>
+                     <date notBefore="1900">c1900 1900</date>
                   </imprint>
                </monogr>
             </biblStruct>

@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>Indianapolis]</pubPlace>
                      <publisher>Van Camp Products Company</publisher>
-                     <date>c1923 1923</date>
+                     <date notBefore="1923">c1923 1923</date>
                   </imprint>
                </monogr>
             </biblStruct>

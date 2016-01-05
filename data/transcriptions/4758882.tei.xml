@@ -22,7 +22,7 @@
                       <imprint>
                           <pubPlace>New York London</pubPlace>
                           <publisher>George Routledge and Sons, Broadway, Ludgate Hill; New York: 9, Lafayette place.</publisher>
-                          <date>[between 1865 and 1889] 1860</date>
+                          <date notBefore="1865">[between 1865 and 1889] 1860</date>
                       </imprint>
                   </monogr>
               </biblStruct>

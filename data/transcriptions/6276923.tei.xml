@@ -21,7 +21,7 @@
                   <imprint>
                      <pubPlace>New York</pubPlace>
                      <publisher>G.W. Dillingham Co.</publisher>
-                     <date>1903</date>
+                     <date notBefore="1903">1903</date>
                   </imprint>
                </monogr>
             </biblStruct>

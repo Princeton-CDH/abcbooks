@@ -23,7 +23,7 @@
               <imprint>
                 <pubPlace>Garden City, N.Y</pubPlace>
                 <publisher>Doubleday, Page &amp; Company</publisher>
-                <date>1926</date>
+                <date notBefore="1926">1926</date>
               </imprint>
             </monogr>
           </biblStruct>

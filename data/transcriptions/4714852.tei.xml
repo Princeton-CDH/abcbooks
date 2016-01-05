@@ -23,7 +23,7 @@
                      <pubPlace>London</pubPlace>
                      <publisher>Field &amp; Tuer, Ye Leadenhalle Press. Simpkin, Marshall
                         [.</publisher>
-                     <date>1884] 1884</date>
+                     <date notBefore="1884">1884] 1884</date>
                   </imprint>
                </monogr>
             </biblStruct>

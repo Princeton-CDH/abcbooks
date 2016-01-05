@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Printed for J. Harris and Son, corner of St. Paul's Church-Yard</publisher>
-                     <date>1822</date>
+                     <date notBefore="1822">1822</date>
                   </imprint>
                </monogr>
             </biblStruct>

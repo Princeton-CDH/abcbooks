@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Darton and Clark (Holborn Hill)</publisher>
-                     <date>[ca. 1840] 1840</date>
+                     <date notBefore="1840">[ca. 1840] 1840</date>
                   </imprint>
                </monogr>
             </biblStruct>

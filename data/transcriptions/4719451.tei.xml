@@ -23,9 +23,8 @@
                   </title>
                   <imprint>
                      <pubPlace>London</pubPlace>
-                     <publisher>Published by B. Tabart and Co., Juvenile and School Library, New
-                        Bond-Street</publisher>
-                     <date>1809</date>
+                     <publisher>Published by B. Tabart and Co., Juvenile and School Library, New Bond-Street</publisher>
+                     <date notBefore="1809">1809</date>
                   </imprint>
                </monogr>
             </biblStruct>

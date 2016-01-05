@@ -23,7 +23,7 @@
                       <imprint>
                           <pubPlace>London Aldershot Portsmouth</pubPlace>
                           <publisher>Gale &amp; Polden, Ltd.</publisher>
-                          <date>[193-?] 1920</date>
+                          <date notBefore="1920">[193-?] 1920</date>
                       </imprint>
                   </monogr>
               </biblStruct>

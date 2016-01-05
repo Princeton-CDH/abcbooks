@@ -13,9 +13,8 @@
             <idno type="voyagerid">5877360</idno>
             <idno type="abcbooksid">5877360_afrobets</idno>
          </publicationStmt>
-      </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
+         <sourceDesc>
+         <biblStruct>
             <monogr>
                <title level="m">
                   <seg type="main">Afro-Bets ABC book</seg>
@@ -23,11 +22,14 @@
                <imprint>
                   <pubPlace>Orange, NJ</pubPlace>
                   <publisher>Just Us Books</publisher>
-                  <date>c1987 1987</date>
+                  <date notBefore="1987">c1987 1987</date>
                </imprint>
             </monogr>
          </biblStruct>
-      </sourceDesc>
+         </sourceDesc>
+      </fileDesc>
+
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

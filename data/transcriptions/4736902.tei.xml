@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>London Paris</pubPlace>
                      <publisher>Raphael Tuck &amp; Sons.</publisher>
-                     <date>[1900] 1900</date>
+                     <date notBefore="1900">[1900] 1900</date>
                   </imprint>
                </monogr>
             </biblStruct>

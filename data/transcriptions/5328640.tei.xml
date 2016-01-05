@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>Boston New York</pubPlace>
                      <publisher>H.M. Caldwell Co.</publisher>
-                     <date>c1907 1907</date>
+                     <date notBefore="1907">c1907 1907</date>
                   </imprint>
                </monogr>
             </biblStruct>

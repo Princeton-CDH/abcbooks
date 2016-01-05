@@ -23,7 +23,7 @@
                   <imprint>
                      <pubPlace>Salem, MA</pubPlace>
                      <publisher>Parker Brothers [ca.</publisher>
-                     <date>1890s] 189u</date>
+                     <date notBefore="1890">1890s] 189u</date>
                   </imprint>
                </monogr>
             </biblStruct>

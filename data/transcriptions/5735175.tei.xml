@@ -22,7 +22,7 @@
                   <imprint>
                      <pubPlace>London</pubPlace>
                      <publisher>Frederick Warne and Co.</publisher>
-                     <date>[before 1871?] 1871</date>
+                     <date notBefore="1871">[before 1871?] 1871</date>
                   </imprint>
                </monogr>
             </biblStruct>

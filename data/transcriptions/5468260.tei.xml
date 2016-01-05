@@ -12,22 +12,23 @@
             <idno type="voyagerid">5468260</idno>
             <idno type="abcbooksid">5468260_canadian</idno>
          </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title level="m">
+                     <seg type="nonSort">A </seg>
+                     <seg type="main">Canadian child's ABC</seg>
+                  </title>
+                  <imprint>
+                     <pubPlace>Toronto Vancouver</pubPlace>
+                     <publisher>Dent</publisher>
+                     <date notBefore="1931">[1931] 1931</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
       </fileDesc>
-      <sourceDesc>
-         <biblStruct xmlns="">
-            <monogr>
-               <title level="m">
-                  <seg type="nonSort">A </seg>
-                  <seg type="main">Canadian child's ABC</seg>
-               </title>
-               <imprint>
-                  <pubPlace>Toronto Vancouver</pubPlace>
-                  <publisher>Dent</publisher>
-                  <date>[1931] 1931</date>
-               </imprint>
-            </monogr>
-         </biblStruct>
-      </sourceDesc>
+
    </teiHeader>
    <facsimile>
       <surface xml:id="page_image1">

@@ -22,7 +22,7 @@
                      <pubPlace>London (Broadway, Ludgate Hill) New York (9 Lafayette
                         Place)</pubPlace>
                      <publisher>George Routledge and Sons</publisher>
-                     <date>[1886] 1886</date>
+                     <date notBefore="1886">[1886] 1886</date>
                   </imprint>
                </monogr>
             </biblStruct>

@@ -23,7 +23,7 @@
                       <imprint>
                           <pubPlace>London Chicago</pubPlace>
                           <publisher>Elkin Mathews. A.C. McClurg</publisher>
-                          <date>1895</date>
+                          <date notBefore="1895">1895</date>
                       </imprint>
                   </monogr>
               </biblStruct>
