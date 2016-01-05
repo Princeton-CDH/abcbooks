@@ -69,14 +69,14 @@
    </facsimile>
    <text>
       <body>
-         <div>
             <pb n="1" facs="page_image1"/>
             <div>
                <lg>
                   <l>ABC FUN</l>
                </lg>
             </div>
-               <pb n="2" facs="page_image2"/>
+            
+             <pb n="2" facs="page_image2"/>
                <div>
                   <head>The Alphabet Party.</head>
                   <p>It was about six weeks before Christmas and every child in the city was
@@ -106,54 +106,54 @@
                   <l>A wagon that goes With only a push From ten little toes.</l>
                </lg>
             </div>
-            <div type="alpha-group" xml:id="ag2" ana="B">
-               <lg>
-                  <head>Ethel's Verse.</head>
-                  <l>B is for blocks </l>
-                  <l>For houses you build</l>
-                  <l>And when they fall down</l>
-                  <l>Nobody is killed.</l>
-               </lg>
-            </div>
-            <pb n="4" facs="page_image4"/>
-            <div type="alpha-group" xml:id="ag3" ana="C">
-               <lg>
-                  <head>Edwin's Verse.</head>
-                  <l>C is for cars</l>
-                  <l>That run ofa a track,</l>
-                  <l>And when they run off</l>
-                  <l>They always get back.</l>
-               </lg>
-            </div>
-            <div type="alpha-group" xml:id="ag4" ana="D">
-               <lg>
-                  <head>Edith's Verse.</head>
-                  <l>D is for doll</l>
-                  <l>A little girl owns.</l>
-                  <l>It's body is stuffed</l>
-                  <l>Without any bones.</l>
-               </lg>
-            </div>
-            <div type="alpha-group" xml:id="ag5" ana="E">
-               <lg>
-                  <head>Gertrude s Verse.</head>
-                  <l>E is for elephant,</l>
-                  <l>Rubber at that</l>
-                  <l>If you blow very hard</l>
-                  <l>It gets big and fat.</l>
-               </lg>
-            </div>
-            <pb n="5" facs="page_image5"/>
-            <div type="alpha-group" xml:id="ag6" ana="F">
-               <lg>
-                  <head>George's Verse.</head>
-                  <l>F is for football</l>
-                  <l>The big boys can tell</l>
-                  <l>The fun you can have</l>
-                  <l>If you know how to yell.</l>
-               </lg>
-            </div>
+         <div type="alpha-group" xml:id="ag2" ana="B">
+            <lg>
+               <head>Ethel's Verse.</head>
+               <l>B is for blocks </l>
+               <l>For houses you build</l>
+               <l>And when they fall down</l>
+               <l>Nobody is killed.</l>
+            </lg>
          </div>
+         <pb n="4" facs="page_image4"/>
+         <div type="alpha-group" xml:id="ag3" ana="C">
+            <lg>
+               <head>Edwin's Verse.</head>
+               <l>C is for cars</l>
+               <l>That run ofa a track,</l>
+               <l>And when they run off</l>
+               <l>They always get back.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag4" ana="D">
+            <lg>
+               <head>Edith's Verse.</head>
+               <l>D is for doll</l>
+               <l>A little girl owns.</l>
+               <l>It's body is stuffed</l>
+               <l>Without any bones.</l>
+            </lg>
+         </div>
+         <div type="alpha-group" xml:id="ag5" ana="E">
+            <lg>
+               <head>Gertrude s Verse.</head>
+               <l>E is for elephant,</l>
+               <l>Rubber at that</l>
+               <l>If you blow very hard</l>
+               <l>It gets big and fat.</l>
+            </lg>
+         </div>
+         <pb n="5" facs="page_image5"/>
+         <div type="alpha-group" xml:id="ag6" ana="F">
+            <lg>
+               <head>George's Verse.</head>
+               <l>F is for football</l>
+               <l>The big boys can tell</l>
+               <l>The fun you can have</l>
+               <l>If you know how to yell.</l>
+            </lg>
+         </div>
+         
          <div type="alpha-group" xml:id="ag7" ana="G">
             <lg>
                <l>Julia's Verse.</l>
