@@ -76,7 +76,6 @@
                   <l>ABC FUN</l>
                </lg>
             </div>
-            <div>
                <pb n="2" facs="page_image2"/>
                <div>
                   <head>The Alphabet Party.</head>
@@ -98,7 +97,7 @@
                   <p>On the cover of this book is a picture of the party, while the rhymes are the
                      ones made by the children.</p>
                </div>
-            </div>
+            
             <pb n="3" facs="page_image3"/>
             <div type="alpha-group" xml:id="ag1" ana="A">
                <lg>
