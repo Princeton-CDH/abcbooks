@@ -76,18 +76,13 @@ async def paths(Path, mo):
 @app.cell
 def load_md(mo):
     mo.md(r"""
-    ## 1. Load the embeddings
+    ## Load the data
 
-    The `.h5` file follows the *iconoscope* layout: a list of image paths and a matching
-    array of feature vectors (one row per image). Each path looks like
+    We have pre-computed image embeddings and data about books and page-level tags from ABC Books.
 
-    ```
-    ark--88435-08612z01r/133830a0-2007-4628-9867-c8f877ae59f5.jpg
-    └─ book folder ────┘ └──────────── canvas id ─────────────┘
-    ```
+    Image embeddings and metadata are connected by the IIIF **canvas id**
 
-    The filename (minus `.jpg`) is the page's **IIIF canvas id**. That id is the key we use
-    to connect each embedding to the tag metadata and to its image URL.
+    Tags are lower-cased and de-duplicated. Images without any tags are dropped.
     """)
     return
 
@@ -111,24 +106,6 @@ def load_h5(embeddings_file, h5py, mo, pl):
         ]
     )
     return embeddings_df, features
-
-
-@app.cell
-def meta_md(mo):
-    mo.md(r"""
-    ## 2. Load and join the metadata
-
-    All three files are joined on the **canvas id**:
-
-    | file | what we use | how it matches |
-    |---|---|---|
-    | `pages_with_canvases.csv` | page title, book id, page number | last segment of the `CANVAS` URL |
-    | `tags.csv` | one row per (page, tag) | `post_id` → `PAGE_ID` in the pages file |
-    | `image_metadata.csv` | IIIF image URL, for thumbnails | `id` column |
-
-    Tags are lower-cased and de-duplicated. Images without any tags are dropped.
-    """)
-    return
 
 
 @app.cell
@@ -196,7 +173,7 @@ def tag_counts(mo, page_tags_df, pl):
 @app.cell
 def pick_md(mo):
     mo.md(r"""
-    ## 3. Train a classifier
+    ## Train a classifier
 
     Choose a tag. Every page is labeled **1** if it has the tag and **0** otherwise, and we
     fit a **logistic regression** on the embeddings.
@@ -268,7 +245,7 @@ def train(
 @app.cell
 def eval_md(mo):
     mo.md(r"""
-    ## 4. Evaluate
+    ## Evaluate
 
     * **Precision**: of the pages the model flagged, how many really have the tag?
     * **Recall**: of the pages that really have the tag, how many did the model find?
@@ -335,7 +312,7 @@ def evaluate(
 @app.cell
 def examples_md(mo):
     mo.md(r"""
-    ## 5. Look at the pages
+    ## Review the results
 
     Numbers only tell part of the story. Which pages does the model think are most likely
     to have the tag? Are the "mistakes" really mistakes, or missing tags?
