@@ -9,6 +9,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "altair" },
     { name = "h5py" },
+    { name = "iconoscope" },
     { name = "marimo-book" },
     { name = "numpy" },
     { name = "polars" },
@@ -24,6 +25,7 @@ dev = [
 requires-dist = [
     { name = "altair", specifier = ">=6.3.0" },
     { name = "h5py", specifier = ">=3.16.0" },
+    { name = "iconoscope", specifier = ">=0.2.1" },
     { name = "marimo-book", specifier = ">=0.1.48" },
     { name = "numpy", specifier = ">=2.5.4" },
     { name = "polars", specifier = ">=2.1.0" },
@@ -378,6 +380,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/41/8c/bbe98f813722b4873818a8db3e15aa3e625b59278566905ac439725e8070/h5py-3.16.0-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:346df559a0f7dcb31cf8e44805319e2ab24b8957c45e7708ce503b2ec79ba725", size = 5300253, upload-time = "2026-03-06T13:49:02.033Z" },
     { url = "https://files.pythonhosted.org/packages/32/9e/87e6705b4d6890e7cecdf876e2a7d3e40654a2ae37482d79a6f1b87f7b92/h5py-3.16.0-cp314-cp314t-win_amd64.whl", hash = "sha256:4c6ab014ab704b4feaa719ae783b86522ed0bf1f82184704ed3c9e4e3228796e", size = 3381671, upload-time = "2026-03-06T13:49:04.351Z" },
     { url = "https://files.pythonhosted.org/packages/96/91/9fad90cfc5f9b2489c7c26ad897157bce82f0e9534a986a221b99760b23b/h5py-3.16.0-cp314-cp314t-win_arm64.whl", hash = "sha256:faca8fb4e4319c09d83337adc80b2ca7d5c5a343c2d6f1b6388f32cfecca13c1", size = 2740706, upload-time = "2026-03-06T13:49:06.347Z" },
+]
+
+[[package]]
+name = "iconoscope"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "h5py" },
+    { name = "numpy" },
+    { name = "pillow" },
+    { name = "polars" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/04/81/dea641d92820d49f821b6bf6fd711b6d8a22fa52380ef39cd5ba2dcc4925/iconoscope-0.2.1.tar.gz", hash = "sha256:938cba4459e2faade93aa8f9d05dc15b4eeb7d72479d432bd7a89bc501de6b2b", size = 34688, upload-time = "2026-10-27T17:17:02.536Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/97/bde08c9001b927d3745cfbffb97078ebdf4c261f45bc5038800dc87deeaa/iconoscope-0.2.1-py3-none-any.whl", hash = "sha256:9411a17d1150a3fc4b826f5af2d9a9b1de4f9eff0e865b3ebb45c8268ce6468e", size = 39753, upload-time = "2026-10-27T17:17:01.575Z" },
 ]
 
 [[package]]

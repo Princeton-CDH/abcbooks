@@ -51,10 +51,26 @@ def imports():
 
 
 @app.cell
-def paths(Path):
-    data_dir = Path("/Users/rkoeser/workarea/experiments/abc-books")
-    test_dataset = data_dir / "abc_books_subset.h5"
-    return data_dir, test_dataset
+async def paths(Path, mo):
+    # Data files live in `data/` next to this notebook. When running in the
+    # browser (WASM), they're served by the website, so we download them first.
+    data_dir = mo.notebook_location() / "data"
+
+    async def data_file(name):
+        """Return a local path for a data file, downloading it if needed."""
+        if isinstance(data_dir, Path):
+            return data_dir / name
+        from pyodide.http import pyfetch
+
+        _resp = await pyfetch(str(data_dir / name))
+        Path(name).write_bytes(await _resp.bytes())
+        return Path(name)
+
+    embeddings_file = await data_file("abc_books_subset.h5")
+    pages_file = await data_file("pages_with_canvases.csv")
+    tags_file = await data_file("tags.parquet")
+    image_metadata_file = await data_file("image_metadata.parquet")
+    return embeddings_file, image_metadata_file, pages_file, tags_file
 
 
 @app.cell
@@ -63,15 +79,22 @@ def load_md(mo):
     ## 1. Load the embeddings
 
     The `.h5` file follows the *iconoscope* layout: a list of image paths and a matching
-    array of feature vectors (one row per image). The image filename is the IIIF canvas id,
-    which is how we'll connect it to the tag metadata.
+    array of feature vectors (one row per image). Each path looks like
+
+    ```
+    ark--88435-08612z01r/133830a0-2007-4628-9867-c8f877ae59f5.jpg
+    └─ book folder ────┘ └──────────── canvas id ─────────────┘
+    ```
+
+    The filename (minus `.jpg`) is the page's **IIIF canvas id**. That id is the key we use
+    to connect each embedding to the tag metadata and to its image URL.
     """)
     return
 
 
 @app.cell
-def load_h5(h5py, mo, pl, test_dataset):
-    with h5py.File(test_dataset) as _f:
+def load_h5(embeddings_file, h5py, mo, pl):
+    with h5py.File(embeddings_file) as _f:
         _paths = [p.decode() for p in _f["image/paths"][:]]
         features = _f["image/models/dinov2/defaults/features"][:]
 
@@ -95,26 +118,30 @@ def meta_md(mo):
     mo.md(r"""
     ## 2. Load and join the metadata
 
-    * `pages_with_canvases.csv` maps each tagged page to its IIIF canvas.
-    * `tags.csv` has one row per (page, tag); tags are lower-cased and de-duplicated.
-    * `image_metadata.csv` gives us a IIIF image URL so we can look at pages.
+    All three files are joined on the **canvas id**:
+
+    | file | what we use | how it matches |
+    |---|---|---|
+    | `pages_with_canvases.csv` | page title, book id, page number | last segment of the `CANVAS` URL |
+    | `tags.csv` | one row per (page, tag) | `post_id` → `PAGE_ID` in the pages file |
+    | `image_metadata.csv` | IIIF image URL, for thumbnails | `id` column |
+
+    Tags are lower-cased and de-duplicated. Images without any tags are dropped.
     """)
     return
 
 
 @app.cell
-def load_meta(data_dir, pl):
-    pages_df = pl.read_csv(
-        data_dir / "abcbookdata/pages_with_canvases.csv", separator="\t"
-    ).with_columns(canvas_id=pl.col.CANVAS.str.split("/").list.last())
+def load_meta(image_metadata_file, pages_file, pl, tags_file):
+    pages_df = pl.read_csv(pages_file, separator="\t").with_columns(
+        canvas_id=pl.col.CANVAS.str.split("/").list.last()
+    )
     tags_df = (
-        pl.read_csv(data_dir / "abcbookdata/tags.csv", separator="\t")
+        pl.read_parquet(tags_file)
         .with_columns(tag=pl.col.tag.str.strip_chars().str.to_lowercase())
         .unique()
     )
-    images_df = pl.read_csv(
-        data_dir / "images/image_metadata.csv", infer_schema_length=10000
-    ).select(
+    images_df = pl.read_parquet(image_metadata_file).select(
         canvas_id="id",
         thumbnail=pl.col.image_iiif_id.str.replace("/full/1000,/", "/full/200,/"),
     )
