@@ -1,0 +1,379 @@
+import marimo
+
+__generated_with = "0.25.2"
+app = marimo.App(width="medium")
+
+
+@app.cell
+def intro(mo):
+    mo.md(r"""
+    # Classifying ABC book pages from image embeddings
+
+    Each page image in this dataset has been turned into an **embedding**: a list of 768 numbers
+    produced by the [DINOv2](https://huggingface.co/facebook/dinov2-base) vision model. Images that
+    look alike have embeddings that are close together.
+
+    Some books also have **human-assigned tags** for each page (e.g. `hat`, `bird`, `tree`).
+    In this notebook we will:
+
+    1. load the embeddings and the tag metadata,
+    2. join them so each image knows its tags,
+    3. pick a tag and train a simple classifier that predicts whether a page has that tag,
+    4. evaluate it and look at the pages it gets right and wrong.
+    """)
+    return
+
+
+@app.cell
+def imports():
+    from pathlib import Path
+
+    import altair as alt
+    import h5py
+    import marimo as mo
+    import numpy as np
+    import polars as pl
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.metrics import classification_report, confusion_matrix
+    from sklearn.model_selection import GroupShuffleSplit
+
+    return (
+        GroupShuffleSplit,
+        LogisticRegression,
+        Path,
+        alt,
+        classification_report,
+        confusion_matrix,
+        h5py,
+        mo,
+        pl,
+    )
+
+
+@app.cell
+def paths(Path):
+    data_dir = Path("/Users/rkoeser/workarea/experiments/abc-books")
+    test_dataset = data_dir / "abc_books_subset.h5"
+    return data_dir, test_dataset
+
+
+@app.cell
+def load_md(mo):
+    mo.md(r"""
+    ## 1. Load the embeddings
+
+    The `.h5` file follows the *iconoscope* layout: a list of image paths and a matching
+    array of feature vectors (one row per image). The image filename is the IIIF canvas id,
+    which is how we'll connect it to the tag metadata.
+    """)
+    return
+
+
+@app.cell
+def load_h5(h5py, mo, pl, test_dataset):
+    with h5py.File(test_dataset) as _f:
+        _paths = [p.decode() for p in _f["image/paths"][:]]
+        features = _f["image/models/dinov2/defaults/features"][:]
+
+    embeddings_df = pl.DataFrame({"path": _paths}).with_columns(
+        canvas_id=pl.col.path.str.split("/").list.last().str.replace(r"\.jpg$", ""),
+        row=pl.int_range(pl.len()),
+    )
+    mo.vstack(
+        [
+            mo.md(
+                f"**{features.shape[0]} images**, each with **{features.shape[1]}** numbers"
+            ),
+            embeddings_df.head(),
+        ]
+    )
+    return embeddings_df, features
+
+
+@app.cell
+def meta_md(mo):
+    mo.md(r"""
+    ## 2. Load and join the metadata
+
+    * `pages_with_canvases.csv` maps each tagged page to its IIIF canvas.
+    * `tags.csv` has one row per (page, tag); tags are lower-cased and de-duplicated.
+    * `image_metadata.csv` gives us a IIIF image URL so we can look at pages.
+    """)
+    return
+
+
+@app.cell
+def load_meta(data_dir, pl):
+    pages_df = pl.read_csv(
+        data_dir / "abcbookdata/pages_with_canvases.csv", separator="\t"
+    ).with_columns(canvas_id=pl.col.CANVAS.str.split("/").list.last())
+    tags_df = (
+        pl.read_csv(data_dir / "abcbookdata/tags.csv", separator="\t")
+        .with_columns(tag=pl.col.tag.str.strip_chars().str.to_lowercase())
+        .unique()
+    )
+    images_df = pl.read_csv(
+        data_dir / "images/image_metadata.csv", infer_schema_length=10000
+    ).select(
+        canvas_id="id",
+        thumbnail=pl.col.image_iiif_id.str.replace("/full/1000,/", "/full/200,/"),
+    )
+    return images_df, pages_df, tags_df
+
+
+@app.cell
+def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
+    # one row per image: embedding row, book, page, and its list of tags
+    page_tags_df = (
+        embeddings_df.join(pages_df, on="canvas_id", how="inner")
+        .join(
+            tags_df.group_by("post_id").agg(tags=pl.col.tag),
+            left_on="PAGE_ID",
+            right_on="post_id",
+            how="inner",
+        )
+        .join(images_df, on="canvas_id", how="left")
+        .unique("row")
+        .sort("row")
+    )
+    mo.vstack(
+        [
+            mo.md(
+                f"**{page_tags_df.height}** of {embeddings_df.height} images have tags, from **{page_tags_df['BOOK_ID'].n_unique()}** books."
+            ),
+            page_tags_df.select("TITLE", "BOOK_ID", "PAGENUM", "tags"),
+        ]
+    )
+    return (page_tags_df,)
+
+
+@app.cell
+def tag_counts(mo, page_tags_df, pl):
+    tag_counts = (
+        page_tags_df.explode("tags")
+        .group_by(tag="tags")
+        .agg(pages=pl.len(), books=pl.col.BOOK_ID.n_unique())
+        .sort("pages", descending=True)
+    )
+    mo.vstack(
+        [
+            mo.md(
+                "### Most common tags\nA tag needs enough examples (in several books) to learn from."
+            ),
+            tag_counts.head(30),
+        ]
+    )
+    return (tag_counts,)
+
+
+@app.cell
+def pick_md(mo):
+    mo.md(r"""
+    ## 3. Train a classifier
+
+    Choose a tag. Every page is labeled **1** if it has the tag and **0** otherwise, and we
+    fit a **logistic regression** on the embeddings.
+
+    We split train/test **by book**, not by page: pages from the same book share a style,
+    so testing on a book the model has seen would make it look better than it really is.
+    """)
+    return
+
+
+@app.cell
+def controls(mo, pl, tag_counts):
+    _options = tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4)["tag"].to_list()
+    tag_select = mo.ui.dropdown(
+        options=_options,
+        value="bird" if "bird" in _options else _options[0],
+        label="Tag",
+        searchable=True,
+    )
+    test_size = mo.ui.slider(
+        0.1,
+        0.5,
+        step=0.05,
+        value=0.25,
+        label="Fraction of books held out for testing",
+        show_value=True,
+    )
+    balanced = mo.ui.checkbox(
+        value=True,
+        label="Balance classes (tags are rare, so weight positive examples more)",
+    )
+    mo.vstack([tag_select, test_size, balanced])
+    return balanced, tag_select, test_size
+
+
+@app.cell
+def train(
+    GroupShuffleSplit,
+    LogisticRegression,
+    balanced,
+    features,
+    mo,
+    page_tags_df,
+    tag_select,
+    test_size,
+):
+    target_tag = tag_select.value
+    y = page_tags_df["tags"].list.contains(target_tag).to_numpy().astype(int)
+    X = features[page_tags_df["row"].to_numpy()]
+    groups = page_tags_df["BOOK_ID"].to_numpy()
+
+    _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
+    train_idx, test_idx = next(_split.split(X, y, groups))
+
+    model = LogisticRegression(
+        max_iter=2000, class_weight="balanced" if balanced.value else None
+    )
+    model.fit(X[train_idx], y[train_idx])
+    probs = model.predict_proba(X[test_idx])[:, 1]
+    preds = (probs >= 0.5).astype(int)
+
+    mo.md(
+        f"Training on **{len(train_idx)}** pages ({y[train_idx].sum()} with `{target_tag}`), "
+        f"testing on **{len(test_idx)}** pages from unseen books ({y[test_idx].sum()} with `{target_tag}`)."
+    )
+    return preds, probs, target_tag, test_idx, y
+
+
+@app.cell
+def eval_md(mo):
+    mo.md(r"""
+    ## 4. Evaluate
+
+    * **Precision**: of the pages the model flagged, how many really have the tag?
+    * **Recall**: of the pages that really have the tag, how many did the model find?
+    * Compare **accuracy** to the baseline of always guessing "no tag" — for rare tags it can be high without learning anything.
+    """)
+    return
+
+
+@app.cell
+def evaluate(
+    alt,
+    classification_report,
+    confusion_matrix,
+    mo,
+    pl,
+    preds,
+    target_tag,
+    test_idx,
+    y,
+):
+    _cm = confusion_matrix(y[test_idx], preds, labels=[0, 1])
+    _cm_df = pl.DataFrame(
+        {
+            "actual": ["no " + target_tag, target_tag] * 2,
+            "predicted": ["no " + target_tag] * 2 + [target_tag] * 2,
+            "pages": [_cm[0, 0], _cm[1, 0], _cm[0, 1], _cm[1, 1]],
+        }
+    )
+    _chart = (
+        alt.Chart(_cm_df)
+        .mark_rect()
+        .encode(
+            x="predicted:N",
+            y="actual:N",
+            color=alt.Color("pages:Q", scale=alt.Scale(scheme="blues")),
+        )
+        + alt.Chart(_cm_df)
+        .mark_text(fontSize=16)
+        .encode(x="predicted:N", y="actual:N", text="pages:Q")
+    ).properties(width=250, height=250, title="Confusion matrix")
+    _baseline = 1 - y[test_idx].mean()
+    mo.hstack(
+        [
+            _chart,
+            mo.vstack(
+                [
+                    mo.md(f"Baseline (always 'no'): **{_baseline:.1%}**"),
+                    mo.plain_text(
+                        classification_report(
+                            y[test_idx],
+                            preds,
+                            labels=[0, 1],
+                            target_names=["no " + target_tag, target_tag],
+                            zero_division=0,
+                        )
+                    ),
+                ]
+            ),
+        ]
+    )
+    return
+
+
+@app.cell
+def examples_md(mo):
+    mo.md(r"""
+    ## 5. Look at the pages
+
+    Numbers only tell part of the story. Which pages does the model think are most likely
+    to have the tag? Are the "mistakes" really mistakes, or missing tags?
+    """)
+    return
+
+
+@app.cell
+def examples(mo, page_tags_df, pl, preds, probs, target_tag, test_idx, y):
+    results_df = page_tags_df[test_idx].with_columns(
+        probability=pl.Series(probs),
+        actual=pl.Series(y[test_idx]),
+        predicted=pl.Series(preds),
+    )
+
+    def _gallery(df, title):
+        _items = [
+            mo.vstack(
+                [
+                    mo.image(r["thumbnail"], width=140),
+                    mo.md(f"<small>{r['TITLE']}<br>p={r['probability']:.2f}</small>"),
+                ]
+            )
+            for r in df.iter_rows(named=True)
+        ]
+        return mo.vstack(
+            [mo.md(f"### {title}"), mo.hstack(_items, wrap=True, justify="start")]
+        )
+
+    mo.ui.tabs(
+        {
+            "Most confident": _gallery(
+                results_df.sort("probability", descending=True).head(12),
+                f"Highest predicted probability of '{target_tag}'",
+            ),
+            "False positives": _gallery(
+                results_df.filter((pl.col.predicted == 1) & (pl.col.actual == 0))
+                .sort("probability", descending=True)
+                .head(12),
+                "Predicted but not tagged",
+            ),
+            "False negatives": _gallery(
+                results_df.filter((pl.col.predicted == 0) & (pl.col.actual == 1))
+                .sort("probability")
+                .head(12),
+                "Tagged but missed",
+            ),
+        }
+    )
+    return
+
+
+@app.cell
+def exercises(mo):
+    mo.md(r"""
+    ## Try it yourself
+
+    1. Try several tags. Which are easy to learn (`flag`? `bird`?) and which are hard (`rhyme`?)? Why might a *visual* model struggle with some tags?
+    2. Turn off class balancing. What happens to precision and recall for a rare tag?
+    3. Change the decision threshold from 0.5 — how does that trade precision against recall?
+    4. Replace `LogisticRegression` with `sklearn.neighbors.KNeighborsClassifier`. Does it do better?
+    5. Look at the false positives: are some of them pages that *should* have been tagged?
+    """)
+    return
+
+
+if __name__ == "__main__":
+    app.run()

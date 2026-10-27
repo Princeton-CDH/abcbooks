@@ -44,4 +44,5 @@ dependencies:
 
 toc:
   - file: content/intro.md
-  - file: content/example.py
+  - file: content/classify.py
+    mode: wasm
