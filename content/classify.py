@@ -25,7 +25,18 @@ def intro(mo):
 
 
 @app.cell
-def imports():
+async def imports():
+    import sys
+
+    if "pyodide" in sys.modules:
+        # In the browser (WASM), install packages that aren't bundled with Pyodide
+        import micropip
+
+        # iconoscope requires a newer polars than Pyodide ships, so install it
+        # without dependency checks and install its dependencies explicitly
+        await micropip.install(["h5py", "numpy", "pillow", "polars", "piffle"])
+        await micropip.install("iconoscope", deps=False)
+
     from pathlib import Path
 
     import altair as alt
