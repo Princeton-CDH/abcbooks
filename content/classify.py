@@ -37,9 +37,11 @@ def imports():
     from sklearn.metrics import classification_report, confusion_matrix
     from sklearn.model_selection import GroupShuffleSplit
     from iconoscope.dataset import ImageDataset
+    from piffle.image import IIIFImageClient
 
     return (
         GroupShuffleSplit,
+        IIIFImageClient,
         ImageDataset,
         LogisticRegression,
         Path,
@@ -68,7 +70,7 @@ async def paths(Path, mo):
         return Path(name)
 
     embeddings_file = await data_file("abc_books_subset.h5")
-    pages_file = await data_file("pages_with_canvases.csv")
+    pages_file = await data_file("pages.parquet")
     tags_file = await data_file("tags.parquet")
     image_metadata_file = await data_file("image_metadata.parquet")
     return embeddings_file, image_metadata_file, pages_file, tags_file
@@ -119,8 +121,8 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
 
 
 @app.cell
-def load_meta(image_metadata_file, pages_file, pl, tags_file):
-    pages_df = pl.read_csv(pages_file, separator="\t").with_columns(
+def load_meta(IIIFImageClient, image_metadata_file, pages_file, pl, tags_file):
+    pages_df = pl.read_parquet(pages_file).with_columns(
         canvas_id=pl.col.CANVAS.str.split("/").list.last()
     )
     tags_df = (
@@ -130,7 +132,10 @@ def load_meta(image_metadata_file, pages_file, pl, tags_file):
     )
     images_df = pl.read_parquet(image_metadata_file).select(
         canvas_id="id",
-        thumbnail=pl.col.image_iiif_id.str.replace("/full/1000,/", "/full/200,/"),
+        thumbnail=pl.col.image_iiif_id.map_elements(
+            lambda url: str(IIIFImageClient.init_from_url(url).size(width=500)),
+            return_dtype=pl.String,
+        ),
     )
     return images_df, pages_df, tags_df
 
@@ -329,7 +334,26 @@ def examples_md(mo):
 
 
 @app.cell
-def examples(mo, page_tags_df, pl, preds, probs, target_tag, test_idx, y):
+def thumb_size_control(mo):
+    thumb_size = mo.ui.slider(
+        100, 500, step=25, value=200, label="Thumbnail size (px)", show_value=True
+    )
+    thumb_size
+    return (thumb_size,)
+
+
+@app.cell
+def examples(
+    mo,
+    page_tags_df,
+    pl,
+    preds,
+    probs,
+    target_tag,
+    test_idx,
+    thumb_size,
+    y,
+):
     results_df = page_tags_df[test_idx].with_columns(
         probability=pl.Series(probs),
         actual=pl.Series(y[test_idx]),
@@ -340,10 +364,10 @@ def examples(mo, page_tags_df, pl, preds, probs, target_tag, test_idx, y):
         _items = [
             mo.vstack(
                 [
-                    mo.image(r["thumbnail"], width=140),
+                    mo.image(r["thumbnail"], width=thumb_size.value),
                     mo.md(f"<small>{r['TITLE']}<br>p={r['probability']:.2f}</small>"),
                 ]
-            )
+            ).style(width=f"{thumb_size.value}px", flex="none")
             for r in df.iter_rows(named=True)
         ]
         return mo.vstack(
