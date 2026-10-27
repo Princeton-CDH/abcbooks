@@ -36,15 +36,16 @@ def imports():
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import classification_report, confusion_matrix
     from sklearn.model_selection import GroupShuffleSplit
+    from iconoscope.dataset import ImageDataset
 
     return (
         GroupShuffleSplit,
+        ImageDataset,
         LogisticRegression,
         Path,
         alt,
         classification_report,
         confusion_matrix,
-        h5py,
         mo,
         pl,
     )
@@ -88,24 +89,33 @@ def load_md(mo):
 
 
 @app.cell
-def load_h5(embeddings_file, h5py, mo, pl):
-    with h5py.File(embeddings_file) as _f:
-        _paths = [p.decode() for p in _f["image/paths"][:]]
-        features = _f["image/models/dinov2/defaults/features"][:]
+def load_h5(ImageDataset, embeddings_file, mo, pl):
+    img_dataset = ImageDataset(embeddings_file)
 
-    embeddings_df = pl.DataFrame({"path": _paths}).with_columns(
-        canvas_id=pl.col.path.str.split("/").list.last().str.replace(r"\.jpg$", ""),
-        row=pl.int_range(pl.len()),
+    from iconoscope.models import EmbeddingConfig, EmbeddingModel, DEFAULT_MODEL
+
+    default_config = EmbeddingConfig(model=DEFAULT_MODEL)
+
+    embeddings_df = img_dataset.load_data(
+        features=True, config=default_config
+    )  # includes image paths by default
+
+    embeddings_df = embeddings_df.with_columns(
+        # extract canvas id from filenames used to create the dataset
+        canvas_id=pl.col.image_path.str.split("/")
+        .list.last()
+        .str.replace(r"\.jpg$", ""),
     )
+
     mo.vstack(
         [
             mo.md(
-                f"**{features.shape[0]} images**, each with **{features.shape[1]}** numbers"
+                f"**{embeddings_df.shape[0]:,} images**, each with **{embeddings_df.shape[1]}** numbers"
             ),
             embeddings_df.head(),
         ]
     )
-    return embeddings_df, features
+    return (embeddings_df,)
 
 
 @app.cell
@@ -137,8 +147,7 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
             how="inner",
         )
         .join(images_df, on="canvas_id", how="left")
-        .unique("row")
-        .sort("row")
+        .sort("canvas_id")
     )
     mo.vstack(
         [
@@ -214,7 +223,6 @@ def train(
     GroupShuffleSplit,
     LogisticRegression,
     balanced,
-    features,
     mo,
     page_tags_df,
     tag_select,
@@ -222,7 +230,7 @@ def train(
 ):
     target_tag = tag_select.value
     y = page_tags_df["tags"].list.contains(target_tag).to_numpy().astype(int)
-    X = features[page_tags_df["row"].to_numpy()]
+    X = page_tags_df["features"].to_numpy()
     groups = page_tags_df["BOOK_ID"].to_numpy()
 
     _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
