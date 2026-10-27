@@ -28,13 +28,15 @@ def intro(mo):
 async def imports():
     import sys
 
-    if "pyodide" in sys.modules:
+    if sys.platform == "emscripten":
         # In the browser (WASM), install packages that aren't bundled with Pyodide
         import micropip
 
-        # iconoscope requires a newer polars than Pyodide ships, so install it
-        # without dependency checks and install its dependencies explicitly
-        await micropip.install(["h5py", "numpy", "pillow", "polars", "piffle"])
+        # iconoscope v0.2.1 requires a newer polars than what is pre-installed with Pyodide;
+        # install dependencies first and then install iconoscope without dependencies
+        await micropip.install(
+            ["h5py", "numpy", "pillow", "polars", "piffle", "pyarrow"]
+        )
         await micropip.install("iconoscope", deps=False)
 
     from pathlib import Path
@@ -120,14 +122,7 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
         .str.replace(r"\.jpg$", ""),
     )
 
-    mo.vstack(
-        [
-            mo.md(
-                f"**{embeddings_df.shape[0]:,} images**, each with **{embeddings_df.shape[1]}** numbers"
-            ),
-            embeddings_df.head(),
-        ]
-    )
+    mo.md(f"Loaded features for **{embeddings_df.shape[0]:,} images**")
     return (embeddings_df,)
 
 
