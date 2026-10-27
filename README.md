@@ -40,6 +40,25 @@ marimo-book clean
 | `tags.csv` | tab-separated; one row per (page, tag): `post_id` (= `PAGE_ID`), `tag`. Contains duplicate rows; the notebook de-duplicates and lower-cases tags |
 | `image_metadata.csv` | `id` (canvas id) and `image_iiif_id` (IIIF image URL). Only used to show page thumbnails |
 
+### Preparing data
+
+`scripts/prep_data.py` converts the original files above into the parquet
+files used by the classify notebook. Pass the directory containing the
+originals; output is written to the same directory unless `-o` is given:
+
+```bash
+uv run scripts/prep_data.py content/data
+uv run scripts/prep_data.py path/to/originals -o content/data
+```
+
+It writes:
+
+| file | contents |
+|---|---|
+| `image_metadata.parquet` | `image_metadata.csv` trimmed to `id` and `image_iiif_id` |
+| `tags.parquet` | `tags.csv` with duplicate rows removed |
+| `pages.parquet` | rows of `pages_with_canvases.csv` with an image in `abc_books_subset.h5` and at least one tag, plus a `canvas_id` column |
+
 ### How the files are joined
 
 Everything is joined on the **IIIF canvas id**. Each source stores it differently:
