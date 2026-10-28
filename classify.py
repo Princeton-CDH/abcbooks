@@ -70,7 +70,7 @@ async def imports():
 async def paths(Path, mo):
     # Data files live in `data/` next to this notebook. When running in the
     # browser (WASM), they're served by the website, so we download them first.
-    data_dir = mo.notebook_location() / "data"
+    data_dir = mo.notebook_location() / "public" / "data"
 
     async def data_file(name):
         """Return a local path for a data file, downloading it if needed."""
