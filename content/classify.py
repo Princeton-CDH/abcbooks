@@ -83,9 +83,9 @@ async def paths(Path, mo):
         return Path(name)
 
     embeddings_file = await data_file("abc_books_subset.h5")
-    pages_file = await data_file("pages.parquet")
-    tags_file = await data_file("tags.parquet")
-    image_metadata_file = await data_file("image_metadata.parquet")
+    pages_file = await data_file("pages.csv")
+    tags_file = await data_file("page_tags.csv")
+    image_metadata_file = await data_file("images.csv")
     return embeddings_file, image_metadata_file, pages_file, tags_file
 
 
@@ -128,15 +128,15 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
 
 @app.cell
 def load_meta(IIIFImageClient, image_metadata_file, pages_file, pl, tags_file):
-    pages_df = pl.read_parquet(pages_file).with_columns(
+    pages_df = pl.read_csv(pages_file).with_columns(
         canvas_id=pl.col.CANVAS.str.split("/").list.last()
     )
     tags_df = (
-        pl.read_parquet(tags_file)
+        pl.read_csv(tags_file)
         .with_columns(tag=pl.col.tag.str.strip_chars().str.to_lowercase())
         .unique()
     )
-    images_df = pl.read_parquet(image_metadata_file).select(
+    images_df = pl.read_csv(image_metadata_file).select(
         canvas_id="id",
         thumbnail=pl.col.image_iiif_id.map_elements(
             lambda url: str(IIIFImageClient.init_from_url(url).size(width=500)),
