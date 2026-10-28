@@ -21,7 +21,6 @@ def intro(mo):
     3. pick a tag and train a simple classifier that predicts whether a page has that tag,
     4. evaluate it and look at the pages it gets right and wrong.
     """)
-    return
 
 
 @app.cell
@@ -42,15 +41,13 @@ async def imports():
     from pathlib import Path
 
     import altair as alt
-    import h5py
     import marimo as mo
-    import numpy as np
     import polars as pl
+    from iconoscope.dataset import ImageDataset
+    from piffle.image import IIIFImageClient
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import classification_report, confusion_matrix
     from sklearn.model_selection import GroupShuffleSplit
-    from iconoscope.dataset import ImageDataset
-    from piffle.image import IIIFImageClient
 
     return (
         GroupShuffleSplit,
@@ -100,14 +97,13 @@ def load_md(mo):
 
     Tags are lower-cased and de-duplicated. Images without any tags are dropped.
     """)
-    return
 
 
 @app.cell
 def load_h5(ImageDataset, embeddings_file, mo, pl):
     img_dataset = ImageDataset(embeddings_file)
 
-    from iconoscope.models import EmbeddingConfig, EmbeddingModel, DEFAULT_MODEL
+    from iconoscope.models import DEFAULT_MODEL, EmbeddingConfig
 
     default_config = EmbeddingConfig(model=DEFAULT_MODEL)
 
@@ -201,7 +197,6 @@ def pick_md(mo):
     We split train/test **by book**, not by page: pages from the same book share a style,
     so testing on a book the model has seen would make it look better than it really is.
     """)
-    return
 
 
 @app.cell
@@ -270,7 +265,6 @@ def eval_md(mo):
     * **Recall**: of the pages that really have the tag, how many did the model find?
     * Compare **accuracy** to the baseline of always guessing "no tag" — for rare tags it can be high without learning anything.
     """)
-    return
 
 
 @app.cell
@@ -325,7 +319,6 @@ def evaluate(
             ),
         ]
     )
-    return
 
 
 @app.cell
@@ -336,7 +329,6 @@ def examples_md(mo):
     Numbers only tell part of the story. Which pages does the model think are most likely
     to have the tag? Are the "mistakes" really mistakes, or missing tags?
     """)
-    return
 
 
 @app.cell
@@ -400,7 +392,6 @@ def examples(
             ),
         }
     )
-    return
 
 
 @app.cell
@@ -414,7 +405,6 @@ def exercises(mo):
     4. Replace `LogisticRegression` with `sklearn.neighbors.KNeighborsClassifier`. Does it do better?
     5. Look at the false positives: are some of them pages that *should* have been tagged?
     """)
-    return
 
 
 if __name__ == "__main__":
