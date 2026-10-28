@@ -22,10 +22,13 @@ from pathlib import Path
 import h5py
 import polars as pl
 
+# default input files
 IMAGE_METADATA = "image_metadata.csv"
 TAGS = "tags.csv"
 PAGES = "pages_with_canvases.csv"
 DATASET = "abc_books_subset.h5"
+
+OUTPUT_DIR = Path("public/data")
 
 
 def prep_image_metadata(input_dir: Path, output_dir: Path) -> None:
@@ -33,15 +36,17 @@ def prep_image_metadata(input_dir: Path, output_dir: Path) -> None:
     df = pl.read_csv(input_dir / IMAGE_METADATA, ignore_errors=True).select(
         "id", "image_iiif_id"
     )
-    df.write_parquet(output_dir / "image_metadata.parquet")
-    print(f"image_metadata.parquet: {df.height:,} rows")
+    output_filename = "images.csv"
+    df.write_csv(output_dir / output_filename)
+    print(f"{output_filename}: {df.height:,} rows")
 
 
 def prep_tags(input_dir: Path, output_dir: Path) -> pl.DataFrame:
     """Deduplicate tags."""
     df = pl.read_csv(input_dir / TAGS, separator="\t").unique()
-    df.write_parquet(output_dir / "tags.parquet")
-    print(f"tags.parquet: {df.height:,} rows")
+    output_filename = "page_tags.csv"
+    df.write_csv(output_dir / output_filename)
+    print(f"{output_filename}: {df.height:,} rows")
     return df
 
 
@@ -67,8 +72,8 @@ def prep_pages(input_dir: Path, output_dir: Path, tags: pl.DataFrame) -> None:
         .join(dataset_canvas_ids(input_dir), on="canvas_id", how="semi")
         .join(tags, left_on="PAGE_ID", right_on="post_id", how="semi")
     )
-    df.write_parquet(output_dir / "pages.parquet")
-    print(f"pages.parquet: {df.height:,} rows")
+    df.write_csv(output_dir / "pages.csv")
+    print(f"pages.csv: {df.height:,} rows")
 
 
 def main() -> None:
@@ -80,12 +85,13 @@ def main() -> None:
         "-o",
         "--output-dir",
         type=Path,
-        help="Directory for output parquet files (default: input directory)",
+        default=OUTPUT_DIR,
+        help="Directory for output parquet files (default: %(default)s)",
     )
     args = parser.parse_args()
 
     input_dir: Path = args.input_dir
-    output_dir: Path = args.output_dir or input_dir
+    output_dir: Path = args.output_dir
 
     missing = [
         name
