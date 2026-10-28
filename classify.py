@@ -65,7 +65,7 @@ async def imports():
 
 @app.cell
 async def paths(Path, mo):
-    # Data files live in `data/` next to this notebook. When running in the
+    # Data files live in `public/data/` next to this notebook. When running in the
     # browser (WASM), they're served by the website, so we download them first.
     data_dir = mo.notebook_location() / "public" / "data"
 
@@ -124,14 +124,8 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
 
 @app.cell
 def load_meta(IIIFImageClient, image_metadata_file, pages_file, pl, tags_file):
-    pages_df = pl.read_csv(pages_file).with_columns(
-        canvas_id=pl.col.CANVAS.str.split("/").list.last()
-    )
-    tags_df = (
-        pl.read_csv(tags_file)
-        .with_columns(tag=pl.col.tag.str.strip_chars().str.to_lowercase())
-        .unique()
-    )
+    pages_df = pl.read_csv(pages_file)  # includes canvas_id from prep_data.py
+    tags_df = pl.read_csv(tags_file)  # already normalized in prep_data.py
     images_df = pl.read_csv(image_metadata_file).select(
         canvas_id="id",
         thumbnail=pl.col.image_iiif_id.map_elements(
@@ -148,9 +142,8 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
     page_tags_df = (
         embeddings_df.join(pages_df, on="canvas_id", how="inner")
         .join(
-            tags_df.group_by("post_id").agg(tags=pl.col.tag),
-            left_on="PAGE_ID",
-            right_on="post_id",
+            tags_df.group_by("page_id").agg(tags=pl.col.tag),
+            on="page_id",
             how="inner",
         )
         .join(images_df, on="canvas_id", how="left")
@@ -159,9 +152,9 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
     mo.vstack(
         [
             mo.md(
-                f"**{page_tags_df.height}** of {embeddings_df.height} images have tags, from **{page_tags_df['BOOK_ID'].n_unique()}** books."
+                f"**{page_tags_df.height}** of {embeddings_df.height} images have tags, from **{page_tags_df['book_id'].n_unique()}** books."
             ),
-            page_tags_df.select("TITLE", "BOOK_ID", "PAGENUM", "tags"),
+            page_tags_df.select("title", "book_id", "pagenum", "tags"),
         ]
     )
     return (page_tags_df,)
@@ -172,7 +165,7 @@ def tag_counts(mo, page_tags_df, pl):
     tag_counts = (
         page_tags_df.explode("tags")
         .group_by(tag="tags")
-        .agg(pages=pl.len(), books=pl.col.BOOK_ID.n_unique())
+        .agg(pages=pl.len(), books=pl.col.book_id.n_unique())
         .sort("pages", descending=True)
     )
     mo.vstack(
@@ -237,7 +230,7 @@ def train(
     target_tag = tag_select.value
     y = page_tags_df["tags"].list.contains(target_tag).to_numpy().astype(int)
     X = page_tags_df["features"].to_numpy()
-    groups = page_tags_df["BOOK_ID"].to_numpy()
+    groups = page_tags_df["book_id"].to_numpy()
 
     _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
     train_idx, test_idx = next(_split.split(X, y, groups))
@@ -363,7 +356,7 @@ def examples(
             mo.vstack(
                 [
                     mo.image(r["thumbnail"], width=thumb_size.value),
-                    mo.md(f"<small>{r['TITLE']}<br>p={r['probability']:.2f}</small>"),
+                    mo.md(f"<small>{r['title']}<br>p={r['probability']:.2f}</small>"),
                 ]
             ).style(width=f"{thumb_size.value}px", flex="none")
             for r in df.iter_rows(named=True)
