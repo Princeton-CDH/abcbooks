@@ -2,7 +2,7 @@
 """Prepare data files for the classify notebook.
 
 Reads original data files from an input directory and writes cleaned
-parquet files (image metadata, deduplicated tags, subset of pages).
+CSV files (image metadata, normalized and deduplicated tags, subset of pages).
 
 Expected input files (in the input directory):
   - image_metadata.csv
@@ -42,8 +42,17 @@ def prep_image_metadata(input_dir: Path, output_dir: Path) -> None:
 
 
 def prep_tags(input_dir: Path, output_dir: Path) -> pl.DataFrame:
-    """Deduplicate tags."""
-    df = pl.read_csv(input_dir / TAGS, separator="\t").unique()
+    """Normalize tags (strip whitespace, lowercase), drop empty tags,
+    and deduplicate."""
+    df = (
+        pl.read_csv(input_dir / TAGS, separator="\t")
+        .with_columns(tag=pl.col.tag.str.strip_chars().str.to_lowercase())
+        .filter(pl.col.tag.is_not_null() & (pl.col.tag != ""))
+        .unique()
+        # use same page id column name as pages file
+        .rename({"post_id": "page_id"})
+        .sort("page_id", "tag")
+    )
     output_filename = "page_tags.csv"
     df.write_csv(output_dir / output_filename)
     print(f"{output_filename}: {df.height:,} rows")
@@ -68,9 +77,11 @@ def prep_pages(input_dir: Path, output_dir: Path, tags: pl.DataFrame) -> None:
     """Subset pages to those with an image in the dataset and at least one tag."""
     df = (
         pl.read_csv(input_dir / PAGES, separator="\t")
-        .with_columns(canvas_id=pl.col.CANVAS.str.split("/").list.last())
+        .rename(str.lower)
+        .with_columns(canvas_id=pl.col.canvas.str.split("/").list.last())
         .join(dataset_canvas_ids(input_dir), on="canvas_id", how="semi")
-        .join(tags, left_on="PAGE_ID", right_on="post_id", how="semi")
+        .join(tags, on="page_id", how="semi")
+        .sort("page_id")
     )
     df.write_csv(output_dir / "pages.csv")
     print(f"pages.csv: {df.height:,} rows")
@@ -86,7 +97,7 @@ def main() -> None:
         "--output-dir",
         type=Path,
         default=OUTPUT_DIR,
-        help="Directory for output parquet files (default: %(default)s)",
+        help="Directory for output CSV files (default: %(default)s)",
     )
     args = parser.parse_args()
 
