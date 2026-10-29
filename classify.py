@@ -152,9 +152,14 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
     mo.vstack(
         [
             mo.md(
-                f"**{page_tags_df.height}** of {embeddings_df.height} images have tags, from **{page_tags_df['book_id'].n_unique()}** books."
+                f"**{page_tags_df.height:,}** of {embeddings_df.height:,} images have tags, from **{page_tags_df['book_id'].n_unique()}** books."
             ),
-            page_tags_df.select("title", "book_id", "pagenum", "tags"),
+            page_tags_df.with_columns(tags=pl.col.tags.list.join(", ")).select(
+                "thumbnail",
+                "title",
+                "pagenum",
+                "tags",
+            ),
         ]
     )
     return (page_tags_df,)
