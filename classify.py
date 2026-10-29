@@ -95,7 +95,8 @@ def load_md(mo):
 
     Image embeddings and metadata are connected by the IIIF **canvas id**
 
-    Tags are lower-cased and de-duplicated. Images without any tags are dropped.
+    Tags are lower-cased and de-duplicated. Not every page has been tagged: we train and
+    evaluate on tagged pages, then use the model to suggest tags for untagged pages.
     """)
 
 
@@ -139,25 +140,32 @@ def load_meta(IIIFImageClient, image_metadata_file, pages_file, pl, tags_file):
 @app.cell
 def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
     # one row per image: embedding row, book, page, and its list of tags
-    page_tags_df = (
+    # (null tags = page has not been tagged)
+    all_pages_df = (
         embeddings_df.join(pages_df, on="canvas_id", how="inner")
         .join(
             tags_df.group_by("page_id").agg(tags=pl.col.tag),
             on="page_id",
-            how="inner",
+            how="left",
         )
         .join(images_df, on="canvas_id", how="left")
+        .with_columns(is_tagged=pl.col.tags.is_not_null())
         .sort("canvas_id")
     )
+    # tagged pages have known labels: use them for training and evaluation
+    page_tags_df = all_pages_df.filter(pl.col.is_tagged)
+    untagged_df = all_pages_df.filter(~pl.col.is_tagged)
     mo.vstack(
         [
             mo.md(
-                f"**{page_tags_df.height}** of {embeddings_df.height} images have tags, from **{page_tags_df['book_id'].n_unique()}** books."
+                f"**{all_pages_df.height:,}** of {embeddings_df.height:,} images have page metadata, "
+                f"from **{all_pages_df['book_id'].n_unique()}** books: "
+                f"**{page_tags_df.height:,}** tagged, **{untagged_df.height:,}** untagged."
             ),
-            page_tags_df.select("title", "book_id", "pagenum", "tags"),
+            all_pages_df.select("title", "book_id", "pagenum", "tags"),
         ]
     )
-    return (page_tags_df,)
+    return page_tags_df, untagged_df
 
 
 @app.cell
@@ -184,7 +192,7 @@ def pick_md(mo):
     mo.md(r"""
     ## Train a classifier
 
-    Choose a tag. Every page is labeled **1** if it has the tag and **0** otherwise, and we
+    Choose a tag. Every tagged page is labeled **1** if it has the tag and **0** otherwise, and we
     fit a **logistic regression** on the embeddings.
 
     We split train/test **by book**, not by page: pages from the same book share a style,
@@ -246,7 +254,7 @@ def train(
         f"Training on **{len(train_idx)}** pages ({y[train_idx].sum()} with `{target_tag}`), "
         f"testing on **{len(test_idx)}** pages from unseen books ({y[test_idx].sum()} with `{target_tag}`)."
     )
-    return preds, probs, target_tag, test_idx, y
+    return model, preds, probs, target_tag, test_idx, y
 
 
 @app.cell
@@ -334,24 +342,9 @@ def thumb_size_control(mo):
 
 
 @app.cell
-def examples(
-    mo,
-    page_tags_df,
-    pl,
-    preds,
-    probs,
-    target_tag,
-    test_idx,
-    thumb_size,
-    y,
-):
-    results_df = page_tags_df[test_idx].with_columns(
-        probability=pl.Series(probs),
-        actual=pl.Series(y[test_idx]),
-        predicted=pl.Series(preds),
-    )
-
-    def _gallery(df, title):
+def gallery_fn(mo, thumb_size):
+    def gallery(df, title):
+        """Thumbnails with title and predicted probability for each page."""
         _items = [
             mo.vstack(
                 [
@@ -365,19 +358,40 @@ def examples(
             [mo.md(f"### {title}"), mo.hstack(_items, wrap=True, justify="start")]
         )
 
+    return (gallery,)
+
+
+@app.cell
+def examples(
+    gallery,
+    mo,
+    page_tags_df,
+    pl,
+    preds,
+    probs,
+    target_tag,
+    test_idx,
+    y,
+):
+    results_df = page_tags_df[test_idx].with_columns(
+        probability=pl.Series(probs),
+        actual=pl.Series(y[test_idx]),
+        predicted=pl.Series(preds),
+    )
+
     mo.ui.tabs(
         {
-            "Most confident": _gallery(
+            "Most confident": gallery(
                 results_df.sort("probability", descending=True).head(12),
                 f"Highest predicted probability of '{target_tag}'",
             ),
-            "False positives": _gallery(
+            "False positives": gallery(
                 results_df.filter((pl.col.predicted == 1) & (pl.col.actual == 0))
                 .sort("probability", descending=True)
                 .head(12),
                 "Predicted but not tagged",
             ),
-            "False negatives": _gallery(
+            "False negatives": gallery(
                 results_df.filter((pl.col.predicted == 0) & (pl.col.actual == 1))
                 .sort("probability")
                 .head(12),
@@ -385,6 +399,42 @@ def examples(
             ),
         }
     )
+
+
+@app.cell
+def predict_md(mo):
+    mo.md(r"""
+    ## Suggest tags for untagged pages
+
+    Pages that were never tagged have no labels, so we left them out of training and
+    evaluation. Now we can use the model to suggest which of them might have the tag.
+    """)
+
+
+@app.cell
+def predict_untagged(gallery, mo, model, pl, target_tag, untagged_df):
+    if untagged_df.is_empty():
+        _out = mo.md("All pages with metadata are tagged; nothing to predict.")
+    else:
+        untagged_preds_df = untagged_df.with_columns(
+            probability=pl.Series(
+                model.predict_proba(untagged_df["features"].to_numpy())[:, 1]
+            )
+        ).sort("probability", descending=True)
+        _n_flagged = (untagged_preds_df["probability"] >= 0.5).sum()
+        _out = mo.vstack(
+            [
+                mo.md(
+                    f"The model suggests `{target_tag}` for **{_n_flagged:,}** of "
+                    f"{untagged_df.height:,} untagged pages (p ≥ 0.5)."
+                ),
+                gallery(
+                    untagged_preds_df.head(12),
+                    f"Untagged pages most likely to show '{target_tag}'",
+                ),
+            ]
+        )
+    _out
 
 
 @app.cell

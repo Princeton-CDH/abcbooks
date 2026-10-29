@@ -2,7 +2,8 @@
 """Prepare data files for the classify notebook.
 
 Reads original data files from an input directory and writes cleaned
-CSV files (image metadata, normalized and deduplicated tags, subset of pages).
+CSV files (image metadata, normalized and deduplicated tags, pages with an
+image in the dataset).
 
 Expected input files (in the input directory):
   - image_metadata.csv
@@ -74,17 +75,18 @@ def dataset_canvas_ids(input_dir: Path) -> pl.DataFrame:
 
 
 def prep_pages(input_dir: Path, output_dir: Path, tags: pl.DataFrame) -> None:
-    """Subset pages to those with an image in the dataset and at least one tag."""
+    """Subset pages to those with an image in the dataset. Untagged pages are
+    kept so the notebook can predict tags for them."""
     df = (
         pl.read_csv(input_dir / PAGES, separator="\t")
         .rename(str.lower)
         .with_columns(canvas_id=pl.col.canvas.str.split("/").list.last())
         .join(dataset_canvas_ids(input_dir), on="canvas_id", how="semi")
-        .join(tags, on="page_id", how="semi")
         .sort("page_id")
     )
     df.write_csv(output_dir / "pages.csv")
-    print(f"pages.csv: {df.height:,} rows")
+    n_tagged = df.join(tags, on="page_id", how="semi").height
+    print(f"pages.csv: {df.height:,} rows ({n_tagged:,} tagged)")
 
 
 def main() -> None:
