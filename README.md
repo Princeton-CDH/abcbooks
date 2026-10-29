@@ -16,6 +16,19 @@ uv run marimo export html-wasm classify.py -o test/index.html
 python -m http.server --directory test
 ```
 
+Before committing any changes to this repository, install [pre-commit](https://pre-commit.com/) and configured pre-commit hooks:
+
+```bash
+uv tool install pre-commit --with pre-commit-uv
+pre-commit install
+```
+
+To update pre-commit hooks to latest versions, use:
+
+```bash
+pre-commit autoupdate --freeze
+```
+
 ## Data
 
 Data files needed for the notebook must be placed in `public/data/`.
