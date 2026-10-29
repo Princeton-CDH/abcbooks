@@ -343,19 +343,57 @@ def thumb_size_control(mo):
 
 @app.cell
 def gallery_fn(mo, thumb_size):
+    _gallery_css = """
+    <style>
+    .abc-gallery { display:flex; flex-wrap:wrap; gap:12px; position:relative; }
+    .abc-item { flex:none; position:relative; }
+    .abc-thumb { display:block; width:100%; border-radius:4px; cursor:zoom-in; }
+    .abc-pop { display:none; position:absolute; top:0; left:100%; margin-left:8px; z-index:1000;
+      width:500px; max-width:60vw; background:var(--background, white); padding:4px;
+      border:1px solid #ccc; border-radius:6px; box-shadow:0 4px 16px rgba(0,0,0,.3); pointer-events:none; }
+    .abc-pop img { width:100%; display:block; }
+    .abc-item:hover .abc-pop { display:block; }
+    .abc-item.abc-right .abc-pop { left:auto; right:100%; margin-left:0; margin-right:8px; }
+    .abc-bar { height:6px; background:#e5e7eb; border-radius:3px; overflow:hidden; margin-top:4px; }
+    .abc-bar > div { height:100%; }
+    .abc-caption { font-size:0.8em; line-height:1.3; margin-top:2px; }
+    </style>
+    """
+
+    def _prob_color(p):
+        """Red (weak) -> amber -> green (strong)."""
+        if p >= 0.75:
+            return "#16a34a"
+        if p >= 0.5:
+            return "#84cc16"
+        if p >= 0.25:
+            return "#f59e0b"
+        return "#ef4444"
+
     def gallery(df, title):
-        """Thumbnails with title and predicted probability for each page."""
-        _items = [
-            mo.vstack(
-                [
-                    mo.image(r["thumbnail"], width=thumb_size.value),
-                    mo.md(f"<small>{r['title']}<br>p={r['probability']:.2f}</small>"),
-                ]
-            ).style(width=f"{thumb_size.value}px", flex="none")
-            for r in df.iter_rows(named=True)
-        ]
+        """Thumbnails with title and predicted probability for each page.
+
+        Hover a thumbnail to see a larger version; the bar shows prediction strength.
+        """
+        _w = thumb_size.value
+        _items = []
+        for _i, r in enumerate(df.iter_rows(named=True)):
+            _p = r["probability"]
+            _side = " abc-right" if _i % 4 >= 2 else ""
+            _items.append(
+                f'<div class="abc-item{_side}" style="width:{_w}px">'
+                f'<img class="abc-thumb" src="{r["thumbnail"]}" loading="lazy">'
+                f'<div class="abc-pop"><img src="{r["thumbnail"]}"></div>'
+                f'<div class="abc-bar" title="p={_p:.2f}"><div style="width:{_p * 100:.0f}%;background:{_prob_color(_p)}"></div></div>'
+                f'<div class="abc-caption">{r["title"]}<br><b>p={_p:.2f}</b></div>'
+                "</div>"
+            )
+        _body = "".join(_items) if _items else "<em>No pages to show.</em>"
         return mo.vstack(
-            [mo.md(f"### {title}"), mo.hstack(_items, wrap=True, justify="start")]
+            [
+                mo.md(f"### {title}"),
+                mo.Html(_gallery_css + f'<div class="abc-gallery">{_body}</div>'),
+            ]
         )
 
     return (gallery,)
@@ -422,14 +460,18 @@ def predict_untagged(gallery, mo, model, pl, target_tag, untagged_df):
             )
         ).sort("probability", descending=True)
         _n_flagged = (untagged_preds_df["probability"] >= 0.5).sum()
+        # skip pages the model is essentially certain do NOT have the tag (p rounds to 0.00)
+        _candidates = untagged_preds_df.filter(pl.col.probability >= 0.005)
         _out = mo.vstack(
             [
                 mo.md(
                     f"The model suggests `{target_tag}` for **{_n_flagged:,}** of "
-                    f"{untagged_df.height:,} untagged pages (p ≥ 0.5)."
+                    f"{untagged_df.height:,} untagged pages (p ≥ 0.5). "
+                    f"{_candidates.height:,} pages have a non-zero probability. "
+                    "The colored bar shows prediction strength; hover a page to enlarge it."
                 ),
                 gallery(
-                    untagged_preds_df.head(12),
+                    _candidates.head(12),
                     f"Untagged pages most likely to show '{target_tag}'",
                 ),
             ]
