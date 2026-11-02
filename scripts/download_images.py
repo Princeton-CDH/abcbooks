@@ -17,11 +17,13 @@ from pathlib import Path
 
 import requests
 from piffle.presentation import IIIFException, IIIFPresentation
+from tqdm import tqdm
 
+TITLE_LENGTH = 40
 ABC_COLLECTION = "https://figgy.princeton.edu/collections/deeb2da4-7db2-4514-b9b9-a6c76e164097/manifest"
 DEFAULT_DATA_DIR = Path("local_data")
 
-# extract the unnique name from an ARK identifier in plain text or html-link, e.g.
+# extract the unique name from an ARK identifier in plain text or html-link, e.g.
 # <a href='http://arks.princeton.edu/ark:/88435/1c18dk10w'>...</a>
 re_ark_name = re.compile(r"ark:/\w+/(?P<name>[\w]+)")
 
@@ -36,12 +38,20 @@ def get_ark_name(manifest) -> str | None:
     return None
 
 
+def truncate(text: str, length: int = TITLE_LENGTH) -> str:
+    """Truncate text to a fixed width for progress bar descriptions."""
+    if len(text) > length:
+        text = text[: length - 1] + "…"
+    return text.ljust(length)
+
+
 def download_collection_images(iiff_collection_url: str, output_dir: Path) -> None:
     collection = IIIFPresentation.from_url(iiff_collection_url)
     output_dir.mkdir(exist_ok=True)
 
-    for manifest in collection.manifests:
-        print(f"Downloading manifest {manifest.label[0]} {manifest.id}")
+    manifest_progress = tqdm(collection.manifests, desc="Manifests", position=0)
+    for manifest in manifest_progress:
+        manifest_progress.set_description(truncate(str(manifest.label[0])))
         download_images(manifest.id, output_dir)
 
 
@@ -49,13 +59,13 @@ def download_images(url: str, output_dir: Path) -> None:
     try:
         manifest = IIIFPresentation.from_url(url)
     except IIIFException as err:
-        print(err)
+        tqdm.write(f"Error loading {url}: {err}")
         return
 
     # manifest seeAlso has catalog data for this collection
     identifier = get_ark_name(manifest)
     if not identifier:
-        print(f"No identifier found for {url}; skipping")
+        tqdm.write(f"No identifier found for {url}; skipping")
         return
     # output dir is assumed to be top-level directory; make an images directory,
     # with one subdirectory per book/volume, named by the ARK identifier
@@ -71,19 +81,19 @@ def download_images(url: str, output_dir: Path) -> None:
 
     # multivol has no sequences
     if hasattr(manifest, "sequences"):
-        for canvas in manifest.sequences[0].canvases:
+        canvases = manifest.sequences[0].canvases
+        for canvas in tqdm(
+            canvases, desc=f"  {identifier}", position=1, leave=False, unit="img"
+        ):
             # save in folder by component id, with name based on canvas id
             canvas_id = canvas.short_id(canvas.id)
             image_filename = book_image_dir / f"{canvas_id}.jpg"
             # only download if we don't already have it
             if not image_filename.is_file():
                 image_url = canvas["images"][0]["resource"]["@id"]
-                print(f"downloading {image_url}")
                 image = requests.get(image_url)
                 with image_filename.open("wb") as imgoutput:
                     imgoutput.write(image.content)
-
-                print(f"saved image as {image_filename}")
 
 
 def main() -> None:
