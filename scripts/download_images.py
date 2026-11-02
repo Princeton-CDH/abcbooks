@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Download page images from ABC Books IIIF collection.
+"""Download page images from a IIIF collection or manifest (default: ABC Books).
 
 Images are saved in one directory per book, which are named based on the book's ARK
 identifier, with one JPEG per canvas named by the
@@ -16,7 +16,8 @@ Press Ctrl-C once to stop after the current book; press again to quit immediatel
 
 Usage:
   python scripts/download_images.py
-  python scripts/download_images.py -o path/to/folder -c http://example.com/iiif/collection/manifest
+  python scripts/download_images.py http://example.com/iiif/book/manifest
+  python scripts/download_images.py -o path/to/folder http://example.com/iiif/collection/manifest
 """
 
 import argparse
@@ -111,66 +112,51 @@ def truncate(text: str, length: int = TITLE_LENGTH) -> str:
     return text.ljust(length)
 
 
-def download_collection_images(iiff_collection_url: str, output_dir: Path) -> None:
-    collection = IIIFPresentation.from_url(iiff_collection_url)
-    output_dir.mkdir(exist_ok=True)
-
-    books_path = output_dir / "books.csv"
-    pages_path = output_dir / "pages.csv"
-    completed = load_completed(books_path, pages_path)
-    books_exists = books_path.is_file()
-    pages_exists = pages_path.is_file()
-    with (
-        books_path.open("a", newline="") as books_file,
-        pages_path.open("a", newline="") as pages_file,
-    ):
-        books_csv = csv.DictWriter(books_file, fieldnames=BOOK_FIELDS)
-        pages_csv = csv.DictWriter(pages_file, fieldnames=PAGE_FIELDS)
-        if not books_exists:
-            books_csv.writeheader()
-        if not pages_exists:
-            pages_csv.writeheader()
-
-        signal.signal(signal.SIGINT, request_stop)
-        manifest_progress = tqdm(collection.manifests, desc="Manifests", position=0)
-        for manifest in manifest_progress:
-            manifest_progress.set_description(truncate(get_title(manifest)))
-            download_images(manifest.id, output_dir, books_csv, pages_csv, completed)
-            if stop_requested:
-                break
-
-
-def download_images(
+def download(
     url: str,
     output_dir: Path,
     books_csv: csv.DictWriter,
     pages_csv: csv.DictWriter,
     completed: set[str],
+    depth: int = 0,
 ) -> None:
+    """Download images and metadata for a IIIF collection, multi-volume work,
+    or single book manifest. Collections and multi-volume works are handled
+    recursively; ``depth`` is used to position stacked progress bars."""
     try:
         manifest = IIIFPresentation.from_url(url)
     except IIIFException as err:
         tqdm.write(f"Error loading {url}: {err}")
         return
 
-    # manifest seeAlso has catalog data for this collection
+    # books and volumes are identified by ARK; collections don't have one
     identifier = get_ark_name(manifest)
-    if not identifier:
-        tqdm.write(f"No identifier found for {url}; skipping")
-        return
     if identifier in completed:
         return
-    # output dir is assumed to be top-level directory; make an images directory,
-    # with one subdirectory per book/volume, named by the ARK identifier
-    book_image_dir = output_dir / "images" / identifier
-    # make sure the image dir for this book/volume exists
-    book_image_dir.mkdir(parents=True, exist_ok=True)
 
-    # handle multivolume / multipart
+    # collection or multi-volume work: download each member manifest
     if hasattr(manifest, "manifests"):
-        # similar to collection...
-        for subvol in manifest.manifests:
-            download_images(subvol.id, output_dir, books_csv, pages_csv, completed)
+        members = tqdm(
+            manifest.manifests,
+            desc=truncate(get_title(manifest)),
+            position=depth,
+            leave=depth == 0,
+            unit="book",
+        )
+        for member in members:
+            download(member.id, output_dir, books_csv, pages_csv, completed, depth + 1)
+            # stop before recording a partially downloaded multi-volume work
+            if stop_requested:
+                return
+
+    if not identifier:
+        if not hasattr(manifest, "manifests"):
+            tqdm.write(f"No identifier found for {url}; skipping")
+        return
+
+    # one image directory per book/volume, named by the ARK identifier
+    book_image_dir = output_dir / "images" / identifier
+    book_image_dir.mkdir(parents=True, exist_ok=True)
 
     # collect page rows and write them with the book row once all pages are done,
     # so an interrupted book is not recorded as complete
@@ -179,7 +165,11 @@ def download_images(
     if hasattr(manifest, "sequences"):
         canvases = manifest.sequences[0].canvases
         for canvas in tqdm(
-            canvases, desc=f"  {identifier}", position=1, leave=False, unit="img"
+            canvases,
+            desc=truncate(get_title(manifest)),
+            position=depth,
+            leave=False,
+            unit="img",
         ):
             # save in folder by component id, with name based on canvas id
             canvas_id = canvas.short_id(canvas.id)
@@ -214,7 +204,10 @@ def download_images(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument(
-        "--collection", default=ABC_COLLECTION, help="IIIF collection manifest URL"
+        "url",
+        nargs="?",
+        default=ABC_COLLECTION,
+        help="IIIF collection or manifest URL (default: ABC Books collection)",
     )
     parser.add_argument(
         "-o",
@@ -225,7 +218,26 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    download_collection_images(args.collection, args.output_dir)
+    output_dir = args.output_dir
+    output_dir.mkdir(parents=True, exist_ok=True)
+    books_path = output_dir / "books.csv"
+    pages_path = output_dir / "pages.csv"
+    completed = load_completed(books_path, pages_path)
+    books_exists = books_path.is_file()
+    pages_exists = pages_path.is_file()
+    with (
+        books_path.open("a", newline="") as books_file,
+        pages_path.open("a", newline="") as pages_file,
+    ):
+        books_csv = csv.DictWriter(books_file, fieldnames=BOOK_FIELDS)
+        pages_csv = csv.DictWriter(pages_file, fieldnames=PAGE_FIELDS)
+        if not books_exists:
+            books_csv.writeheader()
+        if not pages_exists:
+            pages_csv.writeheader()
+
+        signal.signal(signal.SIGINT, request_stop)
+        download(args.url, output_dir, books_csv, pages_csv, completed)
 
 
 if __name__ == "__main__":
