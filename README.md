@@ -37,6 +37,21 @@ pre-commit autoupdate --freeze
 
 ## Data
 
+A local copy of content from publicly-accessible materials in the [ABC Books](https://dpul.princeton.edu/cotsen/browse/abc-books) collection of Cotsen Children's Library is needed to generate the data used by the notebook. To download, run
+
+```bash
+uv run scripts/download_images.py
+```
+
+This will download image files, organized by work ids, under `local_data/` and create CSV files for the books and pages included in the download.
+
+Then use iconoscope to create an image embeddings dataset:
+
+```bash
+iconoscope create public/data/abc_books_subset.h5 local_data/images
+iconoscope embed public/data/abc_books_subset.h5
+```
+
 Data files needed for the notebook must be placed in `public/data/`.
 
 - `abc_books_subset.h5` - iconoscope image dataset with pre-computed embeddings
