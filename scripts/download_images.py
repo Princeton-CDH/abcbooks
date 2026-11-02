@@ -19,7 +19,7 @@ import requests
 from piffle.presentation import IIIFException, IIIFPresentation
 
 ABC_COLLECTION = "https://figgy.princeton.edu/collections/deeb2da4-7db2-4514-b9b9-a6c76e164097/manifest"
-DEFAULT_OUTPUT_DIR = Path("abcbook-images")
+DEFAULT_DATA_DIR = Path("local_data")
 
 # extract the unnique name from an ARK identifier in plain text or html-link, e.g.
 # <a href='http://arks.princeton.edu/ark:/88435/1c18dk10w'>...</a>
@@ -57,7 +57,9 @@ def download_images(url: str, output_dir: Path) -> None:
     if not identifier:
         print(f"No identifier found for {url}; skipping")
         return
-    book_image_dir = output_dir / identifier
+    # output dir is assumed to be top-level directory; make an images directory,
+    # with one subdirectory per book/volume, named by the ARK identifier
+    book_image_dir = output_dir / "images" / identifier
     # make sure the image dir for this book/volume exists
     book_image_dir.mkdir(parents=True, exist_ok=True)
 
@@ -93,8 +95,8 @@ def main() -> None:
         "-o",
         "--output-dir",
         type=Path,
-        default=DEFAULT_OUTPUT_DIR,
-        help=f"Directory for downloaded data (default: {DEFAULT_OUTPUT_DIR})",
+        default=DEFAULT_DATA_DIR,
+        help=f"Directory for downloaded data (default: {DEFAULT_DATA_DIR})",
     )
     args = parser.parse_args()
 
