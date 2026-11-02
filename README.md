@@ -16,6 +16,12 @@ uv run marimo export html-wasm classify.py -o test/index.html
 python -m http.server --directory test
 ```
 
+This project uses a simplified branching pattern (no `develop` branch or tagged releases). If you would like to use git flow, install [git-flow-next](https://git-flow.sh/) and initialize it with the GitHub Flow branching pattern.
+
+```bash
+git flow init --preset=github
+```
+
 Before committing any changes to this repository, install [pre-commit](https://pre-commit.com/) and configured pre-commit hooks:
 
 ```bash
