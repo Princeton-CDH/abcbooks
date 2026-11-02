@@ -7,8 +7,12 @@ canvas id. Images that have already been downloaded are skipped, so the
 script can be re-run to resume an interrupted download.
 
 Metadata is written to two CSV files in the output directory: books.csv (one row
-per book/volume) and pages.csv (one row per canvas/page image). If the files
-already exist, new rows are appended.
+per book/volume) and pages.csv (one row per canvas/page image). Rows for a book
+are written only once all of its pages are downloaded. If the files already
+exist, new rows are appended; books listed in books.csv with a page count
+matching their rows in pages.csv are considered complete and skipped.
+
+Press Ctrl-C once to stop after the current book; press again to quit immediately.
 
 Usage:
   python scripts/download_images.py
@@ -18,6 +22,8 @@ Usage:
 import argparse
 import csv
 import re
+import signal
+from collections import Counter
 from pathlib import Path
 
 import requests
@@ -29,12 +35,39 @@ TITLE_LENGTH = 40
 ABC_COLLECTION = "https://figgy.princeton.edu/collections/deeb2da4-7db2-4514-b9b9-a6c76e164097/manifest"
 DEFAULT_DATA_DIR = Path("local_data")
 
-BOOK_FIELDS = ["book_id", "title", "manifest_url", "license"]
+BOOK_FIELDS = ["book_id", "title", "manifest_url", "license", "page_count"]
 PAGE_FIELDS = ["book_id", "canvas_id", "label", "image_id"]
 
 # extract the unique name from an ARK identifier in plain text or html-link, e.g.
 # <a href='http://arks.princeton.edu/ark:/88435/1c18dk10w'>...</a>
 re_ark_name = re.compile(r"ark:/\w+/(?P<name>[\w]+)")
+
+
+# set by the first Ctrl-C; checked after each book
+stop_requested = False
+
+
+def request_stop(signum, frame) -> None:
+    """On first Ctrl-C, finish the current book then stop; restore the
+    default handler so a second Ctrl-C quits immediately."""
+    global stop_requested
+    stop_requested = True
+    signal.signal(signal.SIGINT, signal.default_int_handler)
+    tqdm.write("Stopping after current book; press Ctrl-C again to quit now")
+
+
+def load_completed(books_path: Path, pages_path: Path) -> set[str]:
+    """Get ids of books with all pages recorded in previous runs."""
+    if not books_path.is_file() or not pages_path.is_file():
+        return set()
+    with pages_path.open(newline="") as pages_file:
+        page_counts = Counter(row["book_id"] for row in csv.DictReader(pages_file))
+    with books_path.open(newline="") as books_file:
+        return {
+            row["book_id"]
+            for row in csv.DictReader(books_file)
+            if page_counts[row["book_id"]] == int(row["page_count"])
+        }
 
 
 def get_ark_name(manifest) -> str | None:
@@ -84,6 +117,7 @@ def download_collection_images(iiff_collection_url: str, output_dir: Path) -> No
 
     books_path = output_dir / "books.csv"
     pages_path = output_dir / "pages.csv"
+    completed = load_completed(books_path, pages_path)
     books_exists = books_path.is_file()
     pages_exists = pages_path.is_file()
     with (
@@ -97,14 +131,21 @@ def download_collection_images(iiff_collection_url: str, output_dir: Path) -> No
         if not pages_exists:
             pages_csv.writeheader()
 
+        signal.signal(signal.SIGINT, request_stop)
         manifest_progress = tqdm(collection.manifests, desc="Manifests", position=0)
         for manifest in manifest_progress:
             manifest_progress.set_description(truncate(get_title(manifest)))
-            download_images(manifest.id, output_dir, books_csv, pages_csv)
+            download_images(manifest.id, output_dir, books_csv, pages_csv, completed)
+            if stop_requested:
+                break
 
 
 def download_images(
-    url: str, output_dir: Path, books_csv: csv.DictWriter, pages_csv: csv.DictWriter
+    url: str,
+    output_dir: Path,
+    books_csv: csv.DictWriter,
+    pages_csv: csv.DictWriter,
+    completed: set[str],
 ) -> None:
     try:
         manifest = IIIFPresentation.from_url(url)
@@ -117,14 +158,8 @@ def download_images(
     if not identifier:
         tqdm.write(f"No identifier found for {url}; skipping")
         return
-    books_csv.writerow(
-        {
-            "book_id": identifier,
-            "title": get_title(manifest),
-            "manifest_url": url,
-            "license": get_license(manifest),
-        }
-    )
+    if identifier in completed:
+        return
     # output dir is assumed to be top-level directory; make an images directory,
     # with one subdirectory per book/volume, named by the ARK identifier
     book_image_dir = output_dir / "images" / identifier
@@ -135,8 +170,11 @@ def download_images(
     if hasattr(manifest, "manifests"):
         # similar to collection...
         for subvol in manifest.manifests:
-            download_images(subvol.id, output_dir, books_csv, pages_csv)
+            download_images(subvol.id, output_dir, books_csv, pages_csv, completed)
 
+    # collect page rows and write them with the book row once all pages are done,
+    # so an interrupted book is not recorded as complete
+    pages = []
     # multivol has no sequences
     if hasattr(manifest, "sequences"):
         canvases = manifest.sequences[0].canvases
@@ -146,7 +184,7 @@ def download_images(
             # save in folder by component id, with name based on canvas id
             canvas_id = canvas.short_id(canvas.id)
             image_filename = book_image_dir / f"{canvas_id}.jpg"
-            pages_csv.writerow(
+            pages.append(
                 {
                     "book_id": identifier,
                     "canvas_id": canvas_id,
@@ -160,6 +198,17 @@ def download_images(
                 image = requests.get(image_url)
                 with image_filename.open("wb") as imgoutput:
                     imgoutput.write(image.content)
+
+    pages_csv.writerows(pages)
+    books_csv.writerow(
+        {
+            "book_id": identifier,
+            "title": get_title(manifest),
+            "manifest_url": url,
+            "license": get_license(manifest),
+            "page_count": len(pages),
+        }
+    )
 
 
 def main() -> None:
