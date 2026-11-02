@@ -12,14 +12,28 @@ Usage:
 """
 
 import argparse
+import re
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
 from piffle.presentation import IIIFException, IIIFPresentation
 
 ABC_COLLECTION = "https://figgy.princeton.edu/collections/deeb2da4-7db2-4514-b9b9-a6c76e164097/manifest"
 DEFAULT_OUTPUT_DIR = Path("abcbook-images")
+
+# extract the unnique name from an ARK identifier in plain text or html-link, e.g.
+# <a href='http://arks.princeton.edu/ark:/88435/1c18dk10w'>...</a>
+re_ark_name = re.compile(r"ark:/\w+/(?P<name>[\w]+)")
+
+
+def get_ark_name(manifest) -> str | None:
+    """Get the name portion of the ARK identifier in manifest metadata."""
+    for mdata in manifest.get("metadata", []):
+        if mdata["label"].lower() == "identifier":
+            match = re_ark_name.search(mdata["value"][0])
+            if match:
+                return match.group("name")
+    return None
 
 
 def download_collection_images(iiff_collection_url: str, output_dir: Path) -> None:
@@ -39,28 +53,13 @@ def download_images(url: str, output_dir: Path) -> None:
         return
 
     # manifest seeAlso has catalog data for this collection
-    identifier = None
-    for mdata in manifest.metadata:
-        if mdata["label"].lower() == "identifier":
-            identifier = mdata["value"][0]
-            break
-
-    # ark identifier is either bare string or html link, so parse out the ark url if needed
-    if identifier and identifier.startswith("<a href"):
-        id_tag = BeautifulSoup(identifier, "html.parser")
-        identifier = next(iter(id_tag.strings))  # full ark url
-        identifier = identifier[
-            identifier.find("ark:/") :
-        ]  # get substring starting with ark:/
-        # identifier=='http://arks.princeton.edu/ark:/88435/1c18dk10w' alt='Identifier'>http://arks.princeton.edu/ark:/88435/1c18dk10w</a>"")
-
-    # convert ark identifier for filename safe
-    file_id = identifier.replace("/", "-").replace(":", "-")
-
-    book_image_dir = output_dir / file_id
+    identifier = get_ark_name(manifest)
+    if not identifier:
+        print(f"No identifier found for {url}; skipping")
+        return
+    book_image_dir = output_dir / identifier
     # make sure the image dir for this book/volume exists
-    if not book_image_dir.is_dir():
-        book_image_dir.mkdir()
+    book_image_dir.mkdir(parents=True, exist_ok=True)
 
     # handle multivolume / multipart
     if hasattr(manifest, "manifests"):
