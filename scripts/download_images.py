@@ -12,6 +12,10 @@ are written only once all of its pages are downloaded. If the files already
 exist, new rows are appended; books listed in books.csv with a page count
 matching their rows in pages.csv are considered complete and skipped.
 
+Manifests that require authorization (e.g. restricted or reading-room-only
+content) are intentionally skipped and counted, not treated as errors: we only
+want to use openly accessible content.
+
 Press Ctrl-C once to stop after the current book; press again to quit immediately.
 
 Usage:
@@ -47,6 +51,9 @@ re_ark_name = re.compile(r"ark:/\w+/(?P<name>[\w]+)")
 # set by the first Ctrl-C; checked after each book
 stop_requested = False
 
+# running totals, shown on the progress bar and summarized at the end
+stats = Counter()
+
 
 def request_stop(signum, frame) -> None:
     """On first Ctrl-C, finish the current book then stop; restore the
@@ -57,15 +64,15 @@ def request_stop(signum, frame) -> None:
     tqdm.write("Stopping after current book; press Ctrl-C again to quit now")
 
 
-def load_completed(books_path: Path, pages_path: Path) -> set[str]:
-    """Get ids of books with all pages recorded in previous runs."""
+def load_completed(books_path: Path, pages_path: Path) -> dict[str, int]:
+    """Get ids and page counts of books with all pages recorded in previous runs."""
     if not books_path.is_file() or not pages_path.is_file():
-        return set()
+        return {}
     with pages_path.open(newline="") as pages_file:
         page_counts = Counter(row["book_id"] for row in csv.DictReader(pages_file))
     with books_path.open(newline="") as books_file:
         return {
-            row["book_id"]
+            row["book_id"]: int(row["page_count"])
             for row in csv.DictReader(books_file)
             if page_counts[row["book_id"]] == int(row["page_count"])
         }
@@ -117,7 +124,7 @@ def download(
     output_dir: Path,
     books_csv: csv.DictWriter,
     pages_csv: csv.DictWriter,
-    completed: set[str],
+    completed: dict[str, int],
     depth: int = 0,
 ) -> None:
     """Download images and metadata for a IIIF collection, multi-volume work,
@@ -126,12 +133,20 @@ def download(
     try:
         manifest = IIIFPresentation.from_url(url)
     except IIIFException as err:
-        tqdm.write(f"Error loading {url}: {err}")
+        # restricted manifests return 401/403, or redirect to a login page;
+        # skip them intentionally, since we only use openly accessible content
+        if any(msg in str(err) for msg in ("401", "403", "No JSON found")):
+            stats["unauthorized manifests"] += 1
+        else:
+            stats["errored manifests"] += 1
+            tqdm.write(f"Error loading {url}: {err}")
         return
 
     # books and volumes are identified by ARK; collections don't have one
     identifier = get_ark_name(manifest)
     if identifier in completed:
+        stats["books already complete"] += 1
+        stats["pages already complete"] += completed[identifier]
         return
 
     # collection or multi-volume work: download each member manifest
@@ -145,12 +160,14 @@ def download(
         )
         for member in members:
             download(member.id, output_dir, books_csv, pages_csv, completed, depth + 1)
+            members.set_postfix(unauthorized=stats["unauthorized manifests"])
             # stop before recording a partially downloaded multi-volume work
             if stop_requested:
                 return
 
     if not identifier:
         if not hasattr(manifest, "manifests"):
+            stats["errored manifests"] += 1
             tqdm.write(f"No identifier found for {url}; skipping")
         return
 
@@ -188,6 +205,7 @@ def download(
                 image = requests.get(image_url)
                 with image_filename.open("wb") as imgoutput:
                     imgoutput.write(image.content)
+                stats["pages downloaded"] += 1
 
     pages_csv.writerows(pages)
     books_csv.writerow(
@@ -199,6 +217,7 @@ def download(
             "page_count": len(pages),
         }
     )
+    stats["books downloaded"] += 1
 
 
 def main() -> None:
@@ -238,6 +257,17 @@ def main() -> None:
 
         signal.signal(signal.SIGINT, request_stop)
         download(args.url, output_dir, books_csv, pages_csv, completed)
+
+    print("\nSummary:")
+    for label in [
+        "books downloaded",
+        "pages downloaded",
+        "books already complete",
+        "pages already complete",
+        "unauthorized manifests",
+        "errored manifests",
+    ]:
+        print(f"  {label:<24} {stats[label]:>6}")
 
 
 if __name__ == "__main__":
