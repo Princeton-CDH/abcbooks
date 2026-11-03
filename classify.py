@@ -9,8 +9,8 @@ def intro(mo):
     mo.md(r"""
     # Classifying ABC book pages from image embeddings
 
-    Each page image in this dataset has been turned into an **embedding**: a list of 768 numbers
-    produced by the [DINOv2](https://huggingface.co/facebook/dinov2-base) vision model. Images that
+    Each page image in this dataset has been turned into an **embedding**: a list of numbers
+    produced by a vision model. Images that
     look alike have embeddings that are close together.
 
     Some books also have **human-assigned tags** for each page (e.g. `hat`, `bird`, `tree`).
@@ -115,15 +115,36 @@ def load_md(mo):
 
 
 @app.cell(hide_code=True)
-def load_h5(ImageDataset, embeddings_file, mo, pl):
+def model_select_control(ImageDataset, embeddings_file, mo):
     img_dataset = ImageDataset(embeddings_file)
+    # embedding configurations (model + preprocessing) stored in the dataset
+    embedding_configs = img_dataset.configs_by_label()
+    _model_names = {"dinov2": "DINOv2", "siglip": "SigLIP"}
 
-    from iconoscope.models import DEFAULT_MODEL, EmbeddingConfig
+    def _display_name(config):
+        """Friendly model name, plus any non-default preprocessing options."""
+        _name = _model_names.get(config.model.name, config.model.name)
+        if config.option_labels:
+            _name += f" ({', '.join(config.option_labels)})"
+        return _name
 
-    default_config = EmbeddingConfig(model=DEFAULT_MODEL)
+    # dropdown value is the display name; look up the config by display name
+    embedding_configs = {
+        _display_name(_config): _config for _config in embedding_configs.values()
+    }
+    model_select = mo.ui.dropdown(
+        options=list(embedding_configs),
+        value=next(iter(embedding_configs)),
+        label="Embedding model",
+    )
+    # displayed with the other training controls below
+    return embedding_configs, img_dataset, model_select
 
+
+@app.cell(hide_code=True)
+def load_h5(embedding_configs, img_dataset, mo, model_select, pl):
     embeddings_df = img_dataset.load_data(
-        features=True, config=default_config
+        features=True, config=embedding_configs[model_select.value]
     )  # includes image paths by default
 
     embeddings_df = embeddings_df.with_columns(
@@ -133,7 +154,9 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
         .str.replace(r"\.jpg$", ""),
     )
 
-    mo.md(f"Loaded features for **{embeddings_df.shape[0]:,} images**")
+    mo.md(
+        f"Loaded `{model_select.value}` features for **{embeddings_df.shape[0]:,} images**"
+    )
     return (embeddings_df,)
 
 
@@ -226,11 +249,11 @@ def pick_md(mo):
     mo.md(r"""
     ## Train a classifier
 
-    Choose a tag and a classifier, then click **Train classifier**. Every tagged page is labeled **1** if it
+    Choose a tag, a classifier, and an embedding model, then click **Train classifier**. Every tagged page is labeled **1** if it
     has the tag and **0** otherwise, and we fit the classifier on the embeddings:
 
     * **Random forest**: many decision trees, each voting on the answer.
-    * **Support vector machine**: finds a smooth, curved boundary between pages with and without the tag.
+    * **Support vector machine (SVM)**: finds a smooth, curved boundary between pages with and without the tag.
     * **Neural network (MLP)**: a small network with one hidden layer of 256 units.
 
     We split train/test **by book**, not by page: pages from the same book share a style,
@@ -239,7 +262,7 @@ def pick_md(mo):
 
 
 @app.cell(hide_code=True)
-def controls(mo, pl, tag_counts):
+def controls(mo, model_select, pl, tag_counts):
     # label each tag with its page count; dropdown value is the tag itself
     _options = {
         f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
@@ -254,7 +277,11 @@ def controls(mo, pl, tag_counts):
         searchable=True,
     )
     classifier_select = mo.ui.dropdown(
-        options=["Random forest", "Support vector machine", "Neural network (MLP)"],
+        options=[
+            "Random forest",
+            "Support vector machine (SVM)",
+            "Neural network (MLP)",
+        ],
         value="Random forest",
         label="Classifier",
     )
@@ -270,9 +297,35 @@ def controls(mo, pl, tag_counts):
         value=True,
         label="Balance classes (tags are rare, so weight positive examples more; not supported by the neural network)",
     )
-    train_button = mo.ui.run_button(label="Train classifier", kind="success")
-    mo.vstack([tag_select, classifier_select, test_size, balanced, train_button])
-    return balanced, classifier_select, tag_select, test_size, train_button
+    # displayed together with the train button in the next cell
+    return balanced, classifier_select, tag_select, test_size
+
+
+@app.cell(hide_code=True)
+def train_button_control(
+    balanced, classifier_select, mo, model_select, tag_select, test_size
+):
+    # separate cell so the button is re-created (and enabled) when a tag is chosen;
+    # all training controls are displayed here as one block
+    train_button = mo.ui.run_button(
+        label="Train classifier",
+        kind="success",
+        disabled=tag_select.value is None,
+        tooltip="Choose a tag first" if tag_select.value is None else None,
+    )
+    mo.vstack(
+        [
+            mo.hstack(
+                [tag_select, classifier_select, model_select],
+                justify="start",
+                wrap=True,
+            ),
+            test_size,
+            balanced,
+            train_button,
+        ]
+    )
+    return (train_button,)
 
 
 @app.cell(hide_code=True)
@@ -293,6 +346,7 @@ def train(
     balanced,
     classifier_select,
     mo,
+    model_select,
     page_tags_df,
     set_run_history,
     tag_select,
@@ -312,7 +366,7 @@ def train(
     train_idx, test_idx = next(_split.split(X, y, groups))
 
     _class_weight = "balanced" if balanced.value else None
-    if classifier_select.value == "Support vector machine":
+    if classifier_select.value == "Support vector machine (SVM)":
         # calibrate the SVM so it reports probabilities
         model = CalibratedClassifierCV(
             SVC(kernel="rbf", class_weight=_class_weight), ensemble=False
@@ -338,9 +392,11 @@ def train(
     baseline_accuracy = 1 - y[test_idx].mean()
 
     def _add_run(_runs):
-        """Append this run, keeping the last 5; skip tag + classifier combinations already listed."""
+        """Append this run, keeping the last 5; skip embedding + tag + classifier combinations already listed."""
         if any(
-            _r["tag"] == target_tag and _r["classifier"] == classifier_select.value
+            _r["embedding"] == model_select.value
+            and _r["tag"] == target_tag
+            and _r["classifier"] == classifier_select.value
             for _r in _runs
         ):
             return _runs
@@ -348,6 +404,7 @@ def train(
             _runs
             + [
                 {
+                    "embedding": model_select.value,
                     "tag": target_tag,
                     "classifier": classifier_select.value,
                     "accuracy": round(float(accuracy), 3),
@@ -394,6 +451,7 @@ def evaluate(
     classifier_select,
     get_run_history,
     mo,
+    model_select,
     target_tag,
 ):
     _runs = get_run_history()
@@ -402,11 +460,11 @@ def evaluate(
         [
             mo.stat(
                 f"{accuracy:.1%}",
-                label="Accuracy",
-                caption=f"{target_tag} · {classifier_select.value}"
-                + (
-                    f" (previous run: {_previous:.1%})" if _previous is not None else ""
-                ),
+                label=f"Accuracy: {target_tag}",
+                caption=f"{model_select.value} · "
+                # abbreviate long classifier names, e.g. "Support vector machine (SVM)" -> "SVM"
+                + classifier_select.value.replace("Support vector machine (SVM)", "SVM")
+                + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
                 direction=None
                 if _previous is None or round(accuracy, 3) == _previous
                 else ("increase" if accuracy > _previous else "decrease"),
