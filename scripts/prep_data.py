@@ -78,8 +78,9 @@ def prep_tags(site_dir: Path, output_dir: Path, pages: pl.DataFrame) -> None:
 
     output_filename = "page_tags.csv"
     tag_df.write_csv(output_dir / output_filename)
+    num_tagged_pages = tag_df["page_id"].n_unique()
     print(
-        f"Tags: {tag_df.height:,} unique tag-page pairs. {tag_df['page_id'].n_unique():,} pages, {tag_df['tag'].n_unique():,} unique tags (-> saved to {output_filename})"
+        f"Tags: {tag_df.height:,} unique tag-page pairs. {tag_df['tag'].n_unique():,} unique tags, {num_tagged_pages:,} pages ({num_tagged_pages / pages.height:.1%} of all downloaded pages)"
     )
 
 
@@ -190,8 +191,7 @@ def prep_books(download_dir: Path, site_dir: Path, output_dir: Path) -> None:
                 row["title"][:40] + "..." if len(row["title"]) > 40 else row["title"]
             )
             # fill to 43 characters for alignment (40 + 3 for ellipsis)
-            truncated_title = truncated_title.ljust(43)
-            print(f"  {truncated_title} {row['manifest_url']}")
+            print(f"  {truncated_title:<43} {row['manifest_url']}")
 
     # report how many books in the site class data are in the download
     # the downloaded data is a subset of the site data, since we only use openly accessible volumes; report the total and percentage
