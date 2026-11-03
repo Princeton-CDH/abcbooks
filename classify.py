@@ -233,7 +233,13 @@ def pick_md(mo):
 
 @app.cell(hide_code=True)
 def controls(mo, pl, tag_counts):
-    _options = tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4)["tag"].to_list()
+    # label each tag with its page count; dropdown value is the tag itself
+    _options = {
+        f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
+        for _r in tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4).iter_rows(
+            named=True
+        )
+    }
     tag_select = mo.ui.dropdown(
         options=_options,
         value=None,
