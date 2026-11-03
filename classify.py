@@ -760,7 +760,7 @@ def _(books_file, mo, pl):
 def _(mo, notebook_location):
     img_src_prefix = "public/assets"
     if notebook_location.startswith("http"):
-        img_src_prefix = f"{notebook_location}{img_src_prefix}"
+        img_src_prefix = f"{notebook_location}/{img_src_prefix}"
 
     mo.hstack(
         [
