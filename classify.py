@@ -79,24 +79,21 @@ async def imports():
 
 @app.cell(hide_code=True)
 async def paths(Path, mo):
-    # Data files live in `public/data/` next to this notebook. When running in the
-    # browser (WASM), they're served by the website, so we download them first.
+    # Data files live in `public/data/` next to this notebook; in the browser (WASM)
+    # this is a URL. Polars can read CSVs from a local path or URL directly.
     data_dir = mo.notebook_location() / "public" / "data"
+    pages_file = str(data_dir / "pages.csv")
+    tags_file = str(data_dir / "page_tags.csv")
+    books_file = str(data_dir / "books.csv")
 
-    async def data_file(name):
-        """Return a local path for a data file, downloading it if needed."""
-        if isinstance(data_dir, Path):
-            return data_dir / name
+    # h5py needs a local file, so download the embeddings when running in WASM
+    embeddings_file = data_dir / "abcbooks.h5"
+    if not isinstance(data_dir, Path):
         from pyodide.http import pyfetch
 
-        _resp = await pyfetch(str(data_dir / name))
-        Path(name).write_bytes(await _resp.bytes())
-        return Path(name)
-
-    embeddings_file = await data_file("abcbooks.h5")
-    pages_file = await data_file("pages.csv")
-    tags_file = await data_file("page_tags.csv")
-    books_file = await data_file("books.csv")
+        _resp = await pyfetch(str(embeddings_file))
+        embeddings_file = Path("abcbooks.h5")
+        embeddings_file.write_bytes(await _resp.bytes())
     return books_file, embeddings_file, pages_file, tags_file
 
 
