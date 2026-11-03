@@ -4,7 +4,7 @@ __generated_with = "0.25.2"
 app = marimo.App(width="medium")
 
 
-@app.cell
+@app.cell(hide_code=True)
 def intro(mo):
     mo.md(r"""
     # Classifying ABC book pages from image embeddings
@@ -20,10 +20,21 @@ def intro(mo):
     2. join them so each image knows its tags,
     3. pick a tag and train a simple classifier that predicts whether a page has that tag,
     4. evaluate it and look at the pages it gets right and wrong.
+
+
+    /// admonition | About this notebook
+
+    This is a [marimo](https://marimo.io) notebook that has been exported to HTML+WASM so it can run in the browser.
+
+    This notebook is running in **edit** mode with the code blocks hidden by default. If you are interested in seeing how it is implemented, click into a collapsed block to view the code.
+
+    Switch to **application view** using the ::lucide:layout-template:: button in the bottom right menu. Use the ::lucide:square-pen:: to switch back to **edit view**.
+
+    ///
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 async def imports():
     import sys
 
@@ -63,7 +74,7 @@ async def imports():
     )
 
 
-@app.cell
+@app.cell(hide_code=True)
 async def paths(Path, mo):
     # Data files live in `public/data/` next to this notebook. When running in the
     # browser (WASM), they're served by the website, so we download them first.
@@ -86,7 +97,7 @@ async def paths(Path, mo):
     return books_file, embeddings_file, pages_file, tags_file
 
 
-@app.cell
+@app.cell(hide_code=True)
 def load_md(mo):
     mo.md(r"""
     ## Load the data
@@ -100,7 +111,7 @@ def load_md(mo):
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def load_h5(ImageDataset, embeddings_file, mo, pl):
     img_dataset = ImageDataset(embeddings_file)
 
@@ -123,7 +134,7 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
     return (embeddings_df,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
     # IIIF image API endpoint for Princeton (Figgy) images
     iiif_image_api = "https://iiif-cloud.princeton.edu/iiif/2"
@@ -153,7 +164,7 @@ def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
     return pages_df, tags_df
 
 
-@app.cell
+@app.cell(hide_code=True)
 def join(embeddings_df, mo, pages_df, pl, tags_df):
     # one row per image: embedding row, book, page, and its list of tags
     # (null tags = page has not been tagged)
@@ -188,7 +199,7 @@ def join(embeddings_df, mo, pages_df, pl, tags_df):
     return page_tags_df, untagged_df
 
 
-@app.cell
+@app.cell(hide_code=True)
 def tag_counts(mo, page_tags_df, pl):
     tag_counts = (
         page_tags_df.explode("tags")
@@ -207,7 +218,7 @@ def tag_counts(mo, page_tags_df, pl):
     return (tag_counts,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def pick_md(mo):
     mo.md(r"""
     ## Train a classifier
@@ -220,7 +231,7 @@ def pick_md(mo):
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def controls(mo, pl, tag_counts):
     _options = tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4)["tag"].to_list()
     tag_select = mo.ui.dropdown(
@@ -245,7 +256,7 @@ def controls(mo, pl, tag_counts):
     return balanced, tag_select, test_size
 
 
-@app.cell
+@app.cell(hide_code=True)
 def train(
     GroupShuffleSplit,
     LogisticRegression,
@@ -277,7 +288,7 @@ def train(
     return model, preds, probs, target_tag, test_idx, y
 
 
-@app.cell
+@app.cell(hide_code=True)
 def eval_md(mo):
     mo.md(r"""
     ## Evaluate
@@ -288,7 +299,7 @@ def eval_md(mo):
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def evaluate(
     alt,
     classification_report,
@@ -342,7 +353,7 @@ def evaluate(
     )
 
 
-@app.cell
+@app.cell(hide_code=True)
 def examples_md(mo):
     mo.md(r"""
     ## Review the results
@@ -352,7 +363,7 @@ def examples_md(mo):
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def thumb_size_control(mo):
     thumb_size = mo.ui.slider(
         100, 500, step=25, value=200, label="Thumbnail size (px)", show_value=True
@@ -361,7 +372,7 @@ def thumb_size_control(mo):
     return (thumb_size,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def gallery_fn(mo, thumb_size):
     _gallery_css = """
     <style>
@@ -419,7 +430,7 @@ def gallery_fn(mo, thumb_size):
     return (gallery,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def examples(
     gallery,
     mo,
@@ -459,7 +470,7 @@ def examples(
     )
 
 
-@app.cell
+@app.cell(hide_code=True)
 def predict_md(mo):
     mo.md(r"""
     ## Suggest tags for untagged pages
@@ -469,7 +480,7 @@ def predict_md(mo):
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def predict_untagged(gallery, mo, model, pl, target_tag, untagged_df):
     if untagged_df.is_empty():
         _out = mo.md("All pages with metadata are tagged; nothing to predict.")
@@ -499,7 +510,7 @@ def predict_untagged(gallery, mo, model, pl, target_tag, untagged_df):
     _out
 
 
-@app.cell
+@app.cell(hide_code=True)
 def exercises(mo):
     mo.md(r"""
     ## Try it yourself
@@ -512,7 +523,7 @@ def exercises(mo):
     """)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(books_file, mo, pl):
     # display table of books included in this dataset
     def dpul_link(pul_id: str) -> str:
@@ -593,7 +604,7 @@ def _(books_file, mo, pl):
     )
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _():
     # uncomment to report the the distinct set of license URIs in the data
     # books_df["license_uri"].unique()
