@@ -92,3 +92,10 @@ Everything is joined on the **IIIF canvas id**. Each source stores it differentl
 `tags.csv` joins to pages on `post_id` = `PAGE_ID`.
 
 This assumes canvas ids (which are UUIDs) are unique across books.
+
+### Content License images
+
+CC license images can be downloaded from [Creative Commons](https://creativecommons.org/about/downloads/) and placed in `public/images/rights/` for use in the notebook and HTML export.
+RightsStatements.org images can be downloaded from [Rights Statements assets](https://rightsstatements.org/en/documentation/assets.html); use the `dark-white-interior-blue-type` variant.
+
+Images should be placed in `public/images/rights/` and given the prefix `cc-` or `rs-` to indicate the source. The notebook must be updated for any additional licenses.
