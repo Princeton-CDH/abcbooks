@@ -12,7 +12,7 @@ uv run marimo edit classify.py
 To test or debug the HTML+WASM export locally, export in edit mode and serve:
 
 ```bash
-uv run marimo export html-wasm classify.py -o test/index.html
+uv run marimo export html-wasm --mode edit classify.py -o test/index.html
 python -m http.server --directory test
 ```
 
@@ -45,11 +45,12 @@ uv run scripts/download_images.py
 
 This will download image files, organized by work ids, under `local_data/` and create two CSV files for the books and pages included in the download.
 
-Then use iconoscope to create an image embeddings dataset for the downloaded images:
+Then use iconoscope to create an image dataset from the downloaded images and generate at least two different embeddings. The notebook includes a dropdown to dynamically select from available embeddings.
 
 ```bash
 iconoscope create local_data/images local_data/abcbooks.h5
 iconoscope embed local_data/abcbooks.h5
+iconoscope embed local_data/abcbooks.h5 --model siglip
 ```
 
 Then use the data prep script to combine the downloaded data with exports from the ABC Books class site.
