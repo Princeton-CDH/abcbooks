@@ -262,7 +262,7 @@ def pick_md(mo):
 
 
 @app.cell(hide_code=True)
-def controls(mo, model_select, pl, tag_counts):
+def controls(mo, pl, tag_counts):
     # label each tag with its page count; dropdown value is the tag itself
     _options = {
         f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
@@ -303,7 +303,12 @@ def controls(mo, model_select, pl, tag_counts):
 
 @app.cell(hide_code=True)
 def train_button_control(
-    balanced, classifier_select, mo, model_select, tag_select, test_size
+    balanced,
+    classifier_select,
+    mo,
+    model_select,
+    tag_select,
+    test_size,
 ):
     # separate cell so the button is re-created (and enabled) when a tag is chosen;
     # all training controls are displayed here as one block
@@ -751,6 +756,7 @@ def _(books_file, mo, pl):
             )
         }
     )
+    return (notebook_location,)
 
 
 @app.cell(hide_code=True)
@@ -758,6 +764,34 @@ def _():
     # uncomment to report the the distinct set of license URIs in the data
     # books_df["license_uri"].unique()
     return
+
+
+@app.cell(hide_code=True)
+def footer(mo, notebook_location):
+    # logos are served like the rights images: relative path locally, notebook url on WASM
+    _logo_path = "/public/assets/logos/"
+    if notebook_location.startswith("http"):
+        _logo_path = f"{notebook_location}{_logo_path}"
+
+    mo.md(f"""
+    ---
+
+    <small>
+
+    Developed by the [Center for Digital Humanities at Princeton](https://cdh.princeton.edu/).
+    Images and metadata from the [ABC Books](https://dpul.princeton.edu/cotsen/browse/abc-books)
+    collection of the Cotsen Children's Library, Princeton University Library; page tags from the ABC Books class site.
+    Built with [marimo](https://marimo.io/) and [iconoscope](https://github.com/Princeton-CDH/iconoscope).
+    Code is available on [GitHub](https://github.com/Princeton-CDH/abcbooks) under the
+    [Apache 2.0 license](https://github.com/Princeton-CDH/abcbooks/blob/main/LICENSE).
+
+    </small>
+
+    <div style="display:flex; align-items:center; gap:2rem; margin-top:1rem;">
+    <a href="https://cdh.princeton.edu/" target="_blank"><img src="{_logo_path}cdh-logo.svg" alt="Center for Digital Humanities at Princeton" style="height:60px;"/></a>
+    <a href="https://library.princeton.edu/" target="_blank"><img src="{_logo_path}pul-logo.svg" alt="Princeton University Library" style="height:45px;"/></a>
+    </div>
+    """)
 
 
 if __name__ == "__main__":
