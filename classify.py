@@ -82,7 +82,8 @@ async def paths(Path, mo):
     embeddings_file = await data_file("abcbooks.h5")
     pages_file = await data_file("pages.csv")
     tags_file = await data_file("page_tags.csv")
-    return embeddings_file, pages_file, tags_file
+    books_file = await data_file("books.csv")
+    return books_file, embeddings_file, pages_file, tags_file
 
 
 @app.cell
@@ -402,6 +403,94 @@ def exercises(mo):
     4. Replace `LogisticRegression` with `sklearn.neighbors.KNeighborsClassifier`. Does it do better?
     5. Look at the false positives: are some of them pages that *should* have been tagged?
     """)
+
+
+@app.cell
+def _(books_file, mo, pl):
+    # display table of books included in this dataset
+    def dpul_link(pul_id: str) -> str:
+        return mo.Html(
+            f"<a href='https://dpul.princeton.edu/cotsen/catalog/{pul_id}' target='_blank'>View on DPUL</a>"
+        )
+
+    # when running on locally, use a relative path
+    img_base_path = "/public/assets/rights/"
+    # when running on web assembly, use the base url for the notebook
+    notebook_location = str(mo.notebook_location())
+    if notebook_location.startswith("http"):
+        img_base_path = f"{notebook_location}{img_base_path}"
+
+    def license(uri: str) -> str:
+        img = None
+
+        match uri:
+            case "https://creativecommons.org/publicdomain/mark/1.0/":
+                img = "cc-publicdomain.svg"
+            case "http://rightsstatements.org/vocab/NKC/1.0/":
+                img = "rs-other-unknown.svg"
+            case "http://rightsstatements.org/vocab/CNE/1.0/":
+                img = "rs-other-notevaluated.svg"
+
+        if img is not None:
+            link_text = f'<img src="{img_base_path}{img}"/>'
+        else:
+            link_text = uri
+
+        return mo.Html(f"<a href='{uri}' target='_blank'>{link_text}</a>")
+
+    # NOTE: abcbooks class site now uses slugs instead of numeric ids, so current data doesn't support linking
+    # directly to books on the class site.
+    # If this functionality is desired, we'll need to request an updated version of the data with slugs
+
+    books_df = pl.read_csv(books_file).with_columns(
+        # add links to dpul, abc books, image for license
+        dpul_link=pl.col.book_id.map_elements(dpul_link),
+        license_uri=pl.col.license,
+        license=pl.col.license.map_elements(license),
+    )
+
+    # display list of books in a nicely formatted table
+    book_table = mo.ui.table(
+        books_df.select(
+            "title",
+            "page_count",
+            "license",
+            "dpul_link",
+        ).rename(
+            {
+                "title": "Title",
+                "license": "Rights",
+                "dpul_link": "Link",
+                "page_count": "Pages",
+            }
+        ),
+        selection=None,  # disable select box
+        pagination=False,  # show all rows
+        # label="Books",
+        show_download=False,
+        show_data_types=False,
+        column_widths={"Title": 500},
+    )
+
+    mo.accordion(
+        {
+            "Books": mo.vstack(
+                [
+                    mo.md(
+                        "This is the full list of the books that have pages included in this notebook, along with the rights status. Use the view link to look at books on Princeton University Library's Digital PUL."
+                    ),
+                    book_table,
+                ]
+            )
+        }
+    )
+
+
+@app.cell
+def _():
+    # uncomment to report the the distinct set of license URIs in the data
+    # books_df["license_uri"].unique()
+    return
 
 
 if __name__ == "__main__":
