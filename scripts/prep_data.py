@@ -177,7 +177,7 @@ def prep_books(download_dir: Path, site_dir: Path, output_dir: Path) -> None:
     )
     if not_site_df.height:
         print(
-            f"Warning: {not_site_df.height:,} books in {download_dir / BOOKS} not found in {site_dir / SITE_BOOKS}"
+            f"⚠️ Warning: {not_site_df.height:,} books in {download_dir / BOOKS} not found in {site_dir / SITE_BOOKS}"
         )
         for row in not_site_df.iter_rows(named=True):
             truncated_title = (
@@ -192,6 +192,23 @@ def prep_books(download_dir: Path, site_dir: Path, output_dir: Path) -> None:
     print(
         f"Downloaded data includes {books_df.height:,} books ({books_df.height / site_books.height:.1%} of ABC Books site {site_books.height:,} books)"
     )
+
+    # check licenses for any that are not in the expected set:
+    # - make sure we are only using openly licensed works,
+    # - make sure we are not missing any licenses images for display in the notebook
+    expected_licenses = [
+        "https://creativecommons.org/publicdomain/mark/1.0/",
+        "http://rightsstatements.org/vocab/NKC/1.0/",
+        "http://rightsstatements.org/vocab/CNE/1.0/",
+    ]
+    # NOTE: this list can be expanded if there are other open licenses; if it changes, update the list in the notebook and add the image to assets/images/rights for display
+    unexpected_licenses = books_df.filter(~pl.col.license.is_in(expected_licenses))
+    if unexpected_licenses.height:
+        print(
+            f"⚠️ Warning: {unexpected_licenses.height:,} books have unexpected licenses:"
+        )
+        for row in unexpected_licenses.iter_rows(named=True):
+            print(f"  {row['book_id']}: {row['license']}")
 
     # manifest is needed for joining but not needed for classify notebook, so drop before saving
     books_df = books_df.drop("manifest_url")
