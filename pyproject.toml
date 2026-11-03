@@ -26,3 +26,16 @@ dev = [
 "classify.py" = [
     "B018" # useless expression
 ]
+
+[tool.marimo.display]
+cell_output = "below"  # display output below code instead of above (more like jupyter)
+theme = "system"      # honor user preference, including in static html exports
+
+[tool.marimo.save]
+format_on_save = true
+
+[tool.marimo.diagnostics]
+enabled = true
+
+[tool.marimo.experimental]
+lsp = true
