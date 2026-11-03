@@ -51,14 +51,13 @@ async def imports():
 
     from pathlib import Path
 
-    import altair as alt
     import marimo as mo
     import polars as pl
     from iconoscope.dataset import ImageDataset
     from piffle.image import IIIFImageClient
     from sklearn.calibration import CalibratedClassifierCV
     from sklearn.ensemble import RandomForestClassifier
-    from sklearn.metrics import classification_report, confusion_matrix
+    from sklearn.metrics import accuracy_score
     from sklearn.model_selection import GroupShuffleSplit
     from sklearn.neural_network import MLPClassifier
     from sklearn.svm import SVC
@@ -72,9 +71,7 @@ async def imports():
         Path,
         RandomForestClassifier,
         SVC,
-        alt,
-        classification_report,
-        confusion_matrix,
+        accuracy_score,
         mo,
         pl,
     )
@@ -279,16 +276,25 @@ def controls(mo, pl, tag_counts):
 
 
 @app.cell(hide_code=True)
+def run_history(mo):
+    # accuracy of recent training runs, for comparison across tags and classifiers
+    get_run_history, set_run_history = mo.state([])
+    return get_run_history, set_run_history
+
+
+@app.cell(hide_code=True)
 def train(
     CalibratedClassifierCV,
     GroupShuffleSplit,
     MLPClassifier,
     RandomForestClassifier,
     SVC,
+    accuracy_score,
     balanced,
     classifier_select,
     mo,
     page_tags_df,
+    set_run_history,
     tag_select,
     test_size,
     train_button,
@@ -327,12 +333,45 @@ def train(
         model.fit(X[train_idx], y[train_idx])
     probs = model.predict_proba(X[test_idx])[:, 1]
     preds = (probs >= 0.5).astype(int)
+    accuracy = accuracy_score(y[test_idx], preds)
+    # accuracy of always guessing "no tag"
+    baseline_accuracy = 1 - y[test_idx].mean()
+
+    def _add_run(_runs):
+        """Append this run, keeping the last 5; skip tag + classifier combinations already listed."""
+        if any(
+            _r["tag"] == target_tag and _r["classifier"] == classifier_select.value
+            for _r in _runs
+        ):
+            return _runs
+        return (
+            _runs
+            + [
+                {
+                    "tag": target_tag,
+                    "classifier": classifier_select.value,
+                    "accuracy": round(float(accuracy), 3),
+                    "baseline": round(float(baseline_accuracy), 3),
+                }
+            ]
+        )[-5:]
+
+    set_run_history(_add_run)
 
     mo.md(
         f"Training on **{len(train_idx)}** pages ({y[train_idx].sum()} with `{target_tag}`), "
         f"testing on **{len(test_idx)}** pages from unseen books ({y[test_idx].sum()} with `{target_tag}`)."
     )
-    return model, preds, probs, target_tag, test_idx, y
+    return (
+        accuracy,
+        baseline_accuracy,
+        model,
+        preds,
+        probs,
+        target_tag,
+        test_idx,
+        y,
+    )
 
 
 @app.cell(hide_code=True)
@@ -340,62 +379,67 @@ def eval_md(mo):
     mo.md(r"""
     ## Evaluate
 
-    * **Precision**: of the pages the model flagged, how many really have the tag?
-    * **Recall**: of the pages that really have the tag, how many did the model find?
-    * Compare **accuracy** to the baseline of always guessing "no tag" — for rare tags it can be high without learning anything.
+    **Accuracy** is the share of test pages the model labeled correctly. Compare it to the **baseline**
+    of always guessing that a page does *not* have the tag (e.g. "not hat"): for rare tags the baseline is already high, so a model can look
+    accurate without learning anything.
+
+    The table keeps your last 5 training runs so you can compare tags and classifiers.
     """)
 
 
 @app.cell(hide_code=True)
 def evaluate(
-    alt,
-    classification_report,
-    confusion_matrix,
+    accuracy,
+    baseline_accuracy,
+    classifier_select,
+    get_run_history,
     mo,
-    pl,
-    preds,
     target_tag,
-    test_idx,
-    y,
 ):
-    _cm = confusion_matrix(y[test_idx], preds, labels=[0, 1])
-    _cm_df = pl.DataFrame(
-        {
-            "actual": ["no " + target_tag, target_tag] * 2,
-            "predicted": ["no " + target_tag] * 2 + [target_tag] * 2,
-            "pages": [_cm[0, 0], _cm[1, 0], _cm[0, 1], _cm[1, 1]],
-        }
-    )
-    _chart = (
-        alt.Chart(_cm_df)
-        .mark_rect()
-        .encode(
-            x="predicted:N",
-            y="actual:N",
-            color=alt.Color("pages:Q", scale=alt.Scale(scheme="blues")),
-        )
-        + alt.Chart(_cm_df)
-        .mark_text(fontSize=16)
-        .encode(x="predicted:N", y="actual:N", text="pages:Q")
-    ).properties(width=250, height=250, title="Confusion matrix")
-    _baseline = 1 - y[test_idx].mean()
+    _runs = get_run_history()
+    _previous = _runs[-2]["accuracy"] if len(_runs) > 1 else None
     mo.hstack(
         [
-            _chart,
-            mo.vstack(
-                [
-                    mo.md(f"Baseline (always 'no'): **{_baseline:.1%}**"),
-                    mo.plain_text(
-                        classification_report(
-                            y[test_idx],
-                            preds,
-                            labels=[0, 1],
-                            target_names=["no " + target_tag, target_tag],
-                            zero_division=0,
-                        )
-                    ),
-                ]
+            mo.stat(
+                f"{accuracy:.1%}",
+                label="Accuracy",
+                caption=f"{target_tag} · {classifier_select.value}"
+                + (
+                    f" (previous run: {_previous:.1%})" if _previous is not None else ""
+                ),
+                direction=None
+                if _previous is None or round(accuracy, 3) == _previous
+                else ("increase" if accuracy > _previous else "decrease"),
+                bordered=True,
             ),
+            mo.stat(
+                f"{baseline_accuracy:.1%}",
+                label="Baseline",
+                caption=f"always guess 'not {target_tag}'",
+                bordered=True,
+            ),
+            mo.stat(
+                f"{(accuracy - baseline_accuracy) * 100:+.1f} pts",
+                label="Gain over baseline",
+                direction="increase" if accuracy > baseline_accuracy else "decrease",
+                bordered=True,
+            ),
+        ],
+        justify="start",
+    )
+
+
+@app.cell(hide_code=True)
+def run_history_table(get_run_history, mo, pl):
+    _runs = get_run_history()
+    mo.vstack(
+        [
+            mo.md("### Recent runs"),
+            pl.DataFrame(list(reversed(_runs))).with_columns(
+                gain=pl.col.accuracy - pl.col.baseline
+            )
+            if _runs
+            else mo.md("_No runs yet._"),
         ]
     )
 
@@ -563,9 +607,9 @@ def exercises(mo):
     ## Try it yourself
 
     1. Try several tags. Which are easy to learn (`flag`? `bird`?) and which are hard (`rhyme`?)? Why might a *visual* model struggle with some tags?
-    2. Turn off class balancing. What happens to precision and recall for a rare tag?
-    3. Change the decision threshold from 0.5 — how does that trade precision against recall?
-    4. Train the same tag with each classifier. Which has the best precision and recall? Do they make the same mistakes?
+    2. Turn off class balancing. What happens to accuracy for a rare tag? Is it really doing better than the baseline?
+    3. Change the decision threshold from 0.5. How does it change accuracy?
+    4. Train the same tag with each classifier. Use the recent-runs table: which has the best accuracy? Do they make the same mistakes?
     5. Look at the false positives: are some of them pages that *should* have been tagged?
     """)
 
