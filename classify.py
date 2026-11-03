@@ -746,7 +746,7 @@ def _(books_file, mo, pl):
 
     mo.accordion(
         {
-            "Books": mo.vstack(
+            "Books Included": mo.vstack(
                 [
                     mo.md(
                         "This is the full list of the books that have pages included in this notebook, along with the rights status. Use the view link to look at books on Princeton University Library's Digital PUL."
@@ -760,38 +760,45 @@ def _(books_file, mo, pl):
 
 
 @app.cell(hide_code=True)
-def _():
-    # uncomment to report the the distinct set of license URIs in the data
-    # books_df["license_uri"].unique()
-    return
-
-
-@app.cell(hide_code=True)
-def footer(mo, notebook_location):
-    # logos are served like the rights images: relative path locally, notebook url on WASM
-    _logo_path = "/public/assets/logos/"
+def _(mo, notebook_location):
+    img_src_prefix = "public/assets"
     if notebook_location.startswith("http"):
-        _logo_path = f"{notebook_location}{_logo_path}"
+        img_src_prefix = f"{notebook_location}{img_src_prefix}"
 
-    mo.md(f"""
-    ---
+    mo.hstack(
+        [
+            mo.vstack(
+                [
+                    mo.md(
+                        "----\nDeveloped by the [Center for Digital Humanities at Princeton](https://cdh.princeton.edu), 2026."
+                    ),
+                    mo.md(
+                        "Images and metadata are drawn from the [ABC Books collection](https://dpul.princeton.edu/cotsen/browse/abc-books)  of the Cotsen Children's Library, Princeton University."
+                    ),
+                    mo.md("Tags were exported from the ABC Books course website."),
+                    mo.md(
+                        "Built with [marimo](https://marimo.io) and [iconoscope](https://github.com/Princeton-CDH/iconoscope). Code for this project is made [available on GitHub](https://github.com/Princeton-CDH/abcbooks) under the [Apache 2.0 license](https://github.com/Princeton-CDH/abcbooks/blob/main/LICENSE)."
+                    ),
+                ]
+            ),
+            mo.image(
+                src=f"{img_src_prefix}/pul-logo.png",
+                height=100,
+                alt="Princeton University Libraries",
+            ),
+            mo.image(
+                src=f"{img_src_prefix}/cdh-logo.svg",
+                height=100,
+                alt="Center for Digital Humanities @ Princeton University",
+            ),
+        ],
+        align="end",
+    )
 
-    <small>
 
-    Developed by the [Center for Digital Humanities at Princeton](https://cdh.princeton.edu/).
-    Images and metadata from the [ABC Books](https://dpul.princeton.edu/cotsen/browse/abc-books)
-    collection of the Cotsen Children's Library, Princeton University Library; page tags from the ABC Books class site.
-    Built with [marimo](https://marimo.io/) and [iconoscope](https://github.com/Princeton-CDH/iconoscope).
-    Code is available on [GitHub](https://github.com/Princeton-CDH/abcbooks) under the
-    [Apache 2.0 license](https://github.com/Princeton-CDH/abcbooks/blob/main/LICENSE).
-
-    </small>
-
-    <div style="display:flex; align-items:center; gap:2rem; margin-top:1rem;">
-    <a href="https://cdh.princeton.edu/" target="_blank"><img src="{_logo_path}cdh-logo.svg" alt="Center for Digital Humanities at Princeton" style="height:60px;"/></a>
-    <a href="https://library.princeton.edu/" target="_blank"><img src="{_logo_path}pul-logo.svg" alt="Princeton University Library" style="height:45px;"/></a>
-    </div>
-    """)
+@app.cell
+def _():
+    return
 
 
 if __name__ == "__main__":
