@@ -124,11 +124,26 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
 
 
 @app.cell
-def load_meta(IIIFImageClient, pages_file, pl, tags_file):
+def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
     # IIIF image API endpoint for Princeton (Figgy) images
     iiif_image_api = "https://iiif-cloud.princeton.edu/iiif/2"
-    # includes canvas_id and IIIF image_id from prep_data.py
-    pages_df = pl.read_csv(pages_file).with_columns(
+    # includes canvas_id, page label, and IIIF image_id from prep_data.py;
+    # add book title from books file
+    pages_df = (
+        pl.read_csv(pages_file, schema_overrides={"label": pl.String}).join(
+            pl.read_csv(books_file).select(
+                "book_id",
+                # drop subtitle (after colon) from long titles
+                title=pl.when(
+                    (pl.col.title.str.len_chars() > 50) & pl.col.title.str.contains(":")
+                )
+                .then(pl.col.title.str.split(":").list.first().str.strip_chars())
+                .otherwise(pl.col.title),
+            ),
+            on="book_id",
+            how="left",
+        )
+    ).with_columns(
         thumbnail=pl.col.image_id.map_elements(
             lambda img_id: str(IIIFImageClient(iiif_image_api, img_id).size(width=500)),
             return_dtype=pl.String,
@@ -165,7 +180,7 @@ def join(embeddings_df, mo, pages_df, pl, tags_df):
             all_pages_df.with_columns(tags=pl.col.tags.list.join(", ")).select(
                 "thumbnail",
                 "title",
-                "pagenum",
+                "label",
                 "tags",
             ),
         ]
@@ -390,7 +405,7 @@ def gallery_fn(mo, thumb_size):
                 f'<img class="abc-thumb" src="{r["thumbnail"]}" loading="lazy">'
                 f'<div class="abc-pop"><img src="{r["thumbnail"]}"></div>'
                 f'<div class="abc-bar" title="p={_p:.2f}"><div style="width:{_p * 100:.0f}%;background:{_prob_color(_p)}"></div></div>'
-                f'<div class="abc-caption">{r["title"]}<br><b>p={_p:.2f}</b></div>'
+                f'<div class="abc-caption">{r["title"]}<br>{r["label"] or ""}<br><b>p={_p:.2f}</b></div>'
                 "</div>"
             )
         _body = "".join(_items) if _items else "<em>No pages to show.</em>"

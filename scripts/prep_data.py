@@ -100,7 +100,7 @@ def dataset_canvas_ids(dataset: Path) -> pl.DataFrame:
 
 
 def prep_pages(download_dir: Path, site_dir: Path, output_dir: Path) -> pl.DataFrame:
-    """Combine site page export (page id, title, page number) with IIIF page
+    """Combine site page export (page id, page number) with IIIF page
     metadata (book ARK, canvas label, image id), joined on canvas id; subset to
     pages with an image in the dataset. Untagged pages are kept so the notebook
     can predict tags for them."""
@@ -137,9 +137,9 @@ def prep_pages(download_dir: Path, site_dir: Path, output_dir: Path) -> pl.DataF
         # extract canvas id for joining with iiif pages
         .with_columns(canvas_id=pl.col.canvas.str.split("/").list.last())
         # book_id (ARK) comes from IIIF pages; site book id is added to books
-        .select("page_id", "canvas_id", "title", "pagenum")
+        .select("page_id", "canvas_id", "pagenum")
     )
-    # join with site data to get page id, title, and page number for each canvas; keep all pages in download even if not in site data
+    # join with site data to get page id and page number for each canvas; keep all pages in download even if not in site data
     pages_df = pages_df.join(site_pages, on="canvas_id", how="left")
     # limit to pages with an image in the dataset
     pages_df = pages_df.join(
