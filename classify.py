@@ -79,11 +79,11 @@ async def paths(Path, mo):
         Path(name).write_bytes(await _resp.bytes())
         return Path(name)
 
-    embeddings_file = await data_file("abc_books_subset.h5")
+    embeddings_file = await data_file("abcbooks.h5")
     pages_file = await data_file("pages.csv")
     tags_file = await data_file("page_tags.csv")
-    image_metadata_file = await data_file("images.csv")
-    return embeddings_file, image_metadata_file, pages_file, tags_file
+    books_file = await data_file("books.csv")
+    return books_file, embeddings_file, pages_file, tags_file
 
 
 @app.cell
@@ -124,21 +124,22 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
 
 
 @app.cell
-def load_meta(IIIFImageClient, image_metadata_file, pages_file, pl, tags_file):
-    pages_df = pl.read_csv(pages_file)  # includes canvas_id from prep_data.py
-    tags_df = pl.read_csv(tags_file)  # already normalized in prep_data.py
-    images_df = pl.read_csv(image_metadata_file).select(
-        canvas_id="id",
-        thumbnail=pl.col.image_iiif_id.map_elements(
-            lambda url: str(IIIFImageClient.init_from_url(url).size(width=500)),
+def load_meta(IIIFImageClient, pages_file, pl, tags_file):
+    # IIIF image API endpoint for Princeton (Figgy) images
+    iiif_image_api = "https://iiif-cloud.princeton.edu/iiif/2"
+    # includes canvas_id and IIIF image_id from prep_data.py
+    pages_df = pl.read_csv(pages_file).with_columns(
+        thumbnail=pl.col.image_id.map_elements(
+            lambda img_id: str(IIIFImageClient(iiif_image_api, img_id).size(width=500)),
             return_dtype=pl.String,
         ),
     )
-    return images_df, pages_df, tags_df
+    tags_df = pl.read_csv(tags_file)  # already normalized in prep_data.py
+    return pages_df, tags_df
 
 
 @app.cell
-def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
+def join(embeddings_df, mo, pages_df, pl, tags_df):
     # one row per image: embedding row, book, page, and its list of tags
     # (null tags = page has not been tagged)
     all_pages_df = (
@@ -148,7 +149,6 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
             on="page_id",
             how="left",
         )
-        .join(images_df, on="canvas_id", how="left")
         .with_columns(is_tagged=pl.col.tags.is_not_null())
         .sort("canvas_id")
     )
@@ -162,7 +162,12 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
                 f"from **{all_pages_df['book_id'].n_unique()}** books: "
                 f"**{page_tags_df.height:,}** tagged, **{untagged_df.height:,}** untagged."
             ),
-            all_pages_df.select("title", "book_id", "pagenum", "tags"),
+            all_pages_df.with_columns(tags=pl.col.tags.list.join(", ")).select(
+                "thumbnail",
+                "title",
+                "pagenum",
+                "tags",
+            ),
         ]
     )
     return page_tags_df, untagged_df
@@ -490,6 +495,94 @@ def exercises(mo):
     4. Replace `LogisticRegression` with `sklearn.neighbors.KNeighborsClassifier`. Does it do better?
     5. Look at the false positives: are some of them pages that *should* have been tagged?
     """)
+
+
+@app.cell
+def _(books_file, mo, pl):
+    # display table of books included in this dataset
+    def dpul_link(pul_id: str) -> str:
+        return mo.Html(
+            f"<a href='https://dpul.princeton.edu/cotsen/catalog/{pul_id}' target='_blank'>View on DPUL</a>"
+        )
+
+    # when running on locally, use a relative path
+    img_base_path = "/public/assets/rights/"
+    # when running on web assembly, use the base url for the notebook
+    notebook_location = str(mo.notebook_location())
+    if notebook_location.startswith("http"):
+        img_base_path = f"{notebook_location}{img_base_path}"
+
+    def license(uri: str) -> str:
+        img = None
+
+        match uri:
+            case "https://creativecommons.org/publicdomain/mark/1.0/":
+                img = "cc-publicdomain.svg"
+            case "http://rightsstatements.org/vocab/NKC/1.0/":
+                img = "rs-other-unknown.svg"
+            case "http://rightsstatements.org/vocab/CNE/1.0/":
+                img = "rs-other-notevaluated.svg"
+
+        if img is not None:
+            link_text = f'<img src="{img_base_path}{img}"/>'
+        else:
+            link_text = uri
+
+        return mo.Html(f"<a href='{uri}' target='_blank'>{link_text}</a>")
+
+    # NOTE: abcbooks class site now uses slugs instead of numeric ids, so current data doesn't support linking
+    # directly to books on the class site.
+    # If this functionality is desired, we'll need to request an updated version of the data with slugs
+
+    books_df = pl.read_csv(books_file).with_columns(
+        # add links to dpul, abc books, image for license
+        dpul_link=pl.col.book_id.map_elements(dpul_link),
+        license_uri=pl.col.license,
+        license=pl.col.license.map_elements(license),
+    )
+
+    # display list of books in a nicely formatted table
+    book_table = mo.ui.table(
+        books_df.select(
+            "title",
+            "page_count",
+            "license",
+            "dpul_link",
+        ).rename(
+            {
+                "title": "Title",
+                "license": "Rights",
+                "dpul_link": "Link",
+                "page_count": "Pages",
+            }
+        ),
+        selection=None,  # disable select box
+        pagination=False,  # show all rows
+        # label="Books",
+        show_download=False,
+        show_data_types=False,
+        column_widths={"Title": 500},
+    )
+
+    mo.accordion(
+        {
+            "Books": mo.vstack(
+                [
+                    mo.md(
+                        "This is the full list of the books that have pages included in this notebook, along with the rights status. Use the view link to look at books on Princeton University Library's Digital PUL."
+                    ),
+                    book_table,
+                ]
+            )
+        }
+    )
+
+
+@app.cell
+def _():
+    # uncomment to report the the distinct set of license URIs in the data
+    # books_df["license_uri"].unique()
+    return
 
 
 if __name__ == "__main__":

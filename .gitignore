@@ -1,3 +1,7 @@
+# project specific gitignore rules
+# files to be downloaded but not to be checked in to version control
+local_data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
