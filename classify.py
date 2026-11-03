@@ -56,16 +56,22 @@ async def imports():
     import polars as pl
     from iconoscope.dataset import ImageDataset
     from piffle.image import IIIFImageClient
+    from sklearn.calibration import CalibratedClassifierCV
     from sklearn.ensemble import RandomForestClassifier
     from sklearn.metrics import classification_report, confusion_matrix
     from sklearn.model_selection import GroupShuffleSplit
+    from sklearn.neural_network import MLPClassifier
+    from sklearn.svm import SVC
 
     return (
+        CalibratedClassifierCV,
         GroupShuffleSplit,
         IIIFImageClient,
         ImageDataset,
+        MLPClassifier,
         Path,
         RandomForestClassifier,
+        SVC,
         alt,
         classification_report,
         confusion_matrix,
@@ -223,8 +229,12 @@ def pick_md(mo):
     mo.md(r"""
     ## Train a classifier
 
-    Choose a tag and click **Train**. Every tagged page is labeled **1** if it has the tag and **0** otherwise, and we
-    fit a **random forest** (an ensemble of decision trees) on the embeddings.
+    Choose a tag and a classifier, then click **Train classifier**. Every tagged page is labeled **1** if it
+    has the tag and **0** otherwise, and we fit the classifier on the embeddings:
+
+    * **Random forest**: many decision trees, each voting on the answer.
+    * **Support vector machine**: finds a smooth, curved boundary between pages with and without the tag.
+    * **Neural network (MLP)**: a small network with one hidden layer of 256 units.
 
     We split train/test **by book**, not by page: pages from the same book share a style,
     so testing on a book the model has seen would make it look better than it really is.
@@ -246,6 +256,11 @@ def controls(mo, pl, tag_counts):
         label="Tag",
         searchable=True,
     )
+    classifier_select = mo.ui.dropdown(
+        options=["Random forest", "Support vector machine", "Neural network (MLP)"],
+        value="Random forest",
+        label="Classifier",
+    )
     test_size = mo.ui.slider(
         0.1,
         0.5,
@@ -256,18 +271,22 @@ def controls(mo, pl, tag_counts):
     )
     balanced = mo.ui.checkbox(
         value=True,
-        label="Balance classes (tags are rare, so weight positive examples more)",
+        label="Balance classes (tags are rare, so weight positive examples more; not supported by the neural network)",
     )
     train_button = mo.ui.run_button(label="Train classifier", kind="success")
-    mo.vstack([tag_select, test_size, balanced, train_button])
-    return balanced, tag_select, test_size, train_button
+    mo.vstack([tag_select, classifier_select, test_size, balanced, train_button])
+    return balanced, classifier_select, tag_select, test_size, train_button
 
 
 @app.cell(hide_code=True)
 def train(
+    CalibratedClassifierCV,
     GroupShuffleSplit,
+    MLPClassifier,
     RandomForestClassifier,
+    SVC,
     balanced,
+    classifier_select,
     mo,
     page_tags_df,
     tag_select,
@@ -286,13 +305,25 @@ def train(
     _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
     train_idx, test_idx = next(_split.split(X, y, groups))
 
-    model = RandomForestClassifier(
-        n_estimators=500,
-        min_samples_leaf=2,
-        class_weight="balanced" if balanced.value else None,
-        random_state=0,
-    )
-    with mo.status.spinner(title=f"Training a random forest for '{target_tag}'..."):
+    _class_weight = "balanced" if balanced.value else None
+    if classifier_select.value == "Support vector machine":
+        # calibrate the SVM so it reports probabilities
+        model = CalibratedClassifierCV(
+            SVC(kernel="rbf", class_weight=_class_weight), ensemble=False
+        )
+    elif classifier_select.value == "Neural network (MLP)":
+        # MLPClassifier has no class_weight option
+        model = MLPClassifier(hidden_layer_sizes=(256,), max_iter=300, random_state=0)
+    else:
+        model = RandomForestClassifier(
+            n_estimators=500,
+            min_samples_leaf=2,
+            class_weight=_class_weight,
+            random_state=0,
+        )
+    with mo.status.spinner(
+        title=f"Training {classifier_select.value.lower()} for '{target_tag}'..."
+    ):
         model.fit(X[train_idx], y[train_idx])
     probs = model.predict_proba(X[test_idx])[:, 1]
     preds = (probs >= 0.5).astype(int)
@@ -534,7 +565,7 @@ def exercises(mo):
     1. Try several tags. Which are easy to learn (`flag`? `bird`?) and which are hard (`rhyme`?)? Why might a *visual* model struggle with some tags?
     2. Turn off class balancing. What happens to precision and recall for a rare tag?
     3. Change the decision threshold from 0.5 — how does that trade precision against recall?
-    4. Replace `RandomForestClassifier` with `sklearn.linear_model.LogisticRegression` or `sklearn.neighbors.KNeighborsClassifier`. Is it faster? Does it do better?
+    4. Train the same tag with each classifier. Which has the best precision and recall? Do they make the same mistakes?
     5. Look at the false positives: are some of them pages that *should* have been tagged?
     """)
 
