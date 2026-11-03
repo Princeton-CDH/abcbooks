@@ -79,11 +79,10 @@ async def paths(Path, mo):
         Path(name).write_bytes(await _resp.bytes())
         return Path(name)
 
-    embeddings_file = await data_file("abc_books_subset.h5")
+    embeddings_file = await data_file("abcbooks.h5")
     pages_file = await data_file("pages.csv")
     tags_file = await data_file("page_tags.csv")
-    image_metadata_file = await data_file("images.csv")
-    return embeddings_file, image_metadata_file, pages_file, tags_file
+    return embeddings_file, pages_file, tags_file
 
 
 @app.cell
@@ -123,21 +122,22 @@ def load_h5(ImageDataset, embeddings_file, mo, pl):
 
 
 @app.cell
-def load_meta(IIIFImageClient, image_metadata_file, pages_file, pl, tags_file):
-    pages_df = pl.read_csv(pages_file)  # includes canvas_id from prep_data.py
-    tags_df = pl.read_csv(tags_file)  # already normalized in prep_data.py
-    images_df = pl.read_csv(image_metadata_file).select(
-        canvas_id="id",
-        thumbnail=pl.col.image_iiif_id.map_elements(
-            lambda url: str(IIIFImageClient.init_from_url(url).size(width=500)),
+def load_meta(IIIFImageClient, pages_file, pl, tags_file):
+    # IIIF image API endpoint for Princeton (Figgy) images
+    iiif_image_api = "https://iiif-cloud.princeton.edu/iiif/2"
+    # includes canvas_id and IIIF image_id from prep_data.py
+    pages_df = pl.read_csv(pages_file).with_columns(
+        thumbnail=pl.col.image_id.map_elements(
+            lambda img_id: str(IIIFImageClient(iiif_image_api, img_id).size(width=500)),
             return_dtype=pl.String,
         ),
     )
-    return images_df, pages_df, tags_df
+    tags_df = pl.read_csv(tags_file)  # already normalized in prep_data.py
+    return pages_df, tags_df
 
 
 @app.cell
-def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
+def join(embeddings_df, mo, pages_df, pl, tags_df):
     # one row per image: embedding row, book, page, and its list of tags
     page_tags_df = (
         embeddings_df.join(pages_df, on="canvas_id", how="inner")
@@ -146,7 +146,6 @@ def join(embeddings_df, images_df, mo, pages_df, pl, tags_df):
             on="page_id",
             how="inner",
         )
-        .join(images_df, on="canvas_id", how="left")
         .sort("canvas_id")
     )
     mo.vstack(
