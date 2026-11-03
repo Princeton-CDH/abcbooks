@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.25.2"
-app = marimo.App(width="medium")
+app = marimo.App(width="medium", app_title="Classify ABC Books pages")
 
 
 @app.cell(hide_code=True)
