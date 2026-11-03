@@ -24,7 +24,6 @@ import shutil
 import sys
 from pathlib import Path
 
-import h5py
 import polars as pl
 from iconoscope.dataset import ImageDataset
 from iconoscope.models import DEFAULT_MODEL, EmbeddingConfig
@@ -77,14 +76,15 @@ def prep_tags(site_dir: Path, output_dir: Path) -> pl.DataFrame:
 def dataset_canvas_ids(dataset: Path) -> pl.DataFrame:
     """Canvas ids for images in the dataset: image filename without extension
     (path is book ARK / canvas id .jpg)."""
-    with h5py.File(dataset) as f:
-        paths = f["image/paths"][:]
-    return pl.DataFrame(
-        {
-            "canvas_id": [
-                p.decode().rsplit("/", 1)[-1].removesuffix(".jpg") for p in paths
-            ]
-        }
+    return (
+        # load the image dataset, get image data for dataframe of paths, extract canvas id
+        ImageDataset(dataset)
+        .get_image_data()
+        .with_columns(
+            canvas_id=pl.col.image_path.str.split("/")
+            .list.last()
+            .str.replace(".jpg$", "")
+        )
     )
 
 
@@ -102,7 +102,12 @@ def prep_pages(
         .select("page_id", "canvas_id", "title", "pagenum")
     )
     df = (
-        site_pages.join(pl.read_csv(download_dir / IIIF_PAGES), on="canvas_id")
+        site_pages.join(
+            pl.read_csv(
+                download_dir / IIIF_PAGES, schema_overrides={"label": pl.String}
+            ),
+            on="canvas_id",
+        )
         .join(dataset_canvas_ids(download_dir / DATASET), on="canvas_id", how="semi")
         .join(tags, on="page_id", how="semi")
         .unique("canvas_id")
