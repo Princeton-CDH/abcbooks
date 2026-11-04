@@ -531,7 +531,10 @@ def evaluate(
     get_run_history,
     mo,
     model_select,
+    preds,
     target_tag,
+    test_idx,
+    y,
 ):
     _runs = get_run_history()
     # Compare against the immediately preceding run regardless of settings for now.
@@ -539,7 +542,22 @@ def evaluate(
     # between _runs[-1] and _runs[-2] if only comparable runs should show an arrow.
     _compare_previous = len(_runs) > 1
     _previous = _runs[-2]["accuracy"] if _compare_previous else None
-    mo.hstack(
+    _actual = y[test_idx]
+    _found = int(((preds == 1) & (_actual == 1)).sum())
+    _tagged = int((_actual == 1).sum())
+    _extra = int(((preds == 1) & (_actual == 0)).sum())
+    _suggested = int((preds == 1).sum())
+    _counts = mo.md(
+        (
+            f"- Found **{_found:,} of {_tagged:,}** test pages tagged `{target_tag}`."
+            if _tagged
+            else f"- There are **no test pages tagged** `{target_tag}` to find."
+        )
+        + f"\n- Suggested `{target_tag}` for **{_extra:,} other test pages** without that recorded tag."
+        + f"\n- Suggested `{target_tag}` for **{_suggested:,} test pages total**."
+        + "\n\nA suggestion without a recorded tag may be a model mistake or a missing human tag."
+    )
+    _stats = mo.hstack(
         [
             mo.stat(
                 f"{accuracy:.1%}",
@@ -568,6 +586,7 @@ def evaluate(
         ],
         justify="start",
     )
+    mo.hstack([_counts, _stats], justify="start", align="start", wrap=True)
 
 
 @app.cell(hide_code=True)
