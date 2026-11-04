@@ -394,14 +394,7 @@ def train(
     baseline_accuracy = 1 - y[test_idx].mean()
 
     def _add_run(_runs):
-        """Append this run, keeping the last 5; skip embedding + tag + classifier combinations already listed."""
-        if any(
-            _r["embedding"] == model_select.value
-            and _r["tag"] == target_tag
-            and _r["classifier"] == classifier_select.value
-            for _r in _runs
-        ):
-            return _runs
+        """Append every completed run, keeping the last 10."""
         return (
             _runs
             + [
@@ -409,11 +402,15 @@ def train(
                     "embedding": model_select.value,
                     "tag": target_tag,
                     "classifier": classifier_select.value,
-                    "accuracy": round(float(accuracy), 3),
-                    "baseline": round(float(baseline_accuracy), 3),
+                    "balancing": "Not supported"
+                    if classifier_select.value == "Neural network (MLP)"
+                    else ("On" if balanced.value else "Off"),
+                    "test_fraction": float(test_size.value),
+                    "accuracy": float(accuracy),
+                    "baseline": float(baseline_accuracy),
                 }
             ]
-        )[-5:]
+        )[-10:]
 
     set_run_history(_add_run)
 
@@ -442,7 +439,9 @@ def eval_md(mo):
     of always guessing that a page does *not* have the tag (e.g. "not hat"): for rare tags the baseline is already high, so a model can look
     accurate without learning anything.
 
-    The table keeps your last 5 training runs so you can compare tags and classifiers.
+    The table keeps your last 10 training runs so you can compare tags and classifiers.
+    For a fair comparison of classifiers, keep the tag, embedding model, and test fraction the same.
+    A higher accuracy on a different tag or test set does not necessarily mean a better classifier.
     """)
 
 
@@ -451,13 +450,10 @@ def evaluate(
     accuracy,
     baseline_accuracy,
     classifier_select,
-    get_run_history,
     mo,
     model_select,
     target_tag,
 ):
-    _runs = get_run_history()
-    _previous = _runs[-2]["accuracy"] if len(_runs) > 1 else None
     mo.hstack(
         [
             mo.stat(
@@ -465,11 +461,9 @@ def evaluate(
                 label=f"Accuracy: {target_tag}",
                 caption=f"{model_select.value} · "
                 # abbreviate long classifier names, e.g. "Support vector machine (SVM)" -> "SVM"
-                + classifier_select.value.replace("Support vector machine (SVM)", "SVM")
-                + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
-                direction=None
-                if _previous is None or round(accuracy, 3) == _previous
-                else ("increase" if accuracy > _previous else "decrease"),
+                + classifier_select.value.replace(
+                    "Support vector machine (SVM)", "SVM"
+                ),
                 bordered=True,
             ),
             mo.stat(
@@ -495,8 +489,10 @@ def run_history_table(get_run_history, mo, pl):
     mo.vstack(
         [
             mo.md("### Recent runs"),
-            pl.DataFrame(list(reversed(_runs))).with_columns(
-                gain=pl.col.accuracy - pl.col.baseline
+            pl.DataFrame(list(reversed(_runs)))
+            .with_columns(gain=pl.col.accuracy - pl.col.baseline)
+            .with_columns(
+                pl.col("test_fraction", "accuracy", "baseline", "gain").round(3)
             )
             if _runs
             else mo.md("_No runs yet._"),
