@@ -59,7 +59,7 @@ async def imports():
     from sklearn.calibration import CalibratedClassifierCV
     from sklearn.ensemble import RandomForestClassifier
     from sklearn.metrics import accuracy_score
-    from sklearn.model_selection import GroupShuffleSplit
+    from sklearn.model_selection import GroupShuffleSplit, StratifiedGroupKFold
     from sklearn.neural_network import MLPClassifier
     from sklearn.svm import SVC
 
@@ -73,6 +73,7 @@ async def imports():
         Path,
         RandomForestClassifier,
         SVC,
+        StratifiedGroupKFold,
         accuracy_score,
         auto,
         mo,
@@ -381,6 +382,7 @@ def train(
     MLPClassifier,
     RandomForestClassifier,
     SVC,
+    StratifiedGroupKFold,
     accuracy_score,
     balanced,
     classifier_select,
@@ -500,9 +502,45 @@ def train(
 
     _class_weight = "balanced" if balanced.value else None
     if classifier_select.value == Classifier.SVM:
-        # calibrate the SVM so it reports probabilities
+        # Indices are relative to the outer training partition passed to fit.
+        # Never use outer test books to fit the SVM or calibrate its scores.
+        _calibration_splits = None
+        _training_y = y[train_idx]
+        _training_groups = groups[train_idx]
+        _negative_books = len(set(_training_groups[_training_y == 0]))
+        _max_folds = min(5, _train_tag_books, _negative_books)
+        for _n_folds in range(_max_folds, 1, -1):
+            _cv = StratifiedGroupKFold(n_splits=_n_folds, shuffle=True, random_state=0)
+            _folds = list(_cv.split(X[train_idx], _training_y, groups=_training_groups))
+            # Stratification is approximate: check both classes in every fold.
+            if all(
+                len(set(_training_y[_fit_idx])) == 2
+                and len(set(_training_y[_cal_idx])) == 2
+                for _fit_idx, _cal_idx in _folds
+            ):
+                _calibration_splits = _folds
+                break
+        mo.stop(
+            _calibration_splits is None,
+            mo.vstack(
+                [
+                    _split_report,
+                    mo.callout(
+                        "The SVM needs examples with and without the recorded tag "
+                        "spread across enough training books to estimate its scores "
+                        "on separate books. Try another tag, hold out fewer books, "
+                        "or choose a different classifier.",
+                        kind="warn",
+                    ),
+                ]
+            ),
+        )
+        # Each training page receives an out-of-fold score from an SVM that
+        # has not seen its book; the final SVM is then fitted on all training pages.
         model = CalibratedClassifierCV(
-            SVC(kernel="rbf", class_weight=_class_weight), ensemble=False
+            SVC(kernel="rbf", class_weight=_class_weight),
+            cv=_calibration_splits,
+            ensemble=False,
         )
     elif classifier_select.value == Classifier.MLP:
         # MLPClassifier has no class_weight option
