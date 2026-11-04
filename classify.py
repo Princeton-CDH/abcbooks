@@ -37,6 +37,7 @@ def intro(mo):
 @app.cell(hide_code=True)
 async def imports():
     import sys
+    from enum import Enum, auto
 
     if sys.platform == "emscripten":
         # In the browser (WASM), install packages that aren't bundled with Pyodide
@@ -64,6 +65,7 @@ async def imports():
 
     return (
         CalibratedClassifierCV,
+        Enum,
         GroupShuffleSplit,
         IIIFImageClient,
         ImageDataset,
@@ -72,6 +74,7 @@ async def imports():
         RandomForestClassifier,
         SVC,
         accuracy_score,
+        auto,
         mo,
         pl,
     )
@@ -260,7 +263,7 @@ def pick_md(mo):
 
 
 @app.cell(hide_code=True)
-def controls(mo, pl, tag_counts):
+def controls(Enum, auto, mo, pl, tag_counts):
     # Label each tag with its page count; selected values are the tags themselves.
     _options = {
         f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
@@ -274,22 +277,38 @@ def controls(mo, pl, tag_counts):
         label="Tags (match any)",
     )
 
-    classifier_abbrevs = {"Support vector machine": "SVM", "Neural network": "MLP"}
+    class Classifier(Enum):
+        RANDOMFOREST = auto()
+        SVM = auto()
+        MLP = auto()
 
-    classifiers = ["Random forest", "Support vector machine", "Neural network"]
-    classifier_labels = {}
-    for name in classifiers:
-        abbrev = classifier_abbrevs.get(name)
+    # classifier labels
+
+    classifier_labels = {
+        Classifier.RANDOMFOREST: "Random forest",
+        Classifier.SVM: "Support vector machine",
+        Classifier.MLP: "Neural network",
+    }
+
+    # abbreviations for classifiers that have them
+    classifier_abbrevs = {Classifier.SVM: "SVM", Classifier.MLP: "MLP"}
+
+    classifier_options = {}
+    for opt in Classifier:
+        # get abbreviation if there is one
+        abbrev = classifier_abbrevs.get(opt)
         # if an abbreviation is set, add in parentheses
-        if abbrev:
-            label = f"{name} ({abbrev})"
-        else:
-            label = name
-        classifier_labels[label] = name
+        abbrev = f" ({abbrev})" if abbrev else ""
+        label = f"{classifier_labels[opt]}{abbrev}"
+        classifier_options[label] = opt
+
+    def classifier_shorthand(value):
+        # use abbreviation if there is one, otherwise full name
+        return classifier_abbrevs.get(value) or classifier_labels[value]
 
     classifier_select = mo.ui.dropdown(
-        options=classifier_labels,
-        value=classifiers[0],
+        options=classifier_options,
+        value=classifier_labels[Classifier.RANDOMFOREST],
         label="Classifier",
     )
     test_size = mo.ui.slider(
@@ -306,9 +325,10 @@ def controls(mo, pl, tag_counts):
     )
     # displayed together with the train button in the next cell
     return (
+        Classifier,
         balanced,
-        classifier_abbrevs,
         classifier_select,
+        classifier_shorthand,
         tag_select,
         test_size,
     )
@@ -356,6 +376,7 @@ def run_history(mo):
 @app.cell(hide_code=True)
 def train(
     CalibratedClassifierCV,
+    Classifier,
     GroupShuffleSplit,
     MLPClassifier,
     RandomForestClassifier,
@@ -363,6 +384,7 @@ def train(
     accuracy_score,
     balanced,
     classifier_select,
+    classifier_shorthand,
     mo,
     model_select,
     page_tags_df,
@@ -477,12 +499,12 @@ def train(
     )
 
     _class_weight = "balanced" if balanced.value else None
-    if classifier_select.value == "Support vector machine (SVM)":
+    if classifier_select.value == Classifier.SVM:
         # calibrate the SVM so it reports probabilities
         model = CalibratedClassifierCV(
             SVC(kernel="rbf", class_weight=_class_weight), ensemble=False
         )
-    elif classifier_select.value == "Neural network (MLP)":
+    elif classifier_select.value == Classifier.MLP:
         # MLPClassifier has no class_weight option
         model = MLPClassifier(hidden_layer_sizes=(256,), max_iter=300, random_state=0)
     else:
@@ -493,7 +515,7 @@ def train(
             random_state=0,
         )
     with mo.status.spinner(
-        title=f"Training {classifier_select.value.lower()} for '{target_tag}'..."
+        title=f"Training {classifier_shorthand(classifier_select.value)} for '{target_tag}'..."
     ):
         model.fit(X[train_idx], y[train_idx])
     probs = model.predict_proba(X[test_idx])[:, 1]
@@ -510,9 +532,9 @@ def train(
                 {
                     "embedding": model_select.value,
                     "tag": target_tag,
-                    "classifier": classifier_select.value,
+                    "classifier": classifier_shorthand(classifier_select.value),
                     "balancing": "Not supported"
-                    if classifier_select.value == "Neural network (MLP)"
+                    if classifier_select.value == Classifier.MLP
                     else ("On" if balanced.value else "Off"),
                     "test_fraction": float(test_size.value),
                     "accuracy": float(accuracy),
@@ -555,8 +577,8 @@ def eval_md(mo):
 def evaluate(
     accuracy,
     baseline_accuracy,
-    classifier_abbrevs,
     classifier_select,
+    classifier_shorthand,
     get_run_history,
     mo,
     model_select,
@@ -587,18 +609,13 @@ def evaluate(
         + "\n\nA suggestion without a recorded tag may be a bad prediction or a page that no one has tagged yet."
     )
 
-    # use abbreviation for current classifier, or full name if no abbreviation
-    _classifier_shorthand = classifier_abbrevs.get(
-        classifier_select.value, classifier_select.value
-    )
-
     _stats = mo.hstack(
         [
             mo.stat(
                 f"{accuracy:.1%}",
                 label=f"Accuracy: {target_tag}",
                 caption=f"{model_select.value} · "
-                + _classifier_shorthand
+                + classifier_shorthand(classifier_select.value)
                 + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
                 direction=None
                 if _previous is None or accuracy == _previous
