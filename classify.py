@@ -273,13 +273,23 @@ def controls(mo, pl, tag_counts):
         label="Tag",
         searchable=True,
     )
+
+    classifier_abbrevs = {"Support vector machine": "SVM", "Neural network": "MLP"}
+
+    classifiers = ["Random forest", "Support vector machine", "Neural network"]
+    classifier_labels = {}
+    for name in classifiers:
+        abbrev = classifier_abbrevs.get(name)
+        # if an abbreviation is set, add in parentheses
+        if abbrev:
+            label = f"{name} ({abbrev})"
+        else:
+            label = name
+        classifier_labels[label] = name
+
     classifier_select = mo.ui.dropdown(
-        options=[
-            "Random forest",
-            "Support vector machine (SVM)",
-            "Neural network (MLP)",
-        ],
-        value="Random forest",
+        options=classifier_labels,
+        value=classifiers[0],
         label="Classifier",
     )
     test_size = mo.ui.slider(
@@ -295,7 +305,13 @@ def controls(mo, pl, tag_counts):
         label="Balance classes (tags are rare, so weight positive examples more; not supported by the neural network)",
     )
     # displayed together with the train button in the next cell
-    return balanced, classifier_select, tag_select, test_size
+    return (
+        balanced,
+        classifier_abbrevs,
+        classifier_select,
+        tag_select,
+        test_size,
+    )
 
 
 @app.cell(hide_code=True)
@@ -527,6 +543,7 @@ def eval_md(mo):
 def evaluate(
     accuracy,
     baseline_accuracy,
+    classifier_abbrevs,
     classifier_select,
     get_run_history,
     mo,
@@ -555,16 +572,21 @@ def evaluate(
         )
         + f"\n- Suggested `{target_tag}` for **{_extra:,} other test pages** without that recorded tag."
         + f"\n- Suggested `{target_tag}` for **{_suggested:,} test pages total**."
-        + "\n\nA suggestion without a recorded tag may be a model mistake or a missing human tag."
+        + "\n\nA suggestion without a recorded tag may be a bad prediction or a page that no one has tagged yet."
     )
+
+    # use abbreviation for current classifier, or full name if no abbreviation
+    _classifier_shorthand = classifier_abbrevs.get(
+        classifier_select.value, classifier_select.value
+    )
+
     _stats = mo.hstack(
         [
             mo.stat(
                 f"{accuracy:.1%}",
                 label=f"Accuracy: {target_tag}",
                 caption=f"{model_select.value} · "
-                # abbreviate long classifier names, e.g. "Support vector machine (SVM)" -> "SVM"
-                + classifier_select.value.replace("Support vector machine (SVM)", "SVM")
+                + _classifier_shorthand
                 + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
                 direction=None
                 if _previous is None or accuracy == _previous
@@ -579,14 +601,15 @@ def evaluate(
             ),
             mo.stat(
                 f"{(accuracy - baseline_accuracy) * 100:+.1f} pts",
-                label="Gain over baseline",
+                label="Gain over Baseline",
+                caption="from baseline",
                 direction="increase" if accuracy > baseline_accuracy else "decrease",
                 bordered=True,
             ),
         ],
         justify="start",
     )
-    mo.hstack([_counts, _stats], justify="start", align="start", wrap=True)
+    mo.hstack([_stats, _counts], justify="start", align="start", wrap=True)
 
 
 @app.cell(hide_code=True)
