@@ -367,6 +367,87 @@ def train(
     _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
     train_idx, test_idx = next(_split.split(X, y, groups))
 
+    _train_positive = int(y[train_idx].sum())
+    _test_positive = int(y[test_idx].sum())
+    _train_negative = len(train_idx) - _train_positive
+    _test_negative = len(test_idx) - _test_positive
+    _train_tag_books = len(set(groups[train_idx][y[train_idx] == 1]))
+    _test_tag_books = len(set(groups[test_idx][y[test_idx] == 1]))
+    _split_summary = mo.ui.table(
+        [
+            {
+                "Set": "Training",
+                "Pages": len(train_idx),
+                "Books": len(set(groups[train_idx])),
+                "With tag": _train_positive,
+                "Without tag": _train_negative,
+                "Books with tag": _train_tag_books,
+            },
+            {
+                "Set": "Testing (unseen books)",
+                "Pages": len(test_idx),
+                "Books": len(set(groups[test_idx])),
+                "With tag": _test_positive,
+                "Without tag": _test_negative,
+                "Books with tag": _test_tag_books,
+            },
+        ],
+        label=f"Recorded tag: {target_tag}",
+        selection=None,
+        pagination=False,
+        show_download=False,
+        show_data_types=False,
+    )
+    _warnings = []
+    if _test_positive == 0:
+        _warnings.append(
+            f"None of the test pages have a recorded `{target_tag}` tag. "
+            "Always guessing ‘no’ would score 100% accuracy, so this test cannot tell us "
+            "whether the classifier finds the tag."
+        )
+    elif _test_negative == 0:
+        _warnings.append(
+            f"All test pages have a recorded `{target_tag}` tag. "
+            "Always guessing ‘yes’ would score 100% accuracy, so this test cannot tell us "
+            "whether the classifier avoids incorrect suggestions."
+        )
+    elif _test_tag_books == 1:
+        _warnings.append(
+            f"All test examples tagged `{target_tag}` come from just one book. "
+            "The results may reflect that book’s particular style rather than performance across books."
+        )
+    if _train_tag_books == 1:
+        _warnings.append(
+            f"All training examples tagged `{target_tag}` come from just one book. "
+            "The classifier may learn that book’s style rather than the tag’s content."
+        )
+    _split_report = mo.vstack(
+        [_split_summary]
+        + [
+            mo.callout(
+                mo.md(
+                    _warning
+                    + " Try another tag or change the fraction of books held out."
+                ),
+                kind="warn",
+            )
+            for _warning in _warnings
+        ]
+    )
+    mo.stop(
+        _train_positive == 0 or _train_negative == 0,
+        mo.vstack(
+            [
+                _split_report,
+                mo.callout(
+                    "Training needs pages both with and without the recorded tag. "
+                    "Try another tag or change the fraction of books held out.",
+                    kind="warn",
+                ),
+            ]
+        ),
+    )
+
     _class_weight = "balanced" if balanced.value else None
     if classifier_select.value == "Support vector machine (SVM)":
         # calibrate the SVM so it reports probabilities
@@ -414,10 +495,7 @@ def train(
 
     set_run_history(_add_run)
 
-    mo.md(
-        f"Training on **{len(train_idx)}** pages ({y[train_idx].sum()} with `{target_tag}`), "
-        f"testing on **{len(test_idx)}** pages from unseen books ({y[test_idx].sum()} with `{target_tag}`)."
-    )
+    _split_report
     return (
         accuracy,
         baseline_accuracy,
@@ -450,10 +528,17 @@ def evaluate(
     accuracy,
     baseline_accuracy,
     classifier_select,
+    get_run_history,
     mo,
     model_select,
     target_tag,
 ):
+    _runs = get_run_history()
+    # Compare against the immediately preceding run regardless of settings for now.
+    # Change this condition to require matching tag, embedding, and test_fraction
+    # between _runs[-1] and _runs[-2] if only comparable runs should show an arrow.
+    _compare_previous = len(_runs) > 1
+    _previous = _runs[-2]["accuracy"] if _compare_previous else None
     mo.hstack(
         [
             mo.stat(
@@ -461,9 +546,11 @@ def evaluate(
                 label=f"Accuracy: {target_tag}",
                 caption=f"{model_select.value} · "
                 # abbreviate long classifier names, e.g. "Support vector machine (SVM)" -> "SVM"
-                + classifier_select.value.replace(
-                    "Support vector machine (SVM)", "SVM"
-                ),
+                + classifier_select.value.replace("Support vector machine (SVM)", "SVM")
+                + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
+                direction=None
+                if _previous is None or accuracy == _previous
+                else ("increase" if accuracy > _previous else "decrease"),
                 bordered=True,
             ),
             mo.stat(
