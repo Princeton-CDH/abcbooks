@@ -3,6 +3,13 @@
 # To set up, run `pre-commit install`
 # To run all hooks manually, run `pre-commit run --all-files`
 repos:
+  - repo: local
+    hooks:
+      - id: marimo-check
+        name: Check marimo notebook
+        entry: uv run marimo check --fix
+        language: system
+        files: ^classify\.py$
   # Ruff Python linter and formatter (configs in pyproject.toml)
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: 25bcf95026b96e2dd3c0aec3090c3d6ef6ca2e6c # frozen: v0.17.3
