@@ -246,8 +246,9 @@ def pick_md(mo):
     mo.md(r"""
     ## Train a classifier
 
-    Choose a tag, a classifier, and an embedding model, then click **Train classifier**. Every tagged page is labeled **1** if it
-    has the tag and **0** otherwise, and we fit the classifier on the embeddings:
+    Choose one or more tags, a classifier, and an embedding model, then click **Train classifier**. Every tagged page is labeled **1** if it
+    has **any** selected tag and **0** otherwise, and we fit the classifier on the embeddings.
+    For example, select both `animal` and `animals` to treat either tag as a match:
 
     * **Random forest**: many decision trees, each voting on the answer.
     * **Support vector machine (SVM)**: finds a smooth, curved boundary between pages with and without the tag.
@@ -260,18 +261,17 @@ def pick_md(mo):
 
 @app.cell(hide_code=True)
 def controls(mo, pl, tag_counts):
-    # label each tag with its page count; dropdown value is the tag itself
+    # Label each tag with its page count; selected values are the tags themselves.
     _options = {
         f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
         for _r in tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4).iter_rows(
             named=True
         )
     }
-    tag_select = mo.ui.dropdown(
+    tag_select = mo.ui.multiselect(
         options=_options,
-        value=None,
-        label="Tag",
-        searchable=True,
+        value=[],
+        label="Tags (match any)",
     )
 
     classifier_abbrevs = {"Support vector machine": "SVM", "Neural network": "MLP"}
@@ -328,8 +328,8 @@ def train_button_control(
     train_button = mo.ui.run_button(
         label="Train classifier",
         kind="success",
-        disabled=tag_select.value is None,
-        tooltip="Choose a tag first" if tag_select.value is None else None,
+        disabled=not tag_select.value,
+        tooltip="Choose at least one tag first" if not tag_select.value else None,
     )
     mo.vstack(
         [
@@ -372,11 +372,23 @@ def train(
     train_button,
 ):
     mo.stop(
-        tag_select.value is None or not train_button.value,
-        mo.md("_Choose a tag and click **Train classifier** to fit a model._"),
+        not tag_select.value or not train_button.value,
+        mo.md(
+            "_Choose one or more tags and click **Train classifier** to fit a model._"
+        ),
     )
-    target_tag = tag_select.value
-    y = page_tags_df["tags"].list.contains(target_tag).to_numpy().astype(int)
+    # Keep a single display label for this combined binary classification task.
+    # Sorting makes the history label independent of selection order.
+    _selected_tags = sorted(tag_select.value)
+    target_tag = " or ".join(_selected_tags)
+    y = (
+        page_tags_df["tags"]
+        .list.set_intersection(_selected_tags)
+        .list.len()
+        .gt(0)
+        .to_numpy()
+        .astype(int)
+    )
     X = page_tags_df["features"].to_numpy()
     groups = page_tags_df["book_id"].to_numpy()
 
