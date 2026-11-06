@@ -24,7 +24,8 @@ dev = [
 
 [tool.ruff.lint.per-file-ignores]
 "classify.py" = [
-    "B018" # useless expression
+    "B018",    # notebook display expressions
+    "PLR1711", # marimo-generated cell returns
 ]
 
 [tool.marimo.display]
