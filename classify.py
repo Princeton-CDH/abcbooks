@@ -32,6 +32,7 @@ def intro(mo):
 
     ///
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -43,12 +44,10 @@ async def imports():
         # In the browser (WASM), install packages that aren't bundled with Pyodide
         import micropip
 
-        # iconoscope v0.2.1 requires a newer polars than what is pre-installed with Pyodide;
+        # iconoscope v0.2.2 has relaxed dependencies for compatibility with pyodide
+        # install base version of package without embed/analysis extras
         # install dependencies first and then install iconoscope without dependencies
-        await micropip.install(
-            ["h5py", "numpy", "pillow", "polars", "piffle", "pyarrow"]
-        )
-        await micropip.install("iconoscope", deps=False)
+        await micropip.install(["piffle", "iconoscope>=0.2.2"])
 
     from pathlib import Path
 
@@ -113,6 +112,7 @@ def load_md(mo):
     Tags are lower-cased and de-duplicated. Not every page has been tagged: we train and
     evaluate on tagged pages, then use the model to suggest tags for untagged pages.
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -261,6 +261,7 @@ def pick_md(mo):
     We split train/test **by book**, not by page: pages from the same book share a style,
     so testing on a book the model has seen would make it look better than it really is.
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -609,6 +610,7 @@ def eval_md(mo):
     For a fair comparison of classifiers, keep the tag, embedding model, and test fraction the same.
     A higher accuracy on a different tag or test set does not necessarily mean a better classifier.
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -677,6 +679,7 @@ def evaluate(
         justify="start",
     )
     mo.hstack([_stats, _counts], justify="start", align="start", wrap=True)
+    return
 
 
 @app.cell(hide_code=True)
@@ -694,6 +697,7 @@ def run_history_table(get_run_history, mo, pl):
             else mo.md("_No runs yet._"),
         ]
     )
+    return
 
 
 @app.cell(hide_code=True)
@@ -704,6 +708,7 @@ def examples_md(mo):
     Numbers only tell part of the story. Which pages does the model think are most likely
     to have the tag? Are the "mistakes" really mistakes, or missing tags?
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -811,6 +816,7 @@ def examples(
             ),
         }
     )
+    return
 
 
 @app.cell(hide_code=True)
@@ -821,6 +827,7 @@ def predict_md(mo):
     Pages that were never tagged have no labels, so we left them out of training and
     evaluation. Now we can use the model to suggest which of them might have the tag.
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -851,6 +858,7 @@ def predict_untagged(gallery, mo, model, pl, target_tag, untagged_df):
             ]
         )
     _out
+    return
 
 
 @app.cell(hide_code=True)
@@ -864,6 +872,7 @@ def exercises(mo):
     4. Train the same tag with each classifier. Use the recent-runs table: which has the best accuracy? Do they make the same mistakes?
     5. Look at the false positives: are some of them pages that *should* have been tagged?
     """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -983,6 +992,7 @@ def _(mo, notebook_location):
         ],
         align="end",
     )
+    return
 
 
 if __name__ == "__main__":

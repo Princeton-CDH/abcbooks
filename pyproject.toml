@@ -7,7 +7,7 @@ requires-python = ">=3.14"
 dependencies = [
     "altair>=6.3.0",
     "h5py>=3.16.0",
-    "iconoscope[all]>=0.2.1",
+    "iconoscope[all]>=0.2.2",
     "marimo>=0.25.2",
     "numpy>=2.5.4",
     "piffle>=0.9.0",

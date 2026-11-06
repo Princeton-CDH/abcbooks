@@ -27,7 +27,7 @@ dev = [
 requires-dist = [
     { name = "altair", specifier = ">=6.3.0" },
     { name = "h5py", specifier = ">=3.16.0" },
-    { name = "iconoscope", extras = ["all"], specifier = ">=0.2.1" },
+    { name = "iconoscope", extras = ["all"], specifier = ">=0.2.2" },
     { name = "marimo", specifier = ">=0.25.2" },
     { name = "numpy", specifier = ">=2.5.4" },
     { name = "piffle", specifier = ">=0.9.0" },
@@ -530,7 +530,7 @@ wheels = [
 
 [[package]]
 name = "iconoscope"
-version = "0.2.1"
+version = "0.2.2.post1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "h5py" },
@@ -538,9 +538,9 @@ dependencies = [
     { name = "pillow" },
     { name = "polars" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/81/dea641d92820d49f821b6bf6fd711b6d8a22fa52380ef39cd5ba2dcc4925/iconoscope-0.2.1.tar.gz", hash = "sha256:938cba4459e2faade93aa8f9d05dc15b4eeb7d72479d432bd7a89bc501de6b2b", size = 34688, upload-time = "2026-10-27T17:17:02.536Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/81/42394ab8b2dffdbaf2425619c9784407e27b54946c3c9748f63ab0ffeae8/iconoscope-0.2.2.post1.tar.gz", hash = "sha256:09965772e85d992239fe66397eec2f7373bad959ae0a69e98a2bc4aae82cd077", size = 34747, upload-time = "2026-11-05T22:35:04.603Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a0/97/bde08c9001b927d3745cfbffb97078ebdf4c261f45bc5038800dc87deeaa/iconoscope-0.2.1-py3-none-any.whl", hash = "sha256:9411a17d1150a3fc4b826f5af2d9a9b1de4f9eff0e865b3ebb45c8268ce6468e", size = 39753, upload-time = "2026-10-27T17:17:01.575Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/b5/6b19efd87e78798459175164b0389371d7c3ae139f126aba750c2bbc9e86/iconoscope-0.2.2.post1-py3-none-any.whl", hash = "sha256:ed21de088c1ab35135dd3f37d84312d52a59576c1ce71cdf3a5cb055c580e0b9", size = 39867, upload-time = "2026-11-05T22:35:03.718Z" },
 ]
 
 [package.optional-dependencies]
