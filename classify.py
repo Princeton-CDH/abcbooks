@@ -7,24 +7,31 @@ app = marimo.App(width="medium", app_title="Classify ABC Books pages")
 @app.cell(hide_code=True)
 def intro(mo):
     mo.md(r"""
-    # Classifying ABC book pages from image embeddings
+    # ABC Books: page images, tags, and image classification
 
-    Each page image in this dataset has been turned into an **embedding**: a list of numbers
-    produced by a vision model. Images that
-    look alike have embeddings that are close together.
+    ## [The ABC Books collection](https://commons.princeton.edu/abcbooks/about/)
 
-    Some books also have **human-assigned tags** for each page (e.g. `hat`, `bird`, `tree`).
+    > ABC Books is a digital archive of historical alphabet books from the Cotsen Children’s Library at Princeton, designed specifically for the use of students in ENG 304: Children’s Literature.
+
+    Many page images in the ABC Books collection have received **human-assigned tags** that describe the page content in some way, as for example [page 5 of *A B SEE*, here](https://commons.princeton.edu/abcbooks/leaf/a-b-see-by-lucille-ogle-and-tina-thoburn-illustrated-by-ralph-stobart-5/).
+
+    This notebook explores using these tags to train a simple classification model that can predict whether or not a page image should have a given tag. If we train a model on existing tags, can it successfully suggest those same tags for pages that haven't been tagged yet?
+
+    ## Outline
+
     In this notebook we will:
 
-    1. load the embeddings and the tag metadata,
+    1. load the prepared image and the tag data,
     2. join them so each image knows its tags,
     3. pick a tag and train a simple classifier that predicts whether a page has that tag,
     4. evaluate it and look at the pages it gets right and wrong.
 
+    ## Press ▶️ in the bottom right to start the notebook!
 
-    /// admonition | About this notebook
+    /// details | About this notebook
+        type: info
 
-    This is a [marimo](https://marimo.io) notebook that has been exported to HTML+WASM so it can run in the browser.
+    This is a [marimo](https://marimo.io) notebook that has been exported to HTML+WASM so it can run in the browser. All the code run here is run locally on your computer: nothing is sent to external servers.
 
     This notebook is running in **edit** mode with the code blocks hidden by default. If you are interested in seeing how it is implemented, click into a collapsed block to view the code.
 
@@ -105,12 +112,16 @@ def load_md(mo):
     mo.md(r"""
     ## Load the data
 
-    We have pre-computed image embeddings and data about books and page-level tags from ABC Books.
+    The code here loads both the image data (in the form of image embeddings: see below) and the tag data. Tags have been normalized by converting all tags to lowercase so that a tag of 'Hat' and a tag of 'hat' is treated as the same tag.
 
-    Image embeddings and metadata are connected by the IIIF **canvas id**
+    ### Image embeddings: how do computers 'see'?
 
-    Tags are lower-cased and de-duplicated. Not every page has been tagged: we train and
-    evaluate on tagged pages, then use the model to suggest tags for untagged pages.
+    To a computer, an image is a grid of colored pixels. It is helpful to first process each image to turn it into an "embedding": a long list of numbers that are meaningful to computers because images that are similar to each other will have similar embeddings.
+
+    There are multiple ways to generate image embeddings. In this notebook, we are using two sets of image embeddings which have been precomputed to save on processing time. The models used to generate the embeddings are the following:
+
+    - **DINOv2**: This model was trained to look at the visual structure of images (shapes, textures, objects) without needing text instructions.
+    - **SigLIP**: This model was trained to understand the relationship between images and language. It is specifically designed to align visual features with human words.
     """)
     return
 
@@ -250,13 +261,19 @@ def pick_md(mo):
     mo.md(r"""
     ## Train a classifier
 
-    Choose one or more tags, a classifier, and an embedding model, then click **Train classifier**. Every tagged page is labeled **1** if it
-    has **any** selected tag and **0** otherwise, and we fit the classifier on the embeddings.
-    For example, select both `animal` and `animals` to treat either tag as a match:
+    This notebook is set up to explore using three different possible *classifiers* to judge whether or not a page should have a given tag or tags. These classifiers are:
+
+    <!-- To do: more undergrad-friendly descriptors for each classier here -->
 
     * **Random forest**: many decision trees, each voting on the answer.
     * **Support vector machine (SVM)**: finds a smooth, curved boundary between pages with and without the tag.
     * **Neural network (MLP)**: a small network with one hidden layer of 256 units.
+
+    ## Test it out!
+
+    Choose one or more tags, a classifier, and an embedding model, then click **Train classifier**. Every tagged page is labeled **1** if it
+    has **any** selected tag and **0** otherwise, and we fit the classifier on the embeddings.
+    For example, select both `animal` and `animals` to treat either tag as a match.
 
     We split train/test **by book**, not by page: pages from the same book share a style,
     so testing on a book the model has seen would make it look better than it really is.
