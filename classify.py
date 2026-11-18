@@ -9,6 +9,17 @@ def intro(mo):
     mo.md(r"""
     # ABC Books: page images, tags, and image classification
 
+    /// details | About this notebook
+        type: info
+
+    This is a [marimo](https://marimo.io) notebook that has been exported to HTML+WASM so it can run in the browser. All the code run here is run locally on your computer: nothing is sent to external servers. (This does mean model training will be faster or slower depending on your hardware, and maybe how many applications or tabs you have open...)
+
+    This notebook is running in **edit** mode with the code blocks hidden by default. If you are interested in seeing how it is implemented, click into a collapsed block to view the code.
+
+    Switch to **application view** using the ::lucide:layout-template:: button in the bottom right menu. Use the ::lucide:square-pen:: to switch back to **edit view**.
+
+    ///
+
     ## [The ABC Books collection](https://commons.princeton.edu/abcbooks/about/)
 
     > ABC Books is a digital archive of historical alphabet books from the Cotsen Children’s Library at Princeton, designed specifically for the use of students in ENG 304: Children’s Literature.
@@ -22,22 +33,15 @@ def intro(mo):
     In this notebook we will:
 
     1. load the prepared image and the tag data,
-    2. join them so each image knows its tags,
-    3. pick a tag and train a simple classifier that predicts whether a page has that tag,
-    4. evaluate it and look at the pages it gets right and wrong.
+    2. pick a tag and train a simple classifier that predicts whether a page has that tag,
+    3. evaluate the classifier and look at the pages it gets right and wrong,
+    4. run it on untagged pages and examine the results.
 
-    ## Press ▶️ in the bottom right to start the notebook!
+    ---
 
-    /// details | About this notebook
-        type: info
+    ## 🟢 Press ▶️ in the bottom right to start the notebook!
 
-    This is a [marimo](https://marimo.io) notebook that has been exported to HTML+WASM so it can run in the browser. All the code run here is run locally on your computer: nothing is sent to external servers.
-
-    This notebook is running in **edit** mode with the code blocks hidden by default. If you are interested in seeing how it is implemented, click into a collapsed block to view the code.
-
-    Switch to **application view** using the ::lucide:layout-template:: button in the bottom right menu. Use the ::lucide:square-pen:: to switch back to **edit view**.
-
-    ///
+    ---
     """)
     return
 
@@ -107,12 +111,19 @@ async def paths(Path, mo):
     return books_file, embeddings_file, pages_file, tags_file
 
 
-@app.cell(hide_code=True)
-def load_md(mo):
-    mo.md(r"""
+@app.cell
+def _(embeddings_df, mo, page_tags_df, untagged_df):
+    # Calculate the counts using the height of the dataframes
+    img_count = embeddings_df.height
+    tagged_count = page_tags_df.height
+    untagged_count = untagged_df.height
+
+    mo.md(f"""
     ## Load the data
 
     The code here loads both the image data (in the form of image embeddings: see below) and the tag data. Tags have been normalized by converting all tags to lowercase so that a tag of 'Hat' and a tag of 'hat' is treated as the same tag.
+
+    There are {img_count:,} images in this dataset: {tagged_count:,} have at least one tag, and {untagged_count:,} have zero tags.
 
     ### Image embeddings: how do computers 'see'?
 
@@ -120,8 +131,8 @@ def load_md(mo):
 
     There are multiple ways to generate image embeddings. In this notebook, we are using two sets of image embeddings which have been precomputed to save on processing time. The models used to generate the embeddings are the following:
 
-    - **DINOv2**: This model was trained to look at the visual structure of images (shapes, textures, objects) without needing text instructions.
-    - **SigLIP**: This model was trained to understand the relationship between images and language. It is specifically designed to align visual features with human words.
+    - [**DINOv2**](https://ai.meta.com/blog/dino-v2-computer-vision-self-supervised-learning/): This model was trained to look at the visual structure of images (shapes, textures, objects) without needing text instructions.
+    - [**SigLIP**](https://huggingface.co/docs/transformers/model_doc/siglip): This model was trained to understand the relationship between images and language. It is specifically designed to align visual features with human words.
     """)
     return
 
@@ -142,7 +153,8 @@ def model_select_control(ImageDataset, embeddings_file, mo):
 
     # dropdown value is the display name; look up the config by display name
     embedding_configs = {
-        _display_name(_config): _config for _config in embedding_configs.values()
+        _display_name(_config): _config
+        for _config in embedding_configs.values()
     }
     model_select = mo.ui.dropdown(
         options=list(embedding_configs),
@@ -167,7 +179,7 @@ def load_h5(embedding_configs, img_dataset, mo, model_select, pl):
     )
 
     mo.md(
-        f"Loaded `{model_select.value}` features for **{embeddings_df.shape[0]:,} images**"
+        f"The notebook has now loaded `{model_select.value}` features for **{embeddings_df.shape[0]:,} images**."
     )
     return (embeddings_df,)
 
@@ -184,9 +196,12 @@ def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
                 "book_id",
                 # drop subtitle (after colon) from long titles
                 title=pl.when(
-                    (pl.col.title.str.len_chars() > 50) & pl.col.title.str.contains(":")
+                    (pl.col.title.str.len_chars() > 50)
+                    & pl.col.title.str.contains(":")
                 )
-                .then(pl.col.title.str.split(":").list.first().str.strip_chars())
+                .then(
+                    pl.col.title.str.split(":").list.first().str.strip_chars()
+                )
                 .otherwise(pl.col.title),
             ),
             on="book_id",
@@ -194,7 +209,9 @@ def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
         )
     ).with_columns(
         thumbnail=pl.col.image_id.map_elements(
-            lambda img_id: str(IIIFImageClient(iiif_image_api, img_id).size(width=500)),
+            lambda img_id: str(
+                IIIFImageClient(iiif_image_api, img_id).size(width=500)
+            ),
             return_dtype=pl.String,
         ),
     )
@@ -203,7 +220,7 @@ def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
 
 
 @app.cell(hide_code=True)
-def join(embeddings_df, mo, pages_df, pl, tags_df):
+def join(embeddings_df, pages_df, pl, tags_df):
     # one row per image: embedding row, book, page, and its list of tags
     # (null tags = page has not been tagged)
     all_pages_df = (
@@ -219,22 +236,34 @@ def join(embeddings_df, mo, pages_df, pl, tags_df):
     # tagged pages have known labels: use them for training and evaluation
     page_tags_df = all_pages_df.filter(pl.col.is_tagged)
     untagged_df = all_pages_df.filter(~pl.col.is_tagged)
-    mo.vstack(
-        [
-            mo.md(
-                f"**{all_pages_df.height:,}** of {embeddings_df.height:,} images have page metadata, "
-                f"from **{all_pages_df['book_id'].n_unique()}** books: "
-                f"**{page_tags_df.height:,}** tagged, **{untagged_df.height:,}** untagged."
-            ),
-            all_pages_df.with_columns(tags=pl.col.tags.list.join(", ")).select(
-                "thumbnail",
-                "title",
-                "label",
-                "tags",
-            ),
-        ]
-    )
+    # mo.vstack(
+    #     [
+    #         mo.md(
+    #             f"**{all_pages_df.height:,}** of {embeddings_df.height:,} images have page metadata, "
+    #             f"from **{all_pages_df['book_id'].n_unique()}** books: "
+    #             f"**{page_tags_df.height:,}** tagged, **{untagged_df.height:,}** untagged."
+    #         ),
+    #         all_pages_df.with_columns(tags=pl.col.tags.list.join(", ")).select(
+    #             "thumbnail",
+    #             "title",
+    #             "label",
+    #             "tags",
+    #         ),
+    #     ]
+    # )
     return page_tags_df, untagged_df
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Most common tags
+
+    A tag needs enough examples for the computer to learn from it. Further, a tag should have examples from *multiple books*. Otherwise, if all of the examples of a tag come from the same book, there is a risk that the model simply learns the visual style of the *book* rather than the visual indications of the specific *tag*.
+
+    The below table lists the most common tags in the ABC Books corpus. Try clicking into 'See on ABC Books' to pull up all the examples of that tag across the dataset!
+    """)
+    return
 
 
 @app.cell(hide_code=True)
@@ -247,36 +276,45 @@ def tag_counts(mo, page_tags_df, pl):
     )
     mo.vstack(
         [
-            mo.md(
-                "### Most common tags\nA tag needs enough examples (in several books) to learn from."
-            ),
             tag_counts.head(30),
         ]
     )
+
+    # TODO: Placeholder text about 'See on ABC Books' above -- adjust once code is actually implemented!
     return (tag_counts,)
 
 
 @app.cell(hide_code=True)
 def pick_md(mo):
     mo.md(r"""
+    ---
+
     ## Train a classifier
 
-    This notebook is set up to explore using three different possible *classifiers* to judge whether or not a page should have a given tag or tags. These classifiers are:
+    This notebook is set up to explore using three different possible **classifiers** to judge whether or not a page should have a given tag or tags. These classifiers are:
 
     <!-- To do: more undergrad-friendly descriptors for each classier here -->
 
-    * **Random forest**: many decision trees, each voting on the answer.
-    * **Support vector machine (SVM)**: finds a smooth, curved boundary between pages with and without the tag.
-    * **Neural network (MLP)**: a small network with one hidden layer of 256 units.
+    * **Random forest**: many decision trees, each voting on the answer. It is an approach that tends to be more robust: the majority vote means it is less likely to be thrown off by outlier data points.
+    * **Support vector machine (SVM)**: finds a smooth, curved boundary between pages with and without the tag. It is an approach that works well at finding the tipping point between two categories, but it might be thrown off by outlier data points.
+    * **Neural network (MLP)**: a small network with one hidden layer of 256 units. It is an approach that is effective at finding complex non-linear relationships within data, but it is difficult to get *explainable* results about the decisions made by the model.
 
-    ## Test it out!
+    ---
 
-    Choose one or more tags, a classifier, and an embedding model, then click **Train classifier**. Every tagged page is labeled **1** if it
-    has **any** selected tag and **0** otherwise, and we fit the classifier on the embeddings.
+    ## 🟢 Test it out!
+
+    ---
+
+    Choose one or more tags, a classifier, and an embedding model, then click **Train classifier**.
     For example, select both `animal` and `animals` to treat either tag as a match.
 
-    We split train/test **by book**, not by page: pages from the same book share a style,
+    /// details | Technical notes...
+
+    Every tagged page is labeled **1** if it
+    has **any** selected tag and **0** otherwise, and we fit the classifier on the embeddings. We split train/test **by book**, not by page: pages from the same book share a style,
     so testing on a book the model has seen would make it look better than it really is.
+
+    ///
     """)
     return
 
@@ -286,9 +324,9 @@ def controls(Enum, auto, mo, pl, tag_counts):
     # Label each tag with its page count; selected values are the tags themselves.
     _options = {
         f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
-        for _r in tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4).iter_rows(
-            named=True
-        )
+        for _r in tag_counts.filter(
+            pl.col.pages >= 30, pl.col.books >= 4
+        ).iter_rows(named=True)
     }
     tag_select = mo.ui.multiselect(
         options=_options,
@@ -368,7 +406,9 @@ def train_button_control(
         label="Train classifier",
         kind="success",
         disabled=not tag_select.value,
-        tooltip="Choose at least one tag first" if not tag_select.value else None,
+        tooltip="Choose at least one tag first"
+        if not tag_select.value
+        else None,
     )
     mo.vstack(
         [
@@ -415,9 +455,6 @@ def train(
 ):
     mo.stop(
         not tag_select.value or not train_button.value,
-        mo.md(
-            "_Choose one or more tags and click **Train classifier** to fit a model._"
-        ),
     )
     # Keep a single display label for this combined binary classification task.
     # Sorting makes the history label independent of selection order.
@@ -434,7 +471,9 @@ def train(
     X = page_tags_df["features"].to_numpy()
     groups = page_tags_df["book_id"].to_numpy()
 
-    _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
+    _split = GroupShuffleSplit(
+        n_splits=1, test_size=test_size.value, random_state=0
+    )
     train_idx, test_idx = next(_split.split(X, y, groups))
 
     _train_positive = int(y[train_idx].sum())
@@ -528,8 +567,12 @@ def train(
         _negative_books = len(set(_training_groups[_training_y == 0]))
         _max_folds = min(5, _train_tag_books, _negative_books)
         for _n_folds in range(_max_folds, 1, -1):
-            _cv = StratifiedGroupKFold(n_splits=_n_folds, shuffle=True, random_state=0)
-            _folds = list(_cv.split(X[train_idx], _training_y, groups=_training_groups))
+            _cv = StratifiedGroupKFold(
+                n_splits=_n_folds, shuffle=True, random_state=0
+            )
+            _folds = list(
+                _cv.split(X[train_idx], _training_y, groups=_training_groups)
+            )
             # Stratification is approximate: check both classes in every fold.
             if all(
                 len(set(_training_y[_fit_idx])) == 2
@@ -562,7 +605,9 @@ def train(
         )
     elif classifier_select.value == Classifier.MLP:
         # MLPClassifier has no class_weight option
-        model = MLPClassifier(hidden_layer_sizes=(256,), max_iter=300, random_state=0)
+        model = MLPClassifier(
+            hidden_layer_sizes=(256,), max_iter=300, random_state=0
+        )
     else:
         model = RandomForestClassifier(
             n_estimators=500,
@@ -588,7 +633,9 @@ def train(
                 {
                     "embedding": model_select.value,
                     "tag": target_tag,
-                    "classifier": classifier_shorthand(classifier_select.value),
+                    "classifier": classifier_shorthand(
+                        classifier_select.value
+                    ),
                     "balancing": "Not supported"
                     if classifier_select.value == Classifier.MLP
                     else ("On" if balanced.value else "Off"),
@@ -617,15 +664,16 @@ def train(
 @app.cell(hide_code=True)
 def eval_md(mo):
     mo.md(r"""
-    ## Evaluate
+    ---
 
-    **Accuracy** is the share of test pages the model labeled correctly. Compare it to the **baseline**
-    of always guessing that a page does *not* have the tag (e.g. "not hat"): for rare tags the baseline is already high, so a model can look
-    accurate without learning anything.
+    ## Reported results
 
-    The table keeps your last 10 training runs so you can compare tags and classifiers.
-    For a fair comparison of classifiers, keep the tag, embedding model, and test fraction the same.
-    A higher accuracy on a different tag or test set does not necessarily mean a better classifier.
+    When training the model, the data was split into a **train** subset and a **test** subset.
+    The trained model was automatically run on the **test** subset and accuracy scores have been generated from this run.
+
+    **Accuracy** is the share of test pages the model labeled correctly, according to the data.
+    Since individual tags are rare, we might compare the model's reported accuracy to the **baseline** score we get if we simply always guess that a page does *not* have the tag (e.g. "not hat").
+    This comparison is useful because for rare tags this baseline score might already be high, so a model could have a high reported accuracy score but have not actually learned anything!
     """)
     return
 
@@ -663,7 +711,12 @@ def evaluate(
         )
         + f"\n- Suggested `{target_tag}` for **{_extra:,} other test pages** without that recorded tag."
         + f"\n- Suggested `{target_tag}` for **{_suggested:,} test pages total**."
-        + "\n\nA suggestion without a recorded tag may be a bad prediction or a page that no one has tagged yet."
+        + """\n\n
+        /// details | ❗ Note...
+
+        A suggestion without a recorded tag could be a bad prediction by the model, or it could be a page where that tag would be appropriate but no one has added it yet.
+
+        ///"""
     )
 
     _stats = mo.hstack(
@@ -673,7 +726,11 @@ def evaluate(
                 label=f"Accuracy: {target_tag}",
                 caption=f"{model_select.value} · "
                 + classifier_shorthand(classifier_select.value)
-                + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
+                + (
+                    f" (prev. {_previous:.1%})"
+                    if _previous is not None
+                    else ""
+                ),
                 direction=None
                 if _previous is None or accuracy == _previous
                 else ("increase" if accuracy > _previous else "decrease"),
@@ -689,7 +746,9 @@ def evaluate(
                 f"{(accuracy - baseline_accuracy) * 100:+.1f} pts",
                 label="Gain over Baseline",
                 caption="from baseline",
-                direction="increase" if accuracy > baseline_accuracy else "decrease",
+                direction="increase"
+                if accuracy > baseline_accuracy
+                else "decrease",
                 bordered=True,
             ),
         ],
@@ -704,11 +763,17 @@ def run_history_table(get_run_history, mo, pl):
     _runs = get_run_history()
     mo.vstack(
         [
-            mo.md("### Recent runs"),
+            mo.md("""### Recent runs
+            The table keeps your last 10 training runs so you can compare tags and classifiers.
+            For a fair comparison of classifiers, keep the tag, embedding model, and test fraction the same.
+            Note: a higher reported accuracy on a different tag or test set does not necessarily mean a better classifier!
+            """),
             pl.DataFrame(list(reversed(_runs)))
             .with_columns(gain=pl.col.accuracy - pl.col.baseline)
             .with_columns(
-                pl.col("test_fraction", "accuracy", "baseline", "gain").round(3)
+                pl.col("test_fraction", "accuracy", "baseline", "gain").round(
+                    3
+                )
             )
             if _runs
             else mo.md("_No runs yet._"),
@@ -720,6 +785,8 @@ def run_history_table(get_run_history, mo, pl):
 @app.cell(hide_code=True)
 def examples_md(mo):
     mo.md(r"""
+    ---
+
     ## Review the results
 
     Numbers only tell part of the story. Which pages does the model think are most likely
@@ -731,7 +798,12 @@ def examples_md(mo):
 @app.cell(hide_code=True)
 def thumb_size_control(mo):
     thumb_size = mo.ui.slider(
-        100, 500, step=25, value=200, label="Thumbnail size (px)", show_value=True
+        100,
+        500,
+        step=25,
+        value=200,
+        label="Thumbnail size (px)",
+        show_value=True,
     )
     thumb_size
     return (thumb_size,)
@@ -788,7 +860,9 @@ def gallery_fn(mo, thumb_size):
         return mo.vstack(
             [
                 mo.md(f"### {title}"),
-                mo.Html(_gallery_css + f'<div class="abc-gallery">{_body}</div>'),
+                mo.Html(
+                    _gallery_css + f'<div class="abc-gallery">{_body}</div>'
+                ),
             ]
         )
 
@@ -820,13 +894,17 @@ def examples(
                 f"Highest predicted probability of '{target_tag}'",
             ),
             "False positives": gallery(
-                results_df.filter((pl.col.predicted == 1) & (pl.col.actual == 0))
+                results_df.filter(
+                    (pl.col.predicted == 1) & (pl.col.actual == 0)
+                )
                 .sort("probability", descending=True)
                 .head(12),
                 "Predicted but not tagged",
             ),
             "False negatives": gallery(
-                results_df.filter((pl.col.predicted == 0) & (pl.col.actual == 1))
+                results_df.filter(
+                    (pl.col.predicted == 0) & (pl.col.actual == 1)
+                )
                 .sort("probability")
                 .head(12),
                 "Tagged but missed",
@@ -839,6 +917,8 @@ def examples(
 @app.cell(hide_code=True)
 def predict_md(mo):
     mo.md(r"""
+    ---
+
     ## Suggest tags for untagged pages
 
     Pages that were never tagged have no labels, so we left them out of training and
@@ -881,13 +961,18 @@ def predict_untagged(gallery, mo, model, pl, target_tag, untagged_df):
 @app.cell(hide_code=True)
 def exercises(mo):
     mo.md(r"""
-    ## Try it yourself
+    ---
+
+    <!-- TODO: adjust phrasing for 2 especially based on revisions to tag rarity handling -->
+
+    ## 🟢 ِExperiment!
 
     1. Try several tags. Which are easy to learn (`flag`? `bird`?) and which are hard (`rhyme`?)? Why might a *visual* model struggle with some tags?
     2. Turn off class balancing. What happens to accuracy for a rare tag? Is it really doing better than the baseline?
-    3. Change the decision threshold from 0.5. How does it change accuracy?
-    4. Train the same tag with each classifier. Use the recent-runs table: which has the best accuracy? Do they make the same mistakes?
-    5. Look at the false positives: are some of them pages that *should* have been tagged?
+    3. Train the same tag with each classifier. Use the recent-runs table: which has the best accuracy? Do they make the same mistakes?
+    4. Look at the false positives: are some of them pages that *should* have been tagged?
+
+    ---
     """)
     return
 
@@ -990,7 +1075,9 @@ def _(mo, notebook_location):
                     mo.md(
                         "Images and metadata are drawn from the [ABC Books collection](https://dpul.princeton.edu/cotsen/browse/abc-books)  of the Cotsen Children's Library, Princeton University."
                     ),
-                    mo.md("Tags were exported from the ABC Books course website."),
+                    mo.md(
+                        "Tags were exported from the ABC Books course website."
+                    ),
                     mo.md(
                         "Built with [marimo](https://marimo.io) and [iconoscope](https://github.com/Princeton-CDH/iconoscope). Code for this project is made [available on GitHub](https://github.com/Princeton-CDH/abcbooks) under the [Apache 2.0 license](https://github.com/Princeton-CDH/abcbooks/blob/main/LICENSE)."
                     ),
