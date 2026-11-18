@@ -111,7 +111,7 @@ async def paths(Path, mo):
     return books_file, embeddings_file, pages_file, tags_file
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(embeddings_df, mo, page_tags_df, untagged_df):
     # Calculate the counts using the height of the dataframes
     img_count = embeddings_df.height
