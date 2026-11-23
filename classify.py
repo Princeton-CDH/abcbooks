@@ -255,7 +255,7 @@ def _(mo):
 
     A tag needs enough examples for the computer to learn from it. Further, a tag should have examples from *multiple books*. Otherwise, if all of the examples of a tag come from the same book, there is a risk that the model simply learns the visual style of the *book* rather than the visual indications of the specific *tag*.
 
-    The below table lists the most common tags in the ABC Books corpus. Try clicking on the 'view pages' link in the 'ABC Books link' column to pull up all pages with that that tag anywhere in the course website!
+    The below table lists the most common tags in the ABC Books corpus. Try clicking on the 'view tagged pages' link in the 'ABC Books link' column to pull up all pages with that that tag anywhere in the course website!
     """)
     return
 
@@ -270,7 +270,7 @@ def tag_counts(mo, page_tags_df, pl):
             link=pl.col.tag.map_elements(
                 # create html link to view pages with this tag on ABC Books class site
                 lambda tag: mo.Html(
-                    f"<a href='https://commons.princeton.edu/abcbooks/tag/?tag={tag}' target='_blank'>view pages</a>"
+                    f"<a href='https://commons.princeton.edu/abcbooks/tag/?tag={tag}' target='_blank'>view tagged pages</a>"
                 )
             )
         )
