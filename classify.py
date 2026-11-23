@@ -153,8 +153,7 @@ def model_select_control(ImageDataset, embeddings_file, mo):
 
     # dropdown value is the display name; look up the config by display name
     embedding_configs = {
-        _display_name(_config): _config
-        for _config in embedding_configs.values()
+        _display_name(_config): _config for _config in embedding_configs.values()
     }
     model_select = mo.ui.dropdown(
         options=list(embedding_configs),
@@ -196,12 +195,9 @@ def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
                 "book_id",
                 # drop subtitle (after colon) from long titles
                 title=pl.when(
-                    (pl.col.title.str.len_chars() > 50)
-                    & pl.col.title.str.contains(":")
+                    (pl.col.title.str.len_chars() > 50) & pl.col.title.str.contains(":")
                 )
-                .then(
-                    pl.col.title.str.split(":").list.first().str.strip_chars()
-                )
+                .then(pl.col.title.str.split(":").list.first().str.strip_chars())
                 .otherwise(pl.col.title),
             ),
             on="book_id",
@@ -209,9 +205,7 @@ def load_meta(IIIFImageClient, books_file, pages_file, pl, tags_file):
         )
     ).with_columns(
         thumbnail=pl.col.image_id.map_elements(
-            lambda img_id: str(
-                IIIFImageClient(iiif_image_api, img_id).size(width=500)
-            ),
+            lambda img_id: str(IIIFImageClient(iiif_image_api, img_id).size(width=500)),
             return_dtype=pl.String,
         ),
     )
@@ -324,9 +318,9 @@ def controls(Enum, auto, mo, pl, tag_counts):
     # Label each tag with its page count; selected values are the tags themselves.
     _options = {
         f"{_r['tag']} ({_r['pages']} pages)": _r["tag"]
-        for _r in tag_counts.filter(
-            pl.col.pages >= 30, pl.col.books >= 4
-        ).iter_rows(named=True)
+        for _r in tag_counts.filter(pl.col.pages >= 30, pl.col.books >= 4).iter_rows(
+            named=True
+        )
     }
     tag_select = mo.ui.multiselect(
         options=_options,
@@ -406,9 +400,7 @@ def train_button_control(
         label="Train classifier",
         kind="success",
         disabled=not tag_select.value,
-        tooltip="Choose at least one tag first"
-        if not tag_select.value
-        else None,
+        tooltip="Choose at least one tag first" if not tag_select.value else None,
     )
     mo.vstack(
         [
@@ -471,9 +463,7 @@ def train(
     X = page_tags_df["features"].to_numpy()
     groups = page_tags_df["book_id"].to_numpy()
 
-    _split = GroupShuffleSplit(
-        n_splits=1, test_size=test_size.value, random_state=0
-    )
+    _split = GroupShuffleSplit(n_splits=1, test_size=test_size.value, random_state=0)
     train_idx, test_idx = next(_split.split(X, y, groups))
 
     _train_positive = int(y[train_idx].sum())
@@ -567,12 +557,8 @@ def train(
         _negative_books = len(set(_training_groups[_training_y == 0]))
         _max_folds = min(5, _train_tag_books, _negative_books)
         for _n_folds in range(_max_folds, 1, -1):
-            _cv = StratifiedGroupKFold(
-                n_splits=_n_folds, shuffle=True, random_state=0
-            )
-            _folds = list(
-                _cv.split(X[train_idx], _training_y, groups=_training_groups)
-            )
+            _cv = StratifiedGroupKFold(n_splits=_n_folds, shuffle=True, random_state=0)
+            _folds = list(_cv.split(X[train_idx], _training_y, groups=_training_groups))
             # Stratification is approximate: check both classes in every fold.
             if all(
                 len(set(_training_y[_fit_idx])) == 2
@@ -605,9 +591,7 @@ def train(
         )
     elif classifier_select.value == Classifier.MLP:
         # MLPClassifier has no class_weight option
-        model = MLPClassifier(
-            hidden_layer_sizes=(256,), max_iter=300, random_state=0
-        )
+        model = MLPClassifier(hidden_layer_sizes=(256,), max_iter=300, random_state=0)
     else:
         model = RandomForestClassifier(
             n_estimators=500,
@@ -633,9 +617,7 @@ def train(
                 {
                     "embedding": model_select.value,
                     "tag": target_tag,
-                    "classifier": classifier_shorthand(
-                        classifier_select.value
-                    ),
+                    "classifier": classifier_shorthand(classifier_select.value),
                     "balancing": "Not supported"
                     if classifier_select.value == Classifier.MLP
                     else ("On" if balanced.value else "Off"),
@@ -726,11 +708,7 @@ def evaluate(
                 label=f"Accuracy: {target_tag}",
                 caption=f"{model_select.value} · "
                 + classifier_shorthand(classifier_select.value)
-                + (
-                    f" (prev. {_previous:.1%})"
-                    if _previous is not None
-                    else ""
-                ),
+                + (f" (prev. {_previous:.1%})" if _previous is not None else ""),
                 direction=None
                 if _previous is None or accuracy == _previous
                 else ("increase" if accuracy > _previous else "decrease"),
@@ -746,9 +724,7 @@ def evaluate(
                 f"{(accuracy - baseline_accuracy) * 100:+.1f} pts",
                 label="Gain over Baseline",
                 caption="from baseline",
-                direction="increase"
-                if accuracy > baseline_accuracy
-                else "decrease",
+                direction="increase" if accuracy > baseline_accuracy else "decrease",
                 bordered=True,
             ),
         ],
@@ -771,9 +747,7 @@ def run_history_table(get_run_history, mo, pl):
             pl.DataFrame(list(reversed(_runs)))
             .with_columns(gain=pl.col.accuracy - pl.col.baseline)
             .with_columns(
-                pl.col("test_fraction", "accuracy", "baseline", "gain").round(
-                    3
-                )
+                pl.col("test_fraction", "accuracy", "baseline", "gain").round(3)
             )
             if _runs
             else mo.md("_No runs yet._"),
@@ -860,9 +834,7 @@ def gallery_fn(mo, thumb_size):
         return mo.vstack(
             [
                 mo.md(f"### {title}"),
-                mo.Html(
-                    _gallery_css + f'<div class="abc-gallery">{_body}</div>'
-                ),
+                mo.Html(_gallery_css + f'<div class="abc-gallery">{_body}</div>'),
             ]
         )
 
@@ -894,17 +866,13 @@ def examples(
                 f"Highest predicted probability of '{target_tag}'",
             ),
             "False positives": gallery(
-                results_df.filter(
-                    (pl.col.predicted == 1) & (pl.col.actual == 0)
-                )
+                results_df.filter((pl.col.predicted == 1) & (pl.col.actual == 0))
                 .sort("probability", descending=True)
                 .head(12),
                 "Predicted but not tagged",
             ),
             "False negatives": gallery(
-                results_df.filter(
-                    (pl.col.predicted == 0) & (pl.col.actual == 1)
-                )
+                results_df.filter((pl.col.predicted == 0) & (pl.col.actual == 1))
                 .sort("probability")
                 .head(12),
                 "Tagged but missed",
@@ -1075,9 +1043,7 @@ def _(mo, notebook_location):
                     mo.md(
                         "Images and metadata are drawn from the [ABC Books collection](https://dpul.princeton.edu/cotsen/browse/abc-books)  of the Cotsen Children's Library, Princeton University."
                     ),
-                    mo.md(
-                        "Tags were exported from the ABC Books course website."
-                    ),
+                    mo.md("Tags were exported from the ABC Books course website."),
                     mo.md(
                         "Built with [marimo](https://marimo.io) and [iconoscope](https://github.com/Princeton-CDH/iconoscope). Code for this project is made [available on GitHub](https://github.com/Princeton-CDH/abcbooks) under the [Apache 2.0 license](https://github.com/Princeton-CDH/abcbooks/blob/main/LICENSE)."
                     ),

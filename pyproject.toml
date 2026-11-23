@@ -35,6 +35,9 @@ theme = "system"      # honor user preference, including in static html exports
 [tool.marimo.save]
 format_on_save = true
 
+[tool.marimo.formatting]
+line_length = 88  # match Ruff's default
+
 [tool.marimo.diagnostics]
 enabled = true
 
