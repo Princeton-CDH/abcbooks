@@ -255,7 +255,7 @@ def _(mo):
 
     A tag needs enough examples for the computer to learn from it. Further, a tag should have examples from *multiple books*. Otherwise, if all of the examples of a tag come from the same book, there is a risk that the model simply learns the visual style of the *book* rather than the visual indications of the specific *tag*.
 
-    The below table lists the most common tags in the ABC Books corpus. Try clicking into 'See on ABC Books' to pull up all the examples of that tag across the dataset!
+    The below table lists the most common tags in the ABC Books corpus. Try clicking on the 'view pages' link in the 'ABC Books link' column to pull up all pages with that that tag anywhere in the course website!
     """)
     return
 
@@ -266,15 +266,30 @@ def tag_counts(mo, page_tags_df, pl):
         page_tags_df.explode("tags")
         .group_by(tag="tags")
         .agg(pages=pl.len(), books=pl.col.book_id.n_unique())
+        .with_columns(
+            link=pl.col.tag.map_elements(
+                # create html link to view pages with this tag on ABC Books class site
+                lambda tag: mo.Html(
+                    f"<a href='https://commons.princeton.edu/abcbooks/tag/?tag={tag}' target='_blank'>view pages</a>"
+                )
+            )
+        )
         .sort("pages", descending=True)
     )
-    mo.vstack(
-        [
-            tag_counts.head(30),
-        ]
-    )
 
-    # TODO: Placeholder text about 'See on ABC Books' above -- adjust once code is actually implemented!
+    # update dataframe columns names to make them more readable / informative; for this table only
+    display_labels = {
+        "tag": "Tag",
+        "pages": "Number of Pages",
+        "books": "Number of Books",
+        "link": "ABC Books link",
+    }
+
+    mo.ui.table(
+        data=tag_counts.head(30).rename(display_labels),
+        selection=None,
+        label="Most common tags",
+    )
     return (tag_counts,)
 
 
